@@ -3,7 +3,7 @@ name: miami-nights
 display_name: Miami Nights
 description: Synthwave / Miami Nights palette from JupyterLab Miami Nights (timkpaine)
 author: Derived from jupyterlab_miami_nights variables.css
-version: 1.0.0
+version: 1.1.0
 license: MIT
 tags: [dark, light, jupyterlab, synthwave]
 variants:

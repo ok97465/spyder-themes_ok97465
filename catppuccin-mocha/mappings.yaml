@@ -1,4 +1,10 @@
 ---
+# Upstream semantic reference (not a claim of exact native UI reproduction):
+# https://github.com/catppuccin/catppuccin/blob/d09787dd98ca6fba08af5ef2ae94a7e09f17daca/docs/style-guide.md
+# Personal Spyder Mocha palette and custom light variant are retained. New roles use
+# the guide's sky operators, yellow types/classes and neutral delimiters; existing
+# teal builtins, bold declarations and italic strings remain Spyder adaptations.
+# All six bracket slots deliberately use one neutral delimiter color.
 color_classes:
   Primary: FastBlackVelvet
   Secondary: CompletePurpleIllusion
@@ -11,9 +17,31 @@ color_classes:
   GroupLight: AsymptoticSprinkledWithPinkLight
   Syntax: CatppuccinMochaSyntaxDark
   SyntaxLight: CatppuccinMochaSyntaxLight
+  PythonDark: OptionalPythonDark
+  OptionalUIDark: OptionalUIDark
+  PythonLight: OptionalPythonLight
   Logos: Logos
 semantic_mappings:
   dark:
+
+    # Explicit Qt chrome: preserve this Spyder adaptation, independently of editor.
+    COLOR_TOOLBAR_BACKGROUND: Primary.B40
+    COLOR_EDITOR_LINE_NUMBER: OptionalUIDark.B10
+    COLOR_STATUSBAR_BACKGROUND: Primary.B40
+    COLOR_STATUSBAR_TEXT: Primary.B130
+    COLOR_TAB_TEXT: Primary.B130
+    COLOR_TAB_SELECTED_TEXT: Primary.B150
+    COLOR_TAB_SELECTED_BACKGROUND: Tertiary.B70
+    COLOR_TAB_SELECTED_ACCENT: Secondary.B70
+    COLOR_TAB_HOVER_BACKGROUND: Primary.B30
+    COLOR_TREE_TEXT: Primary.B130
+    COLOR_TREE_HOVER_BACKGROUND: Primary.B30
+    COLOR_TREE_SELECTED_BACKGROUND: Secondary.B40
+    COLOR_TREE_SELECTED_TEXT: Primary.B150
+    COLOR_TREE_INACTIVE_SELECTION_BACKGROUND: Primary.B30
+    COLOR_TREE_INACTIVE_SELECTION_TEXT: Primary.B150
+    TAB_SELECTED_ACCENT_INNER_EDGE: 1
+    TAB_SELECTED_ACCENT_WIDTH: 3
     # Background colors
     COLOR_BACKGROUND_1: Primary.B10
     COLOR_BACKGROUND_2: Primary.B20
@@ -112,6 +140,28 @@ semantic_mappings:
     EDITOR_INSTANCE: [Syntax.B160, false, true]
     EDITOR_SYMBOL: [Syntax.B170, false, false]
 
+    # Extended Python roles: deliberate shared colors are explicit.
+    EDITOR_OPERATOR: [PythonDark.B10, false, false]
+    EDITOR_PUNCTUATION: [PythonDark.B20, false, false]
+    EDITOR_SEPARATOR: [PythonDark.B30, false, false]
+    EDITOR_CLASS: [PythonDark.B40, true, false]
+    EDITOR_FUNCTION_CALL: [PythonDark.B50, false, false]
+    EDITOR_DOCSTRING: [PythonDark.B60, false, true]
+    EDITOR_TYPE: [PythonDark.B70, false, false]
+    EDITOR_BASECLASS: [PythonDark.B80, false, false]
+    EDITOR_STORAGE: [PythonDark.B90, true, false]
+    EDITOR_CONSTANT: [PythonDark.B100, false, false]
+    EDITOR_VARIABLE: [PythonDark.B110, false, false]
+    EDITOR_PARAMETER: [PythonDark.B120, false, true]
+    EDITOR_CLASS_REFERENCE: [PythonDark.B130, false, false]
+    EDITOR_BRACKET_1: [PythonDark.B140, false, false]
+    EDITOR_BRACKET_2: [PythonDark.B150, false, false]
+    EDITOR_BRACKET_3: [PythonDark.B160, false, false]
+    EDITOR_WORD_OPERATOR: [PythonDark.B170, false, false]
+    EDITOR_BRACKET_4: [PythonDark.B180, false, false]
+    EDITOR_BRACKET_5: [PythonDark.B190, false, false]
+    EDITOR_BRACKET_6: [PythonDark.B200, false, false]
+
     # Colors for Spyder and Python logos
     PYTHON_LOGO_UP: Logos.B10
     PYTHON_LOGO_DOWN: Logos.B20
@@ -133,6 +183,26 @@ semantic_mappings:
     # Tooltip opacity (numeric value, not a color reference)
     OPACITY_TOOLTIP: 230
   light:
+
+    # Explicit Qt chrome: preserve this Spyder adaptation, independently of editor.
+    COLOR_TOOLBAR_BACKGROUND: Primary.B110
+    # Slightly darker existing neutral keeps light gutter labels readable.
+    COLOR_EDITOR_LINE_NUMBER: Primary.B70
+    COLOR_STATUSBAR_BACKGROUND: Primary.B110
+    COLOR_STATUSBAR_TEXT: Primary.B20
+    COLOR_TAB_TEXT: Primary.B20
+    COLOR_TAB_SELECTED_TEXT: Primary.B0
+    COLOR_TAB_SELECTED_BACKGROUND: Secondary.B80
+    COLOR_TAB_SELECTED_ACCENT: Secondary.B90
+    COLOR_TAB_HOVER_BACKGROUND: Primary.B120
+    COLOR_TREE_TEXT: Primary.B20
+    COLOR_TREE_HOVER_BACKGROUND: Primary.B120
+    COLOR_TREE_SELECTED_BACKGROUND: Secondary.B120
+    COLOR_TREE_SELECTED_TEXT: Primary.B0
+    COLOR_TREE_INACTIVE_SELECTION_BACKGROUND: Primary.B120
+    COLOR_TREE_INACTIVE_SELECTION_TEXT: Primary.B0
+    TAB_SELECTED_ACCENT_INNER_EDGE: 1
+    TAB_SELECTED_ACCENT_WIDTH: 3
     # Background colors
     COLOR_BACKGROUND_1: Primary.B140
     COLOR_BACKGROUND_2: Primary.B130
@@ -149,7 +219,7 @@ semantic_mappings:
 
     # Accent colors
     COLOR_ACCENT_1: Secondary.B130
-    COLOR_ACCENT_2: Secondary.B120 
+    COLOR_ACCENT_2: Secondary.B120
     COLOR_ACCENT_3: Secondary.B90
     COLOR_ACCENT_4: Secondary.B60
     COLOR_ACCENT_5: Secondary.B30
@@ -231,6 +301,28 @@ semantic_mappings:
     EDITOR_INSTANCE: [SyntaxLight.B160, false, true]
     EDITOR_SYMBOL: [SyntaxLight.B170, false, false]
 
+    # Extended Python roles: deliberate shared colors are explicit.
+    EDITOR_OPERATOR: [PythonLight.B10, false, false]
+    EDITOR_PUNCTUATION: [PythonLight.B20, false, false]
+    EDITOR_SEPARATOR: [PythonLight.B30, false, false]
+    EDITOR_CLASS: [PythonLight.B40, true, false]
+    EDITOR_FUNCTION_CALL: [PythonLight.B50, false, false]
+    EDITOR_DOCSTRING: [PythonLight.B60, false, true]
+    EDITOR_TYPE: [PythonLight.B70, false, false]
+    EDITOR_BASECLASS: [PythonLight.B80, false, false]
+    EDITOR_STORAGE: [PythonLight.B90, true, false]
+    EDITOR_CONSTANT: [PythonLight.B100, false, false]
+    EDITOR_VARIABLE: [PythonLight.B110, false, false]
+    EDITOR_PARAMETER: [PythonLight.B120, false, true]
+    EDITOR_CLASS_REFERENCE: [PythonLight.B130, false, false]
+    EDITOR_BRACKET_1: [PythonLight.B140, false, false]
+    EDITOR_BRACKET_2: [PythonLight.B150, false, false]
+    EDITOR_BRACKET_3: [PythonLight.B160, false, false]
+    EDITOR_WORD_OPERATOR: [PythonLight.B170, false, false]
+    EDITOR_BRACKET_4: [PythonLight.B180, false, false]
+    EDITOR_BRACKET_5: [PythonLight.B190, false, false]
+    EDITOR_BRACKET_6: [PythonLight.B200, false, false]
+
     # Colors for Spyder and Python logos
     PYTHON_LOGO_UP: Logos.B10
     PYTHON_LOGO_DOWN: Logos.B20
@@ -253,25 +345,28 @@ semantic_mappings:
     OPACITY_TOOLTIP: 230
 
 css_overrides:
-  --note-bg: 
+  --syn-operator:
+    dark: PythonDark.B10
+    light: PythonLight.B10
+  --note-bg:
     dark: COLOR_HIGHLIGHT_1
     light: COLOR_HIGHLIGHT_3
   --border-light:
     dark: COLOR_HIGHLIGHT_2
     light: COLOR_HIGHLIGHT_4
-  --link-color: 
+  --link-color:
     dark: Quaternary.B90
     light: Quaternary.B50
   --hover-color: Quaternary.B70
 
 appeal_overrides:
-  --link-color: 
+  --link-color:
     dark: Quaternary.B90
     light: Quaternary.B50
   --hover-color: Quaternary.B70
 
 pydoc_overrides:
-  --link-color: 
+  --link-color:
     dark: Quaternary.B90
     light: Quaternary.B50
   --hover-color: Quaternary.B70

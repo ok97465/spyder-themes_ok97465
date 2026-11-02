@@ -180,6 +180,56 @@ LateHaitiSyntaxLight:
   B150: '#3F7B7C'  # EDITOR_NUMBER (Constants, Numbers)
   B160: '#7B0552'  # EDITOR_INSTANCE (Parameters, Enum Variants, Property)
   B170: '#BC3333'  # EDITOR_SYMBOL (operators, brackets, parentheses and other symbols)
+OptionalPythonDark:
+  B10: '#FF79C6'
+  B20: '#F8F8F2'
+  B30: '#F8F8F2'
+  B40: '#8BE9FD'
+  B50: '#50FA7B'
+  B60: '#F1FA8C'
+  B70: '#8BE9FD'
+  B80: '#8BE9FD'
+  B90: '#FF79C6'
+  B100: '#BD93F9'
+  B110: '#F8F8F2'
+  B120: '#FFB86C'
+  B130: '#8BE9FD'
+  B140: '#F8F8F2'
+  B150: '#F8F8F2'
+  B160: '#F8F8F2'
+  B170: '#FF79C6'
+  B180: '#F8F8F2'
+  B190: '#F8F8F2'
+  B200: '#F8F8F2'
+
+OptionalPythonLight:
+  B10: '#C73E8A'
+  B20: '#282A36'
+  B30: '#282A36'
+  B40: '#40646C'
+  B50: '#5F7B36'
+  B60: '#897000'
+  B70: '#40646C'
+  B80: '#40646C'
+  B90: '#C73E8A'
+  B100: '#3F7B7C'
+  B110: '#282A36'
+  B120: '#7B0552'
+  B130: '#40646C'
+  B140: '#282A36'
+  B150: '#282A36'
+  B160: '#282A36'
+  B170: '#C73E8A'
+  B180: '#282A36'
+  B190: '#282A36'
+  B200: '#282A36'
+
+OptionalUIDark:
+  B10: '#808080'  # Existing Qt gutter fallback.
+
+OptionalUILight:
+  B10: '#808080'  # Existing Qt gutter fallback.
+
 Logos:
   B10: '#3775a9'
   B20: '#ffd444'

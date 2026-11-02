@@ -3,7 +3,7 @@ name: idle
 display_name: IDLE
 description: A personal version of the default theme from the famous Idle editor
 author: Andres Conrado Montoya (@conradolandia)
-version: 1.0.0
+version: 1.1.0
 license: MIT
 tags: [idle, simple, high-contrast, minimal, dark, light]
 variants:

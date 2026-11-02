@@ -3,7 +3,7 @@ name: brutalism
 display_name: Brutalism
 description: Brutalism palette inspired in the brutalist architecture
 author: conradolandia
-version: 1.0.0
+version: 1.1.0
 license: MIT
 tags: [dark, light, minimalistic]
 variants:

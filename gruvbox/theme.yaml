@@ -3,7 +3,7 @@ name: gruvbox
 display_name: Gruvbox
 description: A personal version of the classic Gruvbox theme
 author: Andres Conrado Montoya (@conradolandia)
-version: 1.0.0
+version: 1.1.0
 license: MIT
 tags: [gruvbox, warm, low-contrast, minimal, dark, light]
 variants:

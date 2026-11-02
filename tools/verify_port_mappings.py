@@ -16,6 +16,7 @@ import sys
 
 import yaml
 
+from themeweaver.color_utils import contrast_ratio
 from themeweaver.core.palette import create_palettes
 from themeweaver.core.syntax_schema import formatted_editor_keys
 
@@ -81,6 +82,37 @@ def load_generated(folder, name):
     return module
 
 
+def optional_contrast(palette, syntax_roles):
+    """Report optional foreground/background pairs; native colors are advisory.
+
+    These simple 4.5:1 text / 3:1 gutter comparisons supplement ThemeWeaver's
+    legacy 71 rules. They do not claim accessibility certification or change
+    an upstream scheme to make an advisory pass.
+    """
+    pairs = [(role, "EDITOR_BACKGROUND", 4.5) for role in sorted(syntax_roles)]
+    pairs += [
+        ("COLOR_EDITOR_LINE_NUMBER", "EDITOR_SIDEAREAS", 3.0),
+        ("COLOR_STATUSBAR_TEXT", "COLOR_STATUSBAR_BACKGROUND", 4.5),
+        ("COLOR_TAB_TEXT", "COLOR_BACKGROUND_4", 4.5),
+        ("COLOR_TAB_TEXT", "COLOR_TAB_HOVER_BACKGROUND", 4.5),
+        ("COLOR_TAB_SELECTED_TEXT", "COLOR_TAB_SELECTED_BACKGROUND", 4.5),
+        ("COLOR_TREE_TEXT", "COLOR_BACKGROUND_1", 4.5),
+        ("COLOR_TREE_TEXT", "COLOR_TREE_HOVER_BACKGROUND", 4.5),
+        ("COLOR_TREE_SELECTED_TEXT", "COLOR_TREE_SELECTED_BACKGROUND", 4.5),
+        ("COLOR_TREE_INACTIVE_SELECTION_TEXT",
+         "COLOR_TREE_INACTIVE_SELECTION_BACKGROUND", 4.5),
+    ]
+    results = []
+    for foreground, background, minimum in pairs:
+        fg, bg = getattr(palette, foreground), getattr(palette, background)
+        fg = fg[0] if isinstance(fg, tuple) else fg
+        ratio = contrast_ratio(fg, bg)
+        results.append({"foreground": foreground, "background": background,
+                        "ratio": round(ratio, 3), "minimum": minimum,
+                        "passed": ratio >= minimum})
+    return results
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     root = Path(__file__).resolve().parents[1]
@@ -93,8 +125,10 @@ def main():
     syntax_roles, ui_roles = runtime_roles(args.spyder_dir)
     names = args.themes or sorted(
         path.name for path in args.theme_dir.iterdir()
-        if (path / "theme.yaml").is_file() and (path / "LICENSE").is_file()
+        if (path / "theme.yaml").is_file()
     )
+    if not names:
+        parser.error("No theme metadata found")
     hex_color = re.compile(r"#[0-9A-Fa-f]{6}\Z")
     results = []
     errors = []
@@ -118,7 +152,10 @@ def main():
             assert exported.THEME_ID == name
             assert read_yaml(exported_dir / "theme.yaml") == metadata, "Stale exported metadata"
             assert (exported_dir / "theme.yaml").read_bytes() == (folder / "theme.yaml").read_bytes(), "Stale exported source notice"
-            assert (exported_dir / "LICENSE").read_bytes() == (folder / "LICENSE").read_bytes(), "Stale/missing notice"
+            # Legacy themes have license metadata but no separate source notice.
+            # Preserve every notice that exists without fabricating new ones.
+            if (folder / "LICENSE").is_file():
+                assert (exported_dir / "LICENSE").read_bytes() == (folder / "LICENSE").read_bytes(), "Stale/missing notice"
             for variant in sorted(variants):
                 semantic = mappings["semantic_mappings"][variant]
                 missing = syntax_roles.union(ui_roles) - semantic.keys()
@@ -146,7 +183,9 @@ def main():
                 results.append({"theme": name, "variant": variant,
                                 "syntax_roles": len(syntax_roles), "ui_roles": len(ui_roles),
                                 "background": generated_palette.EDITOR_BACKGROUND,
-                                "foreground": generated_palette.EDITOR_NORMAL[0]})
+                                "foreground": generated_palette.EDITOR_NORMAL[0],
+                                "optional_contrast_advisories": optional_contrast(
+                                    generated_palette, syntax_roles)})
                 print(f"PASS {name}/{variant}: {len(syntax_roles)} syntax + {len(ui_roles)} UI roles; source/export parity")
         except (AssertionError, KeyError, ValueError, OSError, ImportError) as error:
             errors.append({"theme": name, "error": str(error)})

@@ -1,4 +1,11 @@
 ---
+# Personal Spyder IDLE variants; retain the existing adapted palette and font styles.
+# Role semantics checked against CPython v3.13.9 Lib/idlelib/config-highlight.def:
+# https://github.com/python/cpython/blob/v3.13.9/Lib/idlelib/config-highlight.def
+# SHA256 609eada44ff4aa9d5cd10ad8b4c29bb76db8ebc74912a0ae86f5ea3cd19b7547
+# IDLE colors definitions only after def/class; calls/variables/parameters and
+# punctuation use normal text. Types use builtins, language constants keywords.
+# The original palette is deliberately not replaced with stock IDLE Classic/Dark.
 color_classes:
   Primary: ConcurrentMidnightMirage
   Secondary: SoftMattBlue
@@ -111,6 +118,28 @@ semantic_mappings:
     EDITOR_INSTANCE: [Syntax.B160, false, true]
     EDITOR_SYMBOL: [Syntax.B170, false, false]
 
+    # Optional Python roles: source distinctions within this custom adaptation.
+    EDITOR_OPERATOR: [Syntax.B80, false, false]
+    EDITOR_WORD_OPERATOR: [Syntax.B90, true, false]
+    EDITOR_PUNCTUATION: [Syntax.B80, false, false]
+    EDITOR_SEPARATOR: [Syntax.B80, false, false]
+    EDITOR_CLASS: [Syntax.B120, false, false]
+    EDITOR_FUNCTION_CALL: [Syntax.B80, false, false]
+    EDITOR_DOCSTRING: [Syntax.B140, false, true]
+    EDITOR_TYPE: [Syntax.B110, false, false]
+    EDITOR_BASECLASS: [Syntax.B80, false, false]
+    EDITOR_STORAGE: [Syntax.B90, true, false]
+    EDITOR_CONSTANT: [Syntax.B90, true, false]
+    EDITOR_VARIABLE: [Syntax.B80, false, false]
+    EDITOR_PARAMETER: [Syntax.B80, false, false]
+    EDITOR_CLASS_REFERENCE: [Syntax.B80, false, false]
+    EDITOR_BRACKET_1: [Syntax.B80, false, false]
+    EDITOR_BRACKET_2: [Syntax.B80, false, false]
+    EDITOR_BRACKET_3: [Syntax.B80, false, false]
+    EDITOR_BRACKET_4: [Syntax.B80, false, false]
+    EDITOR_BRACKET_5: [Syntax.B80, false, false]
+    EDITOR_BRACKET_6: [Syntax.B80, false, false]
+
     # Colors for Spyder and Python logos
     PYTHON_LOGO_UP: Logos.B10
     PYTHON_LOGO_DOWN: Logos.B20
@@ -121,6 +150,25 @@ semantic_mappings:
     # For special tabs
     SPECIAL_TABS_SEPARATOR: Primary.B70
     SPECIAL_TABS_SELECTED: Secondary.B60
+
+    # Explicit Qt adaptation: preserve existing chrome, separate selected text.
+    COLOR_TOOLBAR_BACKGROUND: Primary.B40
+    COLOR_EDITOR_LINE_NUMBER: Primary.B90
+    COLOR_STATUSBAR_BACKGROUND: Primary.B40
+    COLOR_STATUSBAR_TEXT: Primary.B120
+    COLOR_TAB_TEXT: Primary.B120
+    COLOR_TAB_SELECTED_TEXT: Primary.B120
+    COLOR_TAB_SELECTED_BACKGROUND: Secondary.B60
+    COLOR_TAB_SELECTED_ACCENT: Secondary.B100
+    COLOR_TAB_HOVER_BACKGROUND: Primary.B50
+    COLOR_TREE_TEXT: Primary.B120
+    COLOR_TREE_HOVER_BACKGROUND: Primary.B30
+    COLOR_TREE_SELECTED_BACKGROUND: Secondary.B80
+    COLOR_TREE_SELECTED_TEXT: Primary.B150
+    COLOR_TREE_INACTIVE_SELECTION_BACKGROUND: Primary.B30
+    COLOR_TREE_INACTIVE_SELECTION_TEXT: Primary.B120
+    TAB_SELECTED_ACCENT_INNER_EDGE: 1
+    TAB_SELECTED_ACCENT_WIDTH: 3
 
     # For the heart used to ask for donations
     COLOR_HEART: Secondary.B80
@@ -230,6 +278,28 @@ semantic_mappings:
     EDITOR_INSTANCE: [SyntaxLight.B160, false, true]
     EDITOR_SYMBOL: [SyntaxLight.B170, false, false]
 
+    # Optional Python roles: source distinctions within this custom adaptation.
+    EDITOR_OPERATOR: [SyntaxLight.B80, false, false]
+    EDITOR_WORD_OPERATOR: [SyntaxLight.B90, true, false]
+    EDITOR_PUNCTUATION: [SyntaxLight.B80, false, false]
+    EDITOR_SEPARATOR: [SyntaxLight.B80, false, false]
+    EDITOR_CLASS: [SyntaxLight.B120, false, false]
+    EDITOR_FUNCTION_CALL: [SyntaxLight.B80, false, false]
+    EDITOR_DOCSTRING: [SyntaxLight.B140, false, true]
+    EDITOR_TYPE: [SyntaxLight.B110, false, false]
+    EDITOR_BASECLASS: [SyntaxLight.B80, false, false]
+    EDITOR_STORAGE: [SyntaxLight.B90, true, false]
+    EDITOR_CONSTANT: [SyntaxLight.B90, true, false]
+    EDITOR_VARIABLE: [SyntaxLight.B80, false, false]
+    EDITOR_PARAMETER: [SyntaxLight.B80, false, false]
+    EDITOR_CLASS_REFERENCE: [SyntaxLight.B80, false, false]
+    EDITOR_BRACKET_1: [SyntaxLight.B80, false, false]
+    EDITOR_BRACKET_2: [SyntaxLight.B80, false, false]
+    EDITOR_BRACKET_3: [SyntaxLight.B80, false, false]
+    EDITOR_BRACKET_4: [SyntaxLight.B80, false, false]
+    EDITOR_BRACKET_5: [SyntaxLight.B80, false, false]
+    EDITOR_BRACKET_6: [SyntaxLight.B80, false, false]
+
     # Colors for Spyder and Python logos
     PYTHON_LOGO_UP: Logos.B10
     PYTHON_LOGO_DOWN: Logos.B20
@@ -240,6 +310,25 @@ semantic_mappings:
     # For special tabs
     SPECIAL_TABS_SEPARATOR: Primary.B80
     SPECIAL_TABS_SELECTED: Secondary.B70
+
+    # Explicit Qt adaptation: preserve existing chrome, separate selected text.
+    COLOR_TOOLBAR_BACKGROUND: Primary.B110
+    COLOR_EDITOR_LINE_NUMBER: Primary.B70
+    COLOR_STATUSBAR_BACKGROUND: Primary.B110
+    COLOR_STATUSBAR_TEXT: Primary.B20
+    COLOR_TAB_TEXT: Primary.B20
+    COLOR_TAB_SELECTED_TEXT: Primary.B140
+    COLOR_TAB_SELECTED_BACKGROUND: Secondary.B70
+    COLOR_TAB_SELECTED_ACCENT: Secondary.B80
+    COLOR_TAB_HOVER_BACKGROUND: Primary.B100
+    COLOR_TREE_TEXT: Primary.B20
+    COLOR_TREE_HOVER_BACKGROUND: Primary.B120
+    COLOR_TREE_SELECTED_BACKGROUND: Secondary.B100
+    COLOR_TREE_SELECTED_TEXT: Primary.B20
+    COLOR_TREE_INACTIVE_SELECTION_BACKGROUND: Primary.B120
+    COLOR_TREE_INACTIVE_SELECTION_TEXT: Primary.B20
+    TAB_SELECTED_ACCENT_INNER_EDGE: 1
+    TAB_SELECTED_ACCENT_WIDTH: 3
 
     # For the heart used to ask for donations
     COLOR_HEART: Error.B70

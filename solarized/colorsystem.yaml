@@ -83,7 +83,7 @@ Red:
   B120: '#FEDDDA'
   B130: '#FFEEEE'
   B140: '#FFF5F5'
-  B150: '##FFFFFF'
+  B150: '#FFFFFF'
 Orange:
   B0: '#000000'
   B10: '#471D06'
@@ -100,7 +100,7 @@ Orange:
   B120: '#FFEACA'
   B130: '#FFF3E2'
   B140: '#FFFBF5'
-  B150: '##FFFFFF'
+  B150: '#FFFFFF'
 Yellow:
   B0: '#000000'
   B10: '#151507'
@@ -197,6 +197,56 @@ GunmetalSyntaxLight:
   B150: '#C22173'  # EDITOR_NUMBER
   B160: '#856300'  # EDITOR_INSTANCE
   B170: '#A7540C'  # EDITOR_SYMBOL
+OptionalPythonDark:
+  B10: '#859900'
+  B20: '#EEE8D5'
+  B30: '#EEE8D5'
+  B40: '#B58900'
+  B50: '#79B9E6'
+  B60: '#32C3B7'
+  B70: '#B58900'
+  B80: '#B58900'
+  B90: '#859900'
+  B100: '#E996BC'
+  B110: '#EEE8D5'
+  B120: '#B58900'
+  B130: '#B58900'
+  B140: '#EEE8D5'
+  B150: '#EEE8D5'
+  B160: '#EEE8D5'
+  B170: '#859900'
+  B180: '#EEE8D5'
+  B190: '#EEE8D5'
+  B200: '#EEE8D5'
+
+OptionalPythonLight:
+  B10: '#617000'
+  B20: '#003340'
+  B30: '#003340'
+  B40: '#856300'
+  B50: '#1F6FA8'
+  B60: '#2AA198'
+  B70: '#856300'
+  B80: '#856300'
+  B90: '#617000'
+  B100: '#C22173'
+  B110: '#003340'
+  B120: '#856300'
+  B130: '#856300'
+  B140: '#003340'
+  B150: '#003340'
+  B160: '#003340'
+  B170: '#617000'
+  B180: '#003340'
+  B190: '#003340'
+  B200: '#003340'
+
+OptionalUIDark:
+  B10: '#808080'  # Existing Qt gutter fallback.
+
+OptionalUILight:
+  B10: '#808080'  # Existing Qt gutter fallback.
+
 Logos:
   B10: '#3775a9'
   B20: '#ffd444'

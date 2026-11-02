@@ -149,6 +149,8 @@ InvertedNightmareFuelSyntaxDark:
   B150: '#FFCD22'  # EDITOR_NUMBER
   B160: '#9189E9'  # EDITOR_INSTANCE
   B170: '#F83232'  # EDITOR_SYMBOL
+  B180: '#A082BD'  # Native Python CLASSNAME, separate from function definition
+  B190: '#E8E2B7'  # Native Python OPERATOR, separate from feedback red
 InvertedNightmareFuelSyntaxLight:
   B10: '#CBCBCB'  # EDITOR_CURRENTLINE
   B20: '#DFDFE0'  # EDITOR_CURRENTCELL

@@ -1,4 +1,10 @@
 ---
+# Color reference only: https://github.com/jnurmine/Zenburn
+# 9d7988abf0d2654f837fcd288145afd5f316b70c, colors/zenburn.vim.
+# Dark Operator/Boolean/Type roles recover the source highlight colors; no Vim
+# source code is copied. Keep this Spyder adaptation's dark surfaces, keyword
+# shade, italic comments and custom light palette (upstream is dark-only).
+# File/dock tabs share the established dock fill; light selected text is dark.
 color_classes:
   Primary: ChromaticBlackPanther
   Secondary: HastySodaPop
@@ -40,6 +46,25 @@ semantic_mappings:
     # Disabled elements
     COLOR_DISABLED: Primary.B70
     COLOR_EMPTY: Secondary.B70
+
+    # Explicit Spyder chrome roles preserve the local palette (inner 3px accent).
+    COLOR_TOOLBAR_BACKGROUND: Primary.B40
+    COLOR_EDITOR_LINE_NUMBER: Primary.B90  # Gutter contrast adaptation using an existing theme neutral.
+    COLOR_STATUSBAR_BACKGROUND: Primary.B40
+    COLOR_STATUSBAR_TEXT: Primary.B130
+    COLOR_TAB_TEXT: Primary.B130
+    COLOR_TAB_SELECTED_TEXT: Primary.B130
+    COLOR_TAB_SELECTED_BACKGROUND: Secondary.B60
+    COLOR_TAB_SELECTED_ACCENT: Secondary.B90
+    COLOR_TAB_HOVER_BACKGROUND: Primary.B50
+    COLOR_TREE_TEXT: Primary.B130
+    COLOR_TREE_HOVER_BACKGROUND: Primary.B30
+    COLOR_TREE_SELECTED_BACKGROUND: Secondary.B60
+    COLOR_TREE_SELECTED_TEXT: Primary.B130
+    COLOR_TREE_INACTIVE_SELECTION_BACKGROUND: Primary.B30
+    COLOR_TREE_INACTIVE_SELECTION_TEXT: Primary.B130
+    TAB_SELECTED_ACCENT_INNER_EDGE: 1
+    TAB_SELECTED_ACCENT_WIDTH: 3
 
     # Colors for information and feedback in dialogs
     COLOR_SUCCESS_1: Success.B60
@@ -114,6 +139,28 @@ semantic_mappings:
     EDITOR_INSTANCE: [Syntax.B160, false, true]
     EDITOR_SYMBOL: [Syntax.B170, false, false]
 
+    # Optional Python roles: reuse local intent where no native distinction exists.
+    EDITOR_OPERATOR: [Syntax.B170, false, false]
+    EDITOR_WORD_OPERATOR: [Syntax.B170, false, false]
+    EDITOR_PUNCTUATION: [Syntax.B80, false, false]
+    EDITOR_SEPARATOR: [Syntax.B80, false, false]
+    EDITOR_CLASS: [Syntax.B120, false, false]
+    EDITOR_FUNCTION_CALL: [Syntax.B80, false, false]
+    EDITOR_DOCSTRING: [Syntax.B140, false, false]
+    EDITOR_TYPE: [Syntax.B190, true, false]
+    EDITOR_BASECLASS: [Syntax.B190, true, false]
+    EDITOR_STORAGE: [Syntax.B90, true, false]
+    EDITOR_CONSTANT: [Syntax.B180, false, false]
+    EDITOR_VARIABLE: [Syntax.B80, false, false]
+    EDITOR_PARAMETER: [Syntax.B80, false, false]
+    EDITOR_CLASS_REFERENCE: [Syntax.B120, false, false]
+    EDITOR_BRACKET_1: [Syntax.B80, false, false]
+    EDITOR_BRACKET_2: [Syntax.B80, false, false]
+    EDITOR_BRACKET_3: [Syntax.B80, false, false]
+    EDITOR_BRACKET_4: [Syntax.B80, false, false]
+    EDITOR_BRACKET_5: [Syntax.B80, false, false]
+    EDITOR_BRACKET_6: [Syntax.B80, false, false]
+
     # Colors for Spyder and Python logos
     PYTHON_LOGO_UP: Logos.B10
     PYTHON_LOGO_DOWN: Logos.B20
@@ -159,6 +206,25 @@ semantic_mappings:
     # Disabled elements
     COLOR_DISABLED: Primary.B80
     COLOR_EMPTY: Secondary.B100
+
+    # Explicit Spyder chrome roles preserve the local palette (inner 3px accent).
+    COLOR_TOOLBAR_BACKGROUND: Primary.B110
+    COLOR_EDITOR_LINE_NUMBER: Primary.B70  # Gutter contrast adaptation using an existing theme neutral.
+    COLOR_STATUSBAR_BACKGROUND: Primary.B110
+    COLOR_STATUSBAR_TEXT: Primary.B20
+    COLOR_TAB_TEXT: Primary.B20
+    COLOR_TAB_SELECTED_TEXT: Primary.B20
+    COLOR_TAB_SELECTED_BACKGROUND: Secondary.B90
+    COLOR_TAB_SELECTED_ACCENT: Secondary.B70
+    COLOR_TAB_HOVER_BACKGROUND: Primary.B100
+    COLOR_TREE_TEXT: Primary.B20
+    COLOR_TREE_HOVER_BACKGROUND: Primary.B120
+    COLOR_TREE_SELECTED_BACKGROUND: Secondary.B90
+    COLOR_TREE_SELECTED_TEXT: Primary.B20
+    COLOR_TREE_INACTIVE_SELECTION_BACKGROUND: Primary.B120
+    COLOR_TREE_INACTIVE_SELECTION_TEXT: Primary.B20
+    TAB_SELECTED_ACCENT_INNER_EDGE: 1
+    TAB_SELECTED_ACCENT_WIDTH: 3
 
     # Colors for information and feedback in dialogs
     COLOR_SUCCESS_1: Success.B90
@@ -232,6 +298,28 @@ semantic_mappings:
     EDITOR_NUMBER: [SyntaxLight.B150, false, false]
     EDITOR_INSTANCE: [SyntaxLight.B160, false, true]
     EDITOR_SYMBOL: [SyntaxLight.B170, false, false]
+
+    # Optional Python roles: reuse local intent where no native distinction exists.
+    EDITOR_OPERATOR: [SyntaxLight.B170, false, false]
+    EDITOR_WORD_OPERATOR: [SyntaxLight.B170, false, false]
+    EDITOR_PUNCTUATION: [SyntaxLight.B80, false, false]
+    EDITOR_SEPARATOR: [SyntaxLight.B80, false, false]
+    EDITOR_CLASS: [SyntaxLight.B120, false, false]
+    EDITOR_FUNCTION_CALL: [SyntaxLight.B80, false, false]
+    EDITOR_DOCSTRING: [SyntaxLight.B140, false, false]
+    EDITOR_TYPE: [SyntaxLight.B110, false, false]
+    EDITOR_BASECLASS: [SyntaxLight.B120, false, false]
+    EDITOR_STORAGE: [SyntaxLight.B90, true, false]
+    EDITOR_CONSTANT: [SyntaxLight.B150, false, false]
+    EDITOR_VARIABLE: [SyntaxLight.B80, false, false]
+    EDITOR_PARAMETER: [SyntaxLight.B80, false, false]
+    EDITOR_CLASS_REFERENCE: [SyntaxLight.B120, false, false]
+    EDITOR_BRACKET_1: [SyntaxLight.B80, false, false]
+    EDITOR_BRACKET_2: [SyntaxLight.B80, false, false]
+    EDITOR_BRACKET_3: [SyntaxLight.B80, false, false]
+    EDITOR_BRACKET_4: [SyntaxLight.B80, false, false]
+    EDITOR_BRACKET_5: [SyntaxLight.B80, false, false]
+    EDITOR_BRACKET_6: [SyntaxLight.B80, false, false]
 
     # Colors for Spyder and Python logos
     PYTHON_LOGO_UP: Logos.B10

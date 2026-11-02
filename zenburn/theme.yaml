@@ -4,7 +4,7 @@ display_name: Zenburn
 description: A low-contrast color scheme easy for your eyes and designed to keep you
   in the zone for long programming sessions
 author: Jani Nurminen, adapted by the Spyder Team
-version: 1.0.0
+version: 1.1.0
 license: MIT
 tags: [zenburn, warm, pastel, dark, light]
 variants:

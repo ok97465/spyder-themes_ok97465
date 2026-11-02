@@ -172,13 +172,13 @@ LocalDarkKnightSyntaxDark:
   B80: '#F8F8F2'  # EDITOR_NORMAL (Normal text)
   B90: '#3CFFFC'  # EDITOR_KEYWORD (Keyword)
   B100: '#FFDE63'  # EDITOR_MAGIC (Macros)
-  B110: '#C4F68C'  # EDITOR_BUILTIN (Builtins)
+  B110: '#FFDE63'  # Native --jp-mirror-editor-builtin-color
   B120: '#FFDE63'  # EDITOR_DEFINITION (Methods, Functions, Classes, Interfaces, Types)
   B130: '#9791B2'  # EDITOR_COMMENT (Comments)
-  B140: '#C880FF'  # EDITOR_STRING (Strings, Escape Sequences, Regex)
+  B140: '#C375FF'  # Native --jp-mirror-editor-string-color
   B150: '#00FF98'  # EDITOR_NUMBER (Constants, Numbers)
   B160: '#FF8C8C'  # EDITOR_INSTANCE (Parameters, Enum Variants, Property)
-  B170: '#FF0079'  # EDITOR_SYMBOL (operators, brackets, parentheses and other symbols)
+  B170: '#FF37F2'  # Native --jp-mirror-editor-operator-color; punctuation split.
 LocalDarkKnightSyntaxLight:
   B10: '#DFD9EE'  # EDITOR_CURRENTLINE
   B20: '#E8E2F5'  # EDITOR_CURRENTCELL
@@ -203,3 +203,6 @@ Logos:
   B30: '#414141'
   B40: '#FAFAFA'
   B50: '#8C0000'
+
+MiamiNightsOptionalUi:
+  B10: '#808080'  # Existing Qt line-number fallback, now explicit.

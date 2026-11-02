@@ -3,7 +3,7 @@ name: inkpot
 display_name: Inkpot
 description: A port of the Vim InkPot theme
 author: Campbell Barton, adapted and extended by the Spyder Team
-version: 1.0.0
+version: 1.1.0
 license: MIT
 tags: [inkpot, colorful, pastel, dark, light]
 variants:

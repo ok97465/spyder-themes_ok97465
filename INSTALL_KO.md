@@ -71,6 +71,8 @@ ThemeWeaver 저장소에서 실행합니다.
 
 `Tokyo Night AltSynt / dark`는 Avetis의 VS Code 테마를 별도로 옮긴 것입니다. 변수·매개변수·클래스 참조와 중첩 괄호 색상도 위 Spyder 포크에서 지원합니다. 기존 `Tokyo Night`는 folke의 Night/Day 테마입니다.
 
+기존 Brutalism, Catppuccin Mocha, Dracula, Gruvbox, IDLE, Inkpot, Miami Nights, Notepad++, Obsidian, Solarized, Spyder, Zenburn에도 같은 세부 옵션이 연결되어 있습니다. 전체 **23개 테마·41개 변형**의 구문 20개·UI 15개 역할을 사용하려면 위 Spyder 포크와 전체 테마 패키지를 함께 사용합니다. 기존 사용자 변형의 배색과 원본의 단색 괄호는 유지합니다.
+
 ## 테마 수정 후 다시 설치하기
 
 이 저장소의 YAML 파일을 수정한 뒤 아래 명령을 순서대로 실행하면 됩니다.

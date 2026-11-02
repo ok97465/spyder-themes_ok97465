@@ -180,6 +180,54 @@ CatppuccinMochaSyntaxLight:
   B150: '#955A0E' # EDITOR_NUMBER (Constants, Numbers)
   B160: '#B3480A' # EDITOR_INSTANCE (Parameters, Enum Variants, Property)
   B170: '#d2113a' # EDITOR_SYMBOL (operators, brackets, parentheses and other symbols)
+OptionalPythonDark:
+  B10: '#89DCEB'
+  B20: '#9399B2'
+  B30: '#9399B2'
+  B40: '#F9E2AF'
+  B50: '#7EAFFD'
+  B60: '#A6E3A1'
+  B70: '#F9E2AF'
+  B80: '#F9E2AF'
+  B90: '#CBA6F7'
+  B100: '#FAB387'
+  B110: '#CED7F5'
+  B120: '#EBA0AC'
+  B130: '#F9E2AF'
+  B140: '#9399B2'
+  B150: '#9399B2'
+  B160: '#9399B2'
+  B170: '#CBA6F7'
+  B180: '#9399B2'
+  B190: '#9399B2'
+  B200: '#9399B2'
+
+OptionalPythonLight:
+  B10: '#007A98'
+  B20: '#5F6275'
+  B30: '#5F6275'
+  B40: '#955A0E'
+  B50: '#145AE6'
+  B60: '#389C22'
+  B70: '#955A0E'
+  B80: '#955A0E'
+  B90: '#843AE7'
+  B100: '#955A0E'
+  B110: '#141A2F'
+  B120: '#B3480A'
+  B130: '#955A0E'
+  B140: '#5F6275'
+  B150: '#5F6275'
+  B160: '#5F6275'
+  B170: '#843AE7'
+  B180: '#5F6275'
+  B190: '#5F6275'
+  B200: '#5F6275'
+
+OptionalUIDark:
+  B10: '#808080'  # Existing Qt gutter fallback.
+
+
 Logos:
   B10: '#3775a9'
   B20: '#ffd444'

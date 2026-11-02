@@ -4,7 +4,7 @@ display_name: Solarized
 description: Based on the Solarized color palette by Ethan Schoonover, enhanced with
   a wider range of colors
 author: Ethan Schoonover, adapted by the Spyder Team
-version: 1.0.0
+version: 1.1.0
 license: MIT
 url: https://ethanschoonover.com/solarized/
 tags: [dark, light, low-contrast, professional]

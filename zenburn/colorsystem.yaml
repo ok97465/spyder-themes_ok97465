@@ -169,7 +169,9 @@ ChromaticBlackPantherSyntaxDark:
   B140: '#CC9393'  # EDITOR_STRING
   B150: '#8CD0D3'  # EDITOR_NUMBER
   B160: '#858568'  # EDITOR_INSTANCE
-  B170: '#FF8800'  # EDITOR_SYMBOL
+  B170: '#F0EFD0'  # Native Operator; punctuation uses ordinary foreground.
+  B180: '#DCA3A3'  # Native Boolean (True/False/None adaptation).
+  B190: '#DFDFBF'  # Native Type
 ChromaticBlackPantherSyntaxLight:
   B10: '#D2D2D2'  # EDITOR_CURRENTLINE
   B20: '#E2E2E2'  # EDITOR_CURRENTCELL

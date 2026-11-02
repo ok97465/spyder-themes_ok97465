@@ -96,7 +96,7 @@ def _arguments() -> argparse.Namespace:
 
 
 def _discover(theme_dir: Path, requested: list[str] | None) -> list[dict]:
-    """Read source metadata, selecting LICENSE-bearing ports by default."""
+    """Read every theme's metadata, including the original bundled themes."""
     import yaml
 
     if requested:
@@ -114,7 +114,6 @@ def _discover(theme_dir: Path, requested: list[str] | None) -> list[dict]:
         directories = sorted(
             directory for directory in theme_dir.iterdir()
             if directory.is_dir()
-            and (directory / "LICENSE").is_file()
             and (directory / "theme.yaml").is_file()
         )
 
@@ -298,6 +297,16 @@ def _render_one(args: argparse.Namespace) -> dict:
     )
     editor.set_text(SAMPLE)
     editor.highlighter.rehighlight()
+    # Verify the installed palette survives ThemeManager and CodeEditor setup.
+    # Looking only at exported YAML would miss stale or overridden formats.
+    for role in OPTIONAL_PYTHON_SCHEME_KEYS:
+        expected = getattr(expected_palette, "EDITOR_" + role.upper())
+        actual = editor.highlighter.formats[role]
+        observed = (actual.foreground().color().name().lower(),
+                    actual.font().bold(), actual.fontItalic())
+        required = (expected[0].lower(), expected[1], expected[2])
+        if observed != required:
+            raise RuntimeError(f"Runtime format mismatch for {role}: {observed} != {required}")
     tabs.addTab(editor, "preview.py")
     tabs.addTab(QWidget(), "data.py")
     tabs.setCurrentIndex(1)
@@ -360,6 +369,7 @@ def _render_one(args: argparse.Namespace) -> dict:
         ),
         "sample_lines": len(SAMPLE.splitlines()),
         "optional_syntax_roles": list(OPTIONAL_PYTHON_SCHEME_KEYS),
+        "runtime_syntax_formats_verified": len(OPTIONAL_PYTHON_SCHEME_KEYS),
         "palette": palette_values,
         "warnings": warnings,
     }

@@ -186,3 +186,6 @@ Logos:
   B30: '#414141'
   B40: '#FAFAFA'
   B50: '#8C0000'
+
+BrutalismOptionalUi:
+  B10: '#808080'  # Existing Qt line-number fallback, now explicit.
