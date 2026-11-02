@@ -1,0 +1,27 @@
+---
+# Sublime Text Material Theme by Mattia Astorino (MIT).
+# Upstream mirror (linked by Sublime Text Package Control):
+# https://github.com/SublimeText/material-theme/blob/134916bde95a275f56fa1808586baeaf0be28ab9/schemes/Material-Theme.tmTheme
+# https://github.com/SublimeText/material-theme/blob/134916bde95a275f56fa1808586baeaf0be28ab9/schemes/Material-Theme-Lighter.tmTheme
+# Dark uses the original default/Oceanic palette; light uses Lighter.
+# The UI ramps and Spyder-only slots are adaptations. Upstream translucent
+# line/selection highlights are composited over the editor background.
+# Comments and Lighter's normal/string/number/operator colors are darkened or
+# lightened where necessary for readable Spyder text, retaining the source hues.
+name: material
+display_name: Material
+description: 'Sublime Text Material Theme: original default/Oceanic dark and Lighter, adapted for Spyder'
+author: Mattia Astorino (@equinusocio); Spyder adaptation by ok97465
+version: 1.1.0
+license: MIT
+tags:
+- material
+- sublime-text
+- oceanic
+- teal
+- dark
+- light
+variants:
+  dark: true
+  light: true
+# All twenty optional Python roles and independent widget colors are mapped.

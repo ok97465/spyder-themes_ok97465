@@ -1,11 +1,13 @@
 ---
+# Dark reference: Sublime Text 4 build 4215, Adaptive + Monokai.
+# The light variant remains the original custom Spyder adaptation.
 name: monokai
 display_name: Monokai
-description: A personal version of the popular Monokai theme
-author: Andres Montoya, based on the Sublime Text version, adapted by the Spyder Team
-version: 1.0.0
-license: MIT
-tags: [monokai, colorful, neon, dark, light]
+description: Sublime Text Adaptive/Monokai dark colors with a custom Spyder light variant
+author: Sublime HQ Pty Ltd, Wimer Hazenberg; adapted by Andres Montoya and the Spyder Team
+version: 1.2.0
+license: LicenseRef-Upstream-Unspecified
+tags: [sublime-text, adaptive, monokai, dark, light]
 variants:
   dark: true
   light: true

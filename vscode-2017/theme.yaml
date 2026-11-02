@@ -1,0 +1,14 @@
+---
+# Adapted from Microsoft VS Code 1.19.1 (2017-12-19), Dark+ / Light+ (MIT).
+# Upstream revision: 0759f77bb8d86658bc935a10a64f6182c5a1eeba
+# https://github.com/microsoft/vscode/tree/0759f77bb8d86658bc935a10a64f6182c5a1eeba/extensions/theme-defaults/themes
+name: vscode-2017
+display_name: VS Code 2017
+description: A Spyder adaptation of the classic VS Code 2017 Dark+ and Light+ themes
+author: Microsoft Corporation; adapted for Spyder
+version: 1.1.0
+license: MIT
+tags: [vscode, '2017', classic, dark, light]
+variants:
+  dark: true
+  light: true

@@ -1,0 +1,164 @@
+---
+# Avetis Tokyo Night AltSynt 1.0.2, pinned in theme.yaml.
+# Standard Spyder roles provide a fallback; optional Python/UI roles preserve
+# the source's native distinctions in the companion Spyder fork.
+color_classes:
+  Primary: AltSurfaceDark
+  Secondary: AltBlue
+  Tertiary: AltCyan
+  Quaternary: AltBlue
+  Success: AltSuccess
+  Error: AltError
+  Warning: AltWarning
+  SurfaceDark: AltSurfaceDark
+  AccentDark: AltAccentsDark
+  GroupDark: AltGroupsDark
+  Syntax: AltSyntaxDark
+  Python: AltPythonDark
+  HelpDark: AltHelpDark
+  Logos: Logos
+semantic_mappings:
+  dark:
+    COLOR_BACKGROUND_1: SurfaceDark.B10
+    COLOR_BACKGROUND_2: SurfaceDark.B30
+    COLOR_BACKGROUND_3: SurfaceDark.B40
+    COLOR_BACKGROUND_4: SurfaceDark.B40
+    COLOR_BACKGROUND_5: SurfaceDark.B20
+    COLOR_BACKGROUND_6: SurfaceDark.B220
+    COLOR_TEXT_1: SurfaceDark.B70
+    COLOR_TEXT_2: SurfaceDark.B80
+    COLOR_TEXT_3: SurfaceDark.B80
+    COLOR_TEXT_4: SurfaceDark.B100
+    COLOR_ACCENT_1: AccentDark.B10
+    COLOR_ACCENT_2: AccentDark.B10
+    COLOR_ACCENT_3: AccentDark.B30
+    COLOR_ACCENT_4: AccentDark.B40
+    COLOR_ACCENT_5: AccentDark.B50
+    COLOR_DISABLED: SurfaceDark.B110
+    COLOR_EMPTY: SurfaceDark.B240
+    COLOR_EDITOR_LINE_NUMBER: SurfaceDark.B240
+    COLOR_TOOLBAR_BACKGROUND: SurfaceDark.B10
+    COLOR_STATUSBAR_BACKGROUND: SurfaceDark.B10
+    COLOR_STATUSBAR_TEXT: SurfaceDark.B90
+    COLOR_TAB_SELECTED_TEXT: SurfaceDark.B90
+    COLOR_TAB_SELECTED_BACKGROUND: SurfaceDark.B20
+    COLOR_TAB_SELECTED_ACCENT: SurfaceDark.B250
+    COLOR_TAB_TEXT: SurfaceDark.B100
+    COLOR_TAB_HOVER_BACKGROUND: SurfaceDark.B40
+    COLOR_TREE_HOVER_BACKGROUND: SurfaceDark.B120
+    COLOR_TREE_TEXT: SurfaceDark.B70
+    COLOR_TREE_SELECTED_BACKGROUND: SurfaceDark.B120
+    COLOR_TREE_SELECTED_TEXT: SurfaceDark.B90
+    COLOR_TREE_INACTIVE_SELECTION_BACKGROUND: SurfaceDark.B130
+    COLOR_TREE_INACTIVE_SELECTION_TEXT: SurfaceDark.B260
+    COLOR_SUCCESS_1: Success.B100
+    COLOR_SUCCESS_2: Success.B90
+    COLOR_SUCCESS_3: Success.B100
+    COLOR_SUCCESS_4: Success.B110
+    COLOR_SUCCESS_5: Success.B130
+    COLOR_ERROR_1: Error.B100
+    COLOR_ERROR_2: Error.B90
+    COLOR_ERROR_3: Error.B100
+    COLOR_ERROR_4: Error.B110
+    COLOR_ERROR_5: Error.B130
+    COLOR_WARN_1: Warning.B100
+    COLOR_WARN_2: Warning.B90
+    COLOR_WARN_3: Warning.B100
+    COLOR_WARN_4: Warning.B110
+    COLOR_WARN_5: Warning.B130
+    ICON_1: SurfaceDark.B70
+    ICON_2: AccentDark.B60
+    ICON_3: Success.B100
+    ICON_4: Error.B100
+    ICON_5: Warning.B100
+    ICON_6: SurfaceDark.B60
+    ICON_7: Python.B40
+    GROUP_1: GroupDark.B10
+    GROUP_2: GroupDark.B20
+    GROUP_3: GroupDark.B30
+    GROUP_4: GroupDark.B40
+    GROUP_5: GroupDark.B50
+    GROUP_6: GroupDark.B60
+    GROUP_7: GroupDark.B70
+    GROUP_8: GroupDark.B80
+    GROUP_9: GroupDark.B90
+    GROUP_10: GroupDark.B100
+    GROUP_11: GroupDark.B110
+    GROUP_12: GroupDark.B120
+    COLOR_HIGHLIGHT_1: Syntax.B190
+    COLOR_HIGHLIGHT_2: Syntax.B200
+    COLOR_HIGHLIGHT_3: Syntax.B210
+    COLOR_HIGHLIGHT_4: Syntax.B220
+    COLOR_OCCURRENCE_1: SurfaceDark.B20
+    COLOR_OCCURRENCE_2: SurfaceDark.B140
+    COLOR_OCCURRENCE_3: SurfaceDark.B150
+    COLOR_OCCURRENCE_4: Syntax.B30
+    COLOR_OCCURRENCE_5: Syntax.B200
+    EDITOR_BACKGROUND: SurfaceDark.B20
+    EDITOR_CURRENTLINE: Syntax.B10
+    EDITOR_CURRENTCELL: Syntax.B20
+    EDITOR_OCCURRENCE: Syntax.B30
+    EDITOR_CTRLCLICK: Syntax.B40
+    EDITOR_SIDEAREAS: Syntax.B50
+    EDITOR_MATCHED_P: Syntax.B60
+    EDITOR_UNMATCHED_P: Syntax.B70
+    EDITOR_NORMAL: [Syntax.B80, false, false]
+    EDITOR_KEYWORD: [Syntax.B90, false, false]
+    EDITOR_MAGIC: [Syntax.B100, false, false]
+    EDITOR_BUILTIN: [Syntax.B110, false, false]
+    EDITOR_DEFINITION: [Syntax.B120, false, false]
+    EDITOR_COMMENT: [Syntax.B130, false, false]
+    EDITOR_STRING: [Syntax.B140, false, false]
+    EDITOR_NUMBER: [Syntax.B150, false, false]
+    EDITOR_INSTANCE: [Syntax.B160, false, true]
+    EDITOR_SYMBOL: [Syntax.B170, false, false]
+    EDITOR_OPERATOR: [Python.B10, false, false]
+    EDITOR_WORD_OPERATOR: [Python.B10, false, false]
+    EDITOR_PUNCTUATION: [Python.B20, false, false]
+    EDITOR_SEPARATOR: [Python.B30, false, false]
+    EDITOR_CLASS: [Python.B40, false, false]
+    EDITOR_FUNCTION_CALL: [Python.B50, false, false]
+    EDITOR_DOCSTRING: [Python.B60, false, false]
+    EDITOR_TYPE: [Python.B70, false, false]
+    EDITOR_BASECLASS: [Python.B80, false, false]
+    EDITOR_STORAGE: [Python.B90, false, false]
+    EDITOR_CONSTANT: [Python.B100, false, false]
+    EDITOR_VARIABLE: [Python.B110, false, false]
+    EDITOR_PARAMETER: [Python.B120, false, true]
+    EDITOR_CLASS_REFERENCE: [Python.B130, false, false]
+    EDITOR_BRACKET_1: [Python.B140, false, false]
+    EDITOR_BRACKET_2: [Python.B150, false, false]
+    EDITOR_BRACKET_3: [Python.B160, false, false]
+    # Repeat the native three-color cycle (or unchanged punctuation) at depths 4-6.
+    EDITOR_BRACKET_4: [Python.B140, false, false]
+    EDITOR_BRACKET_5: [Python.B150, false, false]
+    EDITOR_BRACKET_6: [Python.B160, false, false]
+    PYTHON_LOGO_UP: Logos.B10
+    PYTHON_LOGO_DOWN: Logos.B20
+    SPYDER_LOGO_BACKGROUND: SurfaceDark.B20
+    SPYDER_LOGO_WEB: SurfaceDark.B70
+    SPYDER_LOGO_SNAKE: SurfaceDark.B70
+    SPECIAL_TABS_SEPARATOR: SurfaceDark.B20
+    SPECIAL_TABS_SELECTED: SurfaceDark.B20
+    COLOR_HEART: SurfaceDark.B250
+    TIP_TITLE_COLOR: AccentDark.B60
+    TIP_CHAR_HIGHLIGHT_COLOR: Python.B10
+    OPACITY_TOOLTIP: 230
+css_overrides:
+  --header-bg-color: HelpDark.B10
+  --header-text-color: HelpDark.B20
+  --syn-error-bg: HelpDark.B30
+  --warning-bg: HelpDark.B40
+  --link-color: AccentDark.B50
+  --hover-color: AccentDark.B60
+  --note-bg: SurfaceDark.B30
+  --border-light: SurfaceDark.B60
+  --syn-operator: Python.B10
+appeal_overrides:
+  --link-color: AccentDark.B50
+  --hover-color: AccentDark.B60
+pydoc_overrides:
+  --header-bg-color: HelpDark.B10
+  --header-text-color: HelpDark.B20
+  --link-color: AccentDark.B50
+  --hover-color: AccentDark.B60

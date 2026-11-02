@@ -1,0 +1,16 @@
+---
+# Adapted from Binaryify/OneDark-Pro (MIT).
+# Upstream revision: 75c80ab18d90655e05ad837bb8d89f5e68d5ce53
+# https://github.com/Binaryify/OneDark-Pro/blob/75c80ab18d90655e05ad837bb8d89f5e68d5ce53/themes/OneDark-Pro.json
+# Native editor, syntax and widget colors are preserved where slots match.
+# Qt-only intermediate shades, status ramps and opaque overlays are adapted.
+name: one-dark-pro
+display_name: One Dark Pro
+description: A Spyder adaptation of Binaryify's One Dark Pro theme
+author: Binaryify; adapted for Spyder
+version: 1.1.0
+license: MIT
+tags: [one-dark, atom, vscode, dark]
+variants:
+  dark: true
+  light: false

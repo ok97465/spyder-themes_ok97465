@@ -1,0 +1,197 @@
+---
+# Reference: Avetis.tokyo-night 1.0.2, themes/tokyo-night-alt.json.
+# https://github.com/AvetisDN/tokyo-dark-theme/blob/d075816a68955bffcb4dae9cf26a44538b7619a1/themes/tokyo-night-alt.json
+# SHA-256: f0ec30823dff95e55f024f38ecc321fee15d24726825500fb9e8ed1363d6e0fb
+# Exact native UI/token colors are retained, including the subdued comments.
+# RGBA colors are composited over their native editor/sidebar background for Qt.
+# Intermediate status ramps and variable-explorer fills are Spyder adaptations.
+# Surface slots describe native roles and are not a brightness gradient.
+# Python scopes follow VS Code's MagicPython/Pylance fallbacks: docstrings are
+# strings, unresolved generic calls use editor.foreground, classes use blue,
+# and semantic self/cls parameters use the source's orange italic parameter rule.
+# Bracket hues are VS Code's built-in dark defaults; this theme doesn't override
+# them. The screenshot's bracketPairColorization setting enables all three.
+AltSurfaceDark:
+  B10: '#1D1F2D'  # sideBar/statusBar/titleBar/editorWidget background
+  B20: '#1A1B26'  # editor/input/gutter/active file tab background
+  B30: '#15161F'  # panel background
+  B40: '#222332'  # tab.inactiveBackground / tabsBackground
+  B50: '#2E3347'  # menu border / list.focusBackground
+  B60: '#414868'  # focusBorder / editorWidget.resizeBorder
+  B70: '#C0CAF5'  # workbench/editor foreground
+  B80: '#B7BCCF'  # active title-bar foreground
+  B90: '#FFFFFF'  # active tab/status/list-selection foreground
+  B100: '#919199'  # tab.inactiveForeground: white at 128/255 over B40
+  B110: '#4A4E62'  # activityBar.inactiveForeground flattened over editor
+  B120: '#181821'  # list hover/active selection background
+  B130: '#282C3B'  # list.inactiveSelectionBackground
+  B140: '#21232E'  # editor.inactiveSelectionBackground
+  B150: '#202437'  # editor.lineHighlightBackground
+  B160: '#C0CBEA'  # list.hoverForeground
+  B170: '#3D5DA1'  # button.background
+  B180: '#2F477B'  # button.hoverBackground
+  B190: '#323B5E'  # menu.selectionBackground
+  B200: '#303039'  # scrollbarSlider.background over editor
+  B210: '#3F3F45'  # scrollbarSlider.hoverBackground over editor
+  B220: '#5C5D63'  # scrollbarSlider.activeBackground over editor
+  B230: '#6E7084'  # titleBar.inactiveForeground
+  B240: '#484B5C'  # editorLineNumber.foreground
+  B250: '#F7768E'  # tab.activeBorderTop / progressBar.background
+  B260: '#8F97B9'  # list.inactiveSelectionForeground (#C0CAF5AD) over #282C3B.
+AltBlue:
+  B0: '#000000'
+  B10: '#0A0F18'
+  B20: '#131F30'
+  B30: '#1D2E48'
+  B40: '#273D60'
+  B50: '#304C78'
+  B60: '#3A5C8F'
+  B70: '#446BA7'
+  B80: '#4E7ABF'
+  B90: '#578AD7'
+  B100: '#6199EF'
+  B110: '#81ADF2'
+  B120: '#A0C2F5'
+  B130: '#C0D6F9'
+  B140: '#DFEBFC'
+  B150: '#FFFFFF'
+AltCyan:
+  B10: '#051313'
+  B20: '#0B2626'
+  B30: '#103A3A'
+  B40: '#164D4D'
+  B50: '#1B6060'
+  B60: '#207373'
+  B70: '#268686'
+  B80: '#2B9A9A'
+  B90: '#31ADAD'
+  B100: '#36C0C0'
+  B110: '#5ECCCC'
+  B120: '#86D9D9'
+  B130: '#AFE6E6'
+  B140: '#D7F2F2'
+  B150: '#FFFFFF'
+AltSuccess:
+  B0: '#000000'
+  B10: '#0B140A'
+  B20: '#172715'
+  B30: '#223B20'
+  B40: '#2E4E2A'
+  B50: '#396234'
+  B60: '#44753F'
+  B70: '#50894A'
+  B80: '#5B9C54'
+  B90: '#67B05F'
+  B100: '#72C369'
+  B110: '#8ECF87'
+  B120: '#AADBA5'
+  B130: '#C7E7C3'
+  B140: '#E3F3E1'
+  B150: '#FFFFFF'
+AltError:
+  B0: '#000000'
+  B10: '#190C0C'
+  B20: '#311818'
+  B30: '#4A2323'
+  B40: '#632F2F'
+  B50: '#7C3B3B'
+  B60: '#944747'
+  B70: '#AD5353'
+  B80: '#C65E5E'
+  B90: '#DE6A6A'
+  B100: '#F77676'
+  B110: '#F99191'
+  B120: '#FAADAD'
+  B130: '#FCC8C8'
+  B140: '#FDE4E4'
+  B150: '#FFFFFF'
+AltWarning:
+  B0: '#000000'
+  B10: '#150F07'
+  B20: '#2B1F0D'
+  B30: '#402E14'
+  B40: '#563E1A'
+  B50: '#6C4D21'
+  B60: '#815C28'
+  B70: '#976C2E'
+  B80: '#AC7B35'
+  B90: '#C28B3B'
+  B100: '#D79A42'
+  B110: '#DFAE68'
+  B120: '#E7C28E'
+  B130: '#EFD7B3'
+  B140: '#F7EBD9'
+  B150: '#FFFFFF'
+AltAccentsDark:
+  B10: '#1F253F'  # Native editor.selectionBackground
+  B20: '#21232E'  # Native editor.inactiveSelectionBackground
+  B30: '#3D5DA1'  # Native button.background
+  B40: '#6199EF'  # Native class/import blue for checked Qt controls
+  B50: '#3794FF'  # Native textLink.foreground
+  B60: '#7AA2F7'  # Native editorInfo.foreground
+AltGroupsDark:
+  B10: '#974758'
+  B20: '#814F94'
+  B30: '#457AA0'
+  B40: '#4F804E'
+  B50: '#8F674C'
+  B60: '#2B7E82'
+  B70: '#81A1B3'
+  B80: '#3D404B'
+  B90: '#91614E'
+  B100: '#958050'
+  B110: '#705793'
+  B120: '#7E88A2'
+AltSyntaxDark:
+  B10: '#202437'  # Native current line
+  B20: '#1A1B26'  # Native editor; no whole-cell tint upstream
+  B30: '#30262E'  # editor.wordHighlightBackground flattened over editor
+  B40: '#4E94CE'  # editorLink.activeForeground
+  B50: '#1A1B26'  # editorGutter.background
+  B60: '#172222'  # editorBracketMatch.background over editor
+  B70: '#45324F'  # Adapted invalid-bracket fill from native invalid purple
+  B80: '#C0CAF5'  # Native editor.foreground
+  B90: '#EB6572'  # Keyword / operator / storage
+  B100: '#36C0C0'  # Support constant/type
+  B110: '#72C369'  # Built-in function
+  B120: '#72C369'  # Function definition
+  B130: '#545964'  # Comment: intentionally native low contrast
+  B140: '#E5C07B'  # String / Python docstring
+  B150: '#C678DD'  # Numeric constant
+  B160: '#D19A66'  # Semantic self/cls parameter
+  B170: '#ACCFD7'  # Separators/accessors; neutral fallback for stock Spyder
+  B190: '#1F253F'  # Native selected text
+  B200: '#263249'  # Native strong word highlight
+  B210: '#373C57'  # Native editor.findMatchBackground over editor
+  B220: '#55473A'  # Native editor.findMatchHighlightBackground over editor
+AltPythonDark:
+  B10: '#EB6572'  # Operator
+  B20: '#ACCFD7'  # Punctuation
+  B30: '#ACCFD7'  # Separator/accessor
+  B40: '#6199EF'  # Class definition
+  B50: '#C0CAF5'  # Unresolved generic Python calls: no explicit matching rule
+  B60: '#E5C07B'  # Python docstring scope is a string
+  B70: '#6199EF'  # Python semantic class/type fallback
+  B80: '#6199EF'  # Python semantic base class reference
+  B90: '#36C0C0'  # def/class: storage.type.python
+  B100: '#36C0C0'  # Built-in language constants
+  B110: '#ACCFD7'  # Other variables
+  B120: '#D19A66'  # Function parameters (source italic rule)
+  B130: '#6199EF'  # Referenced class names
+  B140: '#FFD700'  # VS Code bracket depth 1
+  B150: '#DA70D6'  # VS Code bracket depth 2
+  B160: '#179FFF'  # VS Code bracket depth 3
+  B170: '#7DCFFF'  # Native semantic enumMember
+  B180: '#E08F68'  # Native semantic variable.constant
+  B190: '#DEC76E'  # Native semantic variable.defaultLibrary
+AltHelpDark:
+  B10: '#1D1F2D'  # Native editorWidget background
+  B20: '#C0CAF5'
+  B30: '#3C2831'  # Adapted error panel fill
+  B40: '#3B322B'  # Adapted warning panel fill
+Logos:
+  B10: '#3775A9'
+  B20: '#FFD444'
+  B30: '#414141'
+  B40: '#FAFAFA'
+  B50: '#8C0000'

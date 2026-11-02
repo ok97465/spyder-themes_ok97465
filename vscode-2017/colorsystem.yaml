@@ -1,0 +1,350 @@
+---
+# Adapted from Microsoft VS Code 1.19.1 (2017-12-19), Dark+ / Light+ (MIT).
+# Upstream revision: 0759f77bb8d86658bc935a10a64f6182c5a1eeba
+# https://github.com/microsoft/vscode/tree/0759f77bb8d86658bc935a10a64f6182c5a1eeba/extensions/theme-defaults/themes
+# UI defaults also come from the same revision of:
+# src/vs/platform/theme/common/colorRegistry.ts
+# src/vs/workbench/common/theme.ts
+# src/vs/editor/common/view/editorColorRegistry.ts
+# Qt intermediate shades, status ramps and opaque alpha composites are adapted.
+# Light warning text uses #8A7000 instead of native #B89500 for readability.
+# Syntax slots B10..B170 follow catppuccin-mocha; B190..B220 are selections.
+# Python colors were checked with the pinned MagicPython grammar and
+# VS Code TextMate selector precedence, not generic palette-name guesses.
+# Native 2017 has no semantic highlighting: ordinary variables, generic calls
+# and constructor references retain editor foreground; declared parameters use
+# variable.parameter, and class declarations/base names use the type color.
+# Logical word operators use keyword.operator.logical.python, not control color.
+# All bracket-depth slots retain native punctuation: 2017 has no rainbow default.
+# Native chrome defaults: workbench/common/theme.ts and platform/theme/common/
+# colorRegistry.ts at the pinned revision; gutter from editorColorRegistry.ts.
+# Half-alpha inactive tab labels are flattened over each inactive tab background.
+# Current-line border colors become fills because Spyder exposes only a fill.
+# Selection/occurrence/bracket fills use native opaque colors or native alpha
+# flattened over editor.background. Current-cell/unmatched fills adapt Qt-only
+# states; the shared accent uses native status/badge blue #007ACC. Group fills
+# and generic Qt widget accents are adapted for Spyder's shared palette slots.
+# Strict contrast checks can flag native syntax, subtle bracket fills, widget
+# borders and text-role ordering; retain native colors instead of brightening.
+VSCode2017Neutral:
+  B0: '#000000'
+  B10: '#1E1E1E'
+  B20: '#252526'
+  B30: '#2D2D2D'
+  B40: '#333333'
+  B50: '#3C3C3C'
+  B60: '#454545'
+  B70: '#5A5A5A'
+  B80: '#6C6C6C'
+  B90: '#999999'
+  B100: '#BBBBBB'
+  B110: '#CCCCCC'
+  B120: '#D4D4D4'
+  B130: '#ECECEC'
+  B140: '#F3F3F3'
+  B150: '#FFFFFF'
+VSCode2017Blue:
+  B0: '#000000'
+  B10: '#000C14'
+  B20: '#001829'
+  B30: '#00253D'
+  B40: '#003152'
+  B50: '#003D66'
+  B60: '#00497A'
+  B70: '#00558F'
+  B80: '#0062A3'
+  B90: '#006EB8'
+  B100: '#007ACC'
+  B110: '#3395D6'
+  B120: '#66AFE0'
+  B130: '#99CAEB'
+  B140: '#CCE4F5'
+  B150: '#FFFFFF'
+VSCode2017Success:
+  B0: '#000000'
+  B10: '#121511'
+  B20: '#242922'
+  B30: '#363E32'
+  B40: '#485243'
+  B50: '#5A6754'
+  B60: '#6D7C65'
+  B70: '#7F9076'
+  B80: '#91A586'
+  B90: '#A3B997'
+  B100: '#B5CEA8'
+  B110: '#C4D8B9'
+  B120: '#D3E2CB'
+  B130: '#E1EBDC'
+  B140: '#F0F5EE'
+  B150: '#FFFFFF'
+VSCode2017Error:
+  B0: '#000000'
+  B10: '#180E0B'
+  B20: '#311B17'
+  B30: '#492822'
+  B40: '#62362D'
+  B50: '#7A4438'
+  B60: '#925144'
+  B70: '#AB5E4F'
+  B80: '#C36C5A'
+  B90: '#DC7A66'
+  B100: '#F48771'
+  B110: '#F69F8D'
+  B120: '#F8B7AA'
+  B130: '#FBCFC6'
+  B140: '#FDE7E3'
+  B150: '#FFFFFF'
+VSCode2017Warning:
+  B0: '#000000'
+  B10: '#16130C'
+  B20: '#2B2519'
+  B30: '#403826'
+  B40: '#564A32'
+  B50: '#6C5D3E'
+  B60: '#81704B'
+  B70: '#968258'
+  B80: '#AC9564'
+  B90: '#C2A770'
+  B100: '#D7BA7D'
+  B110: '#DFC897'
+  B120: '#E7D6B1'
+  B130: '#EFE3CB'
+  B140: '#F7F1E5'
+  B150: '#FFFFFF'
+VSCode2017SurfaceDark:
+  B10: '#1E1E1E'
+  B20: '#252526'
+  B30: '#2D2D2D'
+  B40: '#333333'
+  B50: '#3C3C3C'
+  B60: '#454545'
+  B70: '#CCCCCC'
+  B80: '#D4D4D4'
+  B90: '#BBBBBB'
+  B100: '#999999'
+  B110: '#5A5A5A'
+VSCode2017AccentDark:
+  B10: '#073655'
+  B20: '#1F537E'
+  B30: '#456A95'
+  B40: '#007ACC'
+  B50: '#0097FB'
+  B60: '#2AA8FF'
+# Generic Qt text is slightly darker for Variable Explorer cells; native tree
+# foreground remains #333333 through the independent COLOR_TREE_TEXT role.
+VSCode2017SurfaceLight:
+  B10: '#FFFFFF'
+  B20: '#F3F3F3'
+  B30: '#ECECEC'
+  B40: '#E7E7E7'
+  B50: '#E5EBF1'
+  B60: '#D3D3D3'
+  B70: '#2B2B2B'
+  B80: '#424242'
+  B90: '#6C6C6C'
+  B100: '#6F6F6F'
+  B110: '#BEBEBE'
+VSCode2017AccentLight:
+  B10: '#DCEBFC'
+  B20: '#DBEAFA'
+  B30: '#ADD6FF'
+  B40: '#007ACC'
+  B50: '#0062A3'
+  B60: '#004E82'
+VSCode2017SuccessDark:
+  B10: '#B5CEA8'
+  B20: '#9AAE8F'
+  B30: '#B5CEA8'
+  B40: '#C4D8B9'
+  B50: '#DAE6D4'
+VSCode2017ErrorDark:
+  B10: '#F48771'
+  B20: '#CD7462'
+  B30: '#F48771'
+  B40: '#F69F8D'
+  B50: '#FAC3B8'
+VSCode2017WarningDark:
+  B10: '#D7BA7D'
+  B20: '#B69E6C'
+  B30: '#D7BA7D'
+  B40: '#DFC897'
+  B50: '#EBDCBE'
+VSCode2017SuccessLight:
+  B10: '#09885A'
+  B20: '#08744C'
+  B30: '#5FB294'
+  B40: '#A9D5C5'
+  B50: '#DAEDE6'
+VSCode2017ErrorLight:
+  B10: '#A1260D'
+  B20: '#89200B'
+  B30: '#C27262'
+  B40: '#DEB3AA'
+  B50: '#F1DEDB'
+VSCode2017WarningLight:
+  B10: '#8A7000'
+  B20: '#755F00'
+  B30: '#B3A259'
+  B40: '#D6CDA6'
+  B50: '#EDEAD9'
+VSCode2017GroupDark:
+  B10: '#C586C0'
+  B20: '#48B49E'
+  B30: '#569CD6'
+  B40: '#95A98B'
+  B50: '#CE9178'
+  B60: '#A5A581'
+  B70: '#7AA9C2'
+  B80: '#B9A16E'
+  B90: '#F28670'
+  B100: '#D16969'
+  B110: '#6796E6'
+  B120: '#A2A2A2'
+VSCode2017GroupLight:
+  B10: '#B105DC'
+  B20: '#267F99'
+  B30: '#3333FF'
+  B40: '#09885A'
+  B50: '#A92525'
+  B60: '#795E26'
+  B70: '#38459C'
+  B80: '#8A7000'
+  B90: '#A42D14'
+  B100: '#8A2F4C'
+  B110: '#0451A5'
+  B120: '#6C6C6C'
+VSCode2017SyntaxDark:
+  B10: '#282828'
+  B20: '#252526'
+  B30: '#474747'
+  B40: '#4E94CE'
+  B50: '#1E1E1E'
+  B60: '#1B251B'
+  B70: '#5A1D1D'
+  B80: '#D4D4D4'
+  B90: '#C586C0'
+  B100: '#DCDCAA'
+  B110: '#DCDCAA'
+  B120: '#DCDCAA'
+  B130: '#608B4E'
+  B140: '#CE9178'
+  B150: '#B5CEA8'
+  B160: '#569CD6'
+  B170: '#D4D4D4'
+  B190: '#202A34'
+  B200: '#22364B'
+  B210: '#244362'
+  B220: '#264F78'
+  B180: '#4F4F4F'
+VSCode2017SyntaxLight:
+  B10: '#EEEEEE'
+  B20: '#F3F3F3'
+  B30: '#D5D5D5'
+  B40: '#0000FF'
+  B50: '#FFFFFF'
+  B60: '#E5EFE5'
+  B70: '#F2DEDE'
+  B80: '#000000'
+  B90: '#AF00DB'
+  B100: '#795E26'
+  B110: '#795E26'
+  B120: '#795E26'
+  B130: '#008000'
+  B140: '#A31515'
+  B150: '#09885A'
+  B160: '#0000FF'
+  B170: '#000000'
+  B190: '#EAF5FF'
+  B200: '#D6EAFF'
+  B210: '#C2E0FF'
+  B220: '#ADD6FF'
+  B180: '#B5B5B5'
+Logos:
+  B10: '#3775A9'
+  B20: '#FFD444'
+  B30: '#414141'
+  B40: '#FAFAFA'
+  B50: '#8C0000'
+VSCode2017HelpDark:
+  B10: '#252526'
+  B20: '#CCCCCC'
+  B30: '#5A1D1D'
+  B40: '#352A05'
+VSCode2017HelpLight:
+  B10: '#F3F3F3'
+  B20: '#333333'
+  B30: '#F2DEDE'
+  B40: '#F6F5D2'
+
+VSCode2017PythonDark:
+  B10: '#D4D4D4'  # OPERATOR — keyword.operator
+  B20: '#D4D4D4'  # PUNCTUATION — editor foreground
+  B30: '#D4D4D4'  # SEPARATOR — editor foreground
+  B40: '#4EC9B0'  # CLASS — entity.name.type.class
+  B50: '#D4D4D4'  # FUNCTION_CALL — plain MagicPython fallback
+  B60: '#CE9178'  # DOCSTRING — string.quoted.docstring.multi.python
+  B70: '#4EC9B0'  # TYPE — support.type
+  B80: '#4EC9B0'  # BASECLASS — entity.other.inherited-class
+  B90: '#569CD6'  # STORAGE — storage.type.function/class.python
+  B100: '#569CD6'  # CONSTANT — constant.language.python
+  B110: '#D4D4D4'  # VARIABLE — plain unscoped MagicPython identifier
+  B120: '#9CDCFE'  # PARAMETER — variable.parameter.function
+  B130: '#D4D4D4'  # CLASS_REFERENCE — plain unscoped MagicPython constructor
+  B140: '#D4D4D4'  # BRACKET_1 — native punctuation, no 2017 colorization
+  B150: '#D4D4D4'  # BRACKET_2 — native punctuation, no 2017 colorization
+  B160: '#D4D4D4'  # BRACKET_3 — native punctuation, no 2017 colorization
+  B170: '#569CD6'  # WORD_OPERATOR — keyword.operator.logical.python
+
+VSCode2017UiDark:
+  B10: '#007ACC'  # COLOR_STATUSBAR_BACKGROUND
+  B20: '#FFFFFF'  # COLOR_STATUSBAR_TEXT
+  B30: '#969696'  # COLOR_TAB_TEXT
+  B40: '#FFFFFF'  # COLOR_TAB_SELECTED_TEXT
+  B50: '#2D2D2D'  # COLOR_TAB_HOVER_BACKGROUND
+  B60: '#1E1E1E'  # COLOR_TAB_SELECTED_BACKGROUND
+  B70: '#1E1E1E'  # COLOR_TAB_SELECTED_ACCENT
+  B80: '#2A2D2E'  # COLOR_TREE_HOVER_BACKGROUND
+  B90: '#094771'  # COLOR_TREE_SELECTED_BACKGROUND
+  B100: '#FFFFFF'  # COLOR_TREE_SELECTED_TEXT
+  B110: '#3F3F46'  # COLOR_TREE_INACTIVE_SELECTION_BACKGROUND
+  B120: '#3C3C3C'  # COLOR_TOOLBAR_BACKGROUND
+  B130: '#5A5A5A'  # COLOR_EDITOR_LINE_NUMBER
+  B140: '#CCCCCC'  # COLOR_TREE_TEXT
+  B150: '#CCCCCC'  # COLOR_TREE_INACTIVE_SELECTION_TEXT
+
+VSCode2017PythonLight:
+  B10: '#000000'  # OPERATOR — keyword.operator
+  B20: '#000000'  # PUNCTUATION — editor foreground
+  B30: '#000000'  # SEPARATOR — editor foreground
+  B40: '#267F99'  # CLASS — entity.name.type.class
+  B50: '#000000'  # FUNCTION_CALL — plain MagicPython fallback
+  B60: '#A31515'  # DOCSTRING — string.quoted.docstring.multi.python
+  B70: '#267F99'  # TYPE — support.type
+  B80: '#267F99'  # BASECLASS — entity.other.inherited-class
+  B90: '#0000FF'  # STORAGE — storage.type.function/class.python
+  B100: '#0000FF'  # CONSTANT — constant.language.python
+  B110: '#000000'  # VARIABLE — plain unscoped MagicPython identifier
+  B120: '#001080'  # PARAMETER — variable.parameter.function
+  B130: '#000000'  # CLASS_REFERENCE — plain unscoped MagicPython constructor
+  B140: '#000000'  # BRACKET_1 — native punctuation, no 2017 colorization
+  B150: '#000000'  # BRACKET_2 — native punctuation, no 2017 colorization
+  B160: '#000000'  # BRACKET_3 — native punctuation, no 2017 colorization
+  B170: '#0000FF'  # WORD_OPERATOR — keyword.operator.logical.python
+
+VSCode2017UiLight:
+  B10: '#007ACC'  # COLOR_STATUSBAR_BACKGROUND
+  B20: '#FFFFFF'  # COLOR_STATUSBAR_TEXT
+  B30: '#909090'  # COLOR_TAB_TEXT
+  B40: '#333333'  # COLOR_TAB_SELECTED_TEXT
+  B50: '#ECECEC'  # COLOR_TAB_HOVER_BACKGROUND
+  B60: '#FFFFFF'  # COLOR_TAB_SELECTED_BACKGROUND
+  B70: '#FFFFFF'  # COLOR_TAB_SELECTED_ACCENT
+  B80: '#F0F0F0'  # COLOR_TREE_HOVER_BACKGROUND
+  B90: '#3399FF'  # COLOR_TREE_SELECTED_BACKGROUND
+  B100: '#FFFFFF'  # COLOR_TREE_SELECTED_TEXT
+  B110: '#CCCEDB'  # COLOR_TREE_INACTIVE_SELECTION_BACKGROUND
+  B120: '#DDDDDD'  # COLOR_TOOLBAR_BACKGROUND
+  B130: '#2B91AF'  # COLOR_EDITOR_LINE_NUMBER
+
+  B140: '#333333'  # COLOR_TREE_TEXT
+  B150: '#333333'  # COLOR_TREE_INACTIVE_SELECTION_TEXT

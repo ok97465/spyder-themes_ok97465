@@ -1,0 +1,345 @@
+---
+# Adapted from the canonical Night and Day palettes at:
+# https://github.com/folke/tokyonight.nvim/blob/cdc07ac78467a233fd62c493de29a17e0cf2b2b6/extras/lua/tokyonight_night.lua
+# https://github.com/folke/tokyonight.nvim/blob/cdc07ac78467a233fd62c493de29a17e0cf2b2b6/extras/lua/tokyonight_day.lua
+# Spyder groups several upstream syntax categories into one role.
+# Keywords use Treesitter @keyword; numbers use Constant; self uses @variable.builtin.
+# https://github.com/folke/tokyonight.nvim/blob/cdc07ac78467a233fd62c493de29a17e0cf2b2b6/lua/tokyonight/groups/treesitter.lua
+# https://github.com/folke/tokyonight.nvim/blob/cdc07ac78467a233fd62c493de29a17e0cf2b2b6/lua/tokyonight/groups/base.lua
+color_classes:
+  NativeUiDark: TokyoNightNativeUiDark
+  PythonDark: TokyoNightPythonDark
+  NativeUiLight: TokyoNightNativeUiLight
+  PythonLight: TokyoNightPythonLight
+  WidgetFillDark: TokyoNightWidgetFillDark
+  WidgetFillLight: TokyoNightWidgetFillLight
+  Primary: TokyoNightSurfaceDark
+  Secondary: TokyoNightBlue
+  Tertiary: TokyoNightCyan
+  Quaternary: TokyoNightPurple
+  Success: TokyoNightGreen
+  Error: TokyoNightRed
+  Warning: TokyoNightYellow
+  GroupDark: TokyoNightGroupsDark
+  GroupLight: TokyoNightGroupsLight
+  Syntax: TokyoNightSyntaxDark
+  SyntaxLight: TokyoNightSyntaxLight
+  Logos: Logos
+  SurfaceDark: TokyoNightSurfaceDark
+  SurfaceLight: TokyoNightSurfaceLight
+  AccentDark: TokyoNightAccentsDark
+  AccentLight: TokyoNightAccentsLight
+semantic_mappings:
+  dark:
+    COLOR_BACKGROUND_1: SurfaceDark.B10
+    COLOR_BACKGROUND_2: SurfaceDark.B20
+    COLOR_BACKGROUND_3: SurfaceDark.B30
+    COLOR_BACKGROUND_4: NativeUiDark.B80
+    COLOR_BACKGROUND_5: SurfaceDark.B60
+    COLOR_BACKGROUND_6: SurfaceDark.B70
+    COLOR_TEXT_1: SurfaceDark.B110
+    COLOR_TEXT_2: SurfaceDark.B100
+    COLOR_TEXT_3: SurfaceDark.B160
+    COLOR_TEXT_4: SurfaceDark.B90
+    # Qt keeps COLOR_TEXT_1 over selected/hovered fills. Use upstream
+    # visual/blue7/blue0 for backgrounds; bright blue/cyan remain link accents.
+    COLOR_ACCENT_1: SurfaceDark.B40
+    COLOR_ACCENT_2: WidgetFillDark.B10
+    COLOR_ACCENT_3: WidgetFillDark.B20
+    COLOR_ACCENT_4: AccentDark.B30
+    COLOR_ACCENT_5: AccentDark.B40
+    COLOR_DISABLED: SurfaceDark.B70
+    COLOR_EMPTY: SurfaceDark.B50
+    COLOR_SUCCESS_1: AccentDark.B50
+    COLOR_SUCCESS_2: Success.B40
+    COLOR_SUCCESS_3: Success.B70
+    COLOR_SUCCESS_4: Success.B100
+    COLOR_SUCCESS_5: Success.B120
+    COLOR_ERROR_1: AccentDark.B80
+    COLOR_ERROR_2: AccentDark.B80
+    COLOR_ERROR_3: Error.B70
+    COLOR_ERROR_4: Error.B100
+    COLOR_ERROR_5: Error.B120
+    COLOR_WARN_1: AccentDark.B100
+    COLOR_WARN_2: AccentDark.B100
+    COLOR_WARN_3: Warning.B70
+    COLOR_WARN_4: Warning.B100
+    COLOR_WARN_5: Warning.B120
+    ICON_1: SurfaceDark.B110
+    ICON_2: AccentDark.B20
+    ICON_3: AccentDark.B50
+    ICON_4: AccentDark.B70
+    ICON_5: AccentDark.B100
+    ICON_6: SurfaceDark.B50
+    ICON_7: AccentDark.B120
+    GROUP_1: GroupDark.B10
+    GROUP_2: GroupDark.B20
+    GROUP_3: GroupDark.B30
+    GROUP_4: GroupDark.B40
+    GROUP_5: GroupDark.B50
+    GROUP_6: GroupDark.B60
+    GROUP_7: GroupDark.B70
+    GROUP_8: GroupDark.B80
+    GROUP_9: GroupDark.B90
+    GROUP_10: GroupDark.B100
+    GROUP_11: GroupDark.B110
+    GROUP_12: GroupDark.B120
+    COLOR_HIGHLIGHT_1: SurfaceDark.B40
+    COLOR_HIGHLIGHT_2: SurfaceDark.B120
+    COLOR_HIGHLIGHT_3: SurfaceDark.B50
+    COLOR_HIGHLIGHT_4: SurfaceDark.B130
+    COLOR_OCCURRENCE_1: SurfaceDark.B20
+    COLOR_OCCURRENCE_2: SurfaceDark.B30
+    COLOR_OCCURRENCE_3: SurfaceDark.B40
+    COLOR_OCCURRENCE_4: SurfaceDark.B50
+    COLOR_OCCURRENCE_5: SurfaceDark.B130
+    EDITOR_BACKGROUND: SurfaceDark.B20
+    EDITOR_CURRENTLINE: Syntax.B10
+    EDITOR_CURRENTCELL: Syntax.B20
+    EDITOR_OCCURRENCE: Syntax.B30
+    EDITOR_CTRLCLICK: Syntax.B40
+    EDITOR_SIDEAREAS: SurfaceDark.B20
+    EDITOR_MATCHED_P: Syntax.B60
+    EDITOR_UNMATCHED_P: Syntax.B70
+    EDITOR_NORMAL: [Syntax.B80, false, false]
+    EDITOR_KEYWORD: [Syntax.B90, false, true]
+    EDITOR_MAGIC: [Syntax.B100, false, false]
+    EDITOR_BUILTIN: [Syntax.B110, false, false]
+    EDITOR_DEFINITION: [Syntax.B120, false, false]
+    EDITOR_COMMENT: [Syntax.B130, false, true]
+    EDITOR_STRING: [Syntax.B140, false, false]
+    EDITOR_NUMBER: [Syntax.B150, false, false]
+    EDITOR_INSTANCE: [Syntax.B160, false, false]
+    EDITOR_SYMBOL: [Syntax.B170, false, false]
+    PYTHON_LOGO_UP: Logos.B10
+    PYTHON_LOGO_DOWN: Logos.B20
+    SPYDER_LOGO_BACKGROUND: SurfaceDark.B20
+    SPYDER_LOGO_WEB: SurfaceDark.B110
+    SPYDER_LOGO_SNAKE: SurfaceDark.B110
+    SPECIAL_TABS_SEPARATOR: SurfaceDark.B50
+    SPECIAL_TABS_SELECTED: NativeUiDark.B70
+    COLOR_HEART: AccentDark.B70
+    TIP_TITLE_COLOR: AccentDark.B10
+    TIP_CHAR_HIGHLIGHT_COLOR: Syntax.B170
+    OPACITY_TOOLTIP: 230
+    # Source distinctions; identical bracket slots intentionally disable rainbow coloring.
+    EDITOR_OPERATOR: [PythonDark.B10, false, false]
+    EDITOR_WORD_OPERATOR: [PythonDark.B10, false, false]
+    EDITOR_PUNCTUATION: [PythonDark.B20, false, false]
+    EDITOR_SEPARATOR: [PythonDark.B30, false, false]
+    EDITOR_CLASS: [PythonDark.B40, false, false]
+    EDITOR_FUNCTION_CALL: [PythonDark.B50, false, false]
+    EDITOR_DOCSTRING: [PythonDark.B60, false, false]
+    EDITOR_TYPE: [PythonDark.B70, false, false]
+    EDITOR_BASECLASS: [PythonDark.B80, false, false]
+    EDITOR_STORAGE: [PythonDark.B90, false, false]
+    EDITOR_CONSTANT: [PythonDark.B100, false, false]
+    EDITOR_VARIABLE: [PythonDark.B110, false, false]
+    EDITOR_PARAMETER: [PythonDark.B120, false, false]
+    EDITOR_CLASS_REFERENCE: [PythonDark.B130, false, false]
+    EDITOR_BRACKET_1: [PythonDark.B140, false, false]
+    EDITOR_BRACKET_2: [PythonDark.B150, false, false]
+    EDITOR_BRACKET_3: [PythonDark.B160, false, false]
+    # Repeat the native three-color cycle (or unchanged punctuation) at depths 4-6.
+    EDITOR_BRACKET_4: [PythonDark.B140, false, false]
+    EDITOR_BRACKET_5: [PythonDark.B150, false, false]
+    EDITOR_BRACKET_6: [PythonDark.B160, false, false]
+    # Native widget colors, with translucent fills flattened over their source surface.
+    COLOR_STATUSBAR_BACKGROUND: NativeUiDark.B10
+    COLOR_STATUSBAR_TEXT: NativeUiDark.B20
+    COLOR_TOOLBAR_BACKGROUND: NativeUiDark.B30
+    COLOR_EDITOR_LINE_NUMBER: NativeUiDark.B40
+    COLOR_TAB_TEXT: NativeUiDark.B50
+    COLOR_TAB_SELECTED_TEXT: NativeUiDark.B60
+    COLOR_TAB_SELECTED_BACKGROUND: NativeUiDark.B70
+    COLOR_TAB_HOVER_BACKGROUND: NativeUiDark.B80
+    COLOR_TAB_SELECTED_ACCENT: NativeUiDark.B90
+    COLOR_TREE_HOVER_BACKGROUND: NativeUiDark.B100
+    COLOR_TREE_SELECTED_BACKGROUND: NativeUiDark.B110
+    COLOR_TREE_INACTIVE_SELECTION_BACKGROUND: NativeUiDark.B120
+    COLOR_TREE_SELECTED_TEXT: NativeUiDark.B130
+    COLOR_TREE_TEXT: NativeUiDark.B140
+    COLOR_TREE_INACTIVE_SELECTION_TEXT: NativeUiDark.B150
+  light:
+    COLOR_BACKGROUND_1: SurfaceLight.B10
+    COLOR_BACKGROUND_2: SurfaceLight.B10
+    COLOR_BACKGROUND_3: SurfaceLight.B30
+    COLOR_BACKGROUND_4: NativeUiLight.B80
+    COLOR_BACKGROUND_5: SurfaceLight.B50
+    COLOR_BACKGROUND_6: SurfaceLight.B60
+    COLOR_TEXT_1: SurfaceLight.B110
+    COLOR_TEXT_2: SurfaceLight.B90
+    COLOR_TEXT_3: SurfaceLight.B100
+    COLOR_TEXT_4: SurfaceLight.B160
+    # Upstream highlight/visual surfaces keep Day's blue text readable.
+    COLOR_ACCENT_1: SurfaceLight.B20
+    COLOR_ACCENT_2: WidgetFillLight.B10
+    COLOR_ACCENT_3: WidgetFillLight.B20
+    COLOR_ACCENT_4: AccentLight.B30
+    COLOR_ACCENT_5: AccentLight.B40
+    COLOR_DISABLED: SurfaceLight.B70
+    COLOR_EMPTY: SurfaceLight.B50
+    COLOR_SUCCESS_1: AccentLight.B50
+    COLOR_SUCCESS_2: Success.B70
+    COLOR_SUCCESS_3: Success.B50
+    COLOR_SUCCESS_4: Success.B30
+    COLOR_SUCCESS_5: Success.B10
+    COLOR_ERROR_1: AccentLight.B160
+    COLOR_ERROR_2: AccentLight.B160
+    COLOR_ERROR_3: Error.B50
+    COLOR_ERROR_4: Error.B30
+    COLOR_ERROR_5: Error.B10
+    COLOR_WARN_1: AccentLight.B100
+    COLOR_WARN_2: AccentLight.B100
+    COLOR_WARN_3: Warning.B50
+    COLOR_WARN_4: Warning.B30
+    COLOR_WARN_5: Warning.B10
+    ICON_1: SurfaceLight.B110
+    ICON_2: AccentLight.B20
+    ICON_3: AccentLight.B50
+    ICON_4: AccentLight.B70
+    ICON_5: AccentLight.B100
+    ICON_6: SurfaceLight.B50
+    ICON_7: AccentLight.B120
+    GROUP_1: GroupLight.B10
+    GROUP_2: GroupLight.B20
+    GROUP_3: GroupLight.B30
+    GROUP_4: GroupLight.B40
+    GROUP_5: GroupLight.B50
+    GROUP_6: GroupLight.B60
+    GROUP_7: GroupLight.B70
+    GROUP_8: GroupLight.B80
+    GROUP_9: GroupLight.B90
+    GROUP_10: GroupLight.B100
+    GROUP_11: GroupLight.B110
+    GROUP_12: GroupLight.B120
+    COLOR_HIGHLIGHT_1: SurfaceLight.B40
+    COLOR_HIGHLIGHT_2: SurfaceLight.B120
+    COLOR_HIGHLIGHT_3: SurfaceLight.B50
+    COLOR_HIGHLIGHT_4: SurfaceLight.B130
+    COLOR_OCCURRENCE_1: SurfaceLight.B20
+    COLOR_OCCURRENCE_2: SurfaceLight.B30
+    COLOR_OCCURRENCE_3: SurfaceLight.B40
+    COLOR_OCCURRENCE_4: SurfaceLight.B50
+    COLOR_OCCURRENCE_5: SurfaceLight.B130
+    EDITOR_BACKGROUND: SurfaceLight.B20
+    EDITOR_CURRENTLINE: SyntaxLight.B10
+    EDITOR_CURRENTCELL: SyntaxLight.B20
+    EDITOR_OCCURRENCE: SyntaxLight.B30
+    EDITOR_CTRLCLICK: SyntaxLight.B40
+    EDITOR_SIDEAREAS: SurfaceLight.B20
+    EDITOR_MATCHED_P: SyntaxLight.B60
+    EDITOR_UNMATCHED_P: SyntaxLight.B70
+    EDITOR_NORMAL: [SyntaxLight.B80, false, false]
+    EDITOR_KEYWORD: [SyntaxLight.B90, false, true]
+    EDITOR_MAGIC: [SyntaxLight.B100, false, false]
+    EDITOR_BUILTIN: [SyntaxLight.B110, false, false]
+    EDITOR_DEFINITION: [SyntaxLight.B120, false, false]
+    EDITOR_COMMENT: [SyntaxLight.B130, false, true]
+    EDITOR_STRING: [SyntaxLight.B140, false, false]
+    EDITOR_NUMBER: [SyntaxLight.B150, false, false]
+    EDITOR_INSTANCE: [SyntaxLight.B160, false, false]
+    EDITOR_SYMBOL: [SyntaxLight.B170, false, false]
+    PYTHON_LOGO_UP: Logos.B10
+    PYTHON_LOGO_DOWN: Logos.B20
+    SPYDER_LOGO_BACKGROUND: SurfaceLight.B20
+    SPYDER_LOGO_WEB: SurfaceLight.B110
+    SPYDER_LOGO_SNAKE: SurfaceLight.B110
+    SPECIAL_TABS_SEPARATOR: SurfaceLight.B50
+    SPECIAL_TABS_SELECTED: NativeUiLight.B70
+    COLOR_HEART: AccentLight.B70
+    TIP_TITLE_COLOR: AccentLight.B10
+    TIP_CHAR_HIGHLIGHT_COLOR: SyntaxLight.B170
+    OPACITY_TOOLTIP: 230
+
+    # Source distinctions; identical bracket slots intentionally disable rainbow coloring.
+    EDITOR_OPERATOR: [PythonLight.B10, false, false]
+    EDITOR_WORD_OPERATOR: [PythonLight.B10, false, false]
+    EDITOR_PUNCTUATION: [PythonLight.B20, false, false]
+    EDITOR_SEPARATOR: [PythonLight.B30, false, false]
+    EDITOR_CLASS: [PythonLight.B40, false, false]
+    EDITOR_FUNCTION_CALL: [PythonLight.B50, false, false]
+    EDITOR_DOCSTRING: [PythonLight.B60, false, false]
+    EDITOR_TYPE: [PythonLight.B70, false, false]
+    EDITOR_BASECLASS: [PythonLight.B80, false, false]
+    EDITOR_STORAGE: [PythonLight.B90, false, false]
+    EDITOR_CONSTANT: [PythonLight.B100, false, false]
+    EDITOR_VARIABLE: [PythonLight.B110, false, false]
+    EDITOR_PARAMETER: [PythonLight.B120, false, false]
+    EDITOR_CLASS_REFERENCE: [PythonLight.B130, false, false]
+    EDITOR_BRACKET_1: [PythonLight.B140, false, false]
+    EDITOR_BRACKET_2: [PythonLight.B150, false, false]
+    EDITOR_BRACKET_3: [PythonLight.B160, false, false]
+    # Repeat the native three-color cycle (or unchanged punctuation) at depths 4-6.
+    EDITOR_BRACKET_4: [PythonLight.B140, false, false]
+    EDITOR_BRACKET_5: [PythonLight.B150, false, false]
+    EDITOR_BRACKET_6: [PythonLight.B160, false, false]
+    # Native widget colors, with translucent fills flattened over their source surface.
+    COLOR_STATUSBAR_BACKGROUND: NativeUiLight.B10
+    COLOR_STATUSBAR_TEXT: NativeUiLight.B20
+    COLOR_TOOLBAR_BACKGROUND: NativeUiLight.B30
+    COLOR_EDITOR_LINE_NUMBER: NativeUiLight.B40
+    COLOR_TAB_TEXT: NativeUiLight.B50
+    COLOR_TAB_SELECTED_TEXT: NativeUiLight.B60
+    COLOR_TAB_SELECTED_BACKGROUND: NativeUiLight.B70
+    COLOR_TAB_HOVER_BACKGROUND: NativeUiLight.B80
+    COLOR_TAB_SELECTED_ACCENT: NativeUiLight.B90
+    COLOR_TREE_HOVER_BACKGROUND: NativeUiLight.B100
+    COLOR_TREE_SELECTED_BACKGROUND: NativeUiLight.B110
+    COLOR_TREE_INACTIVE_SELECTION_BACKGROUND: NativeUiLight.B120
+    COLOR_TREE_SELECTED_TEXT: NativeUiLight.B130
+    COLOR_TREE_TEXT: NativeUiLight.B140
+    COLOR_TREE_INACTIVE_SELECTION_TEXT: NativeUiLight.B150
+css_overrides:
+  --syn-operator:
+    dark: EDITOR_OPERATOR
+    light: EDITOR_OPERATOR
+  # Warning roles are also foregrounds in Spyder; give help admonitions
+  # separate low-contrast background shades while preserving readable text.
+  --warning-bg:
+    dark: Warning.B20
+    light: Warning.B130
+  --syn-error-bg:
+    dark: Error.B20
+    light: Error.B140
+  --header-bg-color:
+    dark: SurfaceDark.B40
+    light: SurfaceLight.B20
+  --header-text-color:
+    dark: SurfaceDark.B110
+    light: SurfaceLight.B110
+  --note-bg:
+    dark: SurfaceDark.B30
+    light: SurfaceLight.B30
+  --border-light:
+    dark: SurfaceDark.B50
+    light: SurfaceLight.B50
+  --link-color:
+    dark: AccentDark.B10
+    light: AccentLight.B10
+  --hover-color:
+    dark: AccentDark.B30
+    light: AccentLight.B30
+
+appeal_overrides:
+  --link-color:
+    dark: AccentDark.B10
+    light: AccentLight.B10
+  --hover-color:
+    dark: AccentDark.B30
+    light: AccentLight.B30
+
+pydoc_overrides:
+  --header-bg-color:
+    dark: SurfaceDark.B40
+    light: SurfaceLight.B20
+  --header-text-color:
+    dark: SurfaceDark.B110
+    light: SurfaceLight.B110
+  --link-color:
+    dark: AccentDark.B10
+    light: AccentLight.B10
+  --hover-color:
+    dark: AccentDark.B30
+    light: AccentLight.B30
+

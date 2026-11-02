@@ -1,4 +1,12 @@
 ---
+# Dark palette: Sublime Text 4 build 4215, Monokai.sublime-color-scheme
+# and Adaptive.sublime-theme. Source attribution/checksums are in LICENSE.
+# HSL colors are converted to opaque #RRGGBB, not sampled from screenshots.
+# Adaptive file_medium_dark: sidebar/tabset = editor * .6; status = editor * .5.
+# SurfaceDark slots describe widget roles, not an increasing brightness ramp:
+# B10 editor/selected tab; B20 sidebar; B40 toolbar/inactive tab; B50 selected tab.
+# B120 is the native status/output-panel fill. Generic Spyder widgets share slots.
+# The original palette below is retained for the custom light variant.
 AgileLead:
   B0: '#000000'
   B10: '#141414'
@@ -122,19 +130,6 @@ ExternalDragonBall:
   B130: '#FECDA2'
   B140: '#FEE6D3'
   B150: '#FFFFFF'
-LazyCyberpinkDark:
-  B10: '#F92672'
-  B20: '#00BDE6'
-  B30: '#8C7A00'
-  B40: '#856096'
-  B50: '#03BCA4'
-  B60: '#EC7758'
-  B70: '#006CA6'
-  B80: '#559C00'
-  B90: '#FE86C2'
-  B100: '#018692'
-  B110: '#946624'
-  B120: '#A5A0E6'
 LazyCyberpinkLight:
   B10: '#FE4C80'
   B20: '#0194B4'
@@ -148,24 +143,94 @@ LazyCyberpinkLight:
   B100: '#026670'
   B110: '#6A4F2E'
   B120: '#827EA5'
-AgileLeadSyntaxDark:
-  B10: '#2F2F2F'  # EDITOR_CURRENTLINE
-  B20: '#222222'  # EDITOR_CURRENTCELL
-  B30: '#1F4777'  # EDITOR_OCCURRENCE
-  B40: '#FFFFFF'  # EDITOR_CTRLCLICK
-  B50: '#2F2F2F'  # EDITOR_SIDEAREAS
-  B60: '#3B7A00'  # EDITOR_MATCHED_P
-  B70: '#8E0212'  # EDITOR_UNMATCHED_P
-  B80: '#F0DFCD'  # EDITOR_NORMAL (Normal text)
-  B90: '#FF007F'  # EDITOR_KEYWORD (Keyword)
-  B100: '#FF007F'  # EDITOR_MAGIC (Macros)
-  B110: '#52E3F6'  # EDITOR_BUILTIN (Builtins)
-  B120: '#A7EC21'  # EDITOR_DEFINITION (Methods, Functions, Classes, Interfaces, Types)
-  B130: '#7B7B7B'  # EDITOR_COMMENT (Comments)
-  B140: '#ECE47E'  # EDITOR_STRING (Strings, Escape Sequences, Regex)
-  B150: '#C48CFF'  # EDITOR_NUMBER (Constants, Numbers)
-  B160: '#C68841'  # EDITOR_INSTANCE (Parameters, Enum Variants, Property)
-  B170: '#D26366'  # EDITOR_SYMBOL (operators, brackets, parentheses and other symbols)
+MonokaiSurfaceDark:
+  B10: '#282923'
+  B20: '#181915'
+  B30: '#20211C'
+  B40: '#181915'
+  B50: '#282923'
+  B60: '#5D5E5B'
+  B70: '#F8F8F2'
+  B80: '#D4D4D3'
+  B90: '#BFBFBD'
+  B100: '#9E9F9C'
+  B110: '#5D5E5B'
+  B120: '#141512'
+  B130: '#262723'
+  B140: '#8C8C8A'
+  B150: '#FFFFFF'
+  B160: '#BABAB9'
+  B170: '#23241F'
+  B180: '#808080'  # Existing Qt gutter fallback; native gutter foreground is implicit.
+MonokaiCompatLight:
+  B10: '#808080'  # Existing Qt gutter default for the custom light variant.
+MonokaiAccentDark:
+  B10: '#42423F'
+  B20: '#31322E'
+  B30: '#5D5E5B'
+  B40: '#F92472'  # Native keyword pink for checked controls/focus
+  B50: '#BFBFBD'
+  B60: '#F8F8F2'
+MonokaiSuccessDark:
+  B10: '#A6E22C'
+  B20: '#93C62B'
+  B30: '#A6E22C'
+  B40: '#B8E856'
+  B50: '#D3F196'
+MonokaiErrorDark:
+  B10: '#F83535'
+  B20: '#D93132'
+  B30: '#F83535'
+  B40: '#F95D5D'
+  B50: '#FC9A9A'
+MonokaiWarningDark:
+  B10: '#FD9621'
+  B20: '#DD8621'
+  B30: '#FD9621'
+  B40: '#FDA94D'
+  B50: '#FECBA8'
+MonokaiGroupDark:
+  B10: '#A62653'
+  B20: '#775DA7'
+  B30: '#4E929D'
+  B40: '#739829'
+  B50: '#A86B22'
+  B60: '#9A9454'
+  B70: '#4E929D'
+  B80: '#565444'
+  B90: '#A53E2E'
+  B100: '#A99B67'
+  B110: '#775DA7'
+  B120: '#A5A59F'
+MonokaiSyntaxDark:
+  B10: '#3E3D32'  # Native line_highlight (yellow4)
+  B20: '#282923'  # No whole-cell tint in Sublime Text
+  B30: '#47473D'  # Native grey selection alpha .7 over black3
+  B40: '#67D8EF'
+  B50: '#282923'  # Native gutter follows the editor
+  B60: '#53544F'  # Adapted bracket fill; native uses a pale underline
+  B70: '#67273B'  # Adapted invalid-bracket fill
+  B80: '#F8F8F2'  # white3
+  B90: '#F92472'  # red2: keyword/operator
+  B100: '#67D8EF'  # blue: support.macro
+  B110: '#67D8EF'  # blue: support.function
+  B120: '#A6E22C'  # yellow2: function/class definitions
+  B130: '#74705D'  # yellow5: comments/docstrings
+  B140: '#E7DB74'  # yellow: strings
+  B150: '#AC80FF'  # purple: numbers/language constants
+  B160: '#FD9621'  # orange: self/cls
+  B170: '#F8F8F2'  # Neutral punctuation fallback for unextended Spyder
+  B180: '#F92472'  # Native operators; optional separate editor role
+  B190: '#30302A'
+  B200: '#38382F'
+  B210: '#404034'
+  B220: '#47473D'
+  B230: '#FFE894'  # Native search result highlight (orange3)
+MonokaiHelpDark:
+  B10: '#141512'
+  B20: '#F8F8F2'
+  B30: '#48282F'
+  B40: '#48402C'
 AgileLeadSyntaxLight:
   B10: '#E0E0E0'  # EDITOR_CURRENTLINE
   B20: '#F3F3F3'  # EDITOR_CURRENTCELL

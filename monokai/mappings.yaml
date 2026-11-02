@@ -1,4 +1,8 @@
 ---
+# Dark: the bundled Sublime Text 4 Adaptive/Monokai combination.
+# Light: the original custom Spyder variant (not an upstream Sublime scheme).
+# Optional editor/UI roles preserve native distinctions in the Spyder fork;
+# conventional keys below remain valid on stock Spyder.
 color_classes:
   Primary: AgileLead
   Secondary: AgileBerryBlast
@@ -8,63 +12,70 @@ color_classes:
   RunGreen: MinimumVerminal
   Error: DaringRedЯum
   Warning: ExternalDragonBall
-  GroupDark: LazyCyberpinkDark
+  SurfaceDark: MonokaiSurfaceDark
+  AccentDark: MonokaiAccentDark
+  SuccessDark: MonokaiSuccessDark
+  ErrorDark: MonokaiErrorDark
+  WarningDark: MonokaiWarningDark
+  HelpDark: MonokaiHelpDark
+  GroupDark: MonokaiGroupDark
   GroupLight: LazyCyberpinkLight
-  Syntax: AgileLeadSyntaxDark
+  Syntax: MonokaiSyntaxDark
   SyntaxLight: AgileLeadSyntaxLight
+  CompatLight: MonokaiCompatLight
   Logos: Logos
 semantic_mappings:
   dark:
     # Background colors
-    COLOR_BACKGROUND_1: Primary.B10
-    COLOR_BACKGROUND_2: Primary.B20
-    COLOR_BACKGROUND_3: Primary.B30
-    COLOR_BACKGROUND_4: Primary.B40
-    COLOR_BACKGROUND_5: Primary.B50
-    COLOR_BACKGROUND_6: Primary.B70
+    COLOR_BACKGROUND_1: SurfaceDark.B20
+    COLOR_BACKGROUND_2: SurfaceDark.B120
+    COLOR_BACKGROUND_3: SurfaceDark.B30
+    COLOR_BACKGROUND_4: SurfaceDark.B40
+    COLOR_BACKGROUND_5: SurfaceDark.B50
+    COLOR_BACKGROUND_6: SurfaceDark.B60
 
     # Text colors
-    COLOR_TEXT_1: Primary.B130
-    COLOR_TEXT_2: Primary.B120
-    COLOR_TEXT_3: Primary.B110
-    COLOR_TEXT_4: Primary.B100
+    COLOR_TEXT_1: SurfaceDark.B80
+    COLOR_TEXT_2: SurfaceDark.B90
+    COLOR_TEXT_3: SurfaceDark.B90
+    COLOR_TEXT_4: SurfaceDark.B100
 
     # Accent colors
-    COLOR_ACCENT_1: Secondary.B40
-    COLOR_ACCENT_2: Secondary.B50
-    COLOR_ACCENT_3: Secondary.B60
-    COLOR_ACCENT_4: Secondary.B80
-    COLOR_ACCENT_5: Secondary.B100
+    COLOR_ACCENT_1: AccentDark.B10
+    COLOR_ACCENT_2: Syntax.B30
+    COLOR_ACCENT_3: AccentDark.B30
+    COLOR_ACCENT_4: AccentDark.B40
+    COLOR_ACCENT_5: AccentDark.B50
 
     # Disabled elements
-    COLOR_DISABLED: Primary.B70
-    COLOR_EMPTY: Secondary.B60
+    COLOR_DISABLED: SurfaceDark.B110
+    COLOR_EMPTY: SurfaceDark.B140
 
     # Colors for information and feedback in dialogs
-    COLOR_SUCCESS_1: Success.B100
-    COLOR_SUCCESS_2: Success.B70
-    COLOR_SUCCESS_3: Success.B90
-    COLOR_SUCCESS_4: Success.B110
-    COLOR_SUCCESS_5: Success.B130
-    COLOR_ERROR_1: Error.B70
-    COLOR_ERROR_2: Error.B80
-    COLOR_ERROR_3: Error.B90
-    COLOR_ERROR_4: Error.B120
-    COLOR_ERROR_5: Error.B130
-    COLOR_WARN_1: Warning.B80
-    COLOR_WARN_2: Warning.B90
-    COLOR_WARN_3: Warning.B100
-    COLOR_WARN_4: Warning.B110
-    COLOR_WARN_5: Warning.B120
+    COLOR_SUCCESS_1: SuccessDark.B10
+    COLOR_SUCCESS_2: SuccessDark.B20
+    COLOR_SUCCESS_3: SuccessDark.B30
+    COLOR_SUCCESS_4: SuccessDark.B40
+    COLOR_SUCCESS_5: SuccessDark.B50
+    COLOR_ERROR_1: ErrorDark.B10
+    COLOR_ERROR_2: ErrorDark.B20
+    COLOR_ERROR_3: ErrorDark.B30
+    COLOR_ERROR_4: ErrorDark.B40
+    COLOR_ERROR_5: ErrorDark.B50
+    COLOR_WARN_1: WarningDark.B10
+    COLOR_WARN_2: WarningDark.B20
+    COLOR_WARN_3: WarningDark.B30
+    COLOR_WARN_4: WarningDark.B40
+    COLOR_WARN_5: WarningDark.B50
 
     # Icon colors
-    ICON_1: Primary.B140
-    ICON_2: Tertiary.B110
-    ICON_3: Success.B120
-    ICON_4: Error.B70
-    ICON_5: Warning.B100
-    ICON_6: Primary.B30
-    ICON_7: Quaternary.B100
+    ICON_1: SurfaceDark.B140
+    ICON_2: SurfaceDark.B90
+    ICON_3: SuccessDark.B30
+    ICON_4: ErrorDark.B30
+    ICON_5: WarningDark.B30
+    ICON_6: SurfaceDark.B60
+    ICON_7: Syntax.B110
 
     # Colors for variable explorer, and mixed uses of the color system
     GROUP_1: GroupDark.B10
@@ -81,20 +92,20 @@ semantic_mappings:
     GROUP_12: GroupDark.B120
 
     # Colors for highlight in editor
-    COLOR_HIGHLIGHT_1: Secondary.B10
-    COLOR_HIGHLIGHT_2: Secondary.B20
-    COLOR_HIGHLIGHT_3: Secondary.B30
-    COLOR_HIGHLIGHT_4: Secondary.B50
+    COLOR_HIGHLIGHT_1: Syntax.B190
+    COLOR_HIGHLIGHT_2: Syntax.B200
+    COLOR_HIGHLIGHT_3: Syntax.B210
+    COLOR_HIGHLIGHT_4: Syntax.B220
 
     # Colors for occurrences from find widget
-    COLOR_OCCURRENCE_1: Primary.B10
-    COLOR_OCCURRENCE_2: Primary.B20
-    COLOR_OCCURRENCE_3: Primary.B30
-    COLOR_OCCURRENCE_4: Primary.B50
-    COLOR_OCCURRENCE_5: Primary.B80
+    COLOR_OCCURRENCE_1: SurfaceDark.B10
+    COLOR_OCCURRENCE_2: SurfaceDark.B20
+    COLOR_OCCURRENCE_3: SurfaceDark.B30
+    COLOR_OCCURRENCE_4: Syntax.B30
+    COLOR_OCCURRENCE_5: SurfaceDark.B60
 
     # Editor colors
-    EDITOR_BACKGROUND: Primary.B10
+    EDITOR_BACKGROUND: SurfaceDark.B10
     EDITOR_CURRENTLINE: Syntax.B10
     EDITOR_CURRENTCELL: Syntax.B20
     EDITOR_OCCURRENCE: Syntax.B30
@@ -105,31 +116,68 @@ semantic_mappings:
     EDITOR_NORMAL: [Syntax.B80, false, false]
     EDITOR_KEYWORD: [Syntax.B90, false, false]
     EDITOR_MAGIC: [Syntax.B100, false, false]
-    EDITOR_BUILTIN: [Syntax.B110, true, false]
-    EDITOR_DEFINITION: [Syntax.B120, true, false]
+    EDITOR_BUILTIN: [Syntax.B110, false, false]
+    EDITOR_DEFINITION: [Syntax.B120, false, false]
     EDITOR_COMMENT: [Syntax.B130, false, false]
-    EDITOR_STRING: [Syntax.B140, false, true]
+    EDITOR_STRING: [Syntax.B140, false, false]
     EDITOR_NUMBER: [Syntax.B150, false, false]
     EDITOR_INSTANCE: [Syntax.B160, false, true]
     EDITOR_SYMBOL: [Syntax.B170, false, false]
+    EDITOR_OPERATOR: [Syntax.B180, false, false]
+    EDITOR_WORD_OPERATOR: [Syntax.B90, false, false]
+    EDITOR_PUNCTUATION: [Syntax.B80, false, false]
+    EDITOR_SEPARATOR: [Syntax.B80, false, false]
+    EDITOR_CLASS: [Syntax.B120, false, false]
+    EDITOR_FUNCTION_CALL: [Syntax.B110, false, false]
+    EDITOR_DOCSTRING: [Syntax.B130, false, false]
+    EDITOR_TYPE: [Syntax.B110, false, true]
+    EDITOR_BASECLASS: [Syntax.B120, false, true]
+    EDITOR_STORAGE: [Syntax.B110, false, true]
+    EDITOR_CONSTANT: [Syntax.B150, false, false]
+    EDITOR_VARIABLE: [Syntax.B80, false, false]
+    EDITOR_PARAMETER: [Syntax.B160, false, true]
+    EDITOR_CLASS_REFERENCE: [Syntax.B110, false, true]
+    # Native Sublime brackets retain their neutral color at every depth.
+    EDITOR_BRACKET_1: [Syntax.B80, false, false]
+    EDITOR_BRACKET_2: [Syntax.B80, false, false]
+    EDITOR_BRACKET_3: [Syntax.B80, false, false]
+    # Repeat the native three-color cycle (or unchanged punctuation) at depths 4-6.
+    EDITOR_BRACKET_4: [Syntax.B80, false, false]
+    EDITOR_BRACKET_5: [Syntax.B80, false, false]
+    EDITOR_BRACKET_6: [Syntax.B80, false, false]
 
     # Colors for Spyder and Python logos
     PYTHON_LOGO_UP: Logos.B10
     PYTHON_LOGO_DOWN: Logos.B20
-    SPYDER_LOGO_BACKGROUND: Primary.B20
-    SPYDER_LOGO_WEB: Primary.B140
-    SPYDER_LOGO_SNAKE: Primary.B140
+    SPYDER_LOGO_BACKGROUND: SurfaceDark.B20
+    SPYDER_LOGO_WEB: SurfaceDark.B80
+    SPYDER_LOGO_SNAKE: SurfaceDark.B80
 
     # For special tabs
-    SPECIAL_TABS_SEPARATOR: Primary.B70
-    SPECIAL_TABS_SELECTED: Secondary.B50
+    SPECIAL_TABS_SEPARATOR: SurfaceDark.B20
+    SPECIAL_TABS_SELECTED: SurfaceDark.B10
+    COLOR_STATUSBAR_BACKGROUND: SurfaceDark.B120
+    COLOR_TOOLBAR_BACKGROUND: SurfaceDark.B40
+    COLOR_EDITOR_LINE_NUMBER: SurfaceDark.B180
+    COLOR_STATUSBAR_TEXT: SurfaceDark.B90
+    COLOR_TAB_SELECTED_TEXT: SurfaceDark.B150
+    COLOR_TAB_SELECTED_BACKGROUND: SurfaceDark.B10
+    COLOR_TAB_SELECTED_ACCENT: SurfaceDark.B10
+    COLOR_TAB_TEXT: SurfaceDark.B160
+    COLOR_TAB_HOVER_BACKGROUND: SurfaceDark.B170
+    COLOR_TREE_HOVER_BACKGROUND: SurfaceDark.B130
+    COLOR_TREE_TEXT: SurfaceDark.B80
+    COLOR_TREE_SELECTED_BACKGROUND: AccentDark.B10
+    COLOR_TREE_SELECTED_TEXT: SurfaceDark.B150
+    COLOR_TREE_INACTIVE_SELECTION_BACKGROUND: AccentDark.B20
+    COLOR_TREE_INACTIVE_SELECTION_TEXT: SurfaceDark.B150
 
     # For the heart used to ask for donations
-    COLOR_HEART: Secondary.B80
+    COLOR_HEART: Syntax.B90
 
     # For editor tooltips
-    TIP_TITLE_COLOR: Success.B80
-    TIP_CHAR_HIGHLIGHT_COLOR: Syntax.B170
+    TIP_TITLE_COLOR: Syntax.B110
+    TIP_CHAR_HIGHLIGHT_COLOR: Syntax.B180
 
     # Tooltip opacity (numeric value, not a color reference)
     OPACITY_TOOLTIP: 230
@@ -231,6 +279,46 @@ semantic_mappings:
     EDITOR_NUMBER: [SyntaxLight.B150, false, false]
     EDITOR_INSTANCE: [SyntaxLight.B160, false, true]
     EDITOR_SYMBOL: [SyntaxLight.B170, false, false]
+    # This is a custom Spyder light palette: new roles explicitly retain its
+    # existing shared colors/styles rather than imply an upstream light scheme.
+    EDITOR_OPERATOR: [SyntaxLight.B170, false, false]
+    EDITOR_WORD_OPERATOR: [SyntaxLight.B90, false, false]
+    EDITOR_PUNCTUATION: [SyntaxLight.B170, false, false]
+    EDITOR_SEPARATOR: [SyntaxLight.B170, false, false]
+    EDITOR_CLASS: [SyntaxLight.B120, true, false]
+    EDITOR_FUNCTION_CALL: [SyntaxLight.B80, false, false]
+    EDITOR_DOCSTRING: [SyntaxLight.B140, false, true]
+    EDITOR_TYPE: [SyntaxLight.B110, true, false]
+    EDITOR_BASECLASS: [SyntaxLight.B80, false, false]
+    EDITOR_STORAGE: [SyntaxLight.B90, false, false]
+    EDITOR_CONSTANT: [SyntaxLight.B90, false, false]
+    EDITOR_VARIABLE: [SyntaxLight.B80, false, false]
+    EDITOR_PARAMETER: [SyntaxLight.B80, false, false]
+    EDITOR_CLASS_REFERENCE: [SyntaxLight.B80, false, false]
+    EDITOR_BRACKET_1: [SyntaxLight.B170, false, false]
+    EDITOR_BRACKET_2: [SyntaxLight.B170, false, false]
+    EDITOR_BRACKET_3: [SyntaxLight.B170, false, false]
+    # Repeat the native three-color cycle (or unchanged punctuation) at depths 4-6.
+    EDITOR_BRACKET_4: [SyntaxLight.B170, false, false]
+    EDITOR_BRACKET_5: [SyntaxLight.B170, false, false]
+    EDITOR_BRACKET_6: [SyntaxLight.B170, false, false]
+    COLOR_TOOLBAR_BACKGROUND: Primary.B110
+    COLOR_EDITOR_LINE_NUMBER: CompatLight.B10
+    COLOR_STATUSBAR_BACKGROUND: Primary.B110
+    COLOR_STATUSBAR_TEXT: Primary.B20
+    COLOR_TAB_SELECTED_TEXT: Primary.B20
+    COLOR_TAB_SELECTED_BACKGROUND: Primary.B100
+    COLOR_TAB_SELECTED_ACCENT: Secondary.B70
+    TAB_SELECTED_ACCENT_INNER_EDGE: 1
+    TAB_SELECTED_ACCENT_WIDTH: 3
+    COLOR_TAB_TEXT: Primary.B20
+    COLOR_TAB_HOVER_BACKGROUND: Primary.B110
+    COLOR_TREE_HOVER_BACKGROUND: Primary.B120
+    COLOR_TREE_TEXT: Primary.B20
+    COLOR_TREE_SELECTED_BACKGROUND: Secondary.B130
+    COLOR_TREE_SELECTED_TEXT: Primary.B20
+    COLOR_TREE_INACTIVE_SELECTION_BACKGROUND: Primary.B120
+    COLOR_TREE_INACTIVE_SELECTION_TEXT: Primary.B20
 
     # Colors for Spyder and Python logos
     PYTHON_LOGO_UP: Logos.B10
@@ -254,31 +342,52 @@ semantic_mappings:
     OPACITY_TOOLTIP: 230
 
 css_overrides:
+  --header-bg-color:
+    dark: HelpDark.B10
+    light: SPECIAL_TABS_SELECTED
+  --header-text-color:
+    dark: HelpDark.B20
+    light: COLOR_BACKGROUND_1
+  --syn-error-bg:
+    dark: HelpDark.B30
+    light: COLOR_ERROR_5
+  --warning-bg:
+    dark: HelpDark.B40
+    light: COLOR_WARN_2
+  --syn-operator:
+    dark: Syntax.B180
+    light: EDITOR_SYMBOL
   --note-bg: 
     dark: COLOR_HIGHLIGHT_2
     light: COLOR_ACCENT_1
   --border-light: 
-    dark: COLOR_ACCENT_2
+    dark: SurfaceDark.B60
     light: COLOR_ACCENT_4
   --link-color: 
-    dark: Tertiary.B80
+    dark: Syntax.B110
     light: Tertiary.B70
   --hover-color: 
-    dark: Tertiary.B70
+    dark: SurfaceDark.B70
     light: Tertiary.B80
 
 appeal_overrides:
   --link-color: 
-    dark: Tertiary.B80
+    dark: Syntax.B110
     light: Tertiary.B70
   --hover-color: 
-    dark: Tertiary.B70
+    dark: SurfaceDark.B70
     light: Tertiary.B80
 
 pydoc_overrides:
+  --header-bg-color:
+    dark: HelpDark.B10
+    light: SPECIAL_TABS_SELECTED
+  --header-text-color:
+    dark: HelpDark.B20
+    light: COLOR_BACKGROUND_1
   --link-color: 
-    dark: Tertiary.B80
+    dark: Syntax.B110
     light: Tertiary.B70
   --hover-color: 
-    dark: Tertiary.B70
+    dark: SurfaceDark.B70
     light: Tertiary.B80

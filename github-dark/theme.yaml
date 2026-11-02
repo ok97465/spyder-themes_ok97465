@@ -1,0 +1,19 @@
+---
+# Adapted from Primer's official GitHub Dark theme (MIT).
+# Upstream revision: cd78e5e4e7bcf132a6f428ae0f32264bb1b729cf
+# https://github.com/primer/github-vscode-theme/blob/cd78e5e4e7bcf132a6f428ae0f32264bb1b729cf/src/theme.js
+# https://github.com/primer/github-vscode-theme/blob/cd78e5e4e7bcf132a6f428ae0f32264bb1b729cf/src/colors.js
+# Palette dependency: @primer/primitives 7.10.0 (the exact upstream version).
+# Uses modern GitHub Dark Default, not the legacy GitHub Dark classic palette.
+# Native editor background, foreground and syntax colors are preserved.
+# Widget shade ramps and opaque alpha composites are adapted for Qt.
+name: github-dark
+display_name: GitHub Dark
+description: A Spyder adaptation of the official GitHub Dark Default theme
+author: Primer / GitHub; adapted for Spyder
+version: 1.1.0
+license: MIT
+tags: [github, dark]
+variants:
+  dark: true
+  light: false

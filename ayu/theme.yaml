@@ -1,0 +1,23 @@
+# Ayu Dark and Light, adapted to Spyder's semantic slots.
+# Official palette: https://github.com/ayu-theme/ayu-colors/tree/d461f02983546636bc6e1e0c48190fdb74036426/themes
+# Resolved colors: https://github.com/ayu-theme/vscode-ayu/tree/7f438df22446f02e79cdfc2f3771b0b273f34654
+# Sources: ayu-dark.json and ayu-light.json; upstream MIT notices in LICENSE.
+# Named surface and syntax colors preserve upstream values. Extra widget shades
+# are RGB blends; translucent editor highlights are flattened over editor.bg.
+---
+name: ayu
+display_name: Ayu
+description: Ayu Dark and Light palettes adapted for the Spyder interface and editor
+author: Ike Kurghinyan (@dempfi), Konstantin Pschera, and Ayu contributors; Spyder adaptation
+version: 1.1.0
+license: MIT
+tags:
+- ayu
+- minimal
+- warm
+- dark
+- light
+variants:
+  dark: true
+  light: true
+# All twenty optional Python roles and independent widget colors are mapped.

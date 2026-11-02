@@ -1,0 +1,18 @@
+---
+# Adapted from Primer's official GitHub Dark Dimmed theme (MIT).
+# Upstream revision: cd78e5e4e7bcf132a6f428ae0f32264bb1b729cf
+# https://github.com/primer/github-vscode-theme/blob/cd78e5e4e7bcf132a6f428ae0f32264bb1b729cf/src/theme.js
+# https://github.com/primer/github-vscode-theme/blob/cd78e5e4e7bcf132a6f428ae0f32264bb1b729cf/src/colors.js
+# Palette dependency: @primer/primitives 7.10.0 (the exact upstream version).
+# Native editor background, foreground and syntax colors are preserved.
+# Widget shade ramps and opaque alpha composites are adapted for Qt.
+name: github-dark-dimmed
+display_name: GitHub Dark Dimmed
+description: A Spyder adaptation of the official GitHub Dark Dimmed theme
+author: Primer / GitHub; adapted for Spyder
+version: 1.1.0
+license: MIT
+tags: [github, dark, dimmed, low-contrast]
+variants:
+  dark: true
+  light: false

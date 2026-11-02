@@ -1,0 +1,16 @@
+---
+# Source: Avetis.tokyo-night 1.0.2, themes/tokyo-night-alt.json.
+# https://github.com/AvetisDN/tokyo-dark-theme/blob/d075816a68955bffcb4dae9cf26a44538b7619a1/themes/tokyo-night-alt.json
+# Installed extension matches that revision byte-for-byte.
+# SHA-256: f0ec30823dff95e55f024f38ecc321fee15d24726825500fb9e8ed1363d6e0fb
+# This is the VS Code Tokyo Night AltSynt variant, separate from folke/tokyonight.nvim.
+name: tokyo-night-altsynt
+display_name: Tokyo Night AltSynt
+description: Avetis Tokyo Night AltSynt 1.0.2 colors and Python syntax adapted for Spyder
+author: AvetisDN; adapted for Spyder
+version: 1.1.0
+license: MIT
+tags: [tokyo-night, altsynt, avetis, vscode, dark]
+variants:
+  dark: true
+  light: false

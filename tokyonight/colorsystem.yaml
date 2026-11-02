@@ -1,0 +1,331 @@
+---
+# Tokyo Night colors from folke/tokyonight.nvim (Apache-2.0); adapted for Spyder.
+# Pinned revision: cdc07ac78467a233fd62c493de29a17e0cf2b2b6
+# Night: https://github.com/folke/tokyonight.nvim/blob/cdc07ac78467a233fd62c493de29a17e0cf2b2b6/extras/lua/tokyonight_night.lua
+# Day: https://github.com/folke/tokyonight.nvim/blob/cdc07ac78467a233fd62c493de29a17e0cf2b2b6/extras/lua/tokyonight_day.lua
+# Surface, accent, group and syntax colors preserve upstream hex values except
+# B160 entries explicitly marked as Spyder UI adaptations.
+# The six UI color ramps interpolate black -> canonical Night accent -> white.
+TokyoNightSurfaceDark:
+  B0: '#15161E'  # black
+  B10: '#16161E'  # bg_dark
+  B20: '#1A1B26'  # bg
+  B30: '#292E42'  # bg_highlight
+  B40: '#283457'  # bg_visual
+  B50: '#3B4261'  # fg_gutter
+  B60: '#414868'  # terminal_black
+  B70: '#565F89'  # comment
+  B80: '#545C7E'  # dark3
+  B90: '#737AA2'  # dark5
+  B100: '#A9B1D6'  # fg_dark
+  B110: '#C0CAF5'  # fg
+  B120: '#394B70'  # blue7
+  B130: '#3D59A1'  # blue0
+  B140: '#0C0E14'  # bg_dark1
+  B150: '#27A1B9'  # border_highlight
+  B160: '#8E96BB'  # Spyder UI secondary text between fg_dark and dark5
+TokyoNightSurfaceLight:
+  B0: '#B4B5B9'  # black
+  B10: '#D0D5E3'  # bg_dark
+  B20: '#E1E2E7'  # bg
+  B30: '#C4C8DA'  # bg_highlight
+  B40: '#B7C1E3'  # bg_visual
+  B50: '#A8AECB'  # fg_gutter
+  B60: '#A1A6C5'  # terminal_black
+  B70: '#848CB5'  # comment
+  B80: '#8990B3'  # dark3
+  B90: '#68709A'  # dark5
+  B100: '#6172B0'  # fg_dark
+  B110: '#3760BF'  # fg
+  B120: '#92A6D5'  # blue7
+  B130: '#7890DD'  # blue0
+  B140: '#C1C9DF'  # bg_dark1
+  B150: '#4094A3'  # border_highlight
+  B160: '#747CA4'  # Spyder UI muted text, retaining the Day blue-gray hue
+TokyoNightBlue:
+  B0: '#000000'
+  B10: '#0C1019'
+  B20: '#182031'
+  B30: '#25314A'
+  B40: '#314163'
+  B50: '#3D517C'
+  B60: '#496194'
+  B70: '#5571AD'
+  B80: '#6282C6'
+  B90: '#6E92DE'
+  B100: '#7AA2F7'  # upstream blue
+  B110: '#95B5F9'
+  B120: '#AFC7FA'
+  B130: '#CADAFC'
+  B140: '#E4ECFD'
+  B150: '#FFFFFF'
+TokyoNightCyan:
+  B0: '#000000'
+  B10: '#0D151A'
+  B20: '#192933'
+  B30: '#263E4D'
+  B40: '#325366'
+  B50: '#3F6880'
+  B60: '#4B7C99'
+  B70: '#5891B3'
+  B80: '#64A6CC'
+  B90: '#71BAE6'
+  B100: '#7DCFFF'  # upstream cyan
+  B110: '#97D9FF'
+  B120: '#B1E2FF'
+  B130: '#CBECFF'
+  B140: '#E5F5FF'
+  B150: '#FFFFFF'
+TokyoNightPurple:
+  B0: '#000000'
+  B10: '#100C16'
+  B20: '#1F192B'
+  B30: '#2F2541'
+  B40: '#3F3256'
+  B50: '#4F3E6C'
+  B60: '#5E4A82'
+  B70: '#6E5797'
+  B80: '#7E63AD'
+  B90: '#8D70C2'
+  B100: '#9D7CD8'  # upstream purple
+  B110: '#B196E0'
+  B120: '#C4B0E8'
+  B130: '#D8CBEF'
+  B140: '#EBE5F7'
+  B150: '#FFFFFF'
+TokyoNightGreen:
+  B0: '#000000'
+  B10: '#10150B'
+  B20: '#202915'
+  B30: '#2F3E20'
+  B40: '#3F522A'
+  B50: '#4F6735'
+  B60: '#5F7C40'
+  B70: '#6F904A'
+  B80: '#7EA555'
+  B90: '#8EB95F'
+  B100: '#9ECE6A'  # upstream green
+  B110: '#B1D888'
+  B120: '#C5E2A6'
+  B130: '#D8EBC3'
+  B140: '#ECF5E1'
+  B150: '#FFFFFF'
+TokyoNightRed:
+  B0: '#000000'
+  B10: '#190C0E'
+  B20: '#31181C'
+  B30: '#4A232B'
+  B40: '#632F39'
+  B50: '#7C3B47'
+  B60: '#944755'
+  B70: '#AD5363'
+  B80: '#C65E72'
+  B90: '#DE6A80'
+  B100: '#F7768E'  # upstream red
+  B110: '#F991A5'
+  B120: '#FAADBB'
+  B130: '#FCC8D2'
+  B140: '#FDE4E8'
+  B150: '#FFFFFF'
+TokyoNightYellow:
+  B0: '#000000'
+  B10: '#16120A'
+  B20: '#2D2315'
+  B30: '#43351F'
+  B40: '#5A462A'
+  B50: '#705834'
+  B60: '#86693E'
+  B70: '#9D7A49'
+  B80: '#B38C53'
+  B90: '#CA9E5E'
+  B100: '#E0AF68'  # upstream yellow
+  B110: '#E6BF86'
+  B120: '#ECCFA4'
+  B130: '#F3DFC3'
+  B140: '#F9EFE1'
+  B150: '#FFFFFF'
+TokyoNightAccentsDark:
+  B10: '#7AA2F7'  # blue
+  B20: '#2AC3DE'  # blue1
+  B30: '#7DCFFF'  # cyan
+  B40: '#89DDFF'  # blue5
+  B50: '#9ECE6A'  # green
+  B60: '#73DACA'  # green1
+  B70: '#F7768E'  # red
+  B80: '#DB4B4B'  # red1
+  B90: '#FF9E64'  # orange
+  B100: '#E0AF68'  # yellow
+  B110: '#BB9AF7'  # magenta
+  B120: '#9D7CD8'  # purple
+  B130: '#1ABC9C'  # teal
+  B140: '#3D59A1'  # blue0
+  B150: '#394B70'  # blue7
+TokyoNightAccentsLight:
+  B10: '#2E7DE9'  # blue
+  B20: '#188092'  # blue1
+  B30: '#007197'  # cyan
+  B40: '#006A83'  # blue5
+  B50: '#587539'  # green
+  B60: '#387068'  # green1
+  B70: '#F52A65'  # red
+  B80: '#C64343'  # red1
+  B90: '#B15C00'  # orange
+  B100: '#8C6C3E'  # yellow
+  B110: '#9854F1'  # magenta
+  B120: '#7847BD'  # purple
+  B130: '#118C74'  # teal
+  B140: '#7890DD'  # blue0
+  B150: '#92A6D5'  # blue7
+  B160: '#A83939'  # Spyder UI error foreground: darkened Day error/red1
+TokyoNightGroupsDark:
+  B10: '#F7768E'  # red
+  B20: '#7AA2F7'  # blue
+  B30: '#9ECE6A'  # green
+  B40: '#BB9AF7'  # magenta
+  B50: '#7DCFFF'  # cyan
+  B60: '#FF9E64'  # orange
+  B70: '#9D7CD8'  # purple
+  B80: '#1ABC9C'  # teal
+  B90: '#E0AF68'  # yellow
+  B100: '#73DACA'  # green1
+  B110: '#2AC3DE'  # blue1
+  B120: '#C0CAF5'  # fg
+TokyoNightGroupsLight:
+  B10: '#F52A65'  # red
+  B20: '#2E7DE9'  # blue
+  B30: '#587539'  # green
+  B40: '#9854F1'  # magenta
+  B50: '#007197'  # cyan
+  B60: '#B15C00'  # orange
+  B70: '#7847BD'  # purple
+  B80: '#118C74'  # teal
+  B90: '#8C6C3E'  # yellow
+  B100: '#387068'  # green1
+  B110: '#188092'  # blue1
+  B120: '#3760BF'  # fg
+TokyoNightSyntaxDark:
+  B10: '#292E42'  # EDITOR_CURRENTLINE: CursorLine
+  B20: '#1A1B26'  # EDITOR_CURRENTCELL: Normal background
+  B30: '#3B4261'  # EDITOR_OCCURRENCE: LspReferenceText background
+  B40: '#7AA2F7'  # EDITOR_CTRLCLICK: Directory / Title
+  B50: '#16161E'  # EDITOR_SIDEAREAS: sidebar background
+  B60: '#243E4A'  # EDITOR_MATCHED_P: DiffAdd background
+  B70: '#4A272F'  # EDITOR_UNMATCHED_P: DiffDelete background
+  B80: '#C0CAF5'  # EDITOR_NORMAL: Normal
+  B90: '#9D7CD8'  # EDITOR_KEYWORD: @keyword
+  B100: '#7DCFFF'  # EDITOR_MAGIC: PreProc / @attribute
+  B110: '#2AC3DE'  # EDITOR_BUILTIN: Special / @function.builtin
+  B120: '#7AA2F7'  # EDITOR_DEFINITION: Function
+  B130: '#565F89'  # EDITOR_COMMENT: Comment
+  B140: '#9ECE6A'  # EDITOR_STRING: String
+  B150: '#FF9E64'  # EDITOR_NUMBER: Constant / Number
+  B160: '#F7768E'  # EDITOR_INSTANCE: @variable.builtin (self / this)
+  B170: '#89DDFF'  # EDITOR_SYMBOL: @operator / @punctuation.delimiter
+TokyoNightSyntaxLight:
+  B10: '#C4C8DA'  # EDITOR_CURRENTLINE: CursorLine
+  B20: '#E1E2E7'  # EDITOR_CURRENTCELL: Normal background
+  B30: '#A8AECB'  # EDITOR_OCCURRENCE: LspReferenceText background
+  B40: '#2E7DE9'  # EDITOR_CTRLCLICK: Directory / Title
+  B50: '#D0D5E3'  # EDITOR_SIDEAREAS: sidebar background
+  B60: '#B7CED5'  # EDITOR_MATCHED_P: DiffAdd background
+  B70: '#DABABE'  # EDITOR_UNMATCHED_P: DiffDelete background
+  B80: '#3760BF'  # EDITOR_NORMAL: Normal
+  B90: '#7847BD'  # EDITOR_KEYWORD: @keyword
+  B100: '#007197'  # EDITOR_MAGIC: PreProc / @attribute
+  B110: '#188092'  # EDITOR_BUILTIN: Special / @function.builtin
+  B120: '#2E7DE9'  # EDITOR_DEFINITION: Function
+  B130: '#848CB5'  # EDITOR_COMMENT: Comment
+  B140: '#587539'  # EDITOR_STRING: String
+  B150: '#B15C00'  # EDITOR_NUMBER: Constant / Number
+  B160: '#F52A65'  # EDITOR_INSTANCE: @variable.builtin (self / this)
+  B170: '#006A83'  # EDITOR_SYMBOL: @operator / @punctuation.delimiter
+Logos:
+  B10: '#3775A9'
+  B20: '#FFD444'
+  B30: '#414141'
+  B40: '#FAFAFA'
+  B50: '#8C0000'
+
+
+# UI-only selection/hover fills adapted for Qt menus with fixed foregrounds.
+TokyoNightWidgetFillDark:
+  B10: '#394B70'
+  B20: '#395395'
+TokyoNightWidgetFillLight:
+  B10: '#E0E2EB'
+  B20: '#DDE2F2'
+
+
+# Native roles added after the source audit. Neovim TabLine/StatusLine and Treesitter colors; Qt tree-row hover/selection project native CursorLine.
+# SHA-256 tokyonight_night.lua: 30cc3cd607e69d8e951fca713016cef239e7e8b748af94363cfa737c5602cc86
+# SHA-256 tokyonight_day.lua: 32e64b3fa2788d66a5fe87e16d5b0ce58520227f4eccc5dc89572de606f59a2e
+TokyoNightNativeUiDark:
+  B10: '#16161E'
+  B20: '#A9B1D6'
+  B30: '#16161E'
+  B40: '#3B4261'
+  B50: '#3B4261'
+  B60: '#15161E'
+  B70: '#7AA2F7'
+  B80: '#16161E'
+  B90: '#7AA2F7'
+  B100: '#292E42'
+  B110: '#292E42'
+  B120: '#292E42'
+  B130: '#A9B1D6'
+  B140: '#A9B1D6'
+  B150: '#A9B1D6'
+TokyoNightPythonDark:
+  B10: '#89DDFF'
+  B20: '#A9B1D6'
+  B30: '#89DDFF'
+  B40: '#2AC3DE'
+  B50: '#7AA2F7'
+  B60: '#E0AF68'
+  B70: '#27A1B9'
+  B80: '#2AC3DE'
+  B90: '#BB9AF7'
+  B100: '#FF9E64'
+  B110: '#C0CAF5'
+  B120: '#E0AF68'
+  B130: '#2AC3DE'
+  B140: '#A9B1D6'
+  B150: '#A9B1D6'
+  B160: '#A9B1D6'
+TokyoNightNativeUiLight:
+  B10: '#D0D5E3'
+  B20: '#6172B0'
+  B30: '#D0D5E3'
+  B40: '#A8AECB'
+  B50: '#A8AECB'
+  B60: '#B4B5B9'
+  B70: '#2E7DE9'
+  B80: '#D0D5E3'
+  B90: '#2E7DE9'
+  B100: '#C4C8DA'
+  B110: '#C4C8DA'
+  B120: '#C4C8DA'
+  B130: '#6172B0'
+  B140: '#6172B0'
+  B150: '#6172B0'
+TokyoNightPythonLight:
+  B10: '#006A83'
+  B20: '#6172B0'
+  B30: '#006A83'
+  B40: '#188092'
+  B50: '#2E7DE9'
+  B60: '#8C6C3E'
+  B70: '#4094A3'
+  B80: '#188092'
+  B90: '#9854F1'
+  B100: '#B15C00'
+  B110: '#3760BF'
+  B120: '#8C6C3E'
+  B130: '#188092'
+  B140: '#6172B0'
+  B150: '#6172B0'
+  B160: '#6172B0'
+
+# Generic Qt text remains adapted for readable variable-explorer cells.
+# Tree text and inactive selection labels now have separate native UI roles.
+# Python word operators follow keyword.operator (Ayu/Material) or @keyword.operator (Tokyo Night).

@@ -1,0 +1,213 @@
+---
+# Palette reference: Sublime Text 4 build 4215 (2026-09-25).
+# https://download.sublimetext.com/sublime_text_build_4215_x64.tar.xz
+# Mariana.sublime-color-scheme in Packages/Color Scheme - Default.sublime-package
+# Adaptive.sublime-theme in Packages/Theme - Default.sublime-package
+# Archive SHA-256: c153f418d3ab26b90ecce8c02a82e4e961025ed7a65f7e25060a5457d43e88d9
+# Upstream licensing is unspecified; see LICENSE for attribution and source notes.
+# Mariana HSL colors are converted to opaque #RRGGBB for Qt.
+# blue3 -> background; white3 -> foreground; blue-vibrant -> accent.
+# Native line_highlight and selection (blue2 at 70%) flatten to #4D5864.
+# Adaptive medium_dark_bg (60% background, 40% black) -> #1D2227 sidebar.
+# Adaptive file_medium_dark is used, as in the reference screenshots.
+# General widgets use B20 (chrome), independently of B10 (editor).
+# B30 = 50% editor background (status/output); B40 = chrome (toolbar/tabs).
+# B50 = editor (active tabs); B60 = white at 30% over chrome (icons/scroll).
+# Native accent blue is kept for links; tab accents use the editor background.
+# Syntax B10..B170 follow the editor slots documented in catppuccin-mocha.
+# Optional formatted slots distinguish functions/classes, calls, types, docstrings,
+# operators, separators and punctuation in the companion Spyder fork.
+# Stock Spyder uses white punctuation and teal definitions as its shared fallback.
+# Comments and other editor text retain upstream plain font styles.
+# Current cell and bracket fills are adapted; Sublime uses bracket underlines.
+# B190..B220 are progressively stronger native selection overlays.
+# Group fills blend native hues 60% over the editor background before Spyder's overlay.
+# Native editor/selection colors can trigger ThemeWeaver's stricter contrast advisories.
+MarianaNeutral:
+  B0: '#000000'
+  B10: '#161617'
+  B20: '#2B2C2F'
+  B30: '#414346'
+  B40: '#56595D'
+  B50: '#6C6F74'
+  B60: '#82858C'
+  B70: '#979BA3'
+  B80: '#ADB2BA'
+  B90: '#C2C8D2'
+  B100: '#D8DEE9'
+  B110: '#E0E5ED'
+  B120: '#E8EBF2'
+  B130: '#EFF2F6'
+  B140: '#F7F8FB'
+  B150: '#FFFFFF'
+MarianaBlue:
+  B0: '#000000'
+  B10: '#090F15'
+  B20: '#121F2B'
+  B30: '#1C2E40'
+  B40: '#253D56'
+  B50: '#2E4C6B'
+  B60: '#375C80'
+  B70: '#406B96'
+  B80: '#4A7AAB'
+  B90: '#538AC1'
+  B100: '#5C99D6'
+  B110: '#7DADDE'
+  B120: '#9DC2E6'
+  B130: '#BED6EF'
+  B140: '#DEEBF7'
+  B150: '#FFFFFF'
+MarianaSuccess:
+  B0: '#000000'
+  B10: '#0F140F'
+  B20: '#1F281E'
+  B30: '#2E3C2C'
+  B40: '#3D503B'
+  B50: '#4C644A'
+  B60: '#5C7759'
+  B70: '#6B8B68'
+  B80: '#7A9F76'
+  B90: '#8AB385'
+  B100: '#99C794'
+  B110: '#ADD2A9'
+  B120: '#C2DDBF'
+  B130: '#D6E9D4'
+  B140: '#EBF4EA'
+  B150: '#FFFFFF'
+MarianaError:
+  B0: '#000000'
+  B10: '#180A0A'
+  B20: '#2F1314'
+  B30: '#471C1F'
+  B40: '#5E2629'
+  B50: '#763033'
+  B60: '#8E393D'
+  B70: '#A54247'
+  B80: '#BD4C52'
+  B90: '#D4565C'
+  B100: '#EC5F66'
+  B110: '#F07F85'
+  B120: '#F49FA3'
+  B130: '#F7BFC2'
+  B140: '#FBDFE0'
+  B150: '#FFFFFF'
+MarianaWarning:
+  B0: '#000000'
+  B10: '#191109'
+  B20: '#322312'
+  B30: '#4B341A'
+  B40: '#644623'
+  B50: '#7C572C'
+  B60: '#956835'
+  B70: '#AE7A3E'
+  B80: '#C78B46'
+  B90: '#E09D4F'
+  B100: '#F9AE58'
+  B110: '#FABE79'
+  B120: '#FBCE9B'
+  B130: '#FDDFBC'
+  B140: '#FEEFDE'
+  B150: '#FFFFFF'
+MarianaSurfaceDark:
+  B10: '#303841'
+  B20: '#1D2227'
+  B30: '#181C20'
+  B40: '#1D2227'
+  B50: '#303841'
+  B60: '#616468'
+  B70: '#D6D7D9'
+  B80: '#D6D7D9'
+  B90: '#C1C3C6'
+  B100: '#A2A5A9'
+  B110: '#8E9093'
+  B120: '#2A3139'  # Inactive tab hover: editor 70%, chrome 30%.
+  B130: '#2A2F34'  # Sidebar row hover: white 6% over chrome.
+  B140: '#454A4E'  # Focused row selection: white 18% over chrome.
+  B150: '#353A3E'  # Inactive row selection: white 18%, opacity 0.6.
+  B160: '#BBBDBE'  # Inactive tab text: white 70% over chrome.
+  B170: '#FFFFFF'  # Active tab text.
+  B180: '#808080'  # Existing Qt gutter fallback; upstream omits gutter_foreground.
+MarianaAccentDark:
+  B10: '#344250'
+  B20: '#4D5864'
+  B30: '#558AC0'
+  B40: '#5C99D6'
+  B50: '#80ACD9'
+  B60: '#A3C3E3'
+MarianaSuccessDark:
+  B10: '#99C794'
+  B20: '#89B288'
+  B30: '#99C794'
+  B40: '#ADD2A9'
+  B50: '#CCE3CA'
+MarianaErrorDark:
+  B10: '#EC5F66'
+  B20: '#D05960'
+  B30: '#EC5F66'
+  B40: '#F07F85'
+  B50: '#F6AFB2'
+MarianaWarningDark:
+  B10: '#F9AE58'
+  B20: '#DB9C55'
+  B30: '#F9AE58'
+  B40: '#FABE79'
+  B50: '#FCD6AC'
+MarianaGroupDark:
+  B10: '#A14F57'
+  B20: '#8A7091'
+  B30: '#507294'
+  B40: '#6F8E73'
+  B50: '#A97F4F'
+  B60: '#4C8286'
+  B70: '#4A729A'
+  B80: '#777E89'
+  B90: '#A9604F'
+  B100: '#A98E54'
+  B110: '#8A7091'
+  B120: '#959CA6'
+MarianaSyntaxDark:
+  B10: '#4D5864'
+  B20: '#303841'  # Sublime has no separate current-cell fill.
+  B30: '#4D5864'
+  B40: '#6699CC'
+  B50: '#303841'
+  B60: '#436A6F'
+  B70: '#7B4850'
+  B80: '#D8DEE9'
+  B90: '#C695C6'
+  B100: '#6699CC'
+  B110: '#6699CC'
+  B120: '#5FB4B4'
+  B130: '#A6ACB9'
+  B140: '#99C794'
+  B150: '#F9AE58'
+  B160: '#EC5F66'
+  B170: '#FFFFFF'
+  B190: '#37404A'
+  B200: '#3E4852'
+  B210: '#46505B'
+  B220: '#4D5864'
+MarianaPythonDark:
+  B10: '#F97B58'  # keyword.operator
+  B20: '#FFFFFF'  # punctuation.section
+  B30: '#A6ACB9'  # punctuation.separator/accessor
+  B40: '#F9AE58'  # entity.name.class
+  B50: '#6699CC'  # variable.function (calls)
+  B60: '#A6ACB9'  # comment.block.documentation
+  B70: '#6699CC'  # support.type (italic)
+  B80: '#5FB4B4'  # entity.other.inherited-class (italic)
+  B90: '#C695C6'  # storage.type (italic def/class)
+  B100: '#EC5F66'  # constant.language (italic)
+  B110: '#D8DEE9'  # Ordinary variables have no overriding native scope rule.
+  B120: '#F9AE58'  # variable.parameter (plain, not italic).
+MarianaHelpDark:
+  B10: '#1D2227'
+  B20: '#D8DEE9'
+  B30: '#433C45'
+  B40: '#444443'
+Logos:
+  B10: '#3775A9'
+  B20: '#FFD444'
+  B30: '#414141'
+  B40: '#FAFAFA'
+  B50: '#8C0000'

@@ -1,0 +1,29 @@
+Attribution and source notice
+
+Dark palette and interface reference:
+  Sublime Text 4 build 4215 (25 September 2026)
+  Monokai.sublime-color-scheme: Sublime HQ Pty Ltd, Wimer Hazenberg
+  Adaptive.sublime-theme: Sublime HQ Pty Ltd
+  https://www.sublimetext.com/download
+  https://download.sublimetext.com/sublime_text_build_4215_x64.tar.xz
+
+Archive SHA-256:
+  c153f418d3ab26b90ecce8c02a82e4e961025ed7a65f7e25060a5457d43e88d9
+Monokai.sublime-color-scheme SHA-256:
+  beab560cf19fe332d10ceeadc9eb37b2c08437ecaf6f80b16b25bf09e5f701a8
+
+The upstream Color Scheme - Default and Theme - Default packages do not
+include an open-source license notice. LicenseRef-Upstream-Unspecified
+records that fact; this notice does not grant or imply an upstream license.
+The MIT license of the separate sublimehq/Packages repository is not asserted
+to cover these bundled resources.
+
+The light variant retains the previous custom Spyder adaptation by Andres
+Montoya and the Spyder Team. It is not an official Sublime Text light scheme.
+The earlier theme metadata declared that adaptation MIT; this notice does not
+relicense those existing contributions or assert a new license for them.
+
+This directory contains Spyder-specific YAML palette and semantic mappings.
+It does not bundle original Sublime Text theme files, application code,
+icons, textures, or fonts. Bracket fills, variable explorer groups, and
+Help/Appeal/Pydoc colors are adaptations for Qt/Spyder.

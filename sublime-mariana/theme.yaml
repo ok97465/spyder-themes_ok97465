@@ -1,0 +1,18 @@
+---
+# Palette reference: Sublime Text 4 build 4215 (2026-09-25).
+# https://download.sublimetext.com/sublime_text_build_4215_x64.tar.xz
+# Packages/Color Scheme - Default.sublime-package: Mariana.sublime-color-scheme
+# Packages/Theme - Default.sublime-package: Adaptive.sublime-theme
+# Mariana supplies editor colors; Adaptive derives the surrounding UI from them.
+# Qt widget shades and opaque highlight fills are adapted for Spyder.
+# No upstream open-source license is specified in these packages; see LICENSE.
+name: sublime-mariana
+display_name: Sublime Mariana
+description: Sublime Text 4 Adaptive/Mariana with native editor colors and dark chrome
+author: Sublime HQ Pty Ltd, Dmitri Voronianski; adapted for Spyder
+version: 1.2.0
+license: LicenseRef-Upstream-Unspecified
+tags: [sublime-text, mariana, adaptive, dark]
+variants:
+  dark: true
+  light: false

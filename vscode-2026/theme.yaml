@@ -1,0 +1,16 @@
+---
+# Adapted from Microsoft VS Code Dark 2026 / Light 2026 (MIT).
+# Upstream revision: 1306698e328e5e531f5e632301d30020aa994eff
+# https://github.com/microsoft/vscode/blob/1306698e328e5e531f5e632301d30020aa994eff/extensions/theme-defaults/themes/2026-dark.json
+# https://github.com/microsoft/vscode/blob/1306698e328e5e531f5e632301d30020aa994eff/extensions/theme-defaults/themes/2026-light.json
+# UI-only intermediate shades and opaque alpha composites are adapted for Qt.
+name: vscode-2026
+display_name: VS Code 2026
+description: A Spyder adaptation of the official VS Code Dark 2026 and Light 2026 themes
+author: Microsoft Corporation; adapted for Spyder
+version: 1.1.0
+license: MIT
+tags: [vscode, '2026', modern, dark, light]
+variants:
+  dark: true
+  light: true

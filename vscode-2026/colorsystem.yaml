@@ -1,0 +1,344 @@
+---
+# Adapted from Microsoft VS Code Dark 2026 / Light 2026 (MIT).
+# Upstream revision: 1306698e328e5e531f5e632301d30020aa994eff
+# https://github.com/microsoft/vscode/blob/1306698e328e5e531f5e632301d30020aa994eff/extensions/theme-defaults/themes/2026-dark.json
+# https://github.com/microsoft/vscode/blob/1306698e328e5e531f5e632301d30020aa994eff/extensions/theme-defaults/themes/2026-light.json
+# UI-only intermediate shades and opaque alpha composites are adapted for Qt.
+# Syntax B10..B170 follow the editor slot order documented in catppuccin-mocha.
+# Syntax B190..B220 use native word/selection alpha composites.
+# The include chain is 2026 -> *_modern -> *_plus -> *_vs; included rules
+# remain active. More-specific inherited support.function, support.type/class,
+# constant.numeric/language, keyword.control and keyword.operator.logical.python
+# override the later generic 2026 support/constant/keyword/entity colors.
+# Python TextMate output was checked with the pinned MagicPython grammar.
+# Contextual calls/classes/variables/parameters use semantic fallback probes
+# from src/vs/platform/theme/common/tokenClassificationRegistry.ts: function ->
+# entity.name.function, class -> entity.name.type.class, variable ->
+# variable.other.readwrite, parameter -> variable.parameter. No external LSP
+# inference is provided by this port. Native body self/cls use variable.language.
+# Bracket colors and enabled-by-default depth cycling come from the pinned
+# editorColorRegistry.ts and core/misc/textModelDefaults.ts.
+# Sidebar/tab/status/gutter colors come directly from the 2026 JSON; alpha
+# tree selections are flattened over sideBar.background for Qt.
+# Variable Explorer group fills have no upstream equivalent: native hues are
+# blended 60% over the sidebar before Spyder applies its own cell overlay.
+VSCode2026Neutral:
+  B0: '#000000'
+  B10: '#121314'
+  B20: '#191A1B'
+  B30: '#202122'
+  B40: '#242526'
+  B50: '#2A2B2C'
+  B60: '#333536'
+  B70: '#555555'
+  B80: '#707070'
+  B90: '#8C8C8C'
+  B100: '#BFBFBF'
+  B110: '#D8D8D8'
+  B120: '#E4E5E6'
+  B130: '#FAFAFD'
+  B140: '#FFFFFF'
+  B150: '#FFFFFF'
+VSCode2026Blue:
+  B0: '#000000'
+  B10: '#060F13'
+  B20: '#0B1E26'
+  B30: '#112C38'
+  B40: '#173B4B'
+  B50: '#1C4A5E'
+  B60: '#225971'
+  B70: '#286884'
+  B80: '#2E7696'
+  B90: '#3385A9'
+  B100: '#3994BC'
+  B110: '#61A9C9'
+  B120: '#88BFD7'
+  B130: '#B0D4E4'
+  B140: '#D7EAF2'
+  B150: '#FFFFFF'
+VSCode2026Success:
+  B0: '#000000'
+  B10: '#0C140E'
+  B20: '#17281D'
+  B30: '#223C2C'
+  B40: '#2E503A'
+  B50: '#3A6448'
+  B60: '#457957'
+  B70: '#508D66'
+  B80: '#5CA174'
+  B90: '#68B582'
+  B100: '#73C991'
+  B110: '#8FD4A7'
+  B120: '#ABDFBD'
+  B130: '#C7E9D3'
+  B140: '#E3F4E9'
+  B150: '#FFFFFF'
+VSCode2026Error:
+  B0: '#000000'
+  B10: '#180E0B'
+  B20: '#311B17'
+  B30: '#492822'
+  B40: '#62362D'
+  B50: '#7A4438'
+  B60: '#925144'
+  B70: '#AB5E4F'
+  B80: '#C36C5A'
+  B90: '#DC7A66'
+  B100: '#F48771'
+  B110: '#F69F8D'
+  B120: '#F8B7AA'
+  B130: '#FBCFC6'
+  B140: '#FDE7E3'
+  B150: '#FFFFFF'
+VSCode2026Warning:
+  B0: '#000000'
+  B10: '#17130C'
+  B20: '#2E2519'
+  B30: '#453826'
+  B40: '#5C4A32'
+  B50: '#725D3E'
+  B60: '#89704B'
+  B70: '#A08258'
+  B80: '#B79564'
+  B90: '#CEA770'
+  B100: '#E5BA7D'
+  B110: '#EAC897'
+  B120: '#EFD6B1'
+  B130: '#F5E3CB'
+  B140: '#FAF1E5'
+  B150: '#FFFFFF'
+VSCode2026SurfaceDark:
+  B10: '#121314'
+  B20: '#191A1B'
+  B30: '#202122'
+  B40: '#242526'
+  B50: '#2A2B2C'
+  B60: '#333536'
+  B70: '#BFBFBF'
+  B80: '#BBBEBF'
+  B90: '#8C8C8C'
+  B100: '#858889'
+  B110: '#555555'
+VSCode2026AccentDark:
+  B10: '#1E3A47'
+  B20: '#1E4253'
+  B30: '#245166'
+  B40: '#3994BC'
+  B50: '#48A0C7'
+  B60: '#53A5CA'
+VSCode2026SuccessDark:
+  B10: '#73C991'
+  B20: '#60A578'
+  B30: '#73C991'
+  B40: '#8FD4A7'
+  B50: '#B9E4C8'
+VSCode2026ErrorDark:
+  B10: '#F48771'
+  B20: '#C7705E'
+  B30: '#F48771'
+  B40: '#F69F8D'
+  B50: '#FAC3B8'
+VSCode2026WarningDark:
+  B10: '#E5BA7D'
+  B20: '#BB9968'
+  B30: '#E5BA7D'
+  B40: '#EAC897'
+  B50: '#F2DCBE'
+VSCode2026GroupDark:
+  B10: '#A3544F'
+  B20: '#886FA4'
+  B30: '#537EA4'
+  B40: '#56955C'
+  B50: '#A36E3F'
+  B60: '#6D8BA4'
+  B70: '#356A82'
+  B80: '#4F8362'
+  B90: '#9C5B4F'
+  B100: '#937A56'
+  B110: '#537EA4'
+  B120: '#5D636A'
+VSCode2026SyntaxDark:
+  B10: '#242526'
+  B20: '#191A1B'
+  B30: '#192D37'
+  B40: '#48A0C7'
+  B50: '#121314'
+  B60: '#1F3E4C'
+  B70: '#613C35'
+  B80: '#BBBEBF'
+  B90: '#C586C0'
+  B100: '#DCDCAA'
+  B110: '#DCDCAA'
+  B120: '#D2A8FF'
+  B130: '#8B949E'
+  B140: '#A5D6FF'
+  B150: '#B5CEA8'
+  B160: '#79C0FF'
+  B170: '#D4D4D4'
+  B190: '#192D37'
+  B200: '#1A333D'
+  B210: '#1D3D4B'
+  B220: '#245C73'
+VSCode2026SurfaceLight:
+  B10: '#FFFFFF'
+  B20: '#FAFAFD'
+  B30: '#FAFAFD'
+  B40: '#EAEAEA'
+  B50: '#F0F1F2'
+  B60: '#EFEFEF'
+  B70: '#202020'
+  B80: '#202020'
+  B90: '#606060'
+  B100: '#606060'
+  B110: '#BBBBBB'
+VSCode2026AccentLight:
+  B10: '#E6F2FA'
+  B20: '#E0EEFA'
+  B30: '#BFD9F2'
+  B40: '#0069CC'
+  B50: '#0063C1'
+  B60: '#004E99'
+VSCode2026SuccessLight:
+  B10: '#587C0C'
+  B20: '#4B690A'
+  B30: '#92AA61'
+  B40: '#C5D1AA'
+  B50: '#E6EBDB'
+VSCode2026ErrorLight:
+  B10: '#AD0707'
+  B20: '#930606'
+  B30: '#CA5E5E'
+  B40: '#E2A8A8'
+  B50: '#F3DADA'
+VSCode2026WarningLight:
+  B10: '#667309'
+  B20: '#576208'
+  B30: '#9CA45F'
+  B40: '#C9CEA9'
+  B50: '#E8EADA'
+VSCode2026GroupLight:
+  B10: '#CF222E'
+  B20: '#8250DF'
+  B30: '#0550AE'
+  B40: '#116329'
+  B50: '#953800'
+  B60: '#0A3069'
+  B70: '#0069CC'
+  B80: '#587C0C'
+  B90: '#AD0707'
+  B100: '#667309'
+  B110: '#0550AE'
+  B120: '#6E7781'
+VSCode2026SyntaxLight:
+  B10: '#FAFAFA'
+  B20: '#FAFAFD'
+  B30: '#D9E9F7'
+  B40: '#0069CC'
+  B50: '#FFFFFF'
+  B60: '#BFD9F2'
+  B70: '#E2A8A8'
+  B80: '#202020'
+  B90: '#AF00DB'
+  B100: '#795E26'
+  B110: '#795E26'
+  B120: '#8250DF'
+  B130: '#6E7781'
+  B140: '#0A3069'
+  B150: '#098658'
+  B160: '#0550AE'
+  B170: '#000000'
+  B190: '#EAF3FB'
+  B200: '#E5F0FA'
+  B210: '#D9E9F7'
+  B220: '#BFD9F2'
+Logos:
+  B10: '#3775A9'
+  B20: '#FFD444'
+  B30: '#414141'
+  B40: '#FAFAFA'
+  B50: '#8C0000'
+
+# Muted help panels preserve readable header, warning and error text.
+VSCode2026HelpDark:
+  B10: '#191A1B'
+  B20: '#BFBFBF'
+  B30: '#2F2524'
+  B40: '#2D2A25'
+VSCode2026HelpLight:
+  B10: '#FAFAFD'
+  B20: '#202020'
+  B30: '#F2E2E4'
+  B40: '#EBECE5'
+
+VSCode2026PythonDark:
+  B10: '#D4D4D4'  # OPERATOR — keyword.operator
+  B20: '#BBBEBF'  # PUNCTUATION — editor foreground
+  B30: '#BBBEBF'  # SEPARATOR — editor foreground
+  B40: '#4EC9B0'  # CLASS — entity.name.type.class
+  B50: '#D2A8FF'  # FUNCTION_CALL — semantic function -> entity.name.function
+  B60: '#A5D6FF'  # DOCSTRING — string.quoted.docstring.multi.python
+  B70: '#4EC9B0'  # TYPE — support.type
+  B80: '#4EC9B0'  # BASECLASS — entity.other.inherited-class
+  B90: '#FF7B72'  # STORAGE — storage.type.function/class.python
+  B100: '#569CD6'  # CONSTANT — constant.language.python
+  B110: '#C9D1D9'  # VARIABLE — semantic variable -> variable.other.readwrite
+  B120: '#FFA657'  # PARAMETER — semantic parameter -> variable.parameter
+  B130: '#4EC9B0'  # CLASS_REFERENCE — semantic class -> entity.name.type.class
+  B140: '#FFD700'  # BRACKET_1 — editorBracketHighlight.foreground1
+  B150: '#DA70D6'  # BRACKET_2 — editorBracketHighlight.foreground2
+  B160: '#179FFF'  # BRACKET_3 — editorBracketHighlight.foreground3
+  B170: '#569CD6'  # WORD_OPERATOR — keyword.operator.logical.python
+
+VSCode2026UiDark:
+  B10: '#191A1B'  # COLOR_STATUSBAR_BACKGROUND
+  B20: '#8C8C8C'  # COLOR_STATUSBAR_TEXT
+  B30: '#8C8C8C'  # COLOR_TAB_TEXT
+  B40: '#BFBFBF'  # COLOR_TAB_SELECTED_TEXT
+  B50: '#121314'  # COLOR_TAB_HOVER_BACKGROUND
+  B60: '#121314'  # COLOR_TAB_SELECTED_BACKGROUND
+  B70: '#3994BC'  # COLOR_TAB_SELECTED_ACCENT
+  B80: '#2B2C2D'  # COLOR_TREE_HOVER_BACKGROUND
+  B90: '#383939'  # COLOR_TREE_SELECTED_BACKGROUND
+  B100: '#EDEDED'  # COLOR_TREE_SELECTED_TEXT
+  B110: '#2C2D2E'  # COLOR_TREE_INACTIVE_SELECTION_BACKGROUND
+  B120: '#191A1B'  # COLOR_TOOLBAR_BACKGROUND
+  B130: '#858889'  # COLOR_EDITOR_LINE_NUMBER
+  B140: '#BFBFBF'  # COLOR_TREE_TEXT
+  B150: '#EDEDED'  # COLOR_TREE_INACTIVE_SELECTION_TEXT
+
+VSCode2026PythonLight:
+  B10: '#000000'  # OPERATOR — keyword.operator
+  B20: '#202020'  # PUNCTUATION — editor foreground
+  B30: '#202020'  # SEPARATOR — editor foreground
+  B40: '#267F99'  # CLASS — entity.name.type.class
+  B50: '#8250DF'  # FUNCTION_CALL — semantic function -> entity.name.function
+  B60: '#0A3069'  # DOCSTRING — string.quoted.docstring.multi.python
+  B70: '#267F99'  # TYPE — support.type
+  B80: '#267F99'  # BASECLASS — entity.other.inherited-class
+  B90: '#CF222E'  # STORAGE — storage.type.function/class.python
+  B100: '#0000FF'  # CONSTANT — constant.language.python
+  B110: '#1F2328'  # VARIABLE — semantic variable -> variable.other.readwrite
+  B120: '#953800'  # PARAMETER — semantic parameter -> variable.parameter
+  B130: '#267F99'  # CLASS_REFERENCE — semantic class -> entity.name.type.class
+  B140: '#0431FA'  # BRACKET_1 — editorBracketHighlight.foreground1
+  B150: '#319331'  # BRACKET_2 — editorBracketHighlight.foreground2
+  B160: '#7B3814'  # BRACKET_3 — editorBracketHighlight.foreground3
+  B170: '#0000FF'  # WORD_OPERATOR — keyword.operator.logical.python
+
+VSCode2026UiLight:
+  B10: '#FAFAFD'  # COLOR_STATUSBAR_BACKGROUND
+  B20: '#606060'  # COLOR_STATUSBAR_TEXT
+  B30: '#606060'  # COLOR_TAB_TEXT
+  B40: '#202020'  # COLOR_TAB_SELECTED_TEXT
+  B50: '#FFFFFF'  # COLOR_TAB_HOVER_BACKGROUND
+  B60: '#FFFFFF'  # COLOR_TAB_SELECTED_BACKGROUND
+  B70: '#000000'  # COLOR_TAB_SELECTED_ACCENT
+  B80: '#E6E6E9'  # COLOR_TREE_HOVER_BACKGROUND
+  B90: '#D6D6D8'  # COLOR_TREE_SELECTED_BACKGROUND
+  B100: '#202020'  # COLOR_TREE_SELECTED_TEXT
+  B110: '#E7E7E8'  # COLOR_TREE_INACTIVE_SELECTION_BACKGROUND
+  B120: '#FAFAFD'  # COLOR_TOOLBAR_BACKGROUND
+  B130: '#606060'  # COLOR_EDITOR_LINE_NUMBER
+
+  B140: '#202020'  # COLOR_TREE_TEXT
+  B150: '#202020'  # COLOR_TREE_INACTIVE_SELECTION_TEXT

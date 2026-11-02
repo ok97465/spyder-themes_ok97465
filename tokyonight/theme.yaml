@@ -1,0 +1,17 @@
+---
+# Palette source: https://github.com/folke/tokyonight.nvim/blob/cdc07ac78467a233fd62c493de29a17e0cf2b2b6/extras/lua/tokyonight_night.lua
+# Light palette: https://github.com/folke/tokyonight.nvim/blob/cdc07ac78467a233fd62c493de29a17e0cf2b2b6/extras/lua/tokyonight_day.lua
+# Original Tokyo Night by enkia; Neovim adaptation by Folke Lemaitre and contributors.
+# Changed for Spyder: YAML palettes, UI ramps and semantic/syntax slot mappings.
+name: tokyonight
+display_name: Tokyo Night
+description: Tokyo Night Night and Day palettes from folke/tokyonight.nvim
+author: Folke Lemaitre and Tokyo Night contributors; adapted for Spyder
+version: 1.1.0
+license: Apache-2.0
+tags: [tokyo-night, dark, light, colorful]
+variants:
+  dark: true
+  light: true
+
+# All twenty optional Python roles and independent widget colors are mapped.

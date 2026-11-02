@@ -1,0 +1,227 @@
+---
+# Adapted from Binaryify/OneDark-Pro (MIT).
+# Upstream revision: 75c80ab18d90655e05ad837bb8d89f5e68d5ce53
+# https://github.com/Binaryify/OneDark-Pro/blob/75c80ab18d90655e05ad837bb8d89f5e68d5ce53/themes/OneDark-Pro.json
+# Native editor, syntax and widget colors are preserved where slots match.
+# Qt-only intermediate shades, status ramps and opaque overlays are adapted.
+# Source JSON SHA-256: bd098a63d2fdcb932ea67caaf66eb25a51cda1c2179ff37048fe1db7fe13461f
+# Editor RGBA overlays are flattened over the editor; list/tab alpha colors
+# are flattened over their native sidebar/tab backgrounds for Qt.
+# Python colors follow VS Code semantic fallback scopes: class.defaultLibrary
+# probes support.class (yellow), while parameter probes variable.parameter
+# (variable red plus the native italic-only parameter rule). TextMate-only
+# support.type.python would be cyan and variable.parameter.function.python orange.
+# Comments and self/cls are italic, and none of these Python roles are bold.
+# Python keyword.operator.logical.python overrides generic cyan operator rules
+# with purple for and/or/not/in/is; symbolic operators remain cyan.
+# Native One Dark Pro supplies three bracket colors; all three are preserved.
+# tab.activeBorder is a native 1px inner gray edge (#B4B4B4); the numeric
+# TAB_SELECTED_ACCENT_INNER_EDGE role preserves its position instead of adding a top line.
+# Qt feedback shade ramps and help fills remain explicit adaptations.
+# Variable-explorer group fills are darkened adaptations so native #ABB2BF labels
+# remain readable after Spyder overlays those fills at 50% on the sidebar.
+OneDarkProNeutral:
+  B0: '#000000'
+  B10: '#181A1F'
+  B20: '#1D1F23'
+  B30: '#21252B'
+  B40: '#282C34'
+  B50: '#2C313C'
+  B60: '#3E4452'
+  B70: '#636B78'
+  B80: '#7F848E'
+  B90: '#9DA5B4'
+  B100: '#ABB2BF'
+  B110: '#C0C5CE'
+  B120: '#D7DAE0'
+  B130: '#DCDCDC'
+  B140: '#F0F0F0'
+  B150: '#FFFFFF'
+OneDarkProBlue:
+  B0: '#000000'
+  B10: '#0A1218'
+  B20: '#132330'
+  B30: '#1D3548'
+  B40: '#274660'
+  B50: '#315878'
+  B60: '#3A698F'
+  B70: '#447AA7'
+  B80: '#4E8CBF'
+  B90: '#579ED7'
+  B100: '#61AFEF'
+  B110: '#81BFF2'
+  B120: '#A0CFF5'
+  B130: '#C0DFF9'
+  B140: '#DFEFFC'
+  B150: '#FFFFFF'
+OneDarkProSuccess:
+  B0: '#000000'
+  B10: '#0F140C'
+  B20: '#1E2718'
+  B30: '#2E3B24'
+  B40: '#3D4E30'
+  B50: '#4C623D'
+  B60: '#5B7549'
+  B70: '#6A8955'
+  B80: '#7A9C61'
+  B90: '#89B06D'
+  B100: '#98C379'
+  B110: '#ADCF94'
+  B120: '#C1DBAF'
+  B130: '#D6E7C9'
+  B140: '#EAF3E4'
+  B150: '#FFFFFF'
+OneDarkProError:
+  B0: '#000000'
+  B10: '#160B0C'
+  B20: '#2D1617'
+  B30: '#432023'
+  B40: '#5A2B2F'
+  B50: '#70363B'
+  B60: '#864146'
+  B70: '#9D4C52'
+  B80: '#B3565E'
+  B90: '#CA6169'
+  B100: '#E06C75'
+  B110: '#E68991'
+  B120: '#ECA7AC'
+  B130: '#F3C4C8'
+  B140: '#F9E2E3'
+  B150: '#FFFFFF'
+OneDarkProWarning:
+  B0: '#000000'
+  B10: '#150F0A'
+  B20: '#2A1F14'
+  B30: '#3F2E1F'
+  B40: '#543E29'
+  B50: '#694D33'
+  B60: '#7D5C3D'
+  B70: '#926C47'
+  B80: '#A77B52'
+  B90: '#BC8B5C'
+  B100: '#D19A66'
+  B110: '#DAAE85'
+  B120: '#E3C2A3'
+  B130: '#EDD7C2'
+  B140: '#F6EBE0'
+  B150: '#FFFFFF'
+OneDarkProSurfaceDark:
+  B10: '#282C34'
+  B20: '#21252B'
+  B30: '#1D1F23'
+  B40: '#21252B'
+  B50: '#282C34'
+  B60: '#6B717D'
+  B70: '#ABB2BF'
+  B80: '#ABB2BF'
+  B90: '#9DA5B4'
+  B100: '#7F848E'
+  B110: '#636B78'
+OneDarkProAccentDark:
+  B10: '#343A46'
+  B20: '#404859'
+  B30: '#4970BC'
+  B40: '#4D78CC'
+  B50: '#61AFEF'
+  B60: '#79BBF1'
+OneDarkProSuccessDark:
+  B10: '#98C379'
+  B20: '#82A56B'
+  B30: '#98C379'
+  B40: '#ADCF94'
+  B50: '#CCE1BC'
+OneDarkProErrorDark:
+  B10: '#C24038'
+  B20: '#C24038'
+  B30: '#C24038'
+  B40: '#E68991'
+  B50: '#F0B6BA'
+OneDarkProWarningDark:
+  B10: '#D19A66'
+  B20: '#D19A66'
+  B30: '#D19A66'
+  B40: '#DAAE85'
+  B50: '#E8CDB3'
+OneDarkProGroupDark:
+  B10: '#B35C65'
+  B20: '#925EA5'
+  B30: '#45739A'
+  B40: '#5F7855'
+  B50: '#8C6C50'
+  B60: '#417D87'
+  B70: '#807052'
+  B80: '#5A784A'
+  B90: '#BB4C58'
+  B100: '#8E6846'
+  B110: '#38789A'
+  B120: '#696F79'
+OneDarkProSyntaxDark:
+  B10: '#2C313C'
+  B20: '#282C34'
+  B30: '#474D59'
+  B40: '#61AFEF'
+  B50: '#282C34'
+  B60: '#515A6B'
+  B70: '#5F3F48'
+  B80: '#ABB2BF'
+  B90: '#C678DD'
+  B100: '#E06C75'
+  B110: '#56B6C2'
+  B120: '#61AFEF'
+  B130: '#7F848E'
+  B140: '#98C379'
+  B150: '#D19A66'
+  B160: '#E5C07B'
+  B170: '#ABB2BF'
+  B190: '#303540'
+  B200: '#353B48'
+  B210: '#3A414F'
+  B220: '#404859'
+Logos:
+  B10: '#3775A9'
+  B20: '#FFD444'
+  B30: '#414141'
+  B40: '#FAFAFA'
+  B50: '#8C0000'
+OneDarkProHelpDark:
+  B10: '#21252B'
+  B20: '#D7DAE0'
+  B30: '#3E343C'
+  B40: '#3C393A'
+OneDarkProPythonDark:
+  B10: '#56B6C2'
+  B20: '#ABB2BF'
+  B30: '#ABB2BF'
+  B40: '#E5C07B'
+  B50: '#61AFEF'
+  B60: '#98C379'
+  B70: '#E5C07B'
+  B80: '#E5C07B'
+  B90: '#C678DD'
+  B100: '#D19A66'
+  B110: '#E06C75'
+  B120: '#E06C75'
+  B130: '#E5C07B'
+  B140: '#D19A66'
+  B150: '#C678DD'
+  B160: '#56B6C2'
+  B170: '#C678DD'  # Native Python keyword.operator.logical: and/or/not/in/is
+  B180: '#D19A66'  # Native bracket depth 4 repeats the three-color source cycle
+  B190: '#C678DD'  # Native bracket depth 5 repeats the three-color source cycle
+  B200: '#56B6C2'  # Native bracket depth 6 repeats the three-color source cycle
+OneDarkProNativeDark:
+  B10: '#21252B'
+  B20: '#9DA5B4'
+  B30: '#282C34'
+  B40: '#495162'
+  B50: '#7F8184'
+  B60: '#DCDCDC'
+  B70: '#282C34'
+  B80: '#323842'
+  B90: '#B4B4B4'
+  B100: '#2C313A'
+  B110: '#2C313A'
+  B120: '#323842'
+  B130: '#D7DAE0'
+  B140: '#ABB2BF'  # Native sideBar.foreground, independent of table/dialog text
+  B150: '#D7DAE0'  # Native list.inactiveSelectionForeground
