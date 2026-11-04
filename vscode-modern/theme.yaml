@@ -1,0 +1,16 @@
+---
+# Adapted from Microsoft VS Code Dark Modern / Light Modern (MIT).
+# Upstream revision: 1306698e328e5e531f5e632301d30020aa994eff
+# https://github.com/microsoft/vscode/blob/1306698e328e5e531f5e632301d30020aa994eff/extensions/theme-defaults/themes/dark_modern.json
+# https://github.com/microsoft/vscode/blob/1306698e328e5e531f5e632301d30020aa994eff/extensions/theme-defaults/themes/light_modern.json
+# UI-only intermediate shades and opaque alpha composites are adapted for Qt.
+name: vscode-modern
+display_name: VS Code Modern
+description: A Spyder adaptation of the official VS Code Dark Modern and Light Modern themes
+author: Microsoft Corporation; adapted for Spyder
+version: 1.0.0
+license: MIT
+tags: [vscode, modern, dark, light]
+variants:
+  dark: true
+  light: true

@@ -1,0 +1,351 @@
+---
+# Adapted from Microsoft VS Code Dark Modern / Light Modern (MIT).
+# Upstream revision: 1306698e328e5e531f5e632301d30020aa994eff
+# https://github.com/microsoft/vscode/blob/1306698e328e5e531f5e632301d30020aa994eff/extensions/theme-defaults/themes/dark_modern.json
+# https://github.com/microsoft/vscode/blob/1306698e328e5e531f5e632301d30020aa994eff/extensions/theme-defaults/themes/light_modern.json
+# UI-only intermediate shades and opaque alpha composites are adapted for Qt.
+# dark_modern.json SHA-256: 58d4ea55a2a36f65c0d5caf033dfddc4ec7d4b3a5d8b731a84bc36001d26a339
+# light_modern.json SHA-256: 831b47d624e9acd6f09da58a699889415be7e45fccffb01177bc718b20e7e25c
+# Syntax B10..B170 follow the editor slot order documented in catppuccin-mocha.
+# The include chain is Modern -> *_plus -> *_vs, at the revision above.
+# Modern overrides UI colors only; Plus/VS supply the effective Python rules.
+# Control keywords use keyword.control; def/class use storage.type; symbol
+# operators use keyword.operator; and/or/not use keyword.operator.logical.python.
+# Contextual calls/classes/variables/parameters use VS Code semantic fallback
+# scopes: entity.name.function, entity.name.type.class, variable.other.readwrite,
+# variable.parameter. This port does not provide external LSP type inference.
+# Native body self/cls use variable.language. Spyder's shared instance role
+# also colors declaration self/cls this way, unlike native parameter scope.
+# Punctuation uses Modern editor.foreground; symbol operators retain VS colors.
+# Native bracket colors cycle every three levels (depths 4-6 repeat).
+# Defaults not present in the JSON come from the pinned editorColorRegistry.ts,
+# colors/editorColors.ts, colors/listColors.ts and highlightDecorations.ts.
+# Sidebar/tab/status/gutter colors are native; tree selections use inherited
+# VS Code defaults except Light Modern's explicit gray active selection.
+# Current-line border colors become opaque Spyder line fills. Cell backgrounds
+# use sidebar shades; unmatched brackets use a muted native error fill.
+# Syntax B30/B200 flatten wordHighlightBackground; B190 flattens inherited
+# selectionHighlightBackground over editor.background; B220 is native selection.
+# B210 interpolates native selection for a Qt-only intermediate highlight.
+# Bracket-match alpha is flattened over editor.background for Qt.
+# Primary/accent/feedback ramps, help fills and Variable Explorer groups are
+# Qt adaptations. Dark groups blend native hues 60% over sideBar.background.
+VSCodeModernNeutral:
+  B0: '#000000'
+  B10: '#181818'
+  B20: '#1F1F1F'
+  B30: '#202020'
+  B40: '#2B2B2B'
+  B50: '#313131'
+  B60: '#3C3C3C'
+  B70: '#616161'
+  B80: '#767676'
+  B90: '#9D9D9D'
+  B100: '#CCCCCC'
+  B110: '#D7D7D7'
+  B120: '#E5E5E5'
+  B130: '#F2F2F2'
+  B140: '#F8F8F8'
+  B150: '#FFFFFF'
+VSCodeModernBlue:
+  B0: '#000000'
+  B10: '#000C15'
+  B20: '#00182A'
+  B30: '#002440'
+  B40: '#003055'
+  B50: '#003C6A'
+  B60: '#00487F'
+  B70: '#005494'
+  B80: '#0060AA'
+  B90: '#006CBF'
+  B100: '#0078D4'
+  B110: '#3393DD'
+  B120: '#66AEE5'
+  B130: '#99C9EE'
+  B140: '#CCE4F6'
+  B150: '#FFFFFF'
+VSCodeModernSuccess:
+  B0: '#000000'
+  B10: '#051007'
+  B20: '#09200D'
+  B30: '#0E3014'
+  B40: '#12401B'
+  B50: '#175022'
+  B60: '#1C6028'
+  B70: '#20702F'
+  B80: '#258036'
+  B90: '#29903C'
+  B100: '#2EA043'
+  B110: '#58B369'
+  B120: '#82C68E'
+  B130: '#ABD9B4'
+  B140: '#D5ECD9'
+  B150: '#FFFFFF'
+VSCodeModernError:
+  B0: '#000000'
+  B10: '#190807'
+  B20: '#32100F'
+  B30: '#4A1816'
+  B40: '#63201D'
+  B50: '#7C2824'
+  B60: '#95312C'
+  B70: '#AE3933'
+  B80: '#C6413A'
+  B90: '#DF4942'
+  B100: '#F85149'
+  B110: '#F9746D'
+  B120: '#FB9792'
+  B130: '#FCB9B6'
+  B140: '#FEDCDB'
+  B150: '#FFFFFF'
+VSCodeModernWarning:
+  B0: '#000000'
+  B10: '#141100'
+  B20: '#292100'
+  B30: '#3D3200'
+  B40: '#524300'
+  B50: '#665400'
+  B60: '#7A6400'
+  B70: '#8F7500'
+  B80: '#A38600'
+  B90: '#B89600'
+  B100: '#CCA700'
+  B110: '#D6B933'
+  B120: '#E0CA66'
+  B130: '#EBDC99'
+  B140: '#F5EDCC'
+  B150: '#FFFFFF'
+VSCodeModernSurfaceDark:
+  B10: '#1F1F1F'
+  B20: '#181818'
+  B30: '#202020'
+  B40: '#2B2B2B'
+  B50: '#313131'
+  B60: '#3C3C3C'
+  B70: '#CCCCCC'
+  B80: '#CCCCCC'
+  B90: '#9D9D9D'
+  B100: '#6E7681'
+  B110: '#616161'
+VSCodeModernAccentDark:
+  B10: '#132B3E'
+  B20: '#264F78'
+  B30: '#04395E'
+  B40: '#0078D4'
+  B50: '#4DAAFC'
+  B60: '#71BBFD'
+VSCodeModernSuccessDark:
+  B10: '#2EA043'
+  B20: '#2A883B'
+  B30: '#2EA043'
+  B40: '#58B369'
+  B50: '#96D0A1'
+VSCodeModernErrorDark:
+  B10: '#F85149'
+  B20: '#D04740'
+  B30: '#F85149'
+  B40: '#F9746D'
+  B50: '#FCA8A4'
+VSCodeModernWarningDark:
+  B10: '#CCA700'
+  B20: '#AC8D04'
+  B30: '#CCA700'
+  B40: '#D6B933'
+  B50: '#E6D380'
+VSCodeModernGroupDark:
+  B10: '#805A7D'
+  B20: '#388273'
+  B30: '#3D678A'
+  B40: '#76856E'
+  B50: '#856152'
+  B60: '#8E8E70'
+  B70: '#0A5289'
+  B80: '#256A32'
+  B90: '#9E3A35'
+  B100: '#846E0A'
+  B110: '#678EA2'
+  B120: '#4C5057'
+VSCodeModernSyntaxDark:
+  B10: '#282828'
+  B20: '#181818'
+  B30: '#474747'
+  B40: '#4DAAFC'
+  B50: '#1F1F1F'
+  B60: '#1C261C'
+  B70: '#552C2A'
+  B80: '#CCCCCC'
+  B90: '#C586C0'
+  B100: '#DCDCAA'
+  B110: '#DCDCAA'
+  B120: '#DCDCAA'
+  B130: '#6A9955'
+  B140: '#CE9178'
+  B150: '#B5CEA8'
+  B160: '#569CD6'
+  B170: '#D4D4D4'
+  B190: '#343A40'
+  B200: '#474747'
+  B210: '#244362'
+  B220: '#264F78'
+VSCodeModernSurfaceLight:
+  B10: '#FFFFFF'
+  B20: '#F8F8F8'
+  B30: '#F8F8F8'
+  B40: '#E5E5E5'
+  B50: '#F2F2F2'
+  B60: '#CCCCCC'
+  B70: '#3B3B3B'
+  B80: '#3B3B3B'
+  B90: '#616161'
+  B100: '#767676'
+  B110: '#CECECE'
+VSCodeModernAccentLight:
+  B10: '#E6EFF8'
+  B20: '#BED6ED'
+  B30: '#ADD6FF'
+  B40: '#005FB8'
+  B50: '#0258A8'
+  B60: '#004C93'
+VSCodeModernSuccessLight:
+  B10: '#2EA043'
+  B20: '#278839'
+  B30: '#75BF82'
+  B40: '#B1D9B9'
+  B50: '#DAEBDD'
+VSCodeModernErrorLight:
+  B10: '#F85149'
+  B20: '#D3453E'
+  B30: '#F88B86'
+  B40: '#F8BEBB'
+  B50: '#F8DFDE'
+VSCodeModernWarningLight:
+  B10: '#BF8803'
+  B20: '#A27403'
+  B30: '#D3AF59'
+  B40: '#E4D1A2'
+  B50: '#EFE7D3'
+VSCodeModernGroupLight:
+  B10: '#AF00DB'
+  B20: '#267F99'
+  B30: '#0000FF'
+  B40: '#098658'
+  B50: '#A31515'
+  B60: '#795E26'
+  B70: '#005FB8'
+  B80: '#2EA043'
+  B90: '#F85149'
+  B100: '#BF8803'
+  B110: '#001080'
+  B120: '#6E7681'
+VSCodeModernSyntaxLight:
+  B10: '#EEEEEE'
+  B20: '#F8F8F8'
+  B30: '#D5D5D5'
+  B40: '#005FB8'
+  B50: '#FFFFFF'
+  B60: '#E5EFE5'
+  B70: '#FDD4D2'
+  B80: '#3B3B3B'
+  B90: '#AF00DB'
+  B100: '#795E26'
+  B110: '#795E26'
+  B120: '#795E26'
+  B130: '#008000'
+  B140: '#A31515'
+  B150: '#098658'
+  B160: '#0000FF'
+  B170: '#000000'
+  B190: '#D6EAFF'
+  B200: '#D5D5D5'
+  B210: '#C2E0FF'
+  B220: '#ADD6FF'
+Logos:
+  B10: '#3775A9'
+  B20: '#FFD444'
+  B30: '#414141'
+  B40: '#FAFAFA'
+  B50: '#8C0000'
+
+# Help headers and muted feedback fills are Qt adaptations.
+VSCodeModernHelpDark:
+  B10: '#181818'
+  B20: '#CCCCCC'
+  B30: '#2E1E1D'
+  B40: '#2A2616'
+VSCodeModernHelpLight:
+  B10: '#F8F8F8'
+  B20: '#3B3B3B'
+  B30: '#F8E7E7'
+  B40: '#F2EDE0'
+
+VSCodeModernPythonDark:
+  B10: '#D4D4D4'  # OPERATOR — keyword.operator
+  B20: '#CCCCCC'  # PUNCTUATION — editor foreground
+  B30: '#CCCCCC'  # SEPARATOR — editor foreground
+  B40: '#4EC9B0'  # CLASS — entity.name.type.class
+  B50: '#DCDCAA'  # FUNCTION_CALL — semantic function -> entity.name.function
+  B60: '#CE9178'  # DOCSTRING — string.quoted.docstring.multi.python
+  B70: '#4EC9B0'  # TYPE — support.type
+  B80: '#4EC9B0'  # BASECLASS — entity.other.inherited-class
+  B90: '#569CD6'  # STORAGE — storage.type.function/class.python
+  B100: '#569CD6'  # CONSTANT — constant.language.python
+  B110: '#9CDCFE'  # VARIABLE — semantic variable -> variable.other.readwrite
+  B120: '#9CDCFE'  # PARAMETER — semantic parameter -> variable.parameter
+  B130: '#4EC9B0'  # CLASS_REFERENCE — semantic class -> entity.name.type.class
+  B140: '#FFD700'  # BRACKET_1 — editorBracketHighlight.foreground1
+  B150: '#DA70D6'  # BRACKET_2 — editorBracketHighlight.foreground2
+  B160: '#179FFF'  # BRACKET_3 — editorBracketHighlight.foreground3
+  B170: '#569CD6'  # WORD_OPERATOR — keyword.operator.logical.python
+
+VSCodeModernUiDark:
+  B10: '#181818'  # COLOR_STATUSBAR_BACKGROUND
+  B20: '#CCCCCC'  # COLOR_STATUSBAR_TEXT
+  B30: '#9D9D9D'  # COLOR_TAB_TEXT
+  B40: '#FFFFFF'  # COLOR_TAB_SELECTED_TEXT
+  B50: '#1F1F1F'  # COLOR_TAB_HOVER_BACKGROUND
+  B60: '#1F1F1F'  # COLOR_TAB_SELECTED_BACKGROUND
+  B70: '#0078D4'  # COLOR_TAB_SELECTED_ACCENT
+  B80: '#2A2D2E'  # COLOR_TREE_HOVER_BACKGROUND
+  B90: '#04395E'  # COLOR_TREE_SELECTED_BACKGROUND
+  B100: '#FFFFFF'  # COLOR_TREE_SELECTED_TEXT
+  B110: '#37373D'  # COLOR_TREE_INACTIVE_SELECTION_BACKGROUND
+  B120: '#181818'  # COLOR_TOOLBAR_BACKGROUND
+  B130: '#6E7681'  # COLOR_EDITOR_LINE_NUMBER
+  B140: '#CCCCCC'  # COLOR_TREE_TEXT
+  B150: '#CCCCCC'  # COLOR_TREE_INACTIVE_SELECTION_TEXT
+
+VSCodeModernPythonLight:
+  B10: '#000000'  # OPERATOR — keyword.operator
+  B20: '#3B3B3B'  # PUNCTUATION — editor foreground
+  B30: '#3B3B3B'  # SEPARATOR — editor foreground
+  B40: '#267F99'  # CLASS — entity.name.type.class
+  B50: '#795E26'  # FUNCTION_CALL — semantic function -> entity.name.function
+  B60: '#A31515'  # DOCSTRING — string.quoted.docstring.multi.python
+  B70: '#267F99'  # TYPE — support.type
+  B80: '#267F99'  # BASECLASS — entity.other.inherited-class
+  B90: '#0000FF'  # STORAGE — storage.type.function/class.python
+  B100: '#0000FF'  # CONSTANT — constant.language.python
+  B110: '#001080'  # VARIABLE — semantic variable -> variable.other.readwrite
+  B120: '#001080'  # PARAMETER — semantic parameter -> variable.parameter
+  B130: '#267F99'  # CLASS_REFERENCE — semantic class -> entity.name.type.class
+  B140: '#0431FA'  # BRACKET_1 — editorBracketHighlight.foreground1
+  B150: '#319331'  # BRACKET_2 — editorBracketHighlight.foreground2
+  B160: '#7B3814'  # BRACKET_3 — editorBracketHighlight.foreground3
+  B170: '#0000FF'  # WORD_OPERATOR — keyword.operator.logical.python
+
+VSCodeModernUiLight:
+  B10: '#F8F8F8'  # COLOR_STATUSBAR_BACKGROUND
+  B20: '#3B3B3B'  # COLOR_STATUSBAR_TEXT
+  B30: '#616161'  # COLOR_TAB_TEXT
+  B40: '#3B3B3B'  # COLOR_TAB_SELECTED_TEXT
+  B50: '#FFFFFF'  # COLOR_TAB_HOVER_BACKGROUND
+  B60: '#FFFFFF'  # COLOR_TAB_SELECTED_BACKGROUND
+  B70: '#005FB8'  # COLOR_TAB_SELECTED_ACCENT
+  B80: '#F2F2F2'  # COLOR_TREE_HOVER_BACKGROUND
+  B90: '#E8E8E8'  # COLOR_TREE_SELECTED_BACKGROUND
+  B100: '#000000'  # COLOR_TREE_SELECTED_TEXT
+  B110: '#E4E6F1'  # COLOR_TREE_INACTIVE_SELECTION_BACKGROUND
+  B120: '#F8F8F8'  # COLOR_TOOLBAR_BACKGROUND
+  B130: '#6E7681'  # COLOR_EDITOR_LINE_NUMBER
+  B140: '#3B3B3B'  # COLOR_TREE_TEXT
+  B150: '#3B3B3B'  # COLOR_TREE_INACTIVE_SELECTION_TEXT
