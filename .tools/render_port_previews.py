@@ -7,8 +7,8 @@ all displayed colors and resources come from the installed theme package.
 
 Example::
 
-    python tools/render_port_previews.py --out-dir /tmp/spyder-port-previews
-    python tools/render_port_previews.py --out-dir /tmp/tokyo-preview \
+    python .tools/render_port_previews.py --out-dir /tmp/spyder-port-previews
+    python .tools/render_port_previews.py --out-dir /tmp/tokyo-preview \
         --themes tokyonight tokyo-night-altsynt
 
 No live Spyder application, projects, consoles, or personal configuration are

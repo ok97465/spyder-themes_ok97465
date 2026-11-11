@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Check source/export parity and coverage of the companion Spyder's roles.
 
-Run with ThemeWeaver's Python environment. This checks the actual generated
-palette, not only whether names occur in YAML. Native source matching is
-documented in each port's palette comments and THEME_AUDIT_KO.md.
+Run .tools/verify_port_mappings.py with ThemeWeaver's Python environment.
+This checks the actual generated palette, not only whether names occur in
+YAML. Native source matching is documented in each port's palette comments
+and THEME_AUDIT_KO.md.
 """
 
 import argparse

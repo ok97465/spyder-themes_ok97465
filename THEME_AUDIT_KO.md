@@ -6,7 +6,7 @@
 ```sh
 cd ~/codepy/spyder-themeweaver
 pixi run cli export --all --theme-dir ../spyder-themes_ok97465
-pixi run python ../spyder-themes_ok97465/tools/verify_port_mappings.py \
+pixi run python ../spyder-themes_ok97465/.tools/verify_port_mappings.py \
   --build-dir build
 ```
 
