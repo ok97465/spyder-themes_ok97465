@@ -1,0 +1,190 @@
+# Adapted from the official Modus themes by Protesilaos.
+# Copyright (C) 2019-2026 Free Software Foundation, Inc.
+# Source revision: 782743415b3eedac0b99db2342fb35703deb752f
+# https://github.com/protesilaos/modus-themes/blob/782743415b3eedac0b99db2342fb35703deb752f/modus-themes.el
+# GPL-3.0-or-later; the original license text is included in LICENSE.
+# Native palette foregrounds and the black/white editor backgrounds are preserved.
+# Qt surfaces, line/cell highlights and selection fills use the native neutral ramp.
+# Spyder-only roles reuse the closest native semantic foreground; operators inherit normal text.
+# This Spyder adaptation does not make an independent WCAG certification claim.
+---
+ModusPaletteDark:
+  B10: '#1E1E1E'  # COLOR_BACKGROUND_1
+  B20: '#0C0C0C'  # COLOR_BACKGROUND_2
+  B30: '#303030'  # COLOR_BACKGROUND_3
+  B40: '#313131'  # COLOR_BACKGROUND_4
+  B50: '#535353'  # COLOR_BACKGROUND_5
+  B60: '#646464'  # COLOR_BACKGROUND_6
+  B70: '#FFFFFF'  # COLOR_TEXT_1
+  B80: '#989898'  # COLOR_TEXT_2
+  B90: '#5A5A5A'  # COLOR_ACCENT_3
+  B100: '#79A8FF'  # COLOR_ACCENT_4
+  B110: '#00BCFF'  # COLOR_ACCENT_5
+  B120: '#44BC44'  # COLOR_SUCCESS_1
+  B130: '#389A38'  # COLOR_SUCCESS_2
+  B140: '#102D10'  # COLOR_SUCCESS_4
+  B150: '#081708'  # COLOR_SUCCESS_5
+  B160: '#FF5F59'  # COLOR_ERROR_1
+  B170: '#D14E49'  # COLOR_ERROR_2
+  B180: '#3D1715'  # COLOR_ERROR_4
+  B190: '#1F0B0B'  # COLOR_ERROR_5
+  B200: '#FEC43F'  # COLOR_WARN_1
+  B210: '#D0A134'  # COLOR_WARN_2
+  B220: '#3D2F0F'  # COLOR_WARN_4
+  B230: '#1E1808'  # COLOR_WARN_5
+  B240: '#6AE4B9'  # ICON_7
+  B250: '#D0BC00'  # GROUP_3
+  B260: '#2FAFFF'  # GROUP_4
+  B270: '#FEACD0'  # GROUP_5
+  B280: '#00D3D0'  # GROUP_6
+  B290: '#DB7B5F'  # GROUP_7
+  B300: '#9CBD6F'  # GROUP_8
+  B310: '#9099D9'  # GROUP_9
+  B320: '#CF7FA7'  # GROUP_10
+  B330: '#D09DC0'  # GROUP_11
+  B340: '#76AFBF'  # GROUP_12
+  B350: '#000000'  # EDITOR_BACKGROUND
+  B360: '#471B19'  # EDITOR_UNMATCHED_P
+  B370: '#B6A0FF'  # EDITOR_KEYWORD
+  B380: '#FF7F86'  # EDITOR_MAGIC
+  B390: '#F78FE7'  # EDITOR_BUILTIN
+  B400: '#9AC8E0'  # EDITOR_DOCSTRING
+  B410: '#FF66FF'  # rainbow-1: EDITOR_BRACKET_2
+  B420: '#00EFF0'  # rainbow-2: EDITOR_BRACKET_3
+  B430: '#FF6B55'  # rainbow-3: EDITOR_BRACKET_4
+  B440: '#EFEF00'  # rainbow-4: EDITOR_BRACKET_5
+  B450: '#44DF44'  # rainbow-6: native depth 7, beyond Spyder's six slots
+  B460: '#2D2D2D'  # COLOR_STATUSBAR_BACKGROUND
+  B470: '#3775A9'  # PYTHON_LOGO_UP
+  B480: '#FFD444'  # PYTHON_LOGO_DOWN
+  B490: '#170908'  # Help ErrorBackground
+  B500: '#171206'  # Help WarningBackground
+
+ModusPaletteLight:
+  B10: '#F2F2F2'  # COLOR_BACKGROUND_1
+  B20: '#F3F3F3'  # COLOR_BACKGROUND_2
+  B30: '#E0E0E0'  # COLOR_BACKGROUND_3
+  B40: '#DFDFDF'  # COLOR_BACKGROUND_4
+  B50: '#C4C4C4'  # COLOR_BACKGROUND_5
+  B60: '#9F9F9F'  # COLOR_BACKGROUND_6
+  B70: '#000000'  # COLOR_TEXT_1
+  B80: '#595959'  # COLOR_TEXT_2
+  B90: '#BDBDBD'  # COLOR_ACCENT_3
+  B100: '#3548CF'  # COLOR_ACCENT_4
+  B110: '#0031A9'  # COLOR_ACCENT_5
+  B120: '#006800'  # COLOR_SUCCESS_1
+  B130: '#2E832E'  # COLOR_SUCCESS_2
+  B140: '#C2DBC2'  # COLOR_SUCCESS_4
+  B150: '#E0EDE0'  # COLOR_SUCCESS_5
+  B160: '#A60000'  # COLOR_ERROR_1
+  B170: '#B62E2E'  # COLOR_ERROR_2
+  B180: '#EAC2C2'  # COLOR_ERROR_4
+  B190: '#F4E0E0'  # COLOR_ERROR_5
+  B200: '#884900'  # COLOR_WARN_1
+  B210: '#9D6A2E'  # COLOR_WARN_2
+  B220: '#E2D3C2'  # COLOR_WARN_4
+  B230: '#F1E9E0'  # COLOR_WARN_5
+  B240: '#005F5F'  # ICON_7
+  B250: '#6F5500'  # GROUP_3
+  B260: '#721045'  # GROUP_5
+  B270: '#005E8B'  # GROUP_6
+  B280: '#8A290F'  # GROUP_7
+  B290: '#4C6000'  # GROUP_8
+  B300: '#4A3A8A'  # GROUP_9
+  B310: '#731C52'  # GROUP_10
+  B320: '#7B435C'  # GROUP_11
+  B330: '#2F3F83'  # GROUP_12
+  B340: '#FFFFFF'  # EDITOR_BACKGROUND
+  B350: '#E6B8B8'  # EDITOR_UNMATCHED_P
+  B360: '#531AB6'  # EDITOR_KEYWORD
+  B370: '#A0132F'  # EDITOR_MAGIC
+  B380: '#8F0075'  # EDITOR_BUILTIN
+  B390: '#0000B0'  # EDITOR_NUMBER
+  B400: '#2A5045'  # EDITOR_DOCSTRING
+  B410: '#DD22DD'  # rainbow-1: EDITOR_BRACKET_2
+  B420: '#008899'  # rainbow-2: EDITOR_BRACKET_3
+  B430: '#972500'  # rainbow-3: EDITOR_BRACKET_4
+  B440: '#808000'  # rainbow-4: EDITOR_BRACKET_5
+  B450: '#008900'  # rainbow-6: native depth 7, beyond Spyder's six slots
+  B460: '#E6E6E6'  # COLOR_STATUSBAR_BACKGROUND
+  B470: '#3775A9'  # PYTHON_LOGO_UP
+  B480: '#FFD444'  # PYTHON_LOGO_DOWN
+  B490: '#F7E8E8'  # Help ErrorBackground
+  B500: '#F4EFE8'  # Help WarningBackground
+
+# Inactive pane edges: B10 panel, B20 editor, B30 sidebar.
+# Native vertical-border/window-divider neutral, separate from the unchanged widget surfaces.
+ModusPaneBordersDark:
+  B10: '#646464'
+  B20: '#646464'
+  B30: '#646464'
+# Native vertical-border/window-divider neutral, separate from the unchanged widget surfaces.
+ModusPaneBordersLight:
+  B10: '#9F9F9F'
+  B20: '#9F9F9F'
+  B30: '#9F9F9F'
+
+# Qt chrome surfaces: UI-only adaptations of this theme's neutral palette.
+# Keep the existing editor/syntax colors; give wide toolbars and idle controls
+# their own visible surface. Flat source surfaces are adapted for Qt.
+ChromeDark:
+  B10: '#303030'  # COLOR_TOOLBAR_BACKGROUND
+  B20: '#313131'  # COLOR_TAB_BACKGROUND
+  B30: '#313131'  # COLOR_BUTTON_BACKGROUND
+  B40: '#535353'  # COLOR_BUTTON_HOVER_BACKGROUND
+  B50: '#1E1E1E'  # COLOR_BUTTON_PRESSED_BACKGROUND
+  B60: '#646464'  # COLOR_BUTTON_BORDER
+  B70: '#404040'  # COLOR_TAB_HOVER_BACKGROUND
+  B80: '#FFFFFF'  # COLOR_BUTTON_TEXT
+
+# Qt chrome surfaces: UI-only adaptations of this theme's neutral palette.
+# Keep the existing editor/syntax colors; give wide toolbars and idle controls
+# their own visible surface. Flat source surfaces are adapted for Qt.
+ChromeLight:
+  B10: '#DCDCDC'  # COLOR_TOOLBAR_BACKGROUND
+  B20: '#DFDFDF'  # COLOR_TAB_BACKGROUND
+  B30: '#DFDFDF'  # COLOR_BUTTON_BACKGROUND
+  B40: '#C4C4C4'  # COLOR_BUTTON_HOVER_BACKGROUND
+  B50: '#B8B8B8'  # COLOR_BUTTON_PRESSED_BACKGROUND
+  B60: '#9F9F9F'  # COLOR_BUTTON_BORDER
+  B70: '#CCCCCC'  # COLOR_TAB_HOVER_BACKGROUND
+  B80: '#000000'  # COLOR_BUTTON_TEXT
+
+# Qt frame/state adaptations: COLOR_BACKGROUND_4 also draws the local Help
+# frame and dock tabs, so its inactive tab shade must remain visible.
+# Focus shades retain this palette's hue and readable generic selection text.
+# Popup menus and command palettes use independent native roles.
+QtUiAuditDark:
+  B10: '#404040'  # COLOR_BACKGROUND_4, COLOR_TAB_BACKGROUND
+  B20: '#535353'  # COLOR_TAB_HOVER_BACKGROUND
+  B30: '#646464'  # COLOR_ACCENT_3
+QtUiAuditLight:
+  B10: '#CCCCCC'  # COLOR_BACKGROUND_4, COLOR_TAB_BACKGROUND
+  B20: '#BDBDBD'  # COLOR_TAB_HOVER_BACKGROUND
+  B30: '#9F9F9F'  # COLOR_ACCENT_3
+
+# Reviewed menus and command palette. Native popup colors where the
+# reference matches; otherwise this theme's own palette is retained.
+# Qt uses opaque fills and 1px popup frames. Switcher titles embed
+# COLOR_TEXT_1 in HTML, so selected/input fills may be adjusted for readability.
+QtPopupAuditDark:
+  B10: '#1E1E1E'  # COLOR_MENU_BACKGROUND
+  B20: '#FFFFFF'  # COLOR_MENU_TEXT
+  B30: '#45605E'  # COLOR_MENU_SELECTED_BACKGROUND
+  B40: '#FFFFFF'  # COLOR_MENU_SELECTED_TEXT
+  B50: '#646464'  # COLOR_MENU_BORDER
+  B60: '#1E1E1E'  # COLOR_SWITCHER_BACKGROUND
+  B70: '#45605E'  # COLOR_SWITCHER_SELECTED_BACKGROUND
+  B80: '#646464'  # COLOR_SWITCHER_BORDER
+  B90: '#303030'  # COLOR_SWITCHER_INPUT_BACKGROUND
+
+QtPopupAuditLight:
+  B10: '#F2F2F2'  # COLOR_MENU_BACKGROUND
+  B20: '#000000'  # COLOR_MENU_TEXT
+  B30: '#B2E4DC'  # COLOR_MENU_SELECTED_BACKGROUND
+  B40: '#000000'  # COLOR_MENU_SELECTED_TEXT
+  B50: '#9F9F9F'  # COLOR_MENU_BORDER
+  B60: '#F2F2F2'  # COLOR_SWITCHER_BACKGROUND
+  B70: '#B2E4DC'  # COLOR_SWITCHER_SELECTED_BACKGROUND
+  B80: '#9F9F9F'  # COLOR_SWITCHER_BORDER
+  B90: '#E0E0E0'  # COLOR_SWITCHER_INPUT_BACKGROUND

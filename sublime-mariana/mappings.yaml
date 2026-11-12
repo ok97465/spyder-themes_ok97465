@@ -4,6 +4,9 @@
 # Optional EDITOR_* roles require the companion Spyder fork; standard slots
 # provide a compatible fallback for unmodified Spyder.
 color_classes:
+  PopupAuditDark: QtPopupAuditDark
+  QtUiAuditDark: QtUiAuditDark
+  ChromeDark: ChromeDark
   HelpDark: MarianaHelpDark
   Primary: MarianaNeutral
   Secondary: MarianaBlue
@@ -21,12 +24,32 @@ color_classes:
   Syntax: MarianaSyntaxDark
   Python: MarianaPythonDark
   Logos: Logos
+  PaneBordersDark: SublimeMarianaPaneBordersDark
 semantic_mappings:
   dark:
+    COLOR_MENU_BACKGROUND: PopupAuditDark.B10
+    COLOR_MENU_TEXT: PopupAuditDark.B20
+    COLOR_MENU_SELECTED_BACKGROUND: PopupAuditDark.B30
+    COLOR_MENU_SELECTED_TEXT: PopupAuditDark.B40
+    COLOR_MENU_BORDER: PopupAuditDark.B50
+    COLOR_SWITCHER_BACKGROUND: PopupAuditDark.B60
+    COLOR_SWITCHER_SELECTED_BACKGROUND: PopupAuditDark.B70
+    COLOR_SWITCHER_BORDER: PopupAuditDark.B80
+    COLOR_SWITCHER_INPUT_BACKGROUND: PopupAuditDark.B90
+    COLOR_BUTTON_TEXT: ChromeDark.B80
+    COLOR_BUTTON_BORDER: ChromeDark.B60
+    COLOR_BUTTON_PRESSED_BACKGROUND: ChromeDark.B50
+    COLOR_BUTTON_HOVER_BACKGROUND: ChromeDark.B40
+    COLOR_BUTTON_BACKGROUND: ChromeDark.B30
+    COLOR_TAB_BACKGROUND: ChromeDark.B20
+    # Qt content frames reuse a cool neutral; the native two-pixel Adaptive chrome rim needs a visible Qt adaptation.
+    COLOR_PANE_BORDER: PaneBordersDark.B10
+    COLOR_EDITOR_BORDER: PaneBordersDark.B20
+    COLOR_SIDEBAR_BORDER: PaneBordersDark.B30
     COLOR_BACKGROUND_1: SurfaceDark.B20
     COLOR_BACKGROUND_2: SurfaceDark.B30
     COLOR_BACKGROUND_3: SurfaceDark.B120
-    COLOR_BACKGROUND_4: SurfaceDark.B40
+    COLOR_BACKGROUND_4: ChromeDark.B20
     COLOR_BACKGROUND_5: SurfaceDark.B50
     COLOR_BACKGROUND_6: SurfaceDark.B60
     COLOR_TEXT_1: SurfaceDark.B70
@@ -35,20 +58,20 @@ semantic_mappings:
     COLOR_TEXT_4: SurfaceDark.B100
     COLOR_ACCENT_1: AccentDark.B10
     COLOR_ACCENT_2: AccentDark.B20
-    COLOR_ACCENT_3: AccentDark.B30
+    COLOR_ACCENT_3: QtUiAuditDark.B30
     COLOR_ACCENT_4: AccentDark.B40
     COLOR_ACCENT_5: AccentDark.B50
     COLOR_DISABLED: SurfaceDark.B60
     COLOR_EMPTY: AccentDark.B30
-    COLOR_TOOLBAR_BACKGROUND: SurfaceDark.B20
+    COLOR_TOOLBAR_BACKGROUND: ChromeDark.B10
     COLOR_EDITOR_LINE_NUMBER: SurfaceDark.B180
     COLOR_STATUSBAR_BACKGROUND: SurfaceDark.B30
     COLOR_STATUSBAR_TEXT: SurfaceDark.B90
     COLOR_TAB_SELECTED_TEXT: SurfaceDark.B170
     COLOR_TAB_SELECTED_BACKGROUND: SurfaceDark.B10
     COLOR_TAB_SELECTED_ACCENT: SurfaceDark.B10
-    COLOR_TAB_TEXT: SurfaceDark.B160
-    COLOR_TAB_HOVER_BACKGROUND: SurfaceDark.B120
+    COLOR_TAB_TEXT: SurfaceDark.B70
+    COLOR_TAB_HOVER_BACKGROUND: ChromeDark.B70
     COLOR_TREE_HOVER_BACKGROUND: SurfaceDark.B130
     COLOR_TREE_TEXT: SurfaceDark.B80
     COLOR_TREE_SELECTED_BACKGROUND: SurfaceDark.B140
@@ -70,8 +93,10 @@ semantic_mappings:
     COLOR_WARN_3: WarningDark.B30
     COLOR_WARN_4: WarningDark.B40
     COLOR_WARN_5: WarningDark.B50
-    ICON_1: SurfaceDark.B110
-    ICON_2: SurfaceDark.B60
+    ICON_1: SurfaceDark.B70
+    # Use the native blue accent for active debugger actions, rather than
+    # Adaptive's muted/inactive neutral on the raised toolbar.
+    ICON_2: AccentDark.B50
     ICON_3: SuccessDark.B30
     ICON_4: ErrorDark.B30
     ICON_5: WarningDark.B30

@@ -1,0 +1,29 @@
+# Adapted from Horizon and Horizon Bright by Jonathan Olaleye.
+# Source revision: 5ae91b6d49bf291e0a34c0a1cb277d9738aadd90
+# https://github.com/jolaleye/horizon-theme-vscode/tree/5ae91b6d49bf291e0a34c0a1cb277d9738aadd90/themes
+# Sources: horizon.json and horizon-bright.json; MIT notice included in LICENSE.
+# Native editor backgrounds are preserved; alpha colors are composited over editor.background.
+# Spyder adaptation: neutral comments and Bright docstrings are strengthened to at least 4.5:1
+# against the editor background; other token foregrounds preserve their source colors.
+# Normal text follows the source global foreground where no token rule applies.
+# variable.parameter adds italics and inherits the upstream variable foreground.
+# Qt panels, hover and selections use subdued grey/warm-neutral adaptations.
+# Warning and success UI colors are adapted for legibility on the Bright background.
+# No native rainbow bracket scopes exist, so all six bracket depths inherit punctuation.
+---
+name: horizon
+display_name: Horizon
+description: Horizon dark and Bright light palettes adapted for Spyder with subdued
+  widget surfaces
+author: Jonathan Olaleye; adapted for Spyder
+license: MIT
+url: https://github.com/jolaleye/horizon-theme-vscode
+version: 1.0.0
+tags:
+- dark
+- light
+- neutral
+- python
+variants:
+  dark: true
+  light: true

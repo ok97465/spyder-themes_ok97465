@@ -4,6 +4,8 @@
 # Mariana.sublime-color-scheme in Packages/Color Scheme - Default.sublime-package
 # Adaptive.sublime-theme in Packages/Theme - Default.sublime-package
 # Archive SHA-256: c153f418d3ab26b90ecce8c02a82e4e961025ed7a65f7e25060a5457d43e88d9
+# Verified with installed build 4215 Adaptive.sublime-theme SHA-256:
+# 4f54692826579f1c1ca04c1c134916c6674717b9f7f4a5e087b8d0bf6f612a95
 # Upstream licensing is unspecified; see LICENSE for attribution and source notes.
 # Mariana HSL colors are converted to opaque #RRGGBB for Qt.
 # blue3 -> background; white3 -> foreground; blue-vibrant -> accent.
@@ -211,3 +213,47 @@ Logos:
   B30: '#414141'
   B40: '#FAFAFA'
   B50: '#8C0000'
+
+# Qt content frames: B10 panel, B20 editor, B30 sidebar.
+# Qt content frames reuse a cool neutral; the native two-pixel Adaptive chrome rim needs a visible Qt adaptation.
+SublimeMarianaPaneBordersDark:
+  B10: '#56595D'
+  B20: '#56595D'
+  B30: '#56595D'
+
+# Qt chrome surfaces: UI-only adaptations of this theme's neutral palette.
+# Keep the existing editor/syntax colors; give wide toolbars and idle controls
+# their own visible surface. Flat source surfaces are adapted for Qt.
+ChromeDark:
+  B10: '#414B55'  # COLOR_TOOLBAR_BACKGROUND
+  B20: '#3F4953'  # COLOR_TAB_BACKGROUND
+  B30: '#3F4347'  # Adaptive white 15% over medium_dark_bg.
+  B40: '#55595D'  # Adaptive white 25% on hover; blend before 8-bit rounding.
+  B50: '#616468'  # Adaptive white 30% when pressed (lighter, not darker).
+  B60: '#616468'  # Qt-only outline reuses the native pressed shade.
+  B70: '#505D69'  # COLOR_TAB_HOVER_BACKGROUND
+  B80: '#EAEBEC'  # Adaptive label_control: background 10%, white 90%.
+
+# Qt frame/state adaptations: COLOR_BACKGROUND_4 also draws the local Help
+# frame and dock tabs, so its inactive tab shade must remain visible.
+# Focus shades retain this palette's hue and readable generic selection text.
+# Popup menus and command palettes use independent native roles.
+QtUiAuditDark:
+  B30: '#425F7D'  # COLOR_ACCENT_3
+
+# Installed Sublime Text build 4215: Adaptive.sublime-theme quick_panel uses
+# medium_dark_bg and a white 15% selected-row overlay. These override the
+# earlier VS Code Mariana-port reference. Qt uses an opaque 1px popup frame;
+# switcher titles embed COLOR_TEXT_1, retaining the readable native selected
+# label shade for ordinary labels too. macOS paints Sublime menus natively;
+# the Qt menu colors below are palette-based approximations, not Adaptive rules.
+QtPopupAuditDark:
+  B10: '#293038'  # COLOR_MENU_BACKGROUND
+  B20: '#F0F0F0'  # COLOR_MENU_TEXT
+  B30: '#303841'  # COLOR_MENU_SELECTED_BACKGROUND
+  B40: '#FFFFFF'  # COLOR_MENU_SELECTED_TEXT
+  B50: '#293038'  # COLOR_MENU_BORDER
+  B60: '#1D2227'  # Adaptive medium_dark_bg: COLOR_SWITCHER_BACKGROUND
+  B70: '#3F4347'  # Native white 15% overlay: selected quick-panel row.
+  B80: '#56595D'  # COLOR_SWITCHER_BORDER
+  B90: '#303841'  # Native focused quick-panel input follows editor base.

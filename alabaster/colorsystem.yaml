@@ -1,0 +1,317 @@
+# Alabaster: official source colors adapted to Spyder.
+# Upstream author: Nikita Prokopov. License: MIT (notice in LICENSE).
+# Upstream revision: 7e8e48c0f33022cd3cf5fec0114c307d63663e39
+# Source: https://github.com/tonsky/vscode-theme-alabaster/blob/7e8e48c0f33022cd3cf5fec0114c307d63663e39/theme/alabaster-color-theme.json
+# Original light theme only. Editor background #F7F7F7 and the four main highlight classes are preserved.
+# Comments red, strings green, constants purple, entity definitions blue; keywords/builtins/variables stay black.
+# Punctuation and all six bracket roles inherit original punctuation gray; no added rainbow or font variations.
+# All formatted syntax roles are regular. Unsupported semantic distinctions fall back to black.
+# Neutral Qt selection #DDDDDD follows original list selection rather than the bluer editor selection #BFDBFE.
+# Original selection highlight alpha is flattened over editor.background. Extra gray widget shades are Qt adaptations.
+# Qt gutter labels use original punctuation/bright-black #777777 instead of native #9DA39A for at least 3:1 contrast.
+---
+AlabasterNeutral:
+  B0: '#000000'
+  B10: '#151515'
+  B20: '#2A2A2A'
+  B30: '#3E3E3E'
+  B40: '#535353'
+  B50: '#686868'
+  B60: '#7D7D7D'
+  B70: '#929292'
+  B80: '#A6A6A6'
+  B90: '#BBBBBB'
+  B100: '#D0D0D0'
+  B110: '#D9D9D9'
+  B120: '#E3E3E3'
+  B130: '#ECECEC'
+  B140: '#F6F6F6'
+  B150: '#FFFFFF'
+AlabasterSecondary:
+  B0: '#000000'
+  B10: '#050913'
+  B20: '#0A1226'
+  B30: '#0F1C3A'
+  B40: '#14254D'
+  B50: '#192E60'
+  B60: '#1E3773'
+  B70: '#234086'
+  B80: '#284A9A'
+  B90: '#2D53AD'
+  B100: '#325CC0'
+  B110: '#5B7DCD'
+  B120: '#849DD9'
+  B130: '#ADBEE6'
+  B140: '#D6DEF2'
+  B150: '#FFFFFF'
+AlabasterTertiary:
+  B0: '#000000'
+  B10: '#0C0610'
+  B20: '#180C1F'
+  B30: '#25132F'
+  B40: '#31193F'
+  B50: '#3D1F4E'
+  B60: '#49255E'
+  B70: '#552B6E'
+  B80: '#62327E'
+  B90: '#6E388D'
+  B100: '#7A3E9D'
+  B110: '#9565B1'
+  B120: '#AF8BC4'
+  B130: '#CAB2D8'
+  B140: '#E4D8EB'
+  B150: '#FFFFFF'
+AlabasterQuaternary:
+  B0: '#000000'
+  B10: '#000D12'
+  B20: '#001A24'
+  B30: '#002735'
+  B40: '#003447'
+  B50: '#004259'
+  B60: '#004F6B'
+  B70: '#005C7D'
+  B80: '#00698E'
+  B90: '#0076A0'
+  B100: '#0083B2'
+  B110: '#339CC1'
+  B120: '#66B5D1'
+  B130: '#99CDE0'
+  B140: '#CCE6F0'
+  B150: '#FFFFFF'
+AlabasterSuccess:
+  B0: '#000000'
+  B10: '#070E04'
+  B20: '#0E1C08'
+  B30: '#142A0C'
+  B40: '#1B3810'
+  B50: '#224614'
+  B60: '#295417'
+  B70: '#30621B'
+  B80: '#36701F'
+  B90: '#3D7E23'
+  B100: '#448C27'
+  B110: '#69A352'
+  B120: '#8FBA7D'
+  B130: '#B4D1A9'
+  B140: '#DAE8D4'
+  B150: '#FFFFFF'
+AlabasterError:
+  B0: '#000000'
+  B10: '#110605'
+  B20: '#220B0A'
+  B30: '#33100F'
+  B40: '#441614'
+  B50: '#551C18'
+  B60: '#66211D'
+  B70: '#772622'
+  B80: '#882C27'
+  B90: '#99322C'
+  B100: '#AA3731'
+  B110: '#BB5F5A'
+  B120: '#CC8783'
+  B130: '#DDAFAD'
+  B140: '#EED7D6'
+  B150: '#FFFFFF'
+AlabasterWarning:
+  B0: '#000000'
+  B10: '#140E00'
+  B20: '#291D00'
+  B30: '#3D2B00'
+  B40: '#513A00'
+  B50: '#664800'
+  B60: '#7A5600'
+  B70: '#8E6500'
+  B80: '#A27300'
+  B90: '#B78200'
+  B100: '#CB9000'
+  B110: '#D5A633'
+  B120: '#E0BC66'
+  B130: '#EAD399'
+  B140: '#F5E9CC'
+  B150: '#FFFFFF'
+Logos:
+  B10: '#3775A9'
+  B20: '#FFD444'
+AlabasterSurfaceLight:
+  B10: '#F0F0F0'
+  B20: '#F7F7F7'
+  B30: '#E8E8E8'
+  B40: '#F0F0F0'
+  B50: '#CCCCCC'
+  B60: '#9DA39A'
+  B70: '#000000'
+  B80: '#000000'
+  B90: '#474747'
+  B100: '#474747'
+  B110: '#9DA39A'
+  B120: '#CCCCCC'
+AlabasterAccentLight:
+  B10: '#E8E8E8'
+  B20: '#DDDDDD'
+  B30: '#DDDDDD'
+  B40: '#9E9E9E'
+  B50: '#325CC0'
+AlabasterFeedbackLight:
+  B10: '#76AA61'
+  B20: '#5D9B44'
+  B30: '#448C27'
+  B40: '#5D9B44'
+  B50: '#76AA61'
+  B60: '#C06D68'
+  B70: '#B5524D'
+  B80: '#AA3731'
+  B90: '#B5524D'
+  B100: '#C06D68'
+  B110: '#D7AD45'
+  B120: '#D19E23'
+  B130: '#CB9000'
+  B140: '#D19E23'
+  B150: '#D7AD45'
+AlabasterIconsLight:
+  B10: '#000000'
+  B20: '#325CC0'
+  B30: '#448C27'
+  B40: '#AA3731'
+  B50: '#CB9000'
+  B60: '#F0F0F0'
+  B70: '#0083B2'
+AlabasterGroupLight:
+  B10: '#325CC0'
+  B20: '#7A3E9D'
+  B30: '#0083B2'
+  B40: '#448C27'
+  B50: '#AA3731'
+  B60: '#CB9000'
+  B70: '#007ACC'
+  B80: '#60CB00'
+  B90: '#F05050'
+  B100: '#FFBC5D'
+  B110: '#E64CE6'
+  B120: '#777777'
+AlabasterHighlightLight:
+  B10: '#E8E8E8'
+  B20: '#E6E6E6'
+  B30: '#DDDDDD'
+  B40: '#CCCCCC'
+  B50: '#F7F7F7'
+  B60: '#F0F0F0'
+  B70: '#E8E8E8'
+  B80: '#DDDDDD'
+  B90: '#CCCCCC'
+AlabasterEditorLight:
+  B10: '#F7F7F7'
+  B20: '#F0F0F0'
+  B30: '#F7F7F7'
+  B40: '#E3E3E3'
+  B50: '#325CC0'
+  B60: '#F7F7F7'
+  B70: '#DDDDDD'
+  B80: '#EFE4E4'
+AlabasterSyntaxLight:
+  B10: '#000000'
+  B20: '#000000'
+  B30: '#000000'
+  B40: '#000000'
+  B50: '#325CC0'
+  B60: '#AA3731'
+  B70: '#448C27'
+  B80: '#7A3E9D'
+  B90: '#000000'
+  B100: '#777777'
+AlabasterPythonLight:
+  B10: '#000000'
+  B20: '#000000'
+  B30: '#777777'
+  B40: '#777777'
+  B50: '#325CC0'
+  B60: '#000000'
+  B70: '#448C27'
+  B80: '#000000'
+  B90: '#000000'
+  B100: '#000000'
+  B110: '#7A3E9D'
+  B120: '#000000'
+  B130: '#000000'
+  B140: '#000000'
+  B150: '#777777'
+  B160: '#777777'
+  B170: '#777777'
+  B180: '#777777'
+  B190: '#777777'
+  B200: '#777777'
+AlabasterNativeUiLight:
+  B10: '#DDDDDD'
+  B20: '#474747'
+  B30: '#F0F0F0'
+  B40: '#777777'
+  B50: '#474747'
+  B60: '#000000'
+  B70: '#F7F7F7'
+  B80: '#E8E8E8'
+  B90: '#325CC0'
+  B100: '#000000'
+  B110: '#E8E8E8'
+  B120: '#DDDDDD'
+  B130: '#E6E6E6'
+  B140: '#000000'
+  B150: '#000000'
+AlabasterDetailLight:
+  B10: '#F0F0F0'
+  B20: '#000000'
+  B30: '#000000'
+  B40: '#CCCCCC'
+  B50: '#F7F7F7'
+  B60: '#AA3731'
+  B70: '#325CC0'
+  B80: '#000000'
+AlabasterHelpLight:
+  B10: '#F0F0F0'
+  B20: '#000000'
+  B30: '#F1E8E7'
+  B40: '#F3EFE3'
+  B50: '#325CC0'
+  B60: '#284A9A'
+  B70: '#E8E8E8'
+
+# Inactive pane edges: B10 panel, B20 editor, B30 sidebar.
+# Qt content frames use an existing neutral gray; a native focus color is not an inactive-frame specification.
+AlabasterPaneBordersLight:
+  B10: '#BBBBBB'
+  B20: '#BBBBBB'
+  B30: '#BBBBBB'
+
+# Qt chrome surfaces: UI-only adaptations of this theme's neutral palette.
+# Keep the existing editor/syntax colors; give wide toolbars and idle controls
+# their own visible surface. Flat source surfaces are adapted for Qt.
+ChromeLight:
+  B10: '#E0E0E0'  # COLOR_TOOLBAR_BACKGROUND
+  B20: '#DDDDDD'  # COLOR_TAB_BACKGROUND
+  B30: '#DDDDDD'  # COLOR_BUTTON_BACKGROUND
+  B40: '#CDCDCD'  # COLOR_BUTTON_HOVER_BACKGROUND
+  B50: '#BEBEBE'  # COLOR_BUTTON_PRESSED_BACKGROUND
+  B60: '#BBBBBB'  # COLOR_BUTTON_BORDER
+  B70: '#E8E8E8'  # COLOR_TAB_HOVER_BACKGROUND
+  B80: '#000000'  # COLOR_BUTTON_TEXT
+
+# Qt frame/state adaptations: COLOR_BACKGROUND_4 also draws the local Help
+# frame and dock tabs, so its inactive tab shade must remain visible.
+# Focus shades retain this palette's hue and readable generic selection text.
+# Popup menus and command palettes use independent native roles.
+QtUiAuditLight:
+  B10: '#CCCCCC'  # COLOR_BACKGROUND_4, COLOR_TAB_BACKGROUND
+  B30: '#007ACC'  # COLOR_ACCENT_3
+
+# Reviewed menus and command palette. Native popup colors where the
+# reference matches; otherwise this theme's own palette is retained.
+# Qt uses opaque fills and 1px popup frames. Switcher titles embed
+# COLOR_TEXT_1 in HTML, so selected/input fills may be adjusted for readability.
+QtPopupAuditLight:
+  B10: '#FFFFFF'  # COLOR_MENU_BACKGROUND
+  B20: '#616161'  # COLOR_MENU_TEXT
+  B30: '#DDDDDD'  # COLOR_MENU_SELECTED_BACKGROUND
+  B40: '#000000'  # COLOR_MENU_SELECTED_TEXT
+  B50: '#FFFFFF'  # COLOR_MENU_BORDER
+  B60: '#F3F3F3'  # COLOR_SWITCHER_BACKGROUND
+  B70: '#DDDDDD'  # COLOR_SWITCHER_SELECTED_BACKGROUND
+  B80: '#BBBBBB'  # COLOR_SWITCHER_BORDER
+  B90: '#FFFFFF'  # COLOR_SWITCHER_INPUT_BACKGROUND

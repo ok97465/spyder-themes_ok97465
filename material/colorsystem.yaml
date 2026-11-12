@@ -396,3 +396,80 @@ MaterialPythonLight:
 
 # The native String/Symbols/Inherited-Class rule also colors Python base classes
 # green; Lighter inherits the established readable string-green adaptation.
+
+# Inactive pane edges: B10 panel, B20 editor, B30 sidebar.
+# Qt content frames use existing blue-gray surface shades; the native layout edge loses separation in Qt.
+MaterialPaneBordersDark:
+  B10: '#455A64'
+  B20: '#455A64'
+  B30: '#455A64'
+# Qt content frames use existing blue-gray surface shades; the native layout edge loses separation in Qt.
+MaterialPaneBordersLight:
+  B10: '#B0BEC5'
+  B20: '#B0BEC5'
+  B30: '#B0BEC5'
+
+
+# Interface hierarchy: source colors and Qt-only state adaptations.
+# Material Oceanic/Lighter have flat native chrome. Qt toolbar,
+# inactive tabs and buttons use adjacent levels of the existing Material
+# blue-gray surfaces, with native foreground hues. These are explicit Spyder
+# adaptations; editor colors and the teal selected-tab accent stay unchanged.
+MaterialInterfaceDark:
+  B10: '#2E3C43'  # toolbar
+  B20: '#37474F'  # inactive tab
+  B30: '#CFD8DC'  # inactive tab text
+  B40: '#455A64'  # tab hover
+  B50: '#37474F'  # button
+  B60: '#ECEFF1'  # button text
+  B70: '#455A64'  # button hover
+  B80: '#2E3C43'  # button pressed
+  B90: '#607D8B'  # button border
+MaterialInterfaceLight:
+  B10: '#ECEFF1'  # toolbar
+  B20: '#E7EAEC'  # inactive tab
+  B30: '#455A64'  # inactive tab text
+  B40: '#CFD8DC'  # tab hover
+  B50: '#E7EAEC'  # button
+  B60: '#37474F'  # button text
+  B70: '#CFD8DC'  # button hover
+  B80: '#B0BEC5'  # button pressed
+  B90: '#90A4AE'  # button border
+
+# Qt frame/state adaptations: COLOR_BACKGROUND_4 also draws the local Help
+# frame and dock tabs, so its inactive tab shade must remain visible.
+# Focus shades retain this palette's hue and readable generic selection text.
+# Popup menus and command palettes use independent native roles.
+QtUiAuditDark:
+  B10: '#3B4D55'  # COLOR_BACKGROUND_4, COLOR_TAB_BACKGROUND
+QtUiAuditLight:
+  B10: '#CCD7DA'  # COLOR_BACKGROUND_4, COLOR_TAB_BACKGROUND
+  B20: '#E7EAEC'  # COLOR_TAB_HOVER_BACKGROUND
+  B30: '#C0D4D0'  # COLOR_ACCENT_3
+  B40: '#455A64'  # COLOR_TEXT_1
+
+# Reviewed menus and command palette. Native popup colors where the
+# reference matches; otherwise this theme's own palette is retained.
+# Qt uses opaque fills and 1px popup frames. Switcher titles embed
+# COLOR_TEXT_1 in HTML, so selected/input fills may be adjusted for readability.
+QtPopupAuditDark:
+  B10: '#263238'  # COLOR_MENU_BACKGROUND
+  B20: '#EEFFFF'  # COLOR_MENU_TEXT
+  B30: '#1A2226'  # COLOR_MENU_SELECTED_BACKGROUND
+  B40: '#80CBC4'  # COLOR_MENU_SELECTED_TEXT
+  B50: '#263238'  # COLOR_MENU_BORDER
+  B60: '#263238'  # COLOR_SWITCHER_BACKGROUND
+  B70: '#3F4C51'  # COLOR_SWITCHER_SELECTED_BACKGROUND
+  B80: '#455A64'  # COLOR_SWITCHER_BORDER
+  B90: '#303C41'  # COLOR_SWITCHER_INPUT_BACKGROUND
+
+QtPopupAuditLight:
+  B10: '#FAFAFA'  # COLOR_MENU_BACKGROUND
+  B20: '#455A64'  # COLOR_MENU_TEXT
+  B30: '#ECEFF0'  # COLOR_MENU_SELECTED_BACKGROUND
+  B40: '#455A64'  # COLOR_MENU_SELECTED_TEXT
+  B50: '#FAFAFA'  # COLOR_MENU_BORDER
+  B60: '#FAFAFA'  # COLOR_SWITCHER_BACKGROUND
+  B70: '#EDEFF0'  # COLOR_SWITCHER_SELECTED_BACKGROUND
+  B80: '#B0BEC5'  # COLOR_SWITCHER_BORDER
+  B90: '#EEEEEE'  # COLOR_SWITCHER_INPUT_BACKGROUND

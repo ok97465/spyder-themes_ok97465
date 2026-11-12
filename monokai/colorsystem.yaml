@@ -255,3 +255,23 @@ Logos:
   B30: '#414141'
   B40: '#fafafa'
   B50: '#8c0000'
+
+# Qt content frames: B10 panel, B20 editor, B30 sidebar.
+# Qt content frames use the neutral ramp; the native two-pixel Adaptive chrome rim is not a one-pixel Qt frame.
+MonokaiPaneBordersDark:
+  B10: '#4E4E4E'
+  B20: '#4E4E4E'
+  B30: '#4E4E4E'
+
+# Qt chrome surfaces: UI-only adaptations of this theme's neutral palette.
+# Keep the existing editor/syntax colors; give wide toolbars and idle controls
+# their own visible surface. Flat source surfaces are adapted for Qt.
+ChromeDark:
+  B10: '#3E3D32'  # COLOR_TOOLBAR_BACKGROUND
+  B20: '#34352F'  # COLOR_TAB_BACKGROUND
+  B30: '#414339'  # COLOR_BUTTON_BACKGROUND
+  B40: '#515347'  # COLOR_BUTTON_HOVER_BACKGROUND
+  B50: '#34352F'  # COLOR_BUTTON_PRESSED_BACKGROUND
+  B60: '#75715E'  # COLOR_BUTTON_BORDER
+  B70: '#45463D'  # COLOR_TAB_HOVER_BACKGROUND
+  B80: '#F8F8F2'  # COLOR_BUTTON_TEXT

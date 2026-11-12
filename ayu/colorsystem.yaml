@@ -348,3 +348,85 @@ AyuPythonLight:
 # Ayu has no bracket-highlight overrides. With VS Code bracket pair coloring
 # enabled (the live reference setting), use the verified built-in dark/light
 # three-color cycles; absent colors 4..6 repeat that cycle in the Spyder fork.
+
+# Inactive pane edges: B10 panel, B20 editor, B30 sidebar.
+# Qt content frames reuse visible neutral shades; native workbench alpha edges are not widget-frame colors.
+AyuPaneBordersDark:
+  B10: '#343940'
+  B20: '#343940'
+  B30: '#343940'
+# Qt content frames reuse visible neutral shades; native workbench alpha edges are not widget-frame colors.
+AyuPaneBordersLight:
+  B10: '#C5CCD5'
+  B20: '#C5CCD5'
+  B30: '#C5CCD5'
+
+
+# Interface hierarchy: source colors and Qt-only state adaptations.
+# Ayu VS Code 1.6.0 (teabyii.ayu) provides the warm yellow accent,
+# titleBar #EBEEF0 and blue-gray translucent secondary buttons. Qt chrome uses
+# existing Ayu neutrals; dark secondary overlays and light pressed/border shades
+# are opaque adaptations so controls remain distinct on Spyder panels.
+AyuInterfaceDark:
+  B10: '#1E242F'  # toolbar
+  B20: '#1E242F'  # inactive tab
+  B30: '#9EA5B0'  # inactive tab text
+  B40: '#303A4B'  # tab hover
+  B50: '#1E242F'  # button
+  B60: '#BFBDB6'  # button text
+  B70: '#363D4C'  # button hover
+  B80: '#303A4B'  # button pressed
+  B90: '#485161'  # button border
+AyuInterfaceLight:
+  B10: '#EBEEF0'  # toolbar
+  B20: '#EBEEF0'  # inactive tab
+  B30: '#5C6166'  # inactive tab text
+  B40: '#DBDFE5'  # tab hover
+  B50: '#DBDFE5'  # button
+  B60: '#454D56'  # button text
+  B70: '#E6E9EE'  # button hover
+  B80: '#C5CCD5'  # button pressed
+  B90: '#A2ABB8'  # button border
+
+# Qt UI boundary review (2026-11-13): inactive dock tabs and the legacy
+# Help frame share COLOR_BACKGROUND_4. These neutral adjustments keep
+# their boundaries visible and inactive labels readable. Focus shades
+# stay distinct on pane/editor surfaces; source editor/syntax colors
+# remain in the original palettes above. These are Qt-only adaptations.
+# The light variant uses its existing button ink for generic UI text,
+# preserving contrast on the shared focus/hover fill. Python syntax
+# and the independent native tree/tab/status text roles stay intact.
+
+QtInterfaceReviewDark:
+  B10: '#2A303B'  # COLOR_BACKGROUND_4, COLOR_TAB_BACKGROUND
+
+QtInterfaceReviewLight:
+  B10: '#D5D8DA'  # COLOR_BACKGROUND_4, COLOR_TAB_BACKGROUND
+  B20: '#454D56'  # COLOR_TAB_TEXT, COLOR_TEXT_1
+  B30: '#F2D2AA'  # COLOR_ACCENT_3
+
+# Reviewed menus and command palette. Native popup colors where the
+# reference matches; otherwise this theme's own palette is retained.
+# Qt uses opaque fills and 1px popup frames. Switcher titles embed
+# COLOR_TEXT_1 in HTML, so selected/input fills may be adjusted for readability.
+QtPopupAuditDark:
+  B10: '#0F131A'  # COLOR_MENU_BACKGROUND
+  B20: '#FFFFFF'  # COLOR_MENU_TEXT
+  B30: '#1A2029'  # COLOR_MENU_SELECTED_BACKGROUND
+  B40: '#C2C0BA'  # COLOR_MENU_SELECTED_TEXT
+  B50: '#1B1F29'  # COLOR_MENU_BORDER
+  B60: '#141821'  # COLOR_SWITCHER_BACKGROUND
+  B70: '#212732'  # COLOR_SWITCHER_SELECTED_BACKGROUND
+  B80: '#1B1F29'  # COLOR_SWITCHER_BORDER
+  B90: '#10141C'  # COLOR_SWITCHER_INPUT_BACKGROUND
+
+QtPopupAuditLight:
+  B10: '#FFFFFF'  # COLOR_MENU_BACKGROUND
+  B20: '#000000'  # COLOR_MENU_TEXT
+  B30: '#EDEFF1'  # COLOR_MENU_SELECTED_BACKGROUND
+  B40: '#575D62'  # COLOR_MENU_SELECTED_TEXT
+  B50: '#EDEFF1'  # COLOR_MENU_BORDER
+  B60: '#FAFAFA'  # COLOR_SWITCHER_BACKGROUND
+  B70: '#E6E8EB'  # COLOR_SWITCHER_SELECTED_BACKGROUND
+  B80: '#E9EBED'  # COLOR_SWITCHER_BORDER
+  B90: '#FCFCFC'  # COLOR_SWITCHER_INPUT_BACKGROUND

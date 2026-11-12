@@ -1,0 +1,508 @@
+# Adapted from Microsoft VS Code High Contrast Dark / Light (MIT).
+# Installed source: VS Code 1.146.0, commit 69047191fc427f2f92828279aae1d90d8eeda7ab.
+# https://github.com/microsoft/vscode/blob/69047191fc427f2f92828279aae1d90d8eeda7ab/extensions/theme-defaults/themes/hc_black.json
+# https://github.com/microsoft/vscode/blob/69047191fc427f2f92828279aae1d90d8eeda7ab/extensions/theme-defaults/themes/hc_light.json
+---
+color_classes:
+  PopupAuditDark: QtPopupAuditDark
+  PopupAuditLight: QtPopupAuditLight
+  Primary: HighContrastNeutral
+  Secondary: HighContrastContrast
+  Tertiary: HighContrastContrast
+  Quaternary: HighContrastContrast
+  Success: HighContrastSuccess
+  Error: HighContrastError
+  Warning: HighContrastWarning
+  HighContrastDark: VSCodeHighContrastDark
+  HighContrastLight: VSCodeHighContrastLight
+semantic_mappings:
+  dark:
+    COLOR_SWITCHER_SELECTED_BORDER: PopupAuditDark.B110
+    COLOR_MENU_SELECTED_BORDER: PopupAuditDark.B100
+    COLOR_MENU_BACKGROUND: PopupAuditDark.B10
+    COLOR_MENU_TEXT: PopupAuditDark.B20
+    COLOR_MENU_SELECTED_BACKGROUND: PopupAuditDark.B30
+    COLOR_MENU_SELECTED_TEXT: PopupAuditDark.B40
+    COLOR_MENU_BORDER: PopupAuditDark.B50
+    COLOR_SWITCHER_BACKGROUND: PopupAuditDark.B60
+    COLOR_SWITCHER_SELECTED_BACKGROUND: PopupAuditDark.B70
+    COLOR_SWITCHER_BORDER: PopupAuditDark.B80
+    COLOR_SWITCHER_INPUT_BACKGROUND: PopupAuditDark.B90
+    COLOR_BACKGROUND_1: HighContrastDark.B10
+    COLOR_BACKGROUND_2: HighContrastDark.B20
+    COLOR_BACKGROUND_3: HighContrastDark.B30
+    COLOR_BACKGROUND_4: HighContrastDark.B40
+    COLOR_BACKGROUND_5: HighContrastDark.B50
+    COLOR_BACKGROUND_6: HighContrastDark.B60
+    COLOR_TEXT_1: HighContrastDark.B70
+    COLOR_TEXT_2: HighContrastDark.B80
+    COLOR_TEXT_3: HighContrastDark.B90
+    COLOR_TEXT_4: HighContrastDark.B100
+    COLOR_ACCENT_1: HighContrastDark.B110
+    COLOR_ACCENT_2: HighContrastDark.B120
+    COLOR_ACCENT_3: HighContrastDark.B130
+    COLOR_ACCENT_4: HighContrastDark.B140
+    COLOR_ACCENT_5: HighContrastDark.B150
+    COLOR_DISABLED: HighContrastDark.B160
+    COLOR_EMPTY: HighContrastDark.B170
+    COLOR_SUCCESS_1: HighContrastDark.B180
+    COLOR_SUCCESS_2: HighContrastDark.B190
+    COLOR_SUCCESS_3: HighContrastDark.B200
+    COLOR_SUCCESS_4: HighContrastDark.B210
+    COLOR_SUCCESS_5: HighContrastDark.B220
+    COLOR_ERROR_1: HighContrastDark.B230
+    COLOR_ERROR_2: HighContrastDark.B240
+    COLOR_ERROR_3: HighContrastDark.B250
+    COLOR_ERROR_4: HighContrastDark.B260
+    COLOR_ERROR_5: HighContrastDark.B270
+    COLOR_WARN_1: HighContrastDark.B280
+    COLOR_WARN_2: HighContrastDark.B290
+    COLOR_WARN_3: HighContrastDark.B300
+    COLOR_WARN_4: HighContrastDark.B310
+    COLOR_WARN_5: HighContrastDark.B320
+    ICON_1: HighContrastDark.B330
+    ICON_2: HighContrastDark.B340
+    ICON_3: HighContrastDark.B350
+    ICON_4: HighContrastDark.B360
+    ICON_5: HighContrastDark.B370
+    ICON_6: HighContrastDark.B380
+    ICON_7: HighContrastDark.B390
+    GROUP_1: HighContrastDark.B400
+    GROUP_2: HighContrastDark.B410
+    GROUP_3: HighContrastDark.B420
+    GROUP_4: HighContrastDark.B430
+    GROUP_5: HighContrastDark.B440
+    GROUP_6: HighContrastDark.B450
+    GROUP_7: HighContrastDark.B460
+    GROUP_8: HighContrastDark.B470
+    GROUP_9: HighContrastDark.B480
+    GROUP_10: HighContrastDark.B490
+    GROUP_11: HighContrastDark.B500
+    GROUP_12: HighContrastDark.B510
+    COLOR_HIGHLIGHT_1: HighContrastDark.B520
+    COLOR_HIGHLIGHT_2: HighContrastDark.B530
+    COLOR_HIGHLIGHT_3: HighContrastDark.B540
+    COLOR_HIGHLIGHT_4: HighContrastDark.B550
+    COLOR_OCCURRENCE_1: HighContrastDark.B560
+    COLOR_OCCURRENCE_2: HighContrastDark.B570
+    COLOR_OCCURRENCE_3: HighContrastDark.B580
+    COLOR_OCCURRENCE_4: HighContrastDark.B590
+    COLOR_OCCURRENCE_5: HighContrastDark.B600
+    EDITOR_BACKGROUND: HighContrastDark.B610
+    EDITOR_CURRENTLINE: HighContrastDark.B620
+    EDITOR_CURRENTCELL: HighContrastDark.B630
+    EDITOR_OCCURRENCE: HighContrastDark.B640
+    EDITOR_CTRLCLICK: HighContrastDark.B650
+    EDITOR_SIDEAREAS: HighContrastDark.B660
+    EDITOR_MATCHED_P: HighContrastDark.B670
+    EDITOR_UNMATCHED_P: HighContrastDark.B680
+    EDITOR_NORMAL:
+    - HighContrastDark.B690
+    - false
+    - false
+    EDITOR_KEYWORD:
+    - HighContrastDark.B700
+    - false
+    - false
+    EDITOR_MAGIC:
+    - HighContrastDark.B710
+    - false
+    - false
+    EDITOR_BUILTIN:
+    - HighContrastDark.B720
+    - false
+    - false
+    EDITOR_DEFINITION:
+    - HighContrastDark.B730
+    - false
+    - false
+    EDITOR_COMMENT:
+    - HighContrastDark.B740
+    - false
+    - false
+    EDITOR_STRING:
+    - HighContrastDark.B750
+    - false
+    - false
+    EDITOR_NUMBER:
+    - HighContrastDark.B760
+    - false
+    - false
+    EDITOR_INSTANCE:
+    - HighContrastDark.B770
+    - false
+    - false
+    EDITOR_SYMBOL:
+    - HighContrastDark.B780
+    - false
+    - false
+    EDITOR_OPERATOR:
+    - HighContrastDark.B790
+    - false
+    - false
+    EDITOR_PUNCTUATION:
+    - HighContrastDark.B800
+    - false
+    - false
+    EDITOR_SEPARATOR:
+    - HighContrastDark.B810
+    - false
+    - false
+    EDITOR_CLASS:
+    - HighContrastDark.B820
+    - false
+    - false
+    EDITOR_FUNCTION_CALL:
+    - HighContrastDark.B830
+    - false
+    - false
+    EDITOR_DOCSTRING:
+    - HighContrastDark.B840
+    - false
+    - false
+    EDITOR_TYPE:
+    - HighContrastDark.B850
+    - false
+    - false
+    EDITOR_BASECLASS:
+    - HighContrastDark.B860
+    - false
+    - false
+    EDITOR_STORAGE:
+    - HighContrastDark.B870
+    - false
+    - false
+    EDITOR_CONSTANT:
+    - HighContrastDark.B880
+    - false
+    - false
+    EDITOR_VARIABLE:
+    - HighContrastDark.B890
+    - false
+    - false
+    EDITOR_PARAMETER:
+    - HighContrastDark.B900
+    - false
+    - false
+    EDITOR_CLASS_REFERENCE:
+    - HighContrastDark.B910
+    - false
+    - false
+    EDITOR_WORD_OPERATOR:
+    - HighContrastDark.B920
+    - false
+    - false
+    COLOR_PANE_BORDER: HighContrastDark.B930
+    COLOR_EDITOR_BORDER: HighContrastDark.B940
+    COLOR_SIDEBAR_BORDER: HighContrastDark.B950
+    COLOR_STATUSBAR_BACKGROUND: HighContrastDark.B960
+    COLOR_STATUSBAR_TEXT: HighContrastDark.B970
+    COLOR_TAB_BACKGROUND: HighContrastDark.B980
+    COLOR_TAB_TEXT: HighContrastDark.B990
+    COLOR_TAB_HOVER_BACKGROUND: HighContrastDark.B1000
+    COLOR_TAB_SELECTED_BACKGROUND: HighContrastDark.B1010
+    COLOR_TAB_SELECTED_TEXT: HighContrastDark.B1020
+    COLOR_TAB_SELECTED_ACCENT: HighContrastDark.B1030
+    COLOR_TREE_TEXT: HighContrastDark.B1040
+    COLOR_TREE_HOVER_BACKGROUND: HighContrastDark.B1050
+    COLOR_TREE_SELECTED_BACKGROUND: HighContrastDark.B1060
+    COLOR_TREE_SELECTED_TEXT: HighContrastDark.B1070
+    COLOR_TREE_INACTIVE_SELECTION_BACKGROUND: HighContrastDark.B1080
+    COLOR_TREE_INACTIVE_SELECTION_TEXT: HighContrastDark.B1090
+    COLOR_TOOLBAR_BACKGROUND: HighContrastDark.B1100
+    COLOR_EDITOR_LINE_NUMBER: HighContrastDark.B1110
+    COLOR_BUTTON_BACKGROUND: HighContrastDark.B1120
+    COLOR_BUTTON_TEXT: HighContrastDark.B1130
+    COLOR_BUTTON_BORDER: HighContrastDark.B1140
+    COLOR_BUTTON_HOVER_BACKGROUND: HighContrastDark.B1150
+    COLOR_BUTTON_PRESSED_BACKGROUND: HighContrastDark.B1160
+    PYTHON_LOGO_UP: HighContrastDark.B1170
+    PYTHON_LOGO_DOWN: HighContrastDark.B1180
+    SPYDER_LOGO_BACKGROUND: HighContrastDark.B1190
+    SPYDER_LOGO_WEB: HighContrastDark.B1200
+    SPYDER_LOGO_SNAKE: HighContrastDark.B1210
+    SPECIAL_TABS_SEPARATOR: HighContrastDark.B1220
+    SPECIAL_TABS_SELECTED: HighContrastDark.B1230
+    COLOR_HEART: HighContrastDark.B1240
+    TIP_TITLE_COLOR: HighContrastDark.B1250
+    TIP_CHAR_HIGHLIGHT_COLOR: HighContrastDark.B1260
+    EDITOR_BRACKET_1:
+    - HighContrastDark.B1270
+    - false
+    - false
+    EDITOR_BRACKET_2:
+    - HighContrastDark.B1280
+    - false
+    - false
+    EDITOR_BRACKET_3:
+    - HighContrastDark.B1290
+    - false
+    - false
+    EDITOR_BRACKET_4:
+    - HighContrastDark.B1300
+    - false
+    - false
+    EDITOR_BRACKET_5:
+    - HighContrastDark.B1310
+    - false
+    - false
+    EDITOR_BRACKET_6:
+    - HighContrastDark.B1320
+    - false
+    - false
+    TAB_SELECTED_ACCENT_WIDTH: 2
+    OPACITY_TOOLTIP: 255
+  light:
+    COLOR_SWITCHER_SELECTED_BORDER: PopupAuditLight.B110
+    COLOR_MENU_SELECTED_BORDER: PopupAuditLight.B100
+    COLOR_MENU_BACKGROUND: PopupAuditLight.B10
+    COLOR_MENU_TEXT: PopupAuditLight.B20
+    COLOR_MENU_SELECTED_BACKGROUND: PopupAuditLight.B30
+    COLOR_MENU_SELECTED_TEXT: PopupAuditLight.B40
+    COLOR_MENU_BORDER: PopupAuditLight.B50
+    COLOR_SWITCHER_BACKGROUND: PopupAuditLight.B60
+    COLOR_SWITCHER_SELECTED_BACKGROUND: PopupAuditLight.B70
+    COLOR_SWITCHER_BORDER: PopupAuditLight.B80
+    COLOR_SWITCHER_INPUT_BACKGROUND: PopupAuditLight.B90
+    COLOR_BACKGROUND_1: HighContrastLight.B10
+    COLOR_BACKGROUND_2: HighContrastLight.B20
+    COLOR_BACKGROUND_3: HighContrastLight.B30
+    COLOR_BACKGROUND_4: HighContrastLight.B40
+    COLOR_BACKGROUND_5: HighContrastLight.B50
+    COLOR_BACKGROUND_6: HighContrastLight.B60
+    COLOR_TEXT_1: HighContrastLight.B70
+    COLOR_TEXT_2: HighContrastLight.B80
+    COLOR_TEXT_3: HighContrastLight.B90
+    COLOR_TEXT_4: HighContrastLight.B100
+    COLOR_ACCENT_1: HighContrastLight.B110
+    COLOR_ACCENT_2: HighContrastLight.B120
+    COLOR_ACCENT_3: HighContrastLight.B130
+    COLOR_ACCENT_4: HighContrastLight.B140
+    COLOR_ACCENT_5: HighContrastLight.B150
+    COLOR_DISABLED: HighContrastLight.B160
+    COLOR_EMPTY: HighContrastLight.B170
+    COLOR_SUCCESS_1: HighContrastLight.B180
+    COLOR_SUCCESS_2: HighContrastLight.B190
+    COLOR_SUCCESS_3: HighContrastLight.B200
+    COLOR_SUCCESS_4: HighContrastLight.B210
+    COLOR_SUCCESS_5: HighContrastLight.B220
+    COLOR_ERROR_1: HighContrastLight.B230
+    COLOR_ERROR_2: HighContrastLight.B240
+    COLOR_ERROR_3: HighContrastLight.B250
+    COLOR_ERROR_4: HighContrastLight.B260
+    COLOR_ERROR_5: HighContrastLight.B270
+    COLOR_WARN_1: HighContrastLight.B280
+    COLOR_WARN_2: HighContrastLight.B290
+    COLOR_WARN_3: HighContrastLight.B300
+    COLOR_WARN_4: HighContrastLight.B310
+    COLOR_WARN_5: HighContrastLight.B320
+    ICON_1: HighContrastLight.B330
+    ICON_2: HighContrastLight.B340
+    ICON_3: HighContrastLight.B350
+    ICON_4: HighContrastLight.B360
+    ICON_5: HighContrastLight.B370
+    ICON_6: HighContrastLight.B380
+    ICON_7: HighContrastLight.B390
+    GROUP_1: HighContrastLight.B400
+    GROUP_2: HighContrastLight.B410
+    GROUP_3: HighContrastLight.B420
+    GROUP_4: HighContrastLight.B430
+    GROUP_5: HighContrastLight.B440
+    GROUP_6: HighContrastLight.B450
+    GROUP_7: HighContrastLight.B460
+    GROUP_8: HighContrastLight.B470
+    GROUP_9: HighContrastLight.B480
+    GROUP_10: HighContrastLight.B490
+    GROUP_11: HighContrastLight.B500
+    GROUP_12: HighContrastLight.B510
+    COLOR_HIGHLIGHT_1: HighContrastLight.B520
+    COLOR_HIGHLIGHT_2: HighContrastLight.B530
+    COLOR_HIGHLIGHT_3: HighContrastLight.B540
+    COLOR_HIGHLIGHT_4: HighContrastLight.B550
+    COLOR_OCCURRENCE_1: HighContrastLight.B560
+    COLOR_OCCURRENCE_2: HighContrastLight.B570
+    COLOR_OCCURRENCE_3: HighContrastLight.B580
+    COLOR_OCCURRENCE_4: HighContrastLight.B590
+    COLOR_OCCURRENCE_5: HighContrastLight.B600
+    EDITOR_BACKGROUND: HighContrastLight.B610
+    EDITOR_CURRENTLINE: HighContrastLight.B620
+    EDITOR_CURRENTCELL: HighContrastLight.B630
+    EDITOR_OCCURRENCE: HighContrastLight.B640
+    EDITOR_CTRLCLICK: HighContrastLight.B650
+    EDITOR_SIDEAREAS: HighContrastLight.B660
+    EDITOR_MATCHED_P: HighContrastLight.B670
+    EDITOR_UNMATCHED_P: HighContrastLight.B680
+    EDITOR_NORMAL:
+    - HighContrastLight.B690
+    - false
+    - false
+    EDITOR_KEYWORD:
+    - HighContrastLight.B700
+    - false
+    - false
+    EDITOR_MAGIC:
+    - HighContrastLight.B710
+    - false
+    - false
+    EDITOR_BUILTIN:
+    - HighContrastLight.B720
+    - false
+    - false
+    EDITOR_DEFINITION:
+    - HighContrastLight.B730
+    - false
+    - false
+    EDITOR_COMMENT:
+    - HighContrastLight.B740
+    - false
+    - false
+    EDITOR_STRING:
+    - HighContrastLight.B750
+    - false
+    - false
+    EDITOR_NUMBER:
+    - HighContrastLight.B760
+    - false
+    - false
+    EDITOR_INSTANCE:
+    - HighContrastLight.B770
+    - false
+    - false
+    EDITOR_SYMBOL:
+    - HighContrastLight.B780
+    - false
+    - false
+    EDITOR_OPERATOR:
+    - HighContrastLight.B790
+    - false
+    - false
+    EDITOR_PUNCTUATION:
+    - HighContrastLight.B800
+    - false
+    - false
+    EDITOR_SEPARATOR:
+    - HighContrastLight.B810
+    - false
+    - false
+    EDITOR_CLASS:
+    - HighContrastLight.B820
+    - false
+    - false
+    EDITOR_FUNCTION_CALL:
+    - HighContrastLight.B830
+    - false
+    - false
+    EDITOR_DOCSTRING:
+    - HighContrastLight.B840
+    - false
+    - false
+    EDITOR_TYPE:
+    - HighContrastLight.B850
+    - false
+    - false
+    EDITOR_BASECLASS:
+    - HighContrastLight.B860
+    - false
+    - false
+    EDITOR_STORAGE:
+    - HighContrastLight.B870
+    - false
+    - false
+    EDITOR_CONSTANT:
+    - HighContrastLight.B880
+    - false
+    - false
+    EDITOR_VARIABLE:
+    - HighContrastLight.B890
+    - false
+    - false
+    EDITOR_PARAMETER:
+    - HighContrastLight.B900
+    - false
+    - false
+    EDITOR_CLASS_REFERENCE:
+    - HighContrastLight.B910
+    - false
+    - false
+    EDITOR_WORD_OPERATOR:
+    - HighContrastLight.B920
+    - false
+    - false
+    COLOR_PANE_BORDER: HighContrastLight.B930
+    COLOR_EDITOR_BORDER: HighContrastLight.B940
+    COLOR_SIDEBAR_BORDER: HighContrastLight.B950
+    COLOR_STATUSBAR_BACKGROUND: HighContrastLight.B960
+    COLOR_STATUSBAR_TEXT: HighContrastLight.B970
+    COLOR_TAB_BACKGROUND: HighContrastLight.B980
+    COLOR_TAB_TEXT: HighContrastLight.B990
+    COLOR_TAB_HOVER_BACKGROUND: HighContrastLight.B1000
+    COLOR_TAB_SELECTED_BACKGROUND: HighContrastLight.B1010
+    COLOR_TAB_SELECTED_TEXT: HighContrastLight.B1020
+    COLOR_TAB_SELECTED_ACCENT: HighContrastLight.B1030
+    COLOR_TREE_TEXT: HighContrastLight.B1040
+    COLOR_TREE_HOVER_BACKGROUND: HighContrastLight.B1050
+    COLOR_TREE_SELECTED_BACKGROUND: HighContrastLight.B1060
+    COLOR_TREE_SELECTED_TEXT: HighContrastLight.B1070
+    COLOR_TREE_INACTIVE_SELECTION_BACKGROUND: HighContrastLight.B1080
+    COLOR_TREE_INACTIVE_SELECTION_TEXT: HighContrastLight.B1090
+    COLOR_TOOLBAR_BACKGROUND: HighContrastLight.B1100
+    COLOR_EDITOR_LINE_NUMBER: HighContrastLight.B1110
+    COLOR_BUTTON_BACKGROUND: HighContrastLight.B1120
+    COLOR_BUTTON_TEXT: HighContrastLight.B1130
+    COLOR_BUTTON_BORDER: HighContrastLight.B1140
+    COLOR_BUTTON_HOVER_BACKGROUND: HighContrastLight.B1150
+    COLOR_BUTTON_PRESSED_BACKGROUND: HighContrastLight.B1160
+    PYTHON_LOGO_UP: HighContrastLight.B1170
+    PYTHON_LOGO_DOWN: HighContrastLight.B1180
+    SPYDER_LOGO_BACKGROUND: HighContrastLight.B1190
+    SPYDER_LOGO_WEB: HighContrastLight.B1200
+    SPYDER_LOGO_SNAKE: HighContrastLight.B1210
+    SPECIAL_TABS_SEPARATOR: HighContrastLight.B1220
+    SPECIAL_TABS_SELECTED: HighContrastLight.B1230
+    COLOR_HEART: HighContrastLight.B1240
+    TIP_TITLE_COLOR: HighContrastLight.B1250
+    TIP_CHAR_HIGHLIGHT_COLOR: HighContrastLight.B1260
+    EDITOR_BRACKET_1:
+    - HighContrastLight.B1270
+    - false
+    - false
+    EDITOR_BRACKET_2:
+    - HighContrastLight.B1280
+    - false
+    - false
+    EDITOR_BRACKET_3:
+    - HighContrastLight.B1290
+    - false
+    - false
+    EDITOR_BRACKET_4:
+    - HighContrastLight.B1300
+    - false
+    - false
+    EDITOR_BRACKET_5:
+    - HighContrastLight.B1310
+    - false
+    - false
+    EDITOR_BRACKET_6:
+    - HighContrastLight.B1320
+    - false
+    - false
+    TAB_SELECTED_ACCENT_WIDTH: 2
+    OPACITY_TOOLTIP: 255
+css_overrides:
+  --header-bg-color: COLOR_BACKGROUND_1
+  --header-text-color: COLOR_TEXT_1
+  --link-color: COLOR_ACCENT_4
+  --hover-color: COLOR_ACCENT_5
+  --warning-bg: COLOR_WARN_5
+  --syn-error-bg: COLOR_ERROR_5
+  --border-color: COLOR_PANE_BORDER
+  --border-light: COLOR_PANE_BORDER
+appeal_overrides:
+  --link-color: COLOR_ACCENT_4
+  --hover-color: COLOR_ACCENT_5
+pydoc_overrides:
+  --header-bg-color: COLOR_BACKGROUND_1
+  --header-text-color: COLOR_TEXT_1
+  --link-color: COLOR_ACCENT_4
+  --hover-color: COLOR_ACCENT_5
+  --border-color: COLOR_PANE_BORDER

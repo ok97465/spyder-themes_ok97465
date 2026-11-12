@@ -1,0 +1,16 @@
+# Adapted from Microsoft VS Code High Contrast Dark / Light (MIT).
+# Installed source: VS Code 1.146.0, commit 69047191fc427f2f92828279aae1d90d8eeda7ab.
+# https://github.com/microsoft/vscode/blob/69047191fc427f2f92828279aae1d90d8eeda7ab/extensions/theme-defaults/themes/hc_black.json
+# https://github.com/microsoft/vscode/blob/69047191fc427f2f92828279aae1d90d8eeda7ab/extensions/theme-defaults/themes/hc_light.json
+---
+name: vscode-high-contrast
+display_name: VS Code High Contrast
+description: VS Code High Contrast Dark and Light adapted to existing Spyder color roles
+author: Microsoft Corporation; adapted for Spyder
+version: 1.0.0
+license: MIT
+tags: [vscode, high-contrast, accessibility, dark, light]
+ui_state_policy: contrast-borders
+variants:
+  dark: true
+  light: true

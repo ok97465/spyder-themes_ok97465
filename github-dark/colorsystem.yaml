@@ -224,3 +224,51 @@ GitHubDarkNativeDark:
   B130: '#E6EDF3'
   B140: '#E6EDF3'  # Native sideBar.foreground, independent of table/dialog text
   B150: '#E6EDF3'  # Native list.inactiveSelectionForeground
+
+# Inactive pane edges: B10 panel, B20 editor, B30 sidebar.
+# Native Primer border.default for editor groups, sidebars and panels.
+GithubDarkPaneBordersDark:
+  B10: '#30363D'
+  B20: '#30363D'
+  B30: '#30363D'
+
+
+# Interface hierarchy: source colors and Qt-only state adaptations.
+# GitHub VS Code 6.3.5 dark-default.json provides #161B22/#21262D
+# surfaces and secondary button #282E33, label #C9D1D9, hover #30363D. Qt toolbar
+# and inactive tabs raise those neutral surfaces above #010409; pressed #3C444D
+# is a Qt adaptation. Native editor and selected-tab colors are unchanged.
+GithubDarkInterfaceDark:
+  B10: '#21262D'  # toolbar
+  B20: '#161B22'  # inactive tab
+  B30: '#8B949E'  # inactive tab text
+  B40: '#21262D'  # tab hover
+  B50: '#282E33'  # button
+  B60: '#C9D1D9'  # button text
+  B70: '#30363D'  # button hover
+  B80: '#3C444D'  # button pressed
+  B90: '#484F58'  # button border
+
+# Qt UI boundary review (2026-11-13): inactive dock tabs and the legacy
+# Help frame share COLOR_BACKGROUND_4. These neutral adjustments keep
+# their boundaries visible and inactive labels readable. Focus shades
+# stay distinct on pane/editor surfaces; source editor/syntax colors
+# remain in the original palettes above. These are Qt-only adaptations.
+
+QtInterfaceReviewDark:
+  B10: '#252A31'  # COLOR_BACKGROUND_4, COLOR_TAB_BACKGROUND
+
+# Reviewed menus and command palette. Native popup colors where the
+# reference matches; otherwise this theme's own palette is retained.
+# Qt uses opaque fills and 1px popup frames. Switcher titles embed
+# COLOR_TEXT_1 in HTML, so selected/input fills may be adjusted for readability.
+QtPopupAuditDark:
+  B10: '#161B22'  # COLOR_MENU_BACKGROUND
+  B20: '#E6EDF3'  # COLOR_MENU_TEXT
+  B30: '#393F48'  # COLOR_MENU_SELECTED_BACKGROUND
+  B40: '#E6EDF3'  # COLOR_MENU_SELECTED_TEXT
+  B50: '#30363D'  # COLOR_MENU_BORDER
+  B60: '#161B22'  # COLOR_SWITCHER_BACKGROUND
+  B70: '#393F48'  # COLOR_SWITCHER_SELECTED_BACKGROUND
+  B80: '#30363D'  # COLOR_SWITCHER_BORDER
+  B90: '#0D1117'  # COLOR_SWITCHER_INPUT_BACKGROUND

@@ -1,0 +1,491 @@
+# PaperColor: official source colors adapted to Spyder.
+# Upstream author: Nikyle Nguyen. License: MIT (notice in LICENSE).
+# Upstream revision: 0cfe64ffb24c21a6101b5f994ca342a74c977aef
+# Source: https://github.com/NLKNguyen/papercolor-theme/blob/0cfe64ffb24c21a6101b5f994ca342a74c977aef/colors/PaperColor.vim
+# Original editor backgrounds, foregrounds, cursor lines, gutter backgrounds and Python syntax anchors are preserved.
+# Qt gutter labels use the upstream neutral comment foreground (#808080 dark / #878787 light) for at least 3:1 contrast.
+# Python keyword collapses to pythonStatement; definition uses pythonFunction; symbolic operators use generic Operator.
+# Word operators use pythonOperator (bold); comments retain upstream italics; builtin highlighting uses upstream default off.
+# Storage def/class follows pythonStatement; builtin types follow default pythonBuiltin; boolean constants follow pythonBoolean (bold).
+# Class definitions share the definition color; calls/parameters/references fall back to foreground where Vim has no distinction.
+# No native rainbow brackets: all six roles explicitly inherit Delimiter (aqua).
+# Qt bars/tabs/tree selections use neutral gray adaptations instead of the saturated terminal status/tab colors.
+# Selection backgrounds are gray; normal foreground is retained. Help feedback fills are 8% RGB composites.
+---
+PapercolorNeutral:
+  B0: '#000000'
+  B10: '#151515'
+  B20: '#2A2A2A'
+  B30: '#3E3E3E'
+  B40: '#535353'
+  B50: '#686868'
+  B60: '#7D7D7D'
+  B70: '#929292'
+  B80: '#A6A6A6'
+  B90: '#BBBBBB'
+  B100: '#D0D0D0'
+  B110: '#D9D9D9'
+  B120: '#E3E3E3'
+  B130: '#ECECEC'
+  B140: '#F6F6F6'
+  B150: '#FFFFFF'
+PapercolorSecondary:
+  B0: '#000000'
+  B10: '#001212'
+  B20: '#002323'
+  B30: '#003434'
+  B40: '#004646'
+  B50: '#005858'
+  B60: '#006969'
+  B70: '#007A7A'
+  B80: '#008C8C'
+  B90: '#009E9E'
+  B100: '#00AFAF'
+  B110: '#33BFBF'
+  B120: '#66CFCF'
+  B130: '#99DFDF'
+  B140: '#CCEFEF'
+  B150: '#FFFFFF'
+PapercolorTertiary:
+  B0: '#000000'
+  B10: '#120E16'
+  B20: '#231B2B'
+  B30: '#342840'
+  B40: '#463656'
+  B50: '#58446C'
+  B60: '#695181'
+  B70: '#7A5E96'
+  B80: '#8C6CAC'
+  B90: '#9E7AC2'
+  B100: '#AF87D7'
+  B110: '#BF9FDF'
+  B120: '#CFB7E7'
+  B130: '#DFCFEF'
+  B140: '#EFE7F7'
+  B150: '#FFFFFF'
+PapercolorQuaternary:
+  B0: '#000000'
+  B10: '#001212'
+  B20: '#002323'
+  B30: '#003434'
+  B40: '#004646'
+  B50: '#005858'
+  B60: '#006969'
+  B70: '#007A7A'
+  B80: '#008C8C'
+  B90: '#009E9E'
+  B100: '#00AFAF'
+  B110: '#33BFBF'
+  B120: '#66CFCF'
+  B130: '#99DFDF'
+  B140: '#CCEFEF'
+  B150: '#FFFFFF'
+PapercolorSuccess:
+  B0: '#000000'
+  B10: '#0A1200'
+  B20: '#132300'
+  B30: '#1C3400'
+  B40: '#264600'
+  B50: '#305800'
+  B60: '#396900'
+  B70: '#427A00'
+  B80: '#4C8C00'
+  B90: '#569E00'
+  B100: '#5FAF00'
+  B110: '#7FBF33'
+  B120: '#9FCF66'
+  B130: '#BFDF99'
+  B140: '#DFEFCC'
+  B150: '#FFFFFF'
+PapercolorError:
+  B0: '#000000'
+  B10: '#12000A'
+  B20: '#230013'
+  B30: '#34001C'
+  B40: '#460026'
+  B50: '#580030'
+  B60: '#690039'
+  B70: '#7A0042'
+  B80: '#8C004C'
+  B90: '#9E0056'
+  B100: '#AF005F'
+  B110: '#BF337F'
+  B120: '#CF669F'
+  B130: '#DF99BF'
+  B140: '#EFCCDF'
+  B150: '#FFFFFF'
+PapercolorWarning:
+  B0: '#000000'
+  B10: '#1A0E00'
+  B20: '#331B00'
+  B30: '#4C2800'
+  B40: '#663600'
+  B50: '#804400'
+  B60: '#995100'
+  B70: '#B25E00'
+  B80: '#CC6C00'
+  B90: '#E67A00'
+  B100: '#FF8700'
+  B110: '#FF9F33'
+  B120: '#FFB766'
+  B130: '#FFCF99'
+  B140: '#FFE7CC'
+  B150: '#FFFFFF'
+Logos:
+  B10: '#3775A9'
+  B20: '#FFD444'
+PapercolorSurfaceDark:
+  B10: '#262626'
+  B20: '#1C1C1C'
+  B30: '#303030'
+  B40: '#262626'
+  B50: '#585858'
+  B60: '#808080'
+  B70: '#D0D0D0'
+  B80: '#D0D0D0'
+  B90: '#BCBCBC'
+  B100: '#BCBCBC'
+  B110: '#808080'
+  B120: '#585858'
+PapercolorAccentDark:
+  B10: '#303030'
+  B20: '#454545'
+  B30: '#454545'
+  B40: '#5D5D5D'
+  B50: '#00AFAF'
+PapercolorFeedbackDark:
+  B10: '#4C8608'
+  B20: '#569A04'
+  B30: '#5FAF00'
+  B40: '#569A04'
+  B50: '#4C8608'
+  B60: '#86084C'
+  B70: '#9A0456'
+  B80: '#AF005F'
+  B90: '#9A0456'
+  B100: '#86084C'
+  B110: '#BF6908'
+  B120: '#DF7804'
+  B130: '#FF8700'
+  B140: '#DF7804'
+  B150: '#BF6908'
+PapercolorIconsDark:
+  B10: '#D0D0D0'
+  B20: '#00AFAF'
+  B30: '#5FAF00'
+  B40: '#AF005F'
+  B50: '#FF8700'
+  B60: '#262626'
+  B70: '#00AFAF'
+PapercolorGroupDark:
+  B10: '#5FAF5F'
+  B20: '#AF87D7'
+  B30: '#00AFAF'
+  B40: '#D7AF00'
+  B50: '#FF5FAF'
+  B60: '#5FAFD7'
+  B70: '#AFD700'
+  B80: '#5FAF00'
+  B90: '#AF005F'
+  B100: '#FFAF00'
+  B110: '#D7875F'
+  B120: '#808080'
+PapercolorHighlightDark:
+  B10: '#303030'
+  B20: '#3A3A3A'
+  B30: '#454545'
+  B40: '#515151'
+  B50: '#1C1C1C'
+  B60: '#262626'
+  B70: '#303030'
+  B80: '#454545'
+  B90: '#585858'
+PapercolorEditorDark:
+  B10: '#1C1C1C'
+  B20: '#303030'
+  B30: '#1C1C1C'
+  B40: '#3A3A3A'
+  B50: '#00AFAF'
+  B60: '#1C1C1C'
+  B70: '#4E4E4E'
+  B80: '#341827'
+PapercolorSyntaxDark:
+  B10: '#D0D0D0'
+  B20: '#AFD700'
+  B30: '#D0D0D0'
+  B40: '#D0D0D0'
+  B50: '#5FAFD7'
+  B60: '#808080'
+  B70: '#D7AF5F'
+  B80: '#FF5FAF'
+  B90: '#D0D0D0'
+  B100: '#5FAFD7'
+PapercolorPythonDark:
+  B10: '#5FAFD7'
+  B20: '#AF87D7'
+  B30: '#5FAFD7'
+  B40: '#5FAFD7'
+  B50: '#5FAFD7'
+  B60: '#D0D0D0'
+  B70: '#D7AF5F'
+  B80: '#D0D0D0'
+  B90: '#D0D0D0'
+  B100: '#AFD700'
+  B110: '#D7AF00'
+  B120: '#D0D0D0'
+  B130: '#D0D0D0'
+  B140: '#D0D0D0'
+  B150: '#5FAFD7'
+  B160: '#5FAFD7'
+  B170: '#5FAFD7'
+  B180: '#5FAFD7'
+  B190: '#5FAFD7'
+  B200: '#5FAFD7'
+PapercolorNativeUiDark:
+  B10: '#262626'
+  B20: '#D0D0D0'
+  B30: '#262626'
+  B40: '#808080'
+  B50: '#BCBCBC'
+  B60: '#D0D0D0'
+  B70: '#1C1C1C'
+  B80: '#303030'
+  B90: '#00AFAF'
+  B100: '#D0D0D0'
+  B110: '#303030'
+  B120: '#454545'
+  B130: '#3A3A3A'
+  B140: '#D0D0D0'
+  B150: '#D0D0D0'
+PapercolorDetailDark:
+  B10: '#262626'
+  B20: '#D0D0D0'
+  B30: '#D0D0D0'
+  B40: '#585858'
+  B50: '#1C1C1C'
+  B60: '#AF005F'
+  B70: '#00AFAF'
+  B80: '#D0D0D0'
+PapercolorHelpDark:
+  B10: '#262626'
+  B20: '#D0D0D0'
+  B30: '#281A21'
+  B40: '#2E251A'
+  B50: '#00AFAF'
+  B60: '#2AB6B6'
+  B70: '#303030'
+PapercolorSurfaceLight:
+  B10: '#E4E4E4'
+  B20: '#EEEEEE'
+  B30: '#DCDCDC'
+  B40: '#E4E4E4'
+  B50: '#BCBCBC'
+  B60: '#878787'
+  B70: '#444444'
+  B80: '#444444'
+  B90: '#444444'
+  B100: '#444444'
+  B110: '#878787'
+  B120: '#BCBCBC'
+PapercolorAccentLight:
+  B10: '#DCDCDC'
+  B20: '#CECECE'
+  B30: '#CECECE'
+  B40: '#B1B1B1'
+  B50: '#005FAF'
+PapercolorFeedbackLight:
+  B10: '#43A443'
+  B20: '#219521'
+  B30: '#008700'
+  B40: '#219521'
+  B50: '#43A443'
+  B60: '#C14343'
+  B70: '#B82121'
+  B80: '#AF0000'
+  B90: '#B82121'
+  B100: '#C14343'
+  B110: '#43C187'
+  B120: '#21B873'
+  B130: '#00AF5F'
+  B140: '#21B873'
+  B150: '#43C187'
+PapercolorIconsLight:
+  B10: '#444444'
+  B20: '#005FAF'
+  B30: '#008700'
+  B40: '#AF0000'
+  B50: '#00AF5F'
+  B60: '#E4E4E4'
+  B70: '#005FAF'
+PapercolorGroupLight:
+  B10: '#D70000'
+  B20: '#8700AF'
+  B30: '#005FAF'
+  B40: '#008700'
+  B50: '#D75F00'
+  B60: '#0087AF'
+  B70: '#D70087'
+  B80: '#008700'
+  B90: '#AF0000'
+  B100: '#D75F00'
+  B110: '#005F87'
+  B120: '#878787'
+PapercolorHighlightLight:
+  B10: '#DCDCDC'
+  B20: '#D8D8D8'
+  B30: '#CECECE'
+  B40: '#C6C6C6'
+  B50: '#EEEEEE'
+  B60: '#E4E4E4'
+  B70: '#DCDCDC'
+  B80: '#CECECE'
+  B90: '#BCBCBC'
+PapercolorEditorLight:
+  B10: '#EEEEEE'
+  B20: '#E4E4E4'
+  B30: '#EEEEEE'
+  B40: '#D0D0D0'
+  B50: '#005FAF'
+  B60: '#EEEEEE'
+  B70: '#C6C6C6'
+  B80: '#E4C8C8'
+PapercolorSyntaxLight:
+  B10: '#444444'
+  B20: '#D70087'
+  B30: '#444444'
+  B40: '#444444'
+  B50: '#0087AF'
+  B60: '#878787'
+  B70: '#5F8700'
+  B80: '#D75F00'
+  B90: '#444444'
+  B100: '#0087AF'
+PapercolorPythonLight:
+  B10: '#0087AF'
+  B20: '#8700AF'
+  B30: '#0087AF'
+  B40: '#0087AF'
+  B50: '#0087AF'
+  B60: '#444444'
+  B70: '#5F8700'
+  B80: '#444444'
+  B90: '#444444'
+  B100: '#D70087'
+  B110: '#008700'
+  B120: '#444444'
+  B130: '#444444'
+  B140: '#444444'
+  B150: '#0087AF'
+  B160: '#0087AF'
+  B170: '#0087AF'
+  B180: '#0087AF'
+  B190: '#0087AF'
+  B200: '#0087AF'
+PapercolorNativeUiLight:
+  B10: '#E4E4E4'
+  B20: '#444444'
+  B30: '#E4E4E4'
+  B40: '#878787'
+  B50: '#444444'
+  B60: '#444444'
+  B70: '#EEEEEE'
+  B80: '#DCDCDC'
+  B90: '#005FAF'
+  B100: '#444444'
+  B110: '#DCDCDC'
+  B120: '#CECECE'
+  B130: '#D8D8D8'
+  B140: '#444444'
+  B150: '#444444'
+PapercolorDetailLight:
+  B10: '#E4E4E4'
+  B20: '#444444'
+  B30: '#444444'
+  B40: '#BCBCBC'
+  B50: '#EEEEEE'
+  B60: '#AF0000'
+  B70: '#005FAF'
+  B80: '#444444'
+PapercolorHelpLight:
+  B10: '#E4E4E4'
+  B20: '#444444'
+  B30: '#E9DBDB'
+  B40: '#DBE9E3'
+  B50: '#005FAF'
+  B60: '#0E5A9A'
+  B70: '#DCDCDC'
+
+# Inactive pane edges: B10 panel, B20 editor, B30 sidebar.
+# Spyder neutral adaptation of native colored splits, consistent with the existing neutral Qt UI.
+PapercolorPaneBordersDark:
+  B10: '#585858'
+  B20: '#585858'
+  B30: '#585858'
+# Spyder neutral adaptation of native colored splits, consistent with the existing neutral Qt UI.
+PapercolorPaneBordersLight:
+  B10: '#BCBCBC'
+  B20: '#BCBCBC'
+  B30: '#BCBCBC'
+
+# Qt chrome surfaces: UI-only adaptations of this theme's neutral palette.
+# Keep the existing editor/syntax colors; give wide toolbars and idle controls
+# their own visible surface. Flat source surfaces are adapted for Qt.
+ChromeDark:
+  B10: '#3A3A3A'  # COLOR_TOOLBAR_BACKGROUND
+  B20: '#3A3A3A'  # COLOR_TAB_BACKGROUND
+  B30: '#444444'  # COLOR_BUTTON_BACKGROUND
+  B40: '#585858'  # COLOR_BUTTON_HOVER_BACKGROUND
+  B50: '#303030'  # COLOR_BUTTON_PRESSED_BACKGROUND
+  B60: '#707070'  # COLOR_BUTTON_BORDER
+  B70: '#494949'  # COLOR_TAB_HOVER_BACKGROUND
+  B80: '#D0D0D0'  # COLOR_BUTTON_TEXT
+
+# Qt chrome surfaces: UI-only adaptations of this theme's neutral palette.
+# Keep the existing editor/syntax colors; give wide toolbars and idle controls
+# their own visible surface. Flat source surfaces are adapted for Qt.
+ChromeLight:
+  B10: '#D0D0D0'  # COLOR_TOOLBAR_BACKGROUND
+  B20: '#D0D0D0'  # COLOR_TAB_BACKGROUND
+  B30: '#D0D0D0'  # COLOR_BUTTON_BACKGROUND
+  B40: '#BCBCBC'  # COLOR_BUTTON_HOVER_BACKGROUND
+  B50: '#AFAFAF'  # COLOR_BUTTON_PRESSED_BACKGROUND
+  B60: '#A0A0A0'  # COLOR_BUTTON_BORDER
+  B70: '#DCDCDC'  # COLOR_TAB_HOVER_BACKGROUND
+  B80: '#303030'  # COLOR_BUTTON_TEXT
+
+# Qt frame/state adaptations: COLOR_BACKGROUND_4 also draws the local Help
+# frame and dock tabs, so its inactive tab shade must remain visible.
+# Focus shades retain this palette's hue and readable generic selection text.
+# Popup menus and command palettes use independent native roles.
+QtUiAuditDark:
+  B10: '#3E3E3E'  # COLOR_BACKGROUND_4, COLOR_TAB_BACKGROUND
+  B30: '#355B63'  # COLOR_ACCENT_3
+QtUiAuditLight:
+  B10: '#BCBCBC'  # COLOR_BACKGROUND_4, COLOR_TAB_BACKGROUND
+  B30: '#B1B1B1'  # COLOR_ACCENT_3
+
+# Reviewed menus and command palette. Native popup colors where the
+# reference matches; otherwise this theme's own palette is retained.
+# Qt uses opaque fills and 1px popup frames. Switcher titles embed
+# COLOR_TEXT_1 in HTML, so selected/input fills may be adjusted for readability.
+QtPopupAuditDark:
+  B10: '#3C3C3C'  # COLOR_MENU_BACKGROUND
+  B20: '#F0F0F0'  # COLOR_MENU_TEXT
+  B30: '#04395E'  # COLOR_MENU_SELECTED_BACKGROUND
+  B40: '#FFFFFF'  # COLOR_MENU_SELECTED_TEXT
+  B50: '#3C3C3C'  # COLOR_MENU_BORDER
+  B60: '#252526'  # COLOR_SWITCHER_BACKGROUND
+  B70: '#04395E'  # COLOR_SWITCHER_SELECTED_BACKGROUND
+  B80: '#585858'  # COLOR_SWITCHER_BORDER
+  B90: '#3C3C3C'  # COLOR_SWITCHER_INPUT_BACKGROUND
+
+QtPopupAuditLight:
+  B10: '#FFFFFF'  # COLOR_MENU_BACKGROUND
+  B20: '#616161'  # COLOR_MENU_TEXT
+  B30: '#0060C0'  # COLOR_MENU_SELECTED_BACKGROUND
+  B40: '#FFFFFF'  # COLOR_MENU_SELECTED_TEXT
+  B50: '#FFFFFF'  # COLOR_MENU_BORDER
+  B60: '#F3F3F3'  # COLOR_SWITCHER_BACKGROUND
+  B70: '#92B4D7'  # COLOR_SWITCHER_SELECTED_BACKGROUND
+  B80: '#BCBCBC'  # COLOR_SWITCHER_BORDER
+  B90: '#FFFFFF'  # COLOR_SWITCHER_INPUT_BACKGROUND

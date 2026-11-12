@@ -329,3 +329,87 @@ TokyoNightPythonLight:
 # Generic Qt text remains adapted for readable variable-explorer cells.
 # Tree text and inactive selection labels now have separate native UI roles.
 # Python word operators follow keyword.operator (Ayu/Material) or @keyword.operator (Tokyo Night).
+
+# Inactive pane edges: B10 panel, B20 editor, B30 sidebar.
+# Qt content frames use existing slate neutrals; an NvimTree split matching its surface does not imply borderless Qt panes.
+TokyonightPaneBordersDark:
+  B10: '#3B4261'
+  B20: '#3B4261'
+  B30: '#3B4261'
+# Qt content frames use existing slate neutrals; an NvimTree split matching its surface does not imply borderless Qt panes.
+TokyonightPaneBordersLight:
+  B10: '#A1A6C5'
+  B20: '#A1A6C5'
+  B30: '#A1A6C5'
+
+
+# Interface hierarchy: source colors and Qt-only state adaptations.
+# Canonical Tokyo Night/Day palettes provide these blue-gray
+# surfaces. Qt chrome uses distinct neighboring levels; inactive labels use
+# readable foregrounds instead of fg_gutter. Day idle #E8E9EE and hover #ECEEF5 are adaptations,
+# and #283457/#0C0E14 button/selected text use the dark palette's blue-gray
+# ink to remain readable on Day fills. Editor and syntax colors are unchanged.
+TokyonightInterfaceDark:
+  B10: '#292E42'  # toolbar
+  B20: '#292E42'  # inactive tab
+  B30: '#A9B1D6'  # inactive tab text
+  B40: '#3B4261'  # tab hover
+  B50: '#3B4261'  # button
+  B60: '#C0CAF5'  # button text
+  B70: '#414868'  # button hover
+  B80: '#283457'  # button pressed
+  B90: '#565F89'  # button border
+TokyonightInterfaceLight:
+  B10: '#ECEEF5'  # toolbar, Qt Day adaptation for readable blue labels
+  B20: '#E8E9EE'  # inactive tab, lifted from the Day editor surface
+  B30: '#3760BF'  # inactive tab text
+  B40: '#ECEEF5'  # tab hover
+  B50: '#C4C8DA'  # button
+  B60: '#283457'  # button text
+  B70: '#D0D5E3'  # button hover
+  B80: '#B7C1E3'  # button pressed
+  B90: '#8990B3'  # button border
+  B100: '#0C0E14'  # selected tab text
+
+# Qt UI boundary review (2026-11-13): inactive dock tabs and the legacy
+# Help frame share COLOR_BACKGROUND_4. These neutral adjustments keep
+# their boundaries visible and inactive labels readable. Focus shades
+# stay distinct on pane/editor surfaces; source editor/syntax colors
+# remain in the original palettes above. These are Qt-only adaptations.
+# The light variant uses its existing button ink for generic UI text,
+# preserving contrast on the shared focus/hover fill. Python syntax
+# and the independent native tree/tab/status text roles stay intact.
+
+QtInterfaceReviewDark:
+  B10: '#2E3347'  # COLOR_BACKGROUND_4, COLOR_TAB_BACKGROUND
+
+QtInterfaceReviewLight:
+  B10: '#FBFCFF'  # COLOR_BACKGROUND_4, COLOR_TAB_BACKGROUND
+  B20: '#B0B4C1'  # COLOR_ACCENT_3
+  B30: '#283457'  # COLOR_TEXT_1
+
+# Reviewed menus and command palette. Native popup colors where the
+# reference matches; otherwise this theme's own palette is retained.
+# Qt uses opaque fills and 1px popup frames. Switcher titles embed
+# COLOR_TEXT_1 in HTML, so selected/input fills may be adjusted for readability.
+QtPopupAuditDark:
+  B10: '#1A1B26'  # COLOR_MENU_BACKGROUND
+  B20: '#C0CAF5'  # COLOR_MENU_TEXT
+  B30: '#292E42'  # COLOR_MENU_SELECTED_BACKGROUND
+  B40: '#A9B1D6'  # COLOR_MENU_SELECTED_TEXT
+  B50: '#3B4261'  # COLOR_MENU_BORDER
+  B60: '#1A1B26'  # COLOR_SWITCHER_BACKGROUND
+  B70: '#292E42'  # COLOR_SWITCHER_SELECTED_BACKGROUND
+  B80: '#3B4261'  # COLOR_SWITCHER_BORDER
+  B90: '#1A1B26'  # COLOR_SWITCHER_INPUT_BACKGROUND
+
+QtPopupAuditLight:
+  B10: '#D0D5E3'  # COLOR_MENU_BACKGROUND
+  B20: '#283457'  # COLOR_MENU_TEXT
+  B30: '#C4C8DA'  # COLOR_MENU_SELECTED_BACKGROUND
+  B40: '#283457'  # COLOR_MENU_SELECTED_TEXT
+  B50: '#A1A6C5'  # COLOR_MENU_BORDER
+  B60: '#D0D5E3'  # COLOR_SWITCHER_BACKGROUND
+  B70: '#C4C8DA'  # COLOR_SWITCHER_SELECTED_BACKGROUND
+  B80: '#A1A6C5'  # COLOR_SWITCHER_BORDER
+  B90: '#D0D5E3'  # COLOR_SWITCHER_INPUT_BACKGROUND

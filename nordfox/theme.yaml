@@ -1,0 +1,36 @@
+# Upstream repository: https://github.com/nuromirg/nightfox-vscode
+# Upstream revision: ed72c227cd94a9698ad463aad8d496fcc0441b2d
+# Source: Nightfox Theme Collections 1.0.7 (nuromirg), themes/nordfox.json
+# Source URL: https://github.com/nuromirg/nightfox-vscode/blob/ed72c227cd94a9698ad463aad8d496fcc0441b2d/themes/nordfox.json
+# Installed source SHA-256: 271d3510ab940afbdc44a62e1152b60717f046635e3d2d732c9a77a589568f8d
+# VS Code port of EdenEast/nightfox.nvim; this adaptation follows the VS Code port.
+# Native editor, syntax, selected-tab, statusbar, pane-border and primary-button colors are retained.
+# Python builtin calls use function.defaultLibrary, builtin types use type.defaultLibrary,
+# self/cls use variable.defaultLibrary; docstrings use string and comments retain italics.
+# All bracket depths use the native Brackets scope; the source has no rainbow colors.
+# Generic *.declaration bold is not applied: Spyder cannot limit that flag to semantic declarations.
+# Qt adaptations: COLOR_ACCENT_3 uses native blue for focused pane outlines;
+# toolbar uses titleBar.activeBackground; inactive tabs/legacy Help frame and tab hover
+# are raised within the blue-gray palette, with brighter inactive tab text.
+# Button pressed is a 10% blend of native button.background toward titleBar.activeBackground.
+# VS Code does not specify quickInput colors: Switcher follows editorWidget/input/list roles.
+# Qt feedback/highlight ramps, current-cell tint and help fills adapt the same native palette.
+# Qt feedback adaptation: COLOR_ERROR_1 and COLOR_WARN_1 also fill legacy Dependencies cells;
+# COLOR_ERROR_1 also colors the stop icon. Darkened same-hue fills and native brightWhite
+# tree text retain readable dependency labels while ICON_4/5 keep native red/yellow.
+# Nordfox shared-role limit: dependency labels reach 4.5:1; the stop icon is 2.719:1 against the toolbar.
+# Qt menu/tree/Switcher selected fill #48586B darkens native #4F6074 slightly for readable #CDCECF text.
+---
+name: nordfox
+display_name: Nordfox
+description: VS Code Nordfox blue-gray interface and syntax adapted for Spyder
+author: nuromirg; James Simpson (@EdenEast) and contributors; Spyder adaptation
+version: 1.0.0
+license: MIT
+tags:
+- nordfox
+- vscode
+- dark
+variants:
+  dark: true
+  light: false

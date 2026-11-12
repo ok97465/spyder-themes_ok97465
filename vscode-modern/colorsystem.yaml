@@ -349,3 +349,82 @@ VSCodeModernUiLight:
   B130: '#6E7681'  # COLOR_EDITOR_LINE_NUMBER
   B140: '#3B3B3B'  # COLOR_TREE_TEXT
   B150: '#3B3B3B'  # COLOR_TREE_INACTIVE_SELECTION_TEXT
+
+# Inactive pane edges: B10 panel, B20 editor, B30 sidebar.
+# Qt content frames reuse visible neutral shades; workbench separators are not the complete Qt pane boundary.
+VscodeModernPaneBordersDark:
+  B10: '#3C3C3C'
+  B20: '#3C3C3C'
+  B30: '#3C3C3C'
+# Qt content frames reuse visible neutral shades; workbench separators are not the complete Qt pane boundary.
+VscodeModernPaneBordersLight:
+  B10: '#CCCCCC'
+  B20: '#CCCCCC'
+  B30: '#CCCCCC'
+
+# Qt chrome surfaces: UI-only adaptations of this theme's neutral palette.
+# Keep the existing editor/syntax colors; give wide toolbars and idle controls
+# their own visible surface. Flat source surfaces are adapted for Qt.
+ChromeDark:
+  B10: '#303030'  # COLOR_TOOLBAR_BACKGROUND
+  B20: '#303030'  # COLOR_TAB_BACKGROUND
+  B30: '#343434'  # COLOR_BUTTON_BACKGROUND
+  B40: '#454545'  # COLOR_BUTTON_HOVER_BACKGROUND
+  B50: '#252525'  # COLOR_BUTTON_PRESSED_BACKGROUND
+  B60: '#5A5A5A'  # COLOR_BUTTON_BORDER
+  B70: '#3C3C3C'  # COLOR_TAB_HOVER_BACKGROUND
+  B80: '#CCCCCC'  # COLOR_BUTTON_TEXT
+  B90: '#B5B5B5'  # COLOR_TAB_TEXT
+
+# Qt chrome surfaces: UI-only adaptations of this theme's neutral palette.
+# Keep the existing editor/syntax colors; give wide toolbars and idle controls
+# their own visible surface. Flat source surfaces are adapted for Qt.
+ChromeLight:
+  B10: '#E5E5E5'  # COLOR_TOOLBAR_BACKGROUND
+  B20: '#E5E5E5'  # COLOR_TAB_BACKGROUND
+  B30: '#E5E5E5'  # COLOR_BUTTON_BACKGROUND
+  B40: '#CCCCCC'  # COLOR_BUTTON_HOVER_BACKGROUND
+  B50: '#B8B8B8'  # COLOR_BUTTON_PRESSED_BACKGROUND
+  B60: '#A6A6A6'  # COLOR_BUTTON_BORDER
+  B70: '#F1F1F1'  # COLOR_TAB_HOVER_BACKGROUND
+  B80: '#3B3B3B'  # COLOR_BUTTON_TEXT
+
+# Qt UI boundary review (2026-11-13): inactive dock tabs and the legacy
+# Help frame share COLOR_BACKGROUND_4. These neutral adjustments keep
+# their boundaries visible and inactive labels readable. Focus shades
+# stay distinct on pane/editor surfaces; source editor/syntax colors
+# remain in the original palettes above. These are Qt-only adaptations.
+
+QtInterfaceReviewDark:
+  B10: '#343434'  # COLOR_BACKGROUND_4, COLOR_TAB_BACKGROUND
+  B20: '#063B5F'  # COLOR_ACCENT_3
+
+QtInterfaceReviewLight:
+  B10: '#D2D2D2'  # COLOR_BACKGROUND_4, COLOR_TAB_BACKGROUND
+  B20: '#3B3B3B'  # COLOR_TAB_TEXT
+
+# Reviewed menus and command palette. Native popup colors where the
+# reference matches; otherwise this theme's own palette is retained.
+# Qt uses opaque fills and 1px popup frames. Switcher titles embed
+# COLOR_TEXT_1 in HTML, so selected/input fills may be adjusted for readability.
+QtPopupAuditDark:
+  B10: '#1F1F1F'  # COLOR_MENU_BACKGROUND
+  B20: '#CCCCCC'  # COLOR_MENU_TEXT
+  B30: '#0078D4'  # COLOR_MENU_SELECTED_BACKGROUND
+  B40: '#FFFFFF'  # COLOR_MENU_SELECTED_TEXT
+  B50: '#454545'  # COLOR_MENU_BORDER
+  B60: '#222222'  # COLOR_SWITCHER_BACKGROUND
+  B70: '#04395E'  # COLOR_SWITCHER_SELECTED_BACKGROUND
+  B80: '#313131'  # COLOR_SWITCHER_BORDER
+  B90: '#313131'  # COLOR_SWITCHER_INPUT_BACKGROUND
+
+QtPopupAuditLight:
+  B10: '#FFFFFF'  # COLOR_MENU_BACKGROUND
+  B20: '#3B3B3B'  # COLOR_MENU_TEXT
+  B30: '#005FB8'  # COLOR_MENU_SELECTED_BACKGROUND
+  B40: '#FFFFFF'  # COLOR_MENU_SELECTED_TEXT
+  B50: '#CECECE'  # COLOR_MENU_BORDER
+  B60: '#F8F8F8'  # COLOR_SWITCHER_BACKGROUND
+  B70: '#E8E8E8'  # COLOR_SWITCHER_SELECTED_BACKGROUND
+  B80: '#E5E5E5'  # COLOR_SWITCHER_BORDER
+  B90: '#FFFFFF'  # COLOR_SWITCHER_INPUT_BACKGROUND

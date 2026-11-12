@@ -1,0 +1,396 @@
+# Upstream repository: https://github.com/kepano/flexoki
+# Upstream revision: 8d723bac4a9ac46adfdf99d42155286977aac72a
+# Source: https://github.com/kepano/flexoki/blob/8d723bac4a9ac46adfdf99d42155286977aac72a/vscode/Flexoki-Dark-color-theme.json
+# Source SHA-256: fd2db5fa965edaa14103cbbc27ae1e259261b8d5be33b5baf9dbd44b1ec4e61e
+# Source: https://github.com/kepano/flexoki/blob/8d723bac4a9ac46adfdf99d42155286977aac72a/vscode/Flexoki-Light-color-theme.json
+# Source SHA-256: 14842b0e0d2fef349b041d51507e1fa51bbbcd71c0e0df0c637d8e7b4ad8a061
+# Source: https://github.com/kepano/flexoki/blob/8d723bac4a9ac46adfdf99d42155286977aac72a/_generators/src/palette.ts
+# Source SHA-256: a1b211e0ffd2422abf58854d0a4463e181db12a7aae2ff42e3632e6ebcbfdffd
+# Native VS Code editor backgrounds, normal foregrounds, syntax colors and neutral UI surfaces are preserved.
+# Alpha selections are composited over the native editor background for opaque Qt colors.
+# The native gutter colors are intentionally faint; line numbers use the upstream comment color for legibility.
+# Qt tab labels use the native normal foreground so hover text remains at least 4.5:1; backgrounds are unchanged.
+# All six bracket depths repeat native punctuation; the upstream theme has no rainbow bracket cycle.
+# Python classes follow entity.name.type.class; builtin types and names use the later support.type.python / variable.legacy.builtin.python cyan rule.
+# Qt-only semantic feedback ramps, current-cell shading and help fills are explicit adaptations.
+# Large widget fills and selections remain neutral; source accent colors are used for small accents and foregrounds.
+---
+color_classes:
+  PopupAuditDark: QtPopupAuditDark
+  PopupAuditLight: QtPopupAuditLight
+  QtUiAuditLight: QtUiAuditLight
+  QtUiAuditDark: QtUiAuditDark
+  ErrorUiDark: QtErrorDark
+  ChromeLight: ChromeLight
+  ChromeDark: ChromeDark
+  SurfaceDark: FlexokiSurfaceDark
+  NativeUiDark: FlexokiNativeUiDark
+  GroupDark: FlexokiGroupDark
+  SyntaxDark: FlexokiSyntaxDark
+  PythonDark: FlexokiPythonDark
+  LogosDark: FlexokiLogosDark
+  HelpDark: FlexokiHelpDark
+  SurfaceLight: FlexokiSurfaceLight
+  NativeUiLight: FlexokiNativeUiLight
+  GroupLight: FlexokiGroupLight
+  SyntaxLight: FlexokiSyntaxLight
+  PythonLight: FlexokiPythonLight
+  LogosLight: FlexokiLogosLight
+  HelpLight: FlexokiHelpLight
+  PaneBordersDark: FlexokiPaneBordersDark
+  PaneBordersLight: FlexokiPaneBordersLight
+semantic_mappings:
+  dark:
+    COLOR_MENU_BACKGROUND: PopupAuditDark.B10
+    COLOR_MENU_TEXT: PopupAuditDark.B20
+    COLOR_MENU_SELECTED_BACKGROUND: PopupAuditDark.B30
+    COLOR_MENU_SELECTED_TEXT: PopupAuditDark.B40
+    COLOR_MENU_BORDER: PopupAuditDark.B50
+    COLOR_SWITCHER_BACKGROUND: PopupAuditDark.B60
+    COLOR_SWITCHER_SELECTED_BACKGROUND: PopupAuditDark.B70
+    COLOR_SWITCHER_BORDER: PopupAuditDark.B80
+    COLOR_SWITCHER_INPUT_BACKGROUND: PopupAuditDark.B90
+    COLOR_BUTTON_TEXT: ChromeDark.B80
+    COLOR_BUTTON_BORDER: ChromeDark.B60
+    COLOR_BUTTON_PRESSED_BACKGROUND: ChromeDark.B50
+    COLOR_BUTTON_HOVER_BACKGROUND: ChromeDark.B40
+    COLOR_BUTTON_BACKGROUND: ChromeDark.B30
+    COLOR_TAB_BACKGROUND: ChromeDark.B20
+    # Qt content frames keep the visible dark edge and strengthen the light edge with an existing paper neutral.
+    COLOR_PANE_BORDER: PaneBordersDark.B10
+    COLOR_EDITOR_BORDER: PaneBordersDark.B20
+    COLOR_SIDEBAR_BORDER: PaneBordersDark.B30
+    COLOR_BACKGROUND_1: SurfaceDark.B10
+    COLOR_BACKGROUND_2: SurfaceDark.B10
+    COLOR_BACKGROUND_3: SurfaceDark.B20
+    COLOR_BACKGROUND_4: ChromeDark.B20
+    COLOR_BACKGROUND_5: SurfaceDark.B30
+    COLOR_BACKGROUND_6: SurfaceDark.B40
+    COLOR_TEXT_1: SurfaceDark.B50
+    COLOR_TEXT_2: SurfaceDark.B60
+    COLOR_TEXT_3: SurfaceDark.B60
+    COLOR_TEXT_4: SurfaceDark.B50
+    COLOR_ACCENT_1: SurfaceDark.B70
+    COLOR_ACCENT_2: SurfaceDark.B20
+    COLOR_ACCENT_3: QtUiAuditDark.B30
+    COLOR_ACCENT_4: SurfaceDark.B20
+    COLOR_ACCENT_5: SurfaceDark.B80
+    COLOR_DISABLED: SurfaceDark.B60
+    COLOR_EMPTY: SurfaceDark.B20
+    COLOR_STATUSBAR_BACKGROUND: NativeUiDark.B10
+    COLOR_STATUSBAR_TEXT: NativeUiDark.B20
+    COLOR_TOOLBAR_BACKGROUND: ChromeDark.B10
+    COLOR_EDITOR_LINE_NUMBER: NativeUiDark.B30
+    COLOR_TAB_TEXT: NativeUiDark.B20
+    COLOR_TAB_SELECTED_TEXT: NativeUiDark.B20
+    COLOR_TAB_SELECTED_BACKGROUND: NativeUiDark.B10
+    COLOR_TAB_HOVER_BACKGROUND: ChromeDark.B70
+    COLOR_TAB_SELECTED_ACCENT: NativeUiDark.B50
+    COLOR_TREE_TEXT: NativeUiDark.B20
+    COLOR_TREE_INACTIVE_SELECTION_TEXT: NativeUiDark.B20
+    COLOR_TREE_HOVER_BACKGROUND: NativeUiDark.B40
+    COLOR_TREE_SELECTED_BACKGROUND: NativeUiDark.B60
+    COLOR_TREE_INACTIVE_SELECTION_BACKGROUND: NativeUiDark.B40
+    COLOR_TREE_SELECTED_TEXT: NativeUiDark.B20
+    COLOR_SUCCESS_1: SurfaceDark.B90
+    COLOR_SUCCESS_2: SurfaceDark.B100
+    COLOR_SUCCESS_3: SurfaceDark.B110
+    COLOR_SUCCESS_4: SurfaceDark.B120
+    COLOR_SUCCESS_5: SurfaceDark.B130
+    # Shared foreground (ima.stop/errors) and Dependencies cell background.
+    COLOR_ERROR_1: ErrorUiDark.B10
+    COLOR_ERROR_2: SurfaceDark.B150
+    COLOR_ERROR_3: SurfaceDark.B160
+    COLOR_ERROR_4: SurfaceDark.B170
+    COLOR_ERROR_5: SurfaceDark.B180
+    COLOR_WARN_1: SurfaceDark.B190
+    COLOR_WARN_2: SurfaceDark.B200
+    COLOR_WARN_3: SurfaceDark.B210
+    COLOR_WARN_4: SurfaceDark.B220
+    COLOR_WARN_5: SurfaceDark.B230
+    ICON_1: SurfaceDark.B50
+    ICON_2: SurfaceDark.B240
+    ICON_3: SurfaceDark.B250
+    ICON_4: SurfaceDark.B260
+    ICON_5: SurfaceDark.B270
+    ICON_6: SurfaceDark.B40
+    ICON_7: SurfaceDark.B270
+    GROUP_1: GroupDark.B10
+    GROUP_2: GroupDark.B20
+    GROUP_3: GroupDark.B30
+    GROUP_4: GroupDark.B40
+    GROUP_5: GroupDark.B50
+    GROUP_6: GroupDark.B60
+    GROUP_7: GroupDark.B70
+    GROUP_8: GroupDark.B80
+    GROUP_9: GroupDark.B20
+    GROUP_10: GroupDark.B40
+    GROUP_11: GroupDark.B70
+    GROUP_12: GroupDark.B90
+    COLOR_HIGHLIGHT_1: SurfaceDark.B20
+    COLOR_HIGHLIGHT_2: SurfaceDark.B30
+    COLOR_HIGHLIGHT_3: SurfaceDark.B20
+    COLOR_HIGHLIGHT_4: SurfaceDark.B80
+    COLOR_OCCURRENCE_1: SurfaceDark.B70
+    COLOR_OCCURRENCE_2: SurfaceDark.B10
+    COLOR_OCCURRENCE_3: SurfaceDark.B20
+    COLOR_OCCURRENCE_4: SurfaceDark.B80
+    COLOR_OCCURRENCE_5: SurfaceDark.B30
+    EDITOR_BACKGROUND: SyntaxDark.B10
+    EDITOR_CURRENTLINE: SyntaxDark.B20
+    EDITOR_CURRENTCELL: SyntaxDark.B30
+    EDITOR_OCCURRENCE: SyntaxDark.B40
+    EDITOR_CTRLCLICK: SyntaxDark.B50
+    EDITOR_SIDEAREAS: SyntaxDark.B10
+    EDITOR_MATCHED_P: SyntaxDark.B60
+    EDITOR_UNMATCHED_P: SyntaxDark.B70
+    EDITOR_NORMAL: [SyntaxDark.B80, false, false]
+    EDITOR_KEYWORD: [SyntaxDark.B90, false, false]
+    EDITOR_MAGIC: [SyntaxDark.B100, false, false]
+    # support.function.builtin.python inherits the orange bold function rule.
+    # Builtin types use the separate cyan EDITOR_TYPE role below.
+    EDITOR_BUILTIN: [SyntaxDark.B120, true, false]
+    EDITOR_DEFINITION: [SyntaxDark.B120, true, false]
+    EDITOR_COMMENT: [SyntaxDark.B130, false, false]
+    EDITOR_STRING: [SyntaxDark.B110, false, false]
+    EDITOR_NUMBER: [SyntaxDark.B140, false, false]
+    # Python self/cls match variable; variable.language.this is JS-specific.
+    EDITOR_INSTANCE: [SyntaxDark.B80, false, false]
+    EDITOR_SYMBOL: [SyntaxDark.B130, false, false]
+    EDITOR_OPERATOR: [PythonDark.B10, false, false]
+    EDITOR_WORD_OPERATOR: [PythonDark.B10, false, false]
+    EDITOR_PUNCTUATION: [PythonDark.B20, false, false]
+    EDITOR_SEPARATOR: [PythonDark.B20, false, false]
+    EDITOR_CLASS: [PythonDark.B30, false, false]
+    EDITOR_FUNCTION_CALL: [PythonDark.B30, true, false]
+    EDITOR_DOCSTRING: [PythonDark.B40, false, false]
+    EDITOR_TYPE: [PythonDark.B40, false, false]
+    # entity.other.inherited-class has no native Flexoki rule.
+    EDITOR_BASECLASS: [SyntaxDark.B80, false, false]
+    EDITOR_STORAGE: [PythonDark.B50, false, false]
+    EDITOR_CONSTANT: [PythonDark.B60, false, false]
+    EDITOR_VARIABLE: [PythonDark.B60, false, false]
+    EDITOR_PARAMETER: [PythonDark.B60, false, false]
+    EDITOR_CLASS_REFERENCE: [PythonDark.B30, false, false]
+    EDITOR_BRACKET_1: [PythonDark.B20, false, false]
+    EDITOR_BRACKET_2: [PythonDark.B20, false, false]
+    EDITOR_BRACKET_3: [PythonDark.B20, false, false]
+    EDITOR_BRACKET_4: [PythonDark.B20, false, false]
+    EDITOR_BRACKET_5: [PythonDark.B20, false, false]
+    EDITOR_BRACKET_6: [PythonDark.B20, false, false]
+    PYTHON_LOGO_UP: LogosDark.B10
+    PYTHON_LOGO_DOWN: LogosDark.B20
+    SPYDER_LOGO_BACKGROUND: SurfaceDark.B10
+    SPYDER_LOGO_WEB: SurfaceDark.B50
+    SPYDER_LOGO_SNAKE: SurfaceDark.B50
+    SPECIAL_TABS_SEPARATOR: SurfaceDark.B30
+    SPECIAL_TABS_SELECTED: SurfaceDark.B10
+    COLOR_HEART: SurfaceDark.B260
+    TIP_TITLE_COLOR: SurfaceDark.B240
+    TIP_CHAR_HIGHLIGHT_COLOR: SurfaceDark.B60
+    OPACITY_TOOLTIP: 230
+    TAB_SELECTED_ACCENT_INNER_EDGE: 0
+    TAB_SELECTED_ACCENT_WIDTH: 1
+  light:
+    COLOR_MENU_BACKGROUND: PopupAuditLight.B10
+    COLOR_MENU_TEXT: PopupAuditLight.B20
+    COLOR_MENU_SELECTED_BACKGROUND: PopupAuditLight.B30
+    COLOR_MENU_SELECTED_TEXT: PopupAuditLight.B40
+    COLOR_MENU_BORDER: PopupAuditLight.B50
+    COLOR_SWITCHER_BACKGROUND: PopupAuditLight.B60
+    COLOR_SWITCHER_SELECTED_BACKGROUND: PopupAuditLight.B70
+    COLOR_SWITCHER_BORDER: PopupAuditLight.B80
+    COLOR_SWITCHER_INPUT_BACKGROUND: PopupAuditLight.B90
+    COLOR_BUTTON_TEXT: ChromeLight.B80
+    COLOR_BUTTON_BORDER: ChromeLight.B60
+    COLOR_BUTTON_PRESSED_BACKGROUND: ChromeLight.B50
+    COLOR_BUTTON_HOVER_BACKGROUND: ChromeLight.B40
+    COLOR_BUTTON_BACKGROUND: ChromeLight.B30
+    COLOR_TAB_BACKGROUND: QtUiAuditLight.B10
+    # Qt content frames keep the visible dark edge and strengthen the light edge with an existing paper neutral.
+    COLOR_PANE_BORDER: PaneBordersLight.B10
+    COLOR_EDITOR_BORDER: PaneBordersLight.B20
+    COLOR_SIDEBAR_BORDER: PaneBordersLight.B30
+    COLOR_BACKGROUND_1: SurfaceLight.B10
+    COLOR_BACKGROUND_2: SurfaceLight.B10
+    COLOR_BACKGROUND_3: SurfaceLight.B20
+    COLOR_BACKGROUND_4: QtUiAuditLight.B10
+    COLOR_BACKGROUND_5: SurfaceLight.B30
+    COLOR_BACKGROUND_6: SurfaceLight.B40
+    COLOR_TEXT_1: SurfaceLight.B50
+    COLOR_TEXT_2: SurfaceLight.B60
+    COLOR_TEXT_3: SurfaceLight.B60
+    COLOR_TEXT_4: SurfaceLight.B50
+    COLOR_ACCENT_1: SurfaceLight.B70
+    COLOR_ACCENT_2: SurfaceLight.B20
+    COLOR_ACCENT_3: QtUiAuditLight.B30
+    COLOR_ACCENT_4: SurfaceLight.B20
+    COLOR_ACCENT_5: SurfaceLight.B80
+    COLOR_DISABLED: SurfaceLight.B60
+    COLOR_EMPTY: SurfaceLight.B20
+    COLOR_STATUSBAR_BACKGROUND: NativeUiLight.B10
+    COLOR_STATUSBAR_TEXT: NativeUiLight.B20
+    COLOR_TOOLBAR_BACKGROUND: ChromeLight.B10
+    COLOR_EDITOR_LINE_NUMBER: NativeUiLight.B30
+    COLOR_TAB_TEXT: NativeUiLight.B20
+    COLOR_TAB_SELECTED_TEXT: NativeUiLight.B20
+    COLOR_TAB_SELECTED_BACKGROUND: NativeUiLight.B10
+    COLOR_TAB_HOVER_BACKGROUND: ChromeLight.B70
+    COLOR_TAB_SELECTED_ACCENT: NativeUiLight.B50
+    COLOR_TREE_TEXT: NativeUiLight.B20
+    COLOR_TREE_INACTIVE_SELECTION_TEXT: NativeUiLight.B20
+    COLOR_TREE_HOVER_BACKGROUND: NativeUiLight.B40
+    COLOR_TREE_SELECTED_BACKGROUND: NativeUiLight.B60
+    COLOR_TREE_INACTIVE_SELECTION_BACKGROUND: NativeUiLight.B40
+    COLOR_TREE_SELECTED_TEXT: NativeUiLight.B20
+    COLOR_SUCCESS_1: SurfaceLight.B90
+    COLOR_SUCCESS_2: SurfaceLight.B100
+    COLOR_SUCCESS_3: SurfaceLight.B110
+    COLOR_SUCCESS_4: SurfaceLight.B120
+    COLOR_SUCCESS_5: SurfaceLight.B130
+    # Shared foreground (ima.stop/errors) and Dependencies cell background.
+    COLOR_ERROR_1: SurfaceLight.B260
+    COLOR_ERROR_2: SurfaceLight.B150
+    COLOR_ERROR_3: SurfaceLight.B160
+    COLOR_ERROR_4: SurfaceLight.B170
+    COLOR_ERROR_5: SurfaceLight.B180
+    COLOR_WARN_1: SurfaceLight.B190
+    COLOR_WARN_2: SurfaceLight.B200
+    COLOR_WARN_3: SurfaceLight.B210
+    COLOR_WARN_4: SurfaceLight.B220
+    COLOR_WARN_5: SurfaceLight.B230
+    ICON_1: SurfaceLight.B50
+    ICON_2: SurfaceLight.B240
+    ICON_3: SurfaceLight.B250
+    ICON_4: SurfaceLight.B260
+    ICON_5: SurfaceLight.B270
+    ICON_6: SurfaceLight.B40
+    ICON_7: SurfaceLight.B270
+    GROUP_1: GroupLight.B10
+    GROUP_2: GroupLight.B20
+    GROUP_3: GroupLight.B30
+    GROUP_4: GroupLight.B40
+    GROUP_5: GroupLight.B50
+    GROUP_6: GroupLight.B60
+    GROUP_7: GroupLight.B70
+    GROUP_8: GroupLight.B80
+    GROUP_9: GroupLight.B20
+    GROUP_10: GroupLight.B40
+    GROUP_11: GroupLight.B70
+    GROUP_12: GroupLight.B90
+    COLOR_HIGHLIGHT_1: SurfaceLight.B20
+    COLOR_HIGHLIGHT_2: SurfaceLight.B30
+    COLOR_HIGHLIGHT_3: SurfaceLight.B20
+    COLOR_HIGHLIGHT_4: SurfaceLight.B80
+    COLOR_OCCURRENCE_1: SurfaceLight.B70
+    COLOR_OCCURRENCE_2: SurfaceLight.B10
+    COLOR_OCCURRENCE_3: SurfaceLight.B20
+    COLOR_OCCURRENCE_4: SurfaceLight.B80
+    COLOR_OCCURRENCE_5: SurfaceLight.B30
+    EDITOR_BACKGROUND: SyntaxLight.B10
+    EDITOR_CURRENTLINE: SyntaxLight.B20
+    EDITOR_CURRENTCELL: SyntaxLight.B30
+    EDITOR_OCCURRENCE: SyntaxLight.B40
+    EDITOR_CTRLCLICK: SyntaxLight.B50
+    EDITOR_SIDEAREAS: SyntaxLight.B10
+    EDITOR_MATCHED_P: SyntaxLight.B60
+    EDITOR_UNMATCHED_P: SyntaxLight.B70
+    EDITOR_NORMAL: [SyntaxLight.B80, false, false]
+    EDITOR_KEYWORD: [SyntaxLight.B90, false, false]
+    EDITOR_MAGIC: [SyntaxLight.B100, false, false]
+    # support.function.builtin.python inherits the orange bold function rule.
+    # Builtin types use the separate cyan EDITOR_TYPE role below.
+    EDITOR_BUILTIN: [SyntaxLight.B120, true, false]
+    EDITOR_DEFINITION: [SyntaxLight.B120, true, false]
+    EDITOR_COMMENT: [SyntaxLight.B130, false, false]
+    EDITOR_STRING: [SyntaxLight.B110, false, false]
+    EDITOR_NUMBER: [SyntaxLight.B140, false, false]
+    # Python self/cls match variable; variable.language.this is JS-specific.
+    EDITOR_INSTANCE: [SyntaxLight.B80, false, false]
+    EDITOR_SYMBOL: [SyntaxLight.B130, false, false]
+    EDITOR_OPERATOR: [PythonLight.B10, false, false]
+    EDITOR_WORD_OPERATOR: [PythonLight.B10, false, false]
+    EDITOR_PUNCTUATION: [PythonLight.B20, false, false]
+    EDITOR_SEPARATOR: [PythonLight.B20, false, false]
+    EDITOR_CLASS: [PythonLight.B30, false, false]
+    EDITOR_FUNCTION_CALL: [PythonLight.B30, true, false]
+    EDITOR_DOCSTRING: [PythonLight.B40, false, false]
+    EDITOR_TYPE: [PythonLight.B40, false, false]
+    # entity.other.inherited-class has no native Flexoki rule.
+    EDITOR_BASECLASS: [SyntaxLight.B80, false, false]
+    EDITOR_STORAGE: [PythonLight.B50, false, false]
+    EDITOR_CONSTANT: [PythonLight.B60, false, false]
+    EDITOR_VARIABLE: [PythonLight.B60, false, false]
+    EDITOR_PARAMETER: [PythonLight.B60, false, false]
+    EDITOR_CLASS_REFERENCE: [PythonLight.B30, false, false]
+    EDITOR_BRACKET_1: [PythonLight.B20, false, false]
+    EDITOR_BRACKET_2: [PythonLight.B20, false, false]
+    EDITOR_BRACKET_3: [PythonLight.B20, false, false]
+    EDITOR_BRACKET_4: [PythonLight.B20, false, false]
+    EDITOR_BRACKET_5: [PythonLight.B20, false, false]
+    EDITOR_BRACKET_6: [PythonLight.B20, false, false]
+    PYTHON_LOGO_UP: LogosLight.B10
+    PYTHON_LOGO_DOWN: LogosLight.B20
+    SPYDER_LOGO_BACKGROUND: SurfaceLight.B10
+    SPYDER_LOGO_WEB: SurfaceLight.B50
+    SPYDER_LOGO_SNAKE: SurfaceLight.B50
+    SPECIAL_TABS_SEPARATOR: SurfaceLight.B30
+    SPECIAL_TABS_SELECTED: SurfaceLight.B10
+    COLOR_HEART: SurfaceLight.B260
+    TIP_TITLE_COLOR: SurfaceLight.B240
+    TIP_CHAR_HIGHLIGHT_COLOR: SurfaceLight.B60
+    OPACITY_TOOLTIP: 230
+    TAB_SELECTED_ACCENT_INNER_EDGE: 0
+    TAB_SELECTED_ACCENT_WIDTH: 1
+css_overrides:
+  --syn-operator:
+    dark: EDITOR_OPERATOR
+    light: EDITOR_OPERATOR
+  --header-bg-color:
+    dark: HelpDark.B10
+    light: HelpLight.B10
+  --header-text-color:
+    dark: HelpDark.B20
+    light: HelpLight.B20
+  --syn-error-bg:
+    dark: HelpDark.B30
+    light: HelpLight.B30
+  --warning-bg:
+    dark: HelpDark.B40
+    light: HelpLight.B40
+  --link-color:
+    dark: HelpDark.B50
+    light: HelpLight.B50
+  --hover-color:
+    dark: HelpDark.B60
+    light: HelpLight.B60
+  --note-bg:
+    dark: HelpDark.B10
+    light: HelpLight.B10
+  --border-light:
+    dark: COLOR_BACKGROUND_5
+    light: COLOR_BACKGROUND_5
+appeal_overrides:
+  # Replace all legacy Error/Warning/Secondary class defaults with native roles.
+  --heart: COLOR_HEART
+  --highlight: EDITOR_MAGIC
+  --hand: EDITOR_DEFINITION
+  --link-color:
+    dark: HelpDark.B50
+    light: HelpLight.B50
+  --hover-color:
+    dark: HelpDark.B60
+    light: HelpLight.B60
+pydoc_overrides:
+  --header-bg-color:
+    dark: HelpDark.B10
+    light: HelpLight.B10
+  --header-text-color:
+    dark: HelpDark.B20
+    light: HelpLight.B20
+  --link-color:
+    dark: HelpDark.B50
+    light: HelpLight.B50
+  --hover-color:
+    dark: HelpDark.B60
+    light: HelpLight.B60

@@ -1,0 +1,378 @@
+# Adapted from Horizon and Horizon Bright by Jonathan Olaleye.
+# Source revision: 5ae91b6d49bf291e0a34c0a1cb277d9738aadd90
+# https://github.com/jolaleye/horizon-theme-vscode/tree/5ae91b6d49bf291e0a34c0a1cb277d9738aadd90/themes
+# Sources: horizon.json and horizon-bright.json; MIT notice included in LICENSE.
+# Native editor backgrounds are preserved; alpha colors are composited over editor.background.
+# Spyder adaptation: neutral comments and Bright docstrings are strengthened to at least 4.5:1
+# against the editor background; other token foregrounds preserve their source colors.
+# Normal text follows the source global foreground where no token rule applies.
+# variable.parameter adds italics and inherits the upstream variable foreground.
+# Qt panels, hover and selections use subdued grey/warm-neutral adaptations.
+# Warning and success UI colors are adapted for legibility on the Bright background.
+# No native rainbow bracket scopes exist, so all six bracket depths inherit punctuation.
+---
+color_classes:
+  PopupAuditDark: QtPopupAuditDark
+  PopupAuditLight: QtPopupAuditLight
+  QtUiAuditLight: QtUiAuditLight
+  QtUiAuditDark: QtUiAuditDark
+  InterfaceDark: HorizonInterfaceDark
+  InterfaceLight: HorizonInterfaceLight
+  Dark: HorizonPaletteDark
+  Light: HorizonPaletteLight
+  PaneBordersDark: HorizonPaneBordersDark
+  PaneBordersLight: HorizonPaneBordersLight
+semantic_mappings:
+  dark:
+    COLOR_MENU_BACKGROUND: PopupAuditDark.B10
+    COLOR_MENU_TEXT: PopupAuditDark.B20
+    COLOR_MENU_SELECTED_BACKGROUND: PopupAuditDark.B30
+    COLOR_MENU_SELECTED_TEXT: PopupAuditDark.B40
+    COLOR_MENU_BORDER: PopupAuditDark.B50
+    COLOR_SWITCHER_BACKGROUND: PopupAuditDark.B60
+    COLOR_SWITCHER_SELECTED_BACKGROUND: PopupAuditDark.B70
+    COLOR_SWITCHER_BORDER: PopupAuditDark.B80
+    COLOR_SWITCHER_INPUT_BACKGROUND: PopupAuditDark.B90
+
+    # Raised Qt surfaces keep inactive tabs and ordinary buttons visible.
+    COLOR_TAB_BACKGROUND: QtUiAuditDark.B10
+    COLOR_BUTTON_BACKGROUND: InterfaceDark.B50
+    COLOR_BUTTON_TEXT: InterfaceDark.B60
+    COLOR_BUTTON_HOVER_BACKGROUND: InterfaceDark.B70
+    COLOR_BUTTON_PRESSED_BACKGROUND: InterfaceDark.B80
+    COLOR_BUTTON_BORDER: InterfaceDark.B90
+    # Qt content frames reuse muted slate and warm stone; faint workbench group edges alone do not delimit Qt panes.
+    COLOR_PANE_BORDER: PaneBordersDark.B10
+    COLOR_EDITOR_BORDER: PaneBordersDark.B20
+    COLOR_SIDEBAR_BORDER: PaneBordersDark.B30
+    COLOR_BACKGROUND_1: Dark.B10
+    COLOR_BACKGROUND_2: Dark.B20
+    COLOR_BACKGROUND_3: Dark.B30
+    COLOR_BACKGROUND_4: QtUiAuditDark.B10
+    COLOR_BACKGROUND_5: Dark.B50
+    COLOR_BACKGROUND_6: Dark.B60
+    COLOR_TEXT_1: Dark.B70
+    COLOR_TEXT_2: Dark.B80
+    COLOR_TEXT_3: Dark.B90
+    COLOR_TEXT_4: Dark.B100
+    COLOR_ACCENT_1: Dark.B20
+    COLOR_ACCENT_2: Dark.B30
+    COLOR_ACCENT_3: QtUiAuditDark.B30
+    COLOR_ACCENT_4: Dark.B110
+    COLOR_ACCENT_5: Dark.B120
+    COLOR_DISABLED: Dark.B100
+    COLOR_EMPTY: Dark.B50
+    COLOR_SUCCESS_1: Dark.B130
+    COLOR_SUCCESS_2: Dark.B140
+    COLOR_SUCCESS_3: Dark.B130
+    COLOR_SUCCESS_4: Dark.B150
+    COLOR_SUCCESS_5: Dark.B160
+    COLOR_ERROR_1: Dark.B170
+    COLOR_ERROR_2: Dark.B180
+    COLOR_ERROR_3: Dark.B170
+    COLOR_ERROR_4: Dark.B190
+    COLOR_ERROR_5: Dark.B200
+    COLOR_WARN_1: Dark.B210
+    COLOR_WARN_2: Dark.B220
+    COLOR_WARN_3: Dark.B210
+    COLOR_WARN_4: Dark.B230
+    COLOR_WARN_5: Dark.B240
+    ICON_1: Dark.B70
+    ICON_2: Dark.B110
+    ICON_3: Dark.B130
+    ICON_4: Dark.B170
+    ICON_5: Dark.B210
+    ICON_6: Dark.B50
+    ICON_7: Dark.B250
+    GROUP_1: Dark.B260
+    GROUP_2: Dark.B270
+    GROUP_3: Dark.B280
+    GROUP_4: Dark.B290
+    GROUP_5: Dark.B250
+    GROUP_6: Dark.B300
+    GROUP_7: Dark.B250
+    GROUP_8: Dark.B310
+    GROUP_9: Dark.B320
+    GROUP_10: Dark.B130
+    GROUP_11: Dark.B330
+    GROUP_12: Dark.B210
+    COLOR_HIGHLIGHT_1: Dark.B10
+    COLOR_HIGHLIGHT_2: Dark.B20
+    COLOR_HIGHLIGHT_3: Dark.B50
+    COLOR_HIGHLIGHT_4: Dark.B50
+    COLOR_OCCURRENCE_1: Dark.B10
+    COLOR_OCCURRENCE_2: Dark.B20
+    COLOR_OCCURRENCE_3: Dark.B30
+    COLOR_OCCURRENCE_4: Dark.B50
+    COLOR_OCCURRENCE_5: Dark.B50
+    EDITOR_BACKGROUND: Dark.B20
+    EDITOR_CURRENTLINE: Dark.B340
+    EDITOR_CURRENTCELL: Dark.B30
+    EDITOR_OCCURRENCE: Dark.B350
+    EDITOR_CTRLCLICK: Dark.B110
+    EDITOR_SIDEAREAS: Dark.B20
+    EDITOR_MATCHED_P: Dark.B350
+    EDITOR_UNMATCHED_P: Dark.B360
+    EDITOR_NORMAL: [Dark.B70, false, false]
+    EDITOR_KEYWORD: [Dark.B290, false, false]
+    EDITOR_MAGIC: [Dark.B290, false, false]
+    EDITOR_BUILTIN: [Dark.B280, false, false]
+    EDITOR_DEFINITION: [Dark.B280, false, false]
+    EDITOR_COMMENT: [Dark.B370, false, true]
+    EDITOR_STRING: [Dark.B270, false, false]
+    EDITOR_NUMBER: [Dark.B300, false, false]
+    EDITOR_INSTANCE: [Dark.B250, false, true]
+    EDITOR_SYMBOL: [Dark.B380, false, false]
+    EDITOR_OPERATOR: [Dark.B380, false, false]
+    EDITOR_WORD_OPERATOR: [Dark.B290, false, false]
+    EDITOR_PUNCTUATION: [Dark.B380, false, false]
+    EDITOR_SEPARATOR: [Dark.B380, false, false]
+    EDITOR_CLASS: [Dark.B250, false, false]
+    EDITOR_FUNCTION_CALL: [Dark.B280, false, false]
+    EDITOR_DOCSTRING: [Dark.B270, false, false]
+    EDITOR_TYPE: [Dark.B250, false, false]
+    EDITOR_BASECLASS: [Dark.B270, false, false]
+    EDITOR_STORAGE: [Dark.B290, false, false]
+    EDITOR_CONSTANT: [Dark.B300, false, false]
+    EDITOR_VARIABLE: [Dark.B260, false, false]
+    EDITOR_PARAMETER: [Dark.B260, false, true]
+    EDITOR_CLASS_REFERENCE: [Dark.B250, false, false]
+    EDITOR_BRACKET_1: [Dark.B380, false, false]
+    EDITOR_BRACKET_2: [Dark.B380, false, false]
+    EDITOR_BRACKET_3: [Dark.B380, false, false]
+    EDITOR_BRACKET_4: [Dark.B380, false, false]
+    EDITOR_BRACKET_5: [Dark.B380, false, false]
+    EDITOR_BRACKET_6: [Dark.B380, false, false]
+    COLOR_TOOLBAR_BACKGROUND: InterfaceDark.B10
+    COLOR_STATUSBAR_BACKGROUND: Dark.B20
+    COLOR_STATUSBAR_TEXT: Dark.B70
+    COLOR_EDITOR_LINE_NUMBER: Dark.B90
+    COLOR_TAB_TEXT: InterfaceDark.B30
+    COLOR_TAB_SELECTED_TEXT: Dark.B70
+    COLOR_TAB_SELECTED_BACKGROUND: Dark.B20
+    COLOR_TAB_SELECTED_ACCENT: Dark.B110
+    COLOR_TAB_HOVER_BACKGROUND: QtUiAuditDark.B20
+    COLOR_TREE_TEXT: Dark.B70
+    COLOR_TREE_HOVER_BACKGROUND: Dark.B30
+    COLOR_TREE_SELECTED_BACKGROUND: Dark.B50
+    COLOR_TREE_SELECTED_TEXT: Dark.B70
+    COLOR_TREE_INACTIVE_SELECTION_BACKGROUND: Dark.B30
+    COLOR_TREE_INACTIVE_SELECTION_TEXT: Dark.B70
+    TAB_SELECTED_ACCENT_INNER_EDGE: 1
+    TAB_SELECTED_ACCENT_WIDTH: 2
+    PYTHON_LOGO_UP: Dark.B390
+    PYTHON_LOGO_DOWN: Dark.B400
+    SPYDER_LOGO_BACKGROUND: Dark.B10
+    SPYDER_LOGO_WEB: Dark.B70
+    SPYDER_LOGO_SNAKE: Dark.B70
+    SPECIAL_TABS_SEPARATOR: Dark.B50
+    SPECIAL_TABS_SELECTED: Dark.B20
+    COLOR_HEART: Dark.B170
+    TIP_TITLE_COLOR: Dark.B110
+    TIP_CHAR_HIGHLIGHT_COLOR: Dark.B380
+    OPACITY_TOOLTIP: 230
+  light:
+    COLOR_MENU_BACKGROUND: PopupAuditLight.B10
+    COLOR_MENU_TEXT: PopupAuditLight.B20
+    COLOR_MENU_SELECTED_BACKGROUND: PopupAuditLight.B30
+    COLOR_MENU_SELECTED_TEXT: PopupAuditLight.B40
+    COLOR_MENU_BORDER: PopupAuditLight.B50
+    COLOR_SWITCHER_BACKGROUND: PopupAuditLight.B60
+    COLOR_SWITCHER_SELECTED_BACKGROUND: PopupAuditLight.B70
+    COLOR_SWITCHER_BORDER: PopupAuditLight.B80
+    COLOR_SWITCHER_INPUT_BACKGROUND: PopupAuditLight.B90
+
+    # Raised Qt surfaces keep inactive tabs and ordinary buttons visible.
+    COLOR_TAB_BACKGROUND: QtUiAuditLight.B10
+    COLOR_BUTTON_BACKGROUND: InterfaceLight.B50
+    COLOR_BUTTON_TEXT: InterfaceLight.B60
+    COLOR_BUTTON_HOVER_BACKGROUND: InterfaceLight.B70
+    COLOR_BUTTON_PRESSED_BACKGROUND: InterfaceLight.B80
+    COLOR_BUTTON_BORDER: InterfaceLight.B90
+    # Qt content frames reuse muted slate and warm stone; faint workbench group edges alone do not delimit Qt panes.
+    COLOR_PANE_BORDER: PaneBordersLight.B10
+    COLOR_EDITOR_BORDER: PaneBordersLight.B20
+    COLOR_SIDEBAR_BORDER: PaneBordersLight.B30
+    COLOR_BACKGROUND_1: Light.B10
+    COLOR_BACKGROUND_2: Light.B20
+    COLOR_BACKGROUND_3: Light.B30
+    COLOR_BACKGROUND_4: QtUiAuditLight.B10
+    COLOR_BACKGROUND_5: Light.B50
+    COLOR_BACKGROUND_6: Light.B60
+    COLOR_TEXT_1: Light.B70
+    COLOR_TEXT_2: Light.B80
+    COLOR_TEXT_3: Light.B90
+    COLOR_TEXT_4: Light.B100
+    COLOR_ACCENT_1: Light.B20
+    COLOR_ACCENT_2: Light.B30
+    COLOR_ACCENT_3: QtUiAuditLight.B30
+    COLOR_ACCENT_4: Light.B120
+    COLOR_ACCENT_5: Light.B130
+    COLOR_DISABLED: Light.B100
+    COLOR_EMPTY: Light.B50
+    COLOR_SUCCESS_1: Light.B140
+    COLOR_SUCCESS_2: Light.B150
+    COLOR_SUCCESS_3: Light.B140
+    COLOR_SUCCESS_4: Light.B160
+    COLOR_SUCCESS_5: Light.B170
+    COLOR_ERROR_1: Light.B180
+    COLOR_ERROR_2: Light.B190
+    COLOR_ERROR_3: Light.B180
+    COLOR_ERROR_4: Light.B200
+    COLOR_ERROR_5: Light.B210
+    COLOR_WARN_1: Light.B220
+    COLOR_WARN_2: Light.B230
+    COLOR_WARN_3: Light.B220
+    COLOR_WARN_4: Light.B240
+    COLOR_WARN_5: Light.B250
+    ICON_1: Light.B70
+    ICON_2: Light.B120
+    ICON_3: Light.B140
+    ICON_4: Light.B180
+    ICON_5: Light.B220
+    ICON_6: Light.B50
+    ICON_7: Light.B260
+    GROUP_1: Light.B270
+    GROUP_2: Light.B280
+    GROUP_3: Light.B290
+    GROUP_4: Light.B300
+    GROUP_5: Light.B260
+    GROUP_6: Light.B310
+    GROUP_7: Light.B260
+    GROUP_8: Light.B320
+    GROUP_9: Light.B330
+    GROUP_10: Light.B340
+    GROUP_11: Light.B350
+    GROUP_12: Light.B360
+    COLOR_HIGHLIGHT_1: Light.B10
+    COLOR_HIGHLIGHT_2: Light.B20
+    COLOR_HIGHLIGHT_3: Light.B110
+    COLOR_HIGHLIGHT_4: Light.B50
+    COLOR_OCCURRENCE_1: Light.B10
+    COLOR_OCCURRENCE_2: Light.B20
+    COLOR_OCCURRENCE_3: Light.B30
+    COLOR_OCCURRENCE_4: Light.B110
+    COLOR_OCCURRENCE_5: Light.B50
+    EDITOR_BACKGROUND: Light.B20
+    EDITOR_CURRENTLINE: Light.B370
+    EDITOR_CURRENTCELL: Light.B30
+    EDITOR_OCCURRENCE: Light.B380
+    EDITOR_CTRLCLICK: Light.B120
+    EDITOR_SIDEAREAS: Light.B20
+    EDITOR_MATCHED_P: Light.B380
+    EDITOR_UNMATCHED_P: Light.B390
+    EDITOR_NORMAL: [Light.B70, false, false]
+    EDITOR_KEYWORD: [Light.B300, false, false]
+    EDITOR_MAGIC: [Light.B300, false, false]
+    EDITOR_BUILTIN: [Light.B290, false, false]
+    EDITOR_DEFINITION: [Light.B290, false, false]
+    EDITOR_COMMENT: [Light.B400, false, true]
+    EDITOR_STRING: [Light.B280, false, false]
+    EDITOR_NUMBER: [Light.B310, false, false]
+    EDITOR_INSTANCE: [Light.B260, false, true]
+    EDITOR_SYMBOL: [Light.B410, false, false]
+    EDITOR_OPERATOR: [Light.B410, false, false]
+    EDITOR_WORD_OPERATOR: [Light.B300, false, false]
+    EDITOR_PUNCTUATION: [Light.B410, false, false]
+    EDITOR_SEPARATOR: [Light.B410, false, false]
+    EDITOR_CLASS: [Light.B260, false, false]
+    EDITOR_FUNCTION_CALL: [Light.B290, false, false]
+    EDITOR_DOCSTRING: [Light.B460, false, false]
+    EDITOR_TYPE: [Light.B260, false, false]
+    EDITOR_BASECLASS: [Light.B280, false, false]
+    EDITOR_STORAGE: [Light.B300, false, false]
+    EDITOR_CONSTANT: [Light.B310, false, false]
+    EDITOR_VARIABLE: [Light.B270, false, false]
+    EDITOR_PARAMETER: [Light.B270, false, true]
+    EDITOR_CLASS_REFERENCE: [Light.B260, false, false]
+    EDITOR_BRACKET_1: [Light.B410, false, false]
+    EDITOR_BRACKET_2: [Light.B410, false, false]
+    EDITOR_BRACKET_3: [Light.B410, false, false]
+    EDITOR_BRACKET_4: [Light.B410, false, false]
+    EDITOR_BRACKET_5: [Light.B410, false, false]
+    EDITOR_BRACKET_6: [Light.B410, false, false]
+    COLOR_TOOLBAR_BACKGROUND: InterfaceLight.B10
+    COLOR_STATUSBAR_BACKGROUND: Light.B20
+    COLOR_STATUSBAR_TEXT: Light.B70
+    COLOR_EDITOR_LINE_NUMBER: Light.B90
+    COLOR_TAB_TEXT: InterfaceLight.B30
+    COLOR_TAB_SELECTED_TEXT: Light.B70
+    COLOR_TAB_SELECTED_BACKGROUND: Light.B20
+    COLOR_TAB_SELECTED_ACCENT: Light.B120
+    COLOR_TAB_HOVER_BACKGROUND: InterfaceLight.B40
+    COLOR_TREE_TEXT: Light.B70
+    COLOR_TREE_HOVER_BACKGROUND: Light.B30
+    COLOR_TREE_SELECTED_BACKGROUND: Light.B110
+    COLOR_TREE_SELECTED_TEXT: Light.B70
+    COLOR_TREE_INACTIVE_SELECTION_BACKGROUND: Light.B30
+    COLOR_TREE_INACTIVE_SELECTION_TEXT: Light.B70
+    TAB_SELECTED_ACCENT_INNER_EDGE: 1
+    TAB_SELECTED_ACCENT_WIDTH: 2
+    PYTHON_LOGO_UP: Light.B420
+    PYTHON_LOGO_DOWN: Light.B430
+    SPYDER_LOGO_BACKGROUND: Light.B10
+    SPYDER_LOGO_WEB: Light.B70
+    SPYDER_LOGO_SNAKE: Light.B70
+    SPECIAL_TABS_SEPARATOR: Light.B50
+    SPECIAL_TABS_SELECTED: Light.B20
+    COLOR_HEART: Light.B180
+    TIP_TITLE_COLOR: Light.B120
+    TIP_CHAR_HIGHLIGHT_COLOR: Light.B410
+    OPACITY_TOOLTIP: 230
+css_overrides:
+  --syn-operator:
+    dark: Dark.B380
+    light: Light.B410
+  --header-bg-color:
+    dark: Dark.B10
+    light: Light.B10
+  --header-text-color:
+    dark: Dark.B70
+    light: Light.B70
+  --syn-error-bg:
+    dark: Dark.B410
+    light: Light.B440
+  --warning-bg:
+    dark: Dark.B420
+    light: Light.B450
+  --link-color:
+    dark: Dark.B110
+    light: Light.B120
+  --hover-color:
+    dark: Dark.B120
+    light: Light.B130
+  --note-bg:
+    dark: Dark.B20
+    light: Light.B20
+  --border-light:
+    dark: Dark.B50
+    light: Light.B50
+appeal_overrides:
+  --link-color:
+    dark: Dark.B110
+    light: Light.B120
+  --hover-color:
+    dark: Dark.B120
+    light: Light.B130
+  --heart:
+    dark: COLOR_HEART
+    light: COLOR_HEART
+  --highlight:
+    dark: COLOR_ACCENT_4
+    light: COLOR_ACCENT_4
+  --hand:
+    dark: COLOR_WARN_1
+    light: COLOR_WARN_1
+pydoc_overrides:
+  --header-bg-color:
+    dark: Dark.B10
+    light: Light.B10
+  --header-text-color:
+    dark: Dark.B70
+    light: Light.B70
+  --link-color:
+    dark: Dark.B110
+    light: Light.B120
+  --hover-color:
+    dark: Dark.B120
+    light: Light.B130

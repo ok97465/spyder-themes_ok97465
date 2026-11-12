@@ -154,7 +154,9 @@ RudeMutabilisLight:
   B120: '#5B585E'
 ChromaticBlackPantherSyntaxDark:
   B10: '#333333'  # EDITOR_CURRENTLINE
-  B20: '#3D3D3D'  # EDITOR_CURRENTCELL
+  # Spyder-only cell highlight: keep it between the #141414 editor background
+  # and the #333333 cursor line; upstream Zenburn has no current-cell role.
+  B20: '#1C1C1C'  # EDITOR_CURRENTCELL
   B30: '#2F6EA2'  # EDITOR_OCCURRENCE
   B40: '#6B6BFF'  # EDITOR_CTRLCLICK
   B50: '#3F3F3F'  # EDITOR_SIDEAREAS

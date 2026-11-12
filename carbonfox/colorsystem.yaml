@@ -1,0 +1,229 @@
+# Upstream repository: https://github.com/EdenEast/nightfox.nvim
+# Upstream revision: 4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a
+# Source: https://github.com/EdenEast/nightfox.nvim/blob/4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a/lua/nightfox/palette/carbonfox.lua
+# Source SHA-256: 79092f52e2dd5dd886c1fa82aa2a85a780b291133b2a633a7c1dbe8e4acf8416
+# Source: https://github.com/EdenEast/nightfox.nvim/blob/4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a/lua/nightfox/group/syntax.lua
+# Source SHA-256: da0604dfa7af02d87c1e315bd286c4b097860a5395171b3dfc35508cc4343abf
+# Source: https://github.com/EdenEast/nightfox.nvim/blob/4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a/lua/nightfox/group/modules/treesitter.lua
+# Source SHA-256: d66c77290d1eb6388cadc7c6d4ac66d3e8e4bb46e0ffecd8a29edb39fee8c14f
+# Source: https://github.com/EdenEast/nightfox.nvim/blob/4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a/lua/nightfox/lib/color.lua
+# Source SHA-256: 62b6949d92f537125f28fa97eded708cc02ab5501010570b5d6ce6b4de4459b9
+# Source: https://github.com/EdenEast/nightfox.nvim/blob/4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a/lua/nightfox/lib/shade.lua
+# Source SHA-256: bfaf88021f73972d31bd2f5f506dec2e82f4e3b568e658100f0ec94021d82624
+# Native palette shades were resolved by executing the pinned upstream palette/carbonfox.lua and generate_spec with its color/shade library.
+# Editor background #161616, foreground #F2F4F8, all source syntax shades and neutral bg0-bg4/selection surfaces are preserved.
+# Python mappings follow upstream Tree-sitter roles: builtin function/self red, parameter builtin1, generic variable white, type cyan.
+# All six bracket depths repeat syn.bracket; the upstream theme does not define a rainbow cycle.
+# Default source font styles are plain. Qt-only semantic ramps, current-cell fills and help backgrounds are adaptations.
+# Large widget fills, tabs, status bar and selection backgrounds use neutral carbon shades; chromatic colors are confined to syntax, small accents and feedback.
+---
+CarbonfoxSurfaceDark:
+  # COLOR_BACKGROUND_1, COLOR_BACKGROUND_2, COLOR_BACKGROUND_4, COLOR_OCCURRENCE_2, SPYDER_LOGO_BACKGROUND, SPECIAL_TABS_SELECTED
+  B10: '#161616'
+  # COLOR_BACKGROUND_3, COLOR_ACCENT_2, COLOR_ACCENT_3, COLOR_ACCENT_4, COLOR_EMPTY, COLOR_HIGHLIGHT_1, COLOR_HIGHLIGHT_2, COLOR_HIGHLIGHT_3, COLOR_OCCURRENCE_3
+  B20: '#252525'
+  # COLOR_BACKGROUND_5, COLOR_OCCURRENCE_5, SPECIAL_TABS_SEPARATOR
+  B30: '#353535'
+  # COLOR_BACKGROUND_6, ICON_6
+  B40: '#535353'
+  # COLOR_TEXT_1, COLOR_TEXT_4, ICON_1, SPYDER_LOGO_WEB, SPYDER_LOGO_SNAKE
+  B50: '#F2F4F8'
+  # COLOR_TEXT_2
+  B60: '#B6B8BB'
+  # COLOR_TEXT_3, COLOR_DISABLED
+  B70: '#7B7C7E'
+  # COLOR_ACCENT_1, COLOR_OCCURRENCE_1
+  B80: '#0C0C0C'
+  # COLOR_ACCENT_5, COLOR_HIGHLIGHT_4, COLOR_OCCURRENCE_4
+  B90: '#2A2A2A'
+  # COLOR_SUCCESS_1
+  B100: '#17231D'
+  # COLOR_SUCCESS_2
+  B110: '#183123'
+  # COLOR_SUCCESS_3
+  B120: '#1A402B'
+  # COLOR_SUCCESS_4
+  B130: '#1C5938'
+  # COLOR_SUCCESS_5
+  B140: '#1E7244'
+  # COLOR_ERROR_1
+  B150: '#271B20'
+  # COLOR_ERROR_2
+  B160: '#39202A'
+  # COLOR_ERROR_3
+  B170: '#4C2536'
+  # COLOR_ERROR_4
+  B180: '#6C2E49'
+  # COLOR_ERROR_5
+  B190: '#8D385C'
+  # COLOR_WARN_1
+  B200: '#232029'
+  # COLOR_WARN_2
+  B210: '#312A3B'
+  # COLOR_WARN_3
+  B220: '#403650'
+  # COLOR_WARN_4
+  B230: '#594973'
+  # COLOR_WARN_5
+  B240: '#725C96'
+  # ICON_2, ICON_7, TIP_TITLE_COLOR
+  B250: '#8CB6FF'
+  # ICON_3
+  B260: '#25BE6A'
+  # ICON_4, COLOR_HEART
+  B270: '#EE5396'
+  # ICON_5
+  B280: '#BE95FF'
+  # TIP_CHAR_HIGHLIGHT_COLOR
+  B290: '#33B1FF'
+CarbonfoxNativeUiDark:
+  # COLOR_STATUSBAR_BACKGROUND
+  B10: '#0C0C0C'
+  # COLOR_STATUSBAR_TEXT, COLOR_TAB_TEXT
+  B20: '#B6B8BB'
+  # COLOR_TOOLBAR_BACKGROUND, COLOR_TAB_SELECTED_BACKGROUND
+  B30: '#161616'
+  # COLOR_EDITOR_LINE_NUMBER
+  B40: '#7B7C7E'
+  # COLOR_TAB_SELECTED_TEXT, COLOR_TREE_TEXT, COLOR_TREE_INACTIVE_SELECTION_TEXT, COLOR_TREE_SELECTED_TEXT
+  B50: '#F2F4F8'
+  # COLOR_TAB_HOVER_BACKGROUND, COLOR_TREE_HOVER_BACKGROUND
+  B60: '#252525'
+  # COLOR_TAB_SELECTED_ACCENT
+  B70: '#78A9FF'
+  # COLOR_TREE_SELECTED_BACKGROUND
+  B80: '#525253'
+  # COLOR_TREE_INACTIVE_SELECTION_BACKGROUND
+  B90: '#2A2A2A'
+CarbonfoxGroupDark:
+  # GROUP_1
+  B10: '#EE5396'
+  # GROUP_2
+  B20: '#25BE6A'
+  # GROUP_3
+  B30: '#08BDBA'
+  # GROUP_4
+  B40: '#78A9FF'
+  # GROUP_5
+  B50: '#BE95FF'
+  # GROUP_6
+  B60: '#33B1FF'
+  # GROUP_7
+  B70: '#3DDBD9'
+  # GROUP_8
+  B80: '#FF7EB6'
+  # GROUP_9
+  B90: '#8CB6FF'
+  # GROUP_10
+  B100: '#46C880'
+  # GROUP_11
+  B110: '#2DC7C4'
+  # GROUP_12
+  B120: '#C8A5FF'
+CarbonfoxSyntaxDark:
+  # EDITOR_BACKGROUND, EDITOR_SIDEAREAS
+  B10: '#161616'
+  # EDITOR_CURRENTLINE
+  B20: '#353535'
+  # EDITOR_CURRENTCELL
+  B30: '#1D1D1D'
+  # EDITOR_OCCURRENCE
+  B40: '#2A2A2A'
+  # EDITOR_CTRLCLICK, EDITOR_DEFINITION
+  B50: '#8CB6FF'
+  # EDITOR_MATCHED_P
+  B60: '#525253'
+  # EDITOR_UNMATCHED_P
+  B70: '#3D212D'
+  # EDITOR_NORMAL
+  B80: '#F2F4F8'
+  # EDITOR_KEYWORD, EDITOR_STORAGE
+  B90: '#BE95FF'
+  # EDITOR_MAGIC
+  B100: '#FF91C1'
+  # EDITOR_BUILTIN, EDITOR_INSTANCE
+  B110: '#EE5396'
+  # EDITOR_COMMENT
+  B120: '#6E6F70'
+  # EDITOR_STRING
+  B130: '#25BE6A'
+  # EDITOR_NUMBER
+  B140: '#3DDBD9'
+  # EDITOR_SYMBOL
+  B150: '#33B1FF'
+CarbonfoxPythonDark:
+  # EDITOR_OPERATOR, EDITOR_WORD_OPERATOR, EDITOR_PUNCTUATION, EDITOR_SEPARATOR, EDITOR_BRACKET_1, EDITOR_BRACKET_2, EDITOR_BRACKET_3, EDITOR_BRACKET_4, EDITOR_BRACKET_5, EDITOR_BRACKET_6
+  B10: '#B6B8BB'
+  # EDITOR_CLASS, EDITOR_BASECLASS, EDITOR_CLASS_REFERENCE
+  B20: '#08BDBA'
+  # EDITOR_FUNCTION_CALL
+  B30: '#8CB6FF'
+  # EDITOR_DOCSTRING
+  B40: '#25BE6A'
+  # EDITOR_TYPE, EDITOR_PARAMETER
+  B50: '#52BDFF'
+  # EDITOR_CONSTANT
+  B60: '#5AE0DF'
+  # EDITOR_VARIABLE
+  B70: '#DFDFE0'
+CarbonfoxLogosDark:
+  # PYTHON_LOGO_UP
+  B10: '#3775A9'
+  # PYTHON_LOGO_DOWN
+  B20: '#FFD444'
+CarbonfoxHelpDark:
+  B10: '#252525'
+  B20: '#F2F4F8'
+  B30: '#271B20'
+  B40: '#232029'
+  B50: '#8CB6FF'
+  B60: '#F2F4F8'
+
+# Inactive pane edges: B10 panel, B20 editor, B30 sidebar.
+# Qt content frames use neutral bg3; a near-black Vim split is not a borderless Qt-frame instruction.
+CarbonfoxPaneBordersDark:
+  B10: '#353535'
+  B20: '#353535'
+  B30: '#353535'
+
+# Qt chrome surfaces: UI-only adaptations of this theme's neutral palette.
+# Keep the existing editor/syntax colors; give wide toolbars and idle controls
+# their own visible surface. Flat source surfaces are adapted for Qt.
+ChromeDark:
+  B10: '#292929'  # COLOR_TOOLBAR_BACKGROUND
+  B20: '#303030'  # COLOR_TAB_BACKGROUND
+  B30: '#353535'  # COLOR_BUTTON_BACKGROUND
+  B40: '#454545'  # COLOR_BUTTON_HOVER_BACKGROUND
+  B50: '#252525'  # COLOR_BUTTON_PRESSED_BACKGROUND
+  B60: '#585858'  # COLOR_BUTTON_BORDER
+  B70: '#414141'  # COLOR_TAB_HOVER_BACKGROUND
+  B80: '#F2F4F8'  # COLOR_BUTTON_TEXT
+
+# Shared COLOR_ERROR_1: icon foreground and legacy Dependencies cell background.
+# Darken the native red/pink only for this Qt role, keeping inherited light
+# tree text at 4.5:1 while maximizing the stop icon against the toolbar.
+QtErrorDark:
+  B10: '#BE4277'
+
+# Qt frame/state adaptations: COLOR_BACKGROUND_4 also draws the local Help
+# frame and dock tabs, so its inactive tab shade must remain visible.
+# Focus shades retain this palette's hue and readable generic selection text.
+# Popup menus and command palettes use independent native roles.
+QtUiAuditDark:
+  B10: '#353535'  # COLOR_BACKGROUND_4, COLOR_TAB_BACKGROUND
+  B30: '#535353'  # COLOR_ACCENT_3
+
+# Reviewed menus and command palette. Native popup colors where the
+# reference matches; otherwise this theme's own palette is retained.
+# Qt uses opaque fills and 1px popup frames. Switcher titles embed
+# COLOR_TEXT_1 in HTML, so selected/input fills may be adjusted for readability.
+QtPopupAuditDark:
+  B10: '#252525'  # COLOR_MENU_BACKGROUND
+  B20: '#F2F4F8'  # COLOR_MENU_TEXT
+  B30: '#525253'  # COLOR_MENU_SELECTED_BACKGROUND
+  B40: '#F2F4F8'  # COLOR_MENU_SELECTED_TEXT
+  B50: '#535353'  # COLOR_MENU_BORDER
+  B60: '#252525'  # COLOR_SWITCHER_BACKGROUND
+  B70: '#525253'  # COLOR_SWITCHER_SELECTED_BACKGROUND
+  B80: '#353535'  # COLOR_SWITCHER_BORDER
+  B90: '#252525'  # COLOR_SWITCHER_INPUT_BACKGROUND

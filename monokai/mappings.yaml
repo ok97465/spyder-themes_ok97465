@@ -4,6 +4,7 @@
 # Optional editor/UI roles preserve native distinctions in the Spyder fork;
 # conventional keys below remain valid on stock Spyder.
 color_classes:
+  ChromeDark: ChromeDark
   Primary: AgileLead
   Secondary: AgileBerryBlast
   Tertiary: RapidSparkyBlue
@@ -24,13 +25,24 @@ color_classes:
   SyntaxLight: AgileLeadSyntaxLight
   CompatLight: MonokaiCompatLight
   Logos: Logos
+  PaneBordersDark: MonokaiPaneBordersDark
 semantic_mappings:
   dark:
+    COLOR_BUTTON_TEXT: ChromeDark.B80
+    COLOR_BUTTON_BORDER: ChromeDark.B60
+    COLOR_BUTTON_PRESSED_BACKGROUND: ChromeDark.B50
+    COLOR_BUTTON_HOVER_BACKGROUND: ChromeDark.B40
+    COLOR_BUTTON_BACKGROUND: ChromeDark.B30
+    COLOR_TAB_BACKGROUND: ChromeDark.B20
+    # Qt content frames use the neutral ramp; the native two-pixel Adaptive chrome rim is not a one-pixel Qt frame.
+    COLOR_PANE_BORDER: PaneBordersDark.B10
+    COLOR_EDITOR_BORDER: PaneBordersDark.B20
+    COLOR_SIDEBAR_BORDER: PaneBordersDark.B30
     # Background colors
     COLOR_BACKGROUND_1: SurfaceDark.B20
     COLOR_BACKGROUND_2: SurfaceDark.B120
     COLOR_BACKGROUND_3: SurfaceDark.B30
-    COLOR_BACKGROUND_4: SurfaceDark.B40
+    COLOR_BACKGROUND_4: ChromeDark.B20
     COLOR_BACKGROUND_5: SurfaceDark.B50
     COLOR_BACKGROUND_6: SurfaceDark.B60
 
@@ -157,14 +169,14 @@ semantic_mappings:
     SPECIAL_TABS_SEPARATOR: SurfaceDark.B20
     SPECIAL_TABS_SELECTED: SurfaceDark.B10
     COLOR_STATUSBAR_BACKGROUND: SurfaceDark.B120
-    COLOR_TOOLBAR_BACKGROUND: SurfaceDark.B40
+    COLOR_TOOLBAR_BACKGROUND: ChromeDark.B10
     COLOR_EDITOR_LINE_NUMBER: SurfaceDark.B180
     COLOR_STATUSBAR_TEXT: SurfaceDark.B90
     COLOR_TAB_SELECTED_TEXT: SurfaceDark.B150
     COLOR_TAB_SELECTED_BACKGROUND: SurfaceDark.B10
     COLOR_TAB_SELECTED_ACCENT: SurfaceDark.B10
     COLOR_TAB_TEXT: SurfaceDark.B160
-    COLOR_TAB_HOVER_BACKGROUND: SurfaceDark.B170
+    COLOR_TAB_HOVER_BACKGROUND: ChromeDark.B70
     COLOR_TREE_HOVER_BACKGROUND: SurfaceDark.B130
     COLOR_TREE_TEXT: SurfaceDark.B80
     COLOR_TREE_SELECTED_BACKGROUND: AccentDark.B10
@@ -182,6 +194,14 @@ semantic_mappings:
     # Tooltip opacity (numeric value, not a color reference)
     OPACITY_TOOLTIP: 230
   light:
+
+    # Reuse established Qt surfaces for idle tabs and visible button states.
+    COLOR_TAB_BACKGROUND: Primary.B110
+    COLOR_BUTTON_BACKGROUND: Primary.B110
+    COLOR_BUTTON_TEXT: Primary.B20
+    COLOR_BUTTON_HOVER_BACKGROUND: Primary.B100
+    COLOR_BUTTON_PRESSED_BACKGROUND: Primary.B90
+    COLOR_BUTTON_BORDER: Primary.B100
     # Background colors
     COLOR_BACKGROUND_1: Primary.B140
     COLOR_BACKGROUND_2: Primary.B130
@@ -312,7 +332,7 @@ semantic_mappings:
     TAB_SELECTED_ACCENT_INNER_EDGE: 1
     TAB_SELECTED_ACCENT_WIDTH: 3
     COLOR_TAB_TEXT: Primary.B20
-    COLOR_TAB_HOVER_BACKGROUND: Primary.B110
+    COLOR_TAB_HOVER_BACKGROUND: Primary.B90
     COLOR_TREE_HOVER_BACKGROUND: Primary.B120
     COLOR_TREE_TEXT: Primary.B20
     COLOR_TREE_SELECTED_BACKGROUND: Secondary.B130

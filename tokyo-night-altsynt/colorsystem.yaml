@@ -195,3 +195,51 @@ Logos:
   B30: '#414141'
   B40: '#FAFAFA'
   B50: '#8C0000'
+
+# Inactive pane edges: B10 panel, B20 editor, B30 sidebar.
+# Qt content frames reuse the native muted focus/resize neutral; transparent workbench sidebar edges do not hide Qt frames.
+TokyoNightAltsyntPaneBordersDark:
+  B10: '#414868'
+  B20: '#414868'
+  B30: '#414868'
+
+
+# Interface hierarchy: source colors and Qt-only state adaptations.
+# Avetis Tokyo Night AltSynt 1.0.2 provides button #3D5DA1,
+# label #FFFFFF and hover #2F477B. Its #222332 inactive tabs barely separate
+# from Spyder's #1D1F2D panels, so toolbar #292E42, tab #2D3043 and hover
+# #3B4261 are blue-gray Qt adaptations. Pressed #25395F deepens the native blue.
+TokyoNightAltsyntInterfaceDark:
+  B10: '#292E42'  # toolbar
+  B20: '#2D3043'  # inactive tab
+  B30: '#B7BCCF'  # inactive tab text
+  B40: '#3B4261'  # tab hover
+  B50: '#3D5DA1'  # button
+  B60: '#FFFFFF'  # button text
+  B70: '#2F477B'  # button hover
+  B80: '#25395F'  # button pressed
+  B90: '#6199EF'  # button border
+
+# Qt UI boundary review (2026-11-13): inactive dock tabs and the legacy
+# Help frame share COLOR_BACKGROUND_4. These neutral adjustments keep
+# their boundaries visible and inactive labels readable. Focus shades
+# stay distinct on pane/editor surfaces; source editor/syntax colors
+# remain in the original palettes above. These are Qt-only adaptations.
+
+QtInterfaceReviewDark:
+  B10: '#36394C'  # COLOR_BACKGROUND_4, COLOR_TAB_BACKGROUND
+
+# Reviewed menus and command palette. Native popup colors where the
+# reference matches; otherwise this theme's own palette is retained.
+# Qt uses opaque fills and 1px popup frames. Switcher titles embed
+# COLOR_TEXT_1 in HTML, so selected/input fills may be adjusted for readability.
+QtPopupAuditDark:
+  B10: '#1D1F2D'  # COLOR_MENU_BACKGROUND
+  B20: '#C0CAF5'  # COLOR_MENU_TEXT
+  B30: '#323B5E'  # COLOR_MENU_SELECTED_BACKGROUND
+  B40: '#FFFFFF'  # COLOR_MENU_SELECTED_TEXT
+  B50: '#2E3347'  # COLOR_MENU_BORDER
+  B60: '#1D1F2D'  # COLOR_SWITCHER_BACKGROUND
+  B70: '#181821'  # COLOR_SWITCHER_SELECTED_BACKGROUND
+  B80: '#414868'  # COLOR_SWITCHER_BORDER
+  B90: '#1A1B26'  # COLOR_SWITCHER_INPUT_BACKGROUND

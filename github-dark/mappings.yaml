@@ -2,6 +2,8 @@
 # Native UI roles and Python semantic fallback scopes are explicit.
 # Native normal/string colors are explicit fallbacks for unsupported distinctions.
 color_classes:
+  PopupAuditDark: QtPopupAuditDark
+  InterfaceDark: GithubDarkInterfaceDark
   HelpDark: GitHubDarkHelpDark
   Primary: GitHubDarkNeutral
   Secondary: GitHubDarkBlue
@@ -20,12 +22,35 @@ color_classes:
   Python: GitHubDarkPythonDark
   Native: GitHubDarkNativeDark
   Logos: Logos
+  PaneBordersDark: GithubDarkPaneBordersDark
+  QtInterfaceReviewDark: QtInterfaceReviewDark
 semantic_mappings:
   dark:
+    COLOR_MENU_BACKGROUND: PopupAuditDark.B10
+    COLOR_MENU_TEXT: PopupAuditDark.B20
+    COLOR_MENU_SELECTED_BACKGROUND: PopupAuditDark.B30
+    COLOR_MENU_SELECTED_TEXT: PopupAuditDark.B40
+    COLOR_MENU_BORDER: PopupAuditDark.B50
+    COLOR_SWITCHER_BACKGROUND: PopupAuditDark.B60
+    COLOR_SWITCHER_SELECTED_BACKGROUND: PopupAuditDark.B70
+    COLOR_SWITCHER_BORDER: PopupAuditDark.B80
+    COLOR_SWITCHER_INPUT_BACKGROUND: PopupAuditDark.B90
+
+    # Raised Qt surfaces keep inactive tabs and ordinary buttons visible.
+    COLOR_TAB_BACKGROUND: QtInterfaceReviewDark.B10
+    COLOR_BUTTON_BACKGROUND: InterfaceDark.B50
+    COLOR_BUTTON_TEXT: InterfaceDark.B60
+    COLOR_BUTTON_HOVER_BACKGROUND: InterfaceDark.B70
+    COLOR_BUTTON_PRESSED_BACKGROUND: InterfaceDark.B80
+    COLOR_BUTTON_BORDER: InterfaceDark.B90
+    # Native Primer border.default for editor groups, sidebars and panels.
+    COLOR_PANE_BORDER: PaneBordersDark.B10
+    COLOR_EDITOR_BORDER: PaneBordersDark.B20
+    COLOR_SIDEBAR_BORDER: PaneBordersDark.B30
     COLOR_BACKGROUND_1: SurfaceDark.B30
     COLOR_BACKGROUND_2: SurfaceDark.B20
     COLOR_BACKGROUND_3: Native.B100
-    COLOR_BACKGROUND_4: SurfaceDark.B40
+    COLOR_BACKGROUND_4: QtInterfaceReviewDark.B10
     COLOR_BACKGROUND_5: SurfaceDark.B50
     COLOR_BACKGROUND_6: SurfaceDark.B60
     COLOR_TEXT_1: SurfaceDark.B70
@@ -41,12 +66,12 @@ semantic_mappings:
     COLOR_EMPTY: AccentDark.B30
     COLOR_STATUSBAR_BACKGROUND: Native.B10
     COLOR_STATUSBAR_TEXT: Native.B20
-    COLOR_TOOLBAR_BACKGROUND: Native.B30
+    COLOR_TOOLBAR_BACKGROUND: InterfaceDark.B10
     COLOR_EDITOR_LINE_NUMBER: Native.B40
-    COLOR_TAB_TEXT: Native.B50
+    COLOR_TAB_TEXT: InterfaceDark.B30
     COLOR_TAB_SELECTED_TEXT: Native.B60
     COLOR_TAB_SELECTED_BACKGROUND: Native.B70
-    COLOR_TAB_HOVER_BACKGROUND: Native.B80
+    COLOR_TAB_HOVER_BACKGROUND: InterfaceDark.B40
     COLOR_TAB_SELECTED_ACCENT: Native.B90
     COLOR_TREE_TEXT: Native.B140
     COLOR_TREE_INACTIVE_SELECTION_TEXT: Native.B150

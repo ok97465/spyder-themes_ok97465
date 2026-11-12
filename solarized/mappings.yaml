@@ -24,8 +24,18 @@ color_classes:
   PythonLight: OptionalPythonLight
   OptionalUILight: OptionalUILight
   Logos: Logos
+  PaneBordersLight: SolarizedPaneBordersLight
 semantic_mappings:
   dark:
+
+    # Reuse established Qt surfaces for idle tabs and visible button states.
+    COLOR_TAB_BACKGROUND: Primary.B40
+    COLOR_BUTTON_BACKGROUND: Primary.B40
+    COLOR_BUTTON_TEXT: Primary.B130
+    COLOR_BUTTON_HOVER_BACKGROUND: Primary.B50
+    COLOR_BUTTON_PRESSED_BACKGROUND: Primary.B30
+    COLOR_BUTTON_BORDER: Primary.B50
+    # A recessed pressed surface keeps pale labels readable.
 
     # Explicit Qt chrome: preserve this Spyder adaptation, independently of editor.
     COLOR_TOOLBAR_BACKGROUND: Primary.B40
@@ -186,6 +196,18 @@ semantic_mappings:
     # Tooltip opacity (numeric value, not a color reference)
     OPACITY_TOOLTIP: 230
   light:
+
+    # Reuse established Qt surfaces for idle tabs and visible button states.
+    COLOR_TAB_BACKGROUND: Primary.B110
+    COLOR_BUTTON_BACKGROUND: Primary.B110
+    COLOR_BUTTON_TEXT: Primary.B20
+    COLOR_BUTTON_HOVER_BACKGROUND: Primary.B100
+    COLOR_BUTTON_PRESSED_BACKGROUND: Primary.B90
+    COLOR_BUTTON_BORDER: Primary.B100
+    # Qt light content frames use an existing warm neutral; keep the low-contrast palette while retaining pane separation.
+    COLOR_PANE_BORDER: PaneBordersLight.B10
+    COLOR_EDITOR_BORDER: PaneBordersLight.B20
+    COLOR_SIDEBAR_BORDER: PaneBordersLight.B30
 
     # Explicit Qt chrome: preserve this Spyder adaptation, independently of editor.
     COLOR_TOOLBAR_BACKGROUND: Primary.B110

@@ -7,6 +7,10 @@
 # https://github.com/folke/tokyonight.nvim/blob/cdc07ac78467a233fd62c493de29a17e0cf2b2b6/lua/tokyonight/groups/treesitter.lua
 # https://github.com/folke/tokyonight.nvim/blob/cdc07ac78467a233fd62c493de29a17e0cf2b2b6/lua/tokyonight/groups/base.lua
 color_classes:
+  PopupAuditDark: QtPopupAuditDark
+  PopupAuditLight: QtPopupAuditLight
+  InterfaceDark: TokyonightInterfaceDark
+  InterfaceLight: TokyonightInterfaceLight
   NativeUiDark: TokyoNightNativeUiDark
   PythonDark: TokyoNightPythonDark
   NativeUiLight: TokyoNightNativeUiLight
@@ -29,12 +33,37 @@ color_classes:
   SurfaceLight: TokyoNightSurfaceLight
   AccentDark: TokyoNightAccentsDark
   AccentLight: TokyoNightAccentsLight
+  PaneBordersDark: TokyonightPaneBordersDark
+  PaneBordersLight: TokyonightPaneBordersLight
+  QtInterfaceReviewDark: QtInterfaceReviewDark
+  QtInterfaceReviewLight: QtInterfaceReviewLight
 semantic_mappings:
   dark:
+    COLOR_MENU_BACKGROUND: PopupAuditDark.B10
+    COLOR_MENU_TEXT: PopupAuditDark.B20
+    COLOR_MENU_SELECTED_BACKGROUND: PopupAuditDark.B30
+    COLOR_MENU_SELECTED_TEXT: PopupAuditDark.B40
+    COLOR_MENU_BORDER: PopupAuditDark.B50
+    COLOR_SWITCHER_BACKGROUND: PopupAuditDark.B60
+    COLOR_SWITCHER_SELECTED_BACKGROUND: PopupAuditDark.B70
+    COLOR_SWITCHER_BORDER: PopupAuditDark.B80
+    COLOR_SWITCHER_INPUT_BACKGROUND: PopupAuditDark.B90
+
+    # Raised Qt surfaces keep inactive tabs and ordinary buttons visible.
+    COLOR_TAB_BACKGROUND: QtInterfaceReviewDark.B10
+    COLOR_BUTTON_BACKGROUND: InterfaceDark.B50
+    COLOR_BUTTON_TEXT: InterfaceDark.B60
+    COLOR_BUTTON_HOVER_BACKGROUND: InterfaceDark.B70
+    COLOR_BUTTON_PRESSED_BACKGROUND: InterfaceDark.B80
+    COLOR_BUTTON_BORDER: InterfaceDark.B90
+    # Qt content frames use existing slate neutrals; an NvimTree split matching its surface does not imply borderless Qt panes.
+    COLOR_PANE_BORDER: PaneBordersDark.B10
+    COLOR_EDITOR_BORDER: PaneBordersDark.B20
+    COLOR_SIDEBAR_BORDER: PaneBordersDark.B30
     COLOR_BACKGROUND_1: SurfaceDark.B10
     COLOR_BACKGROUND_2: SurfaceDark.B20
     COLOR_BACKGROUND_3: SurfaceDark.B30
-    COLOR_BACKGROUND_4: NativeUiDark.B80
+    COLOR_BACKGROUND_4: QtInterfaceReviewDark.B10
     COLOR_BACKGROUND_5: SurfaceDark.B60
     COLOR_BACKGROUND_6: SurfaceDark.B70
     COLOR_TEXT_1: SurfaceDark.B110
@@ -147,12 +176,12 @@ semantic_mappings:
     # Native widget colors, with translucent fills flattened over their source surface.
     COLOR_STATUSBAR_BACKGROUND: NativeUiDark.B10
     COLOR_STATUSBAR_TEXT: NativeUiDark.B20
-    COLOR_TOOLBAR_BACKGROUND: NativeUiDark.B30
+    COLOR_TOOLBAR_BACKGROUND: InterfaceDark.B10
     COLOR_EDITOR_LINE_NUMBER: NativeUiDark.B40
-    COLOR_TAB_TEXT: NativeUiDark.B50
+    COLOR_TAB_TEXT: InterfaceDark.B30
     COLOR_TAB_SELECTED_TEXT: NativeUiDark.B60
     COLOR_TAB_SELECTED_BACKGROUND: NativeUiDark.B70
-    COLOR_TAB_HOVER_BACKGROUND: NativeUiDark.B80
+    COLOR_TAB_HOVER_BACKGROUND: InterfaceDark.B40
     COLOR_TAB_SELECTED_ACCENT: NativeUiDark.B90
     COLOR_TREE_HOVER_BACKGROUND: NativeUiDark.B100
     COLOR_TREE_SELECTED_BACKGROUND: NativeUiDark.B110
@@ -161,20 +190,41 @@ semantic_mappings:
     COLOR_TREE_TEXT: NativeUiDark.B140
     COLOR_TREE_INACTIVE_SELECTION_TEXT: NativeUiDark.B150
   light:
+    COLOR_MENU_BACKGROUND: PopupAuditLight.B10
+    COLOR_MENU_TEXT: PopupAuditLight.B20
+    COLOR_MENU_SELECTED_BACKGROUND: PopupAuditLight.B30
+    COLOR_MENU_SELECTED_TEXT: PopupAuditLight.B40
+    COLOR_MENU_BORDER: PopupAuditLight.B50
+    COLOR_SWITCHER_BACKGROUND: PopupAuditLight.B60
+    COLOR_SWITCHER_SELECTED_BACKGROUND: PopupAuditLight.B70
+    COLOR_SWITCHER_BORDER: PopupAuditLight.B80
+    COLOR_SWITCHER_INPUT_BACKGROUND: PopupAuditLight.B90
+
+    # Raised Qt surfaces keep inactive tabs and ordinary buttons visible.
+    COLOR_TAB_BACKGROUND: QtInterfaceReviewLight.B10
+    COLOR_BUTTON_BACKGROUND: InterfaceLight.B50
+    COLOR_BUTTON_TEXT: InterfaceLight.B60
+    COLOR_BUTTON_HOVER_BACKGROUND: InterfaceLight.B70
+    COLOR_BUTTON_PRESSED_BACKGROUND: InterfaceLight.B80
+    COLOR_BUTTON_BORDER: InterfaceLight.B90
+    # Qt content frames use existing slate neutrals; an NvimTree split matching its surface does not imply borderless Qt panes.
+    COLOR_PANE_BORDER: PaneBordersLight.B10
+    COLOR_EDITOR_BORDER: PaneBordersLight.B20
+    COLOR_SIDEBAR_BORDER: PaneBordersLight.B30
     COLOR_BACKGROUND_1: SurfaceLight.B10
     COLOR_BACKGROUND_2: SurfaceLight.B10
     COLOR_BACKGROUND_3: SurfaceLight.B30
-    COLOR_BACKGROUND_4: NativeUiLight.B80
+    COLOR_BACKGROUND_4: QtInterfaceReviewLight.B10
     COLOR_BACKGROUND_5: SurfaceLight.B50
     COLOR_BACKGROUND_6: SurfaceLight.B60
-    COLOR_TEXT_1: SurfaceLight.B110
+    COLOR_TEXT_1: QtInterfaceReviewLight.B30
     COLOR_TEXT_2: SurfaceLight.B90
     COLOR_TEXT_3: SurfaceLight.B100
     COLOR_TEXT_4: SurfaceLight.B160
     # Upstream highlight/visual surfaces keep Day's blue text readable.
     COLOR_ACCENT_1: SurfaceLight.B20
     COLOR_ACCENT_2: WidgetFillLight.B10
-    COLOR_ACCENT_3: WidgetFillLight.B20
+    COLOR_ACCENT_3: QtInterfaceReviewLight.B20
     COLOR_ACCENT_4: AccentLight.B30
     COLOR_ACCENT_5: AccentLight.B40
     COLOR_DISABLED: SurfaceLight.B70
@@ -276,20 +326,21 @@ semantic_mappings:
     EDITOR_BRACKET_6: [PythonLight.B160, false, false]
     # Native widget colors, with translucent fills flattened over their source surface.
     COLOR_STATUSBAR_BACKGROUND: NativeUiLight.B10
-    COLOR_STATUSBAR_TEXT: NativeUiLight.B20
-    COLOR_TOOLBAR_BACKGROUND: NativeUiLight.B30
+    COLOR_STATUSBAR_TEXT: InterfaceLight.B60
+    COLOR_TOOLBAR_BACKGROUND: InterfaceLight.B10
     COLOR_EDITOR_LINE_NUMBER: NativeUiLight.B40
-    COLOR_TAB_TEXT: NativeUiLight.B50
-    COLOR_TAB_SELECTED_TEXT: NativeUiLight.B60
+    COLOR_TAB_TEXT: InterfaceLight.B30
+    COLOR_TAB_SELECTED_TEXT: InterfaceLight.B100
     COLOR_TAB_SELECTED_BACKGROUND: NativeUiLight.B70
-    COLOR_TAB_HOVER_BACKGROUND: NativeUiLight.B80
+    COLOR_TAB_HOVER_BACKGROUND: InterfaceLight.B40
     COLOR_TAB_SELECTED_ACCENT: NativeUiLight.B90
     COLOR_TREE_HOVER_BACKGROUND: NativeUiLight.B100
     COLOR_TREE_SELECTED_BACKGROUND: NativeUiLight.B110
     COLOR_TREE_INACTIVE_SELECTION_BACKGROUND: NativeUiLight.B120
-    COLOR_TREE_SELECTED_TEXT: NativeUiLight.B130
-    COLOR_TREE_TEXT: NativeUiLight.B140
-    COLOR_TREE_INACTIVE_SELECTION_TEXT: NativeUiLight.B150
+    COLOR_TREE_SELECTED_TEXT: InterfaceLight.B60
+    # Adapted Qt text uses readable existing UI foregrounds.
+    COLOR_TREE_TEXT: InterfaceLight.B60
+    COLOR_TREE_INACTIVE_SELECTION_TEXT: InterfaceLight.B60
 css_overrides:
   --syn-operator:
     dark: EDITOR_OPERATOR

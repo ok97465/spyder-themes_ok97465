@@ -1,0 +1,200 @@
+# Alabaster: official source colors adapted to Spyder.
+# Upstream author: Nikita Prokopov. License: MIT (notice in LICENSE).
+# Upstream revision: 7e8e48c0f33022cd3cf5fec0114c307d63663e39
+# Source: https://github.com/tonsky/vscode-theme-alabaster/blob/7e8e48c0f33022cd3cf5fec0114c307d63663e39/theme/alabaster-color-theme.json
+# Original light theme only. Editor background #F7F7F7 and the four main highlight classes are preserved.
+# Comments red, strings green, constants purple, entity definitions blue; keywords/builtins/variables stay black.
+# Punctuation and all six bracket roles inherit original punctuation gray; no added rainbow or font variations.
+# All formatted syntax roles are regular. Unsupported semantic distinctions fall back to black.
+# Neutral Qt selection #DDDDDD follows original list selection rather than the bluer editor selection #BFDBFE.
+# Original selection highlight alpha is flattened over editor.background. Extra gray widget shades are Qt adaptations.
+# Qt gutter labels use original punctuation/bright-black #777777 instead of native #9DA39A for at least 3:1 contrast.
+---
+color_classes:
+  PopupAuditLight: QtPopupAuditLight
+  QtUiAuditLight: QtUiAuditLight
+  ChromeLight: ChromeLight
+  Primary: AlabasterNeutral
+  Secondary: AlabasterSecondary
+  Tertiary: AlabasterTertiary
+  Quaternary: AlabasterQuaternary
+  Success: AlabasterSuccess
+  Error: AlabasterError
+  Warning: AlabasterWarning
+  Logos: Logos
+  SurfaceLight: AlabasterSurfaceLight
+  AccentLight: AlabasterAccentLight
+  FeedbackLight: AlabasterFeedbackLight
+  IconsLight: AlabasterIconsLight
+  GroupLight: AlabasterGroupLight
+  HighlightLight: AlabasterHighlightLight
+  EditorLight: AlabasterEditorLight
+  SyntaxLight: AlabasterSyntaxLight
+  PythonLight: AlabasterPythonLight
+  NativeUiLight: AlabasterNativeUiLight
+  DetailLight: AlabasterDetailLight
+  HelpLight: AlabasterHelpLight
+  PaneBordersLight: AlabasterPaneBordersLight
+semantic_mappings:
+  light:
+    COLOR_MENU_BACKGROUND: PopupAuditLight.B10
+    COLOR_MENU_TEXT: PopupAuditLight.B20
+    COLOR_MENU_SELECTED_BACKGROUND: PopupAuditLight.B30
+    COLOR_MENU_SELECTED_TEXT: PopupAuditLight.B40
+    COLOR_MENU_BORDER: PopupAuditLight.B50
+    COLOR_SWITCHER_BACKGROUND: PopupAuditLight.B60
+    COLOR_SWITCHER_SELECTED_BACKGROUND: PopupAuditLight.B70
+    COLOR_SWITCHER_BORDER: PopupAuditLight.B80
+    COLOR_SWITCHER_INPUT_BACKGROUND: PopupAuditLight.B90
+    COLOR_BUTTON_TEXT: ChromeLight.B80
+    COLOR_BUTTON_BORDER: ChromeLight.B60
+    COLOR_BUTTON_PRESSED_BACKGROUND: ChromeLight.B50
+    COLOR_BUTTON_HOVER_BACKGROUND: ChromeLight.B40
+    COLOR_BUTTON_BACKGROUND: ChromeLight.B30
+    COLOR_TAB_BACKGROUND: QtUiAuditLight.B10
+    # Qt content frames use an existing neutral gray; a native focus color is not an inactive-frame specification.
+    COLOR_PANE_BORDER: PaneBordersLight.B10
+    COLOR_EDITOR_BORDER: PaneBordersLight.B20
+    COLOR_SIDEBAR_BORDER: PaneBordersLight.B30
+    COLOR_BACKGROUND_1: SurfaceLight.B10
+    COLOR_BACKGROUND_2: SurfaceLight.B20
+    COLOR_BACKGROUND_3: SurfaceLight.B30
+    COLOR_BACKGROUND_4: QtUiAuditLight.B10
+    COLOR_BACKGROUND_5: SurfaceLight.B50
+    COLOR_BACKGROUND_6: SurfaceLight.B60
+    COLOR_TEXT_1: SurfaceLight.B70
+    COLOR_TEXT_2: SurfaceLight.B80
+    COLOR_TEXT_3: SurfaceLight.B90
+    COLOR_TEXT_4: SurfaceLight.B100
+    COLOR_DISABLED: SurfaceLight.B110
+    COLOR_EMPTY: SurfaceLight.B120
+    COLOR_ACCENT_1: AccentLight.B10
+    COLOR_ACCENT_2: AccentLight.B20
+    COLOR_ACCENT_3: QtUiAuditLight.B30
+    COLOR_ACCENT_4: AccentLight.B40
+    COLOR_ACCENT_5: AccentLight.B50
+    COLOR_SUCCESS_1: FeedbackLight.B10
+    COLOR_SUCCESS_2: FeedbackLight.B20
+    COLOR_SUCCESS_3: FeedbackLight.B30
+    COLOR_SUCCESS_4: FeedbackLight.B40
+    COLOR_SUCCESS_5: FeedbackLight.B50
+    COLOR_ERROR_1: FeedbackLight.B60
+    COLOR_ERROR_2: FeedbackLight.B70
+    COLOR_ERROR_3: FeedbackLight.B80
+    COLOR_ERROR_4: FeedbackLight.B90
+    COLOR_ERROR_5: FeedbackLight.B100
+    COLOR_WARN_1: FeedbackLight.B110
+    COLOR_WARN_2: FeedbackLight.B120
+    COLOR_WARN_3: FeedbackLight.B130
+    COLOR_WARN_4: FeedbackLight.B140
+    COLOR_WARN_5: FeedbackLight.B150
+    ICON_1: IconsLight.B10
+    ICON_2: IconsLight.B20
+    ICON_3: IconsLight.B30
+    ICON_4: IconsLight.B40
+    ICON_5: IconsLight.B50
+    ICON_6: IconsLight.B60
+    ICON_7: IconsLight.B70
+    GROUP_1: GroupLight.B10
+    GROUP_2: GroupLight.B20
+    GROUP_3: GroupLight.B30
+    GROUP_4: GroupLight.B40
+    GROUP_5: GroupLight.B50
+    GROUP_6: GroupLight.B60
+    GROUP_7: GroupLight.B70
+    GROUP_8: GroupLight.B80
+    GROUP_9: GroupLight.B90
+    GROUP_10: GroupLight.B100
+    GROUP_11: GroupLight.B110
+    GROUP_12: GroupLight.B120
+    COLOR_HIGHLIGHT_1: HighlightLight.B10
+    COLOR_HIGHLIGHT_2: HighlightLight.B20
+    COLOR_HIGHLIGHT_3: HighlightLight.B30
+    COLOR_HIGHLIGHT_4: HighlightLight.B40
+    COLOR_OCCURRENCE_1: HighlightLight.B50
+    COLOR_OCCURRENCE_2: HighlightLight.B60
+    COLOR_OCCURRENCE_3: HighlightLight.B70
+    COLOR_OCCURRENCE_4: HighlightLight.B80
+    COLOR_OCCURRENCE_5: HighlightLight.B90
+    EDITOR_BACKGROUND: EditorLight.B10
+    EDITOR_CURRENTLINE: EditorLight.B20
+    EDITOR_CURRENTCELL: EditorLight.B30
+    EDITOR_OCCURRENCE: EditorLight.B40
+    EDITOR_CTRLCLICK: EditorLight.B50
+    EDITOR_SIDEAREAS: EditorLight.B60
+    EDITOR_MATCHED_P: EditorLight.B70
+    EDITOR_UNMATCHED_P: EditorLight.B80
+    EDITOR_NORMAL: [SyntaxLight.B10, false, false]
+    EDITOR_KEYWORD: [SyntaxLight.B20, false, false]
+    EDITOR_MAGIC: [SyntaxLight.B30, false, false]
+    EDITOR_BUILTIN: [SyntaxLight.B40, false, false]
+    EDITOR_DEFINITION: [SyntaxLight.B50, false, false]
+    EDITOR_COMMENT: [SyntaxLight.B60, false, false]
+    EDITOR_STRING: [SyntaxLight.B70, false, false]
+    EDITOR_NUMBER: [SyntaxLight.B80, false, false]
+    EDITOR_INSTANCE: [SyntaxLight.B90, false, false]
+    EDITOR_SYMBOL: [SyntaxLight.B100, false, false]
+    EDITOR_OPERATOR: [PythonLight.B10, false, false]
+    EDITOR_WORD_OPERATOR: [PythonLight.B20, false, false]
+    EDITOR_PUNCTUATION: [PythonLight.B30, false, false]
+    EDITOR_SEPARATOR: [PythonLight.B40, false, false]
+    EDITOR_CLASS: [PythonLight.B50, false, false]
+    EDITOR_FUNCTION_CALL: [PythonLight.B60, false, false]
+    EDITOR_DOCSTRING: [PythonLight.B70, false, false]
+    EDITOR_TYPE: [PythonLight.B80, false, false]
+    EDITOR_BASECLASS: [PythonLight.B90, false, false]
+    EDITOR_STORAGE: [PythonLight.B100, false, false]
+    EDITOR_CONSTANT: [PythonLight.B110, false, false]
+    EDITOR_VARIABLE: [PythonLight.B120, false, false]
+    EDITOR_PARAMETER: [PythonLight.B130, false, false]
+    EDITOR_CLASS_REFERENCE: [PythonLight.B140, false, false]
+    EDITOR_BRACKET_1: [PythonLight.B150, false, false]
+    EDITOR_BRACKET_2: [PythonLight.B160, false, false]
+    EDITOR_BRACKET_3: [PythonLight.B170, false, false]
+    EDITOR_BRACKET_4: [PythonLight.B180, false, false]
+    EDITOR_BRACKET_5: [PythonLight.B190, false, false]
+    EDITOR_BRACKET_6: [PythonLight.B200, false, false]
+    COLOR_STATUSBAR_BACKGROUND: NativeUiLight.B10
+    COLOR_STATUSBAR_TEXT: NativeUiLight.B20
+    COLOR_TOOLBAR_BACKGROUND: ChromeLight.B10
+    COLOR_EDITOR_LINE_NUMBER: NativeUiLight.B40
+    COLOR_TAB_TEXT: NativeUiLight.B50
+    COLOR_TAB_SELECTED_TEXT: NativeUiLight.B60
+    COLOR_TAB_SELECTED_BACKGROUND: NativeUiLight.B70
+    COLOR_TAB_HOVER_BACKGROUND: ChromeLight.B70
+    COLOR_TAB_SELECTED_ACCENT: NativeUiLight.B90
+    COLOR_TREE_TEXT: NativeUiLight.B100
+    COLOR_TREE_HOVER_BACKGROUND: NativeUiLight.B110
+    COLOR_TREE_SELECTED_BACKGROUND: NativeUiLight.B120
+    COLOR_TREE_INACTIVE_SELECTION_BACKGROUND: NativeUiLight.B130
+    COLOR_TREE_SELECTED_TEXT: NativeUiLight.B140
+    COLOR_TREE_INACTIVE_SELECTION_TEXT: NativeUiLight.B150
+    PYTHON_LOGO_UP: Logos.B10
+    PYTHON_LOGO_DOWN: Logos.B20
+    SPYDER_LOGO_BACKGROUND: DetailLight.B10
+    SPYDER_LOGO_WEB: DetailLight.B20
+    SPYDER_LOGO_SNAKE: DetailLight.B30
+    SPECIAL_TABS_SEPARATOR: DetailLight.B40
+    SPECIAL_TABS_SELECTED: DetailLight.B50
+    COLOR_HEART: DetailLight.B60
+    TIP_TITLE_COLOR: DetailLight.B70
+    TIP_CHAR_HIGHLIGHT_COLOR: DetailLight.B80
+    OPACITY_TOOLTIP: 230
+css_overrides:
+  --syn-operator: EDITOR_OPERATOR
+  --header-bg-color: HelpLight.B10
+  --header-text-color: HelpLight.B20
+  --syn-error-bg: HelpLight.B30
+  --warning-bg: HelpLight.B40
+  --link-color: HelpLight.B50
+  --hover-color: HelpLight.B60
+  --note-bg: HelpLight.B70
+  --border-light: COLOR_BACKGROUND_5
+appeal_overrides:
+  --link-color: HelpLight.B50
+  --hover-color: HelpLight.B60
+pydoc_overrides:
+  --header-bg-color: HelpLight.B10
+  --header-text-color: HelpLight.B20
+  --link-color: HelpLight.B50
+  --hover-color: HelpLight.B60

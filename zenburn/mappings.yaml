@@ -22,6 +22,15 @@ color_classes:
   Logos: Logos
 semantic_mappings:
   dark:
+
+    # Reuse established Qt surfaces for idle tabs and visible button states.
+    COLOR_TAB_BACKGROUND: Primary.B40
+    COLOR_BUTTON_BACKGROUND: Primary.B40
+    COLOR_BUTTON_TEXT: Primary.B130
+    COLOR_BUTTON_HOVER_BACKGROUND: Primary.B50
+    COLOR_BUTTON_PRESSED_BACKGROUND: Primary.B30
+    COLOR_BUTTON_BORDER: Primary.B50
+    # A recessed pressed surface keeps pale labels readable.
     # Background colors
     COLOR_BACKGROUND_1: Primary.B10
     COLOR_BACKGROUND_2: Primary.B20
@@ -182,6 +191,14 @@ semantic_mappings:
     # Tooltip opacity (numeric value, not a color reference)
     OPACITY_TOOLTIP: 230
   light:
+
+    # Reuse established Qt surfaces for idle tabs and visible button states.
+    COLOR_TAB_BACKGROUND: Primary.B110
+    COLOR_BUTTON_BACKGROUND: Primary.B110
+    COLOR_BUTTON_TEXT: Primary.B20
+    COLOR_BUTTON_HOVER_BACKGROUND: Primary.B100
+    COLOR_BUTTON_PRESSED_BACKGROUND: Primary.B90
+    COLOR_BUTTON_BORDER: Primary.B100
     # Background colors
     COLOR_BACKGROUND_1: Primary.B140
     COLOR_BACKGROUND_2: Primary.B130

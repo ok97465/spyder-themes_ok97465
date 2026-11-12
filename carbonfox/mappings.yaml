@@ -1,0 +1,203 @@
+# Upstream repository: https://github.com/EdenEast/nightfox.nvim
+# Upstream revision: 4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a
+# Source: https://github.com/EdenEast/nightfox.nvim/blob/4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a/lua/nightfox/palette/carbonfox.lua
+# Source SHA-256: 79092f52e2dd5dd886c1fa82aa2a85a780b291133b2a633a7c1dbe8e4acf8416
+# Source: https://github.com/EdenEast/nightfox.nvim/blob/4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a/lua/nightfox/group/syntax.lua
+# Source SHA-256: da0604dfa7af02d87c1e315bd286c4b097860a5395171b3dfc35508cc4343abf
+# Source: https://github.com/EdenEast/nightfox.nvim/blob/4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a/lua/nightfox/group/modules/treesitter.lua
+# Source SHA-256: d66c77290d1eb6388cadc7c6d4ac66d3e8e4bb46e0ffecd8a29edb39fee8c14f
+# Source: https://github.com/EdenEast/nightfox.nvim/blob/4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a/lua/nightfox/lib/color.lua
+# Source SHA-256: 62b6949d92f537125f28fa97eded708cc02ab5501010570b5d6ce6b4de4459b9
+# Source: https://github.com/EdenEast/nightfox.nvim/blob/4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a/lua/nightfox/lib/shade.lua
+# Source SHA-256: bfaf88021f73972d31bd2f5f506dec2e82f4e3b568e658100f0ec94021d82624
+# Native palette shades were resolved by executing the pinned upstream palette/carbonfox.lua and generate_spec with its color/shade library.
+# Editor background #161616, foreground #F2F4F8, all source syntax shades and neutral bg0-bg4/selection surfaces are preserved.
+# Python mappings follow upstream Tree-sitter roles: builtin function/self red, parameter builtin1, generic variable white, type cyan.
+# All six bracket depths repeat syn.bracket; the upstream theme does not define a rainbow cycle.
+# Default source font styles are plain. Qt-only semantic ramps, current-cell fills and help backgrounds are adaptations.
+# Large widget fills, tabs, status bar and selection backgrounds use neutral carbon shades; chromatic colors are confined to syntax, small accents and feedback.
+---
+color_classes:
+  PopupAuditDark: QtPopupAuditDark
+  QtUiAuditDark: QtUiAuditDark
+  ErrorUiDark: QtErrorDark
+  ChromeDark: ChromeDark
+  SurfaceDark: CarbonfoxSurfaceDark
+  NativeUiDark: CarbonfoxNativeUiDark
+  GroupDark: CarbonfoxGroupDark
+  SyntaxDark: CarbonfoxSyntaxDark
+  PythonDark: CarbonfoxPythonDark
+  LogosDark: CarbonfoxLogosDark
+  HelpDark: CarbonfoxHelpDark
+  PaneBordersDark: CarbonfoxPaneBordersDark
+semantic_mappings:
+  dark:
+    COLOR_MENU_BACKGROUND: PopupAuditDark.B10
+    COLOR_MENU_TEXT: PopupAuditDark.B20
+    COLOR_MENU_SELECTED_BACKGROUND: PopupAuditDark.B30
+    COLOR_MENU_SELECTED_TEXT: PopupAuditDark.B40
+    COLOR_MENU_BORDER: PopupAuditDark.B50
+    COLOR_SWITCHER_BACKGROUND: PopupAuditDark.B60
+    COLOR_SWITCHER_SELECTED_BACKGROUND: PopupAuditDark.B70
+    COLOR_SWITCHER_BORDER: PopupAuditDark.B80
+    COLOR_SWITCHER_INPUT_BACKGROUND: PopupAuditDark.B90
+    COLOR_BUTTON_TEXT: ChromeDark.B80
+    COLOR_BUTTON_BORDER: ChromeDark.B60
+    COLOR_BUTTON_PRESSED_BACKGROUND: ChromeDark.B50
+    COLOR_BUTTON_HOVER_BACKGROUND: ChromeDark.B40
+    COLOR_BUTTON_BACKGROUND: ChromeDark.B30
+    COLOR_TAB_BACKGROUND: QtUiAuditDark.B10
+    # Qt content frames use neutral bg3; a near-black Vim split is not a borderless Qt-frame instruction.
+    COLOR_PANE_BORDER: PaneBordersDark.B10
+    COLOR_EDITOR_BORDER: PaneBordersDark.B20
+    COLOR_SIDEBAR_BORDER: PaneBordersDark.B30
+    COLOR_BACKGROUND_1: SurfaceDark.B10
+    COLOR_BACKGROUND_2: SurfaceDark.B10
+    COLOR_BACKGROUND_3: SurfaceDark.B20
+    COLOR_BACKGROUND_4: QtUiAuditDark.B10
+    COLOR_BACKGROUND_5: SurfaceDark.B30
+    COLOR_BACKGROUND_6: SurfaceDark.B40
+    COLOR_TEXT_1: SurfaceDark.B50
+    COLOR_TEXT_2: SurfaceDark.B60
+    COLOR_TEXT_3: SurfaceDark.B70
+    COLOR_TEXT_4: SurfaceDark.B50
+    COLOR_ACCENT_1: SurfaceDark.B80
+    COLOR_ACCENT_2: SurfaceDark.B20
+    COLOR_ACCENT_3: QtUiAuditDark.B30
+    COLOR_ACCENT_4: SurfaceDark.B20
+    COLOR_ACCENT_5: SurfaceDark.B90
+    COLOR_DISABLED: SurfaceDark.B70
+    COLOR_EMPTY: SurfaceDark.B20
+    COLOR_STATUSBAR_BACKGROUND: NativeUiDark.B10
+    COLOR_STATUSBAR_TEXT: NativeUiDark.B20
+    COLOR_TOOLBAR_BACKGROUND: ChromeDark.B10
+    COLOR_EDITOR_LINE_NUMBER: NativeUiDark.B40
+    COLOR_TAB_TEXT: NativeUiDark.B20
+    COLOR_TAB_SELECTED_TEXT: NativeUiDark.B50
+    COLOR_TAB_SELECTED_BACKGROUND: NativeUiDark.B30
+    COLOR_TAB_HOVER_BACKGROUND: ChromeDark.B70
+    COLOR_TAB_SELECTED_ACCENT: NativeUiDark.B70
+    COLOR_TREE_TEXT: NativeUiDark.B50
+    COLOR_TREE_INACTIVE_SELECTION_TEXT: NativeUiDark.B50
+    COLOR_TREE_HOVER_BACKGROUND: NativeUiDark.B60
+    COLOR_TREE_SELECTED_BACKGROUND: NativeUiDark.B80
+    COLOR_TREE_INACTIVE_SELECTION_BACKGROUND: NativeUiDark.B90
+    COLOR_TREE_SELECTED_TEXT: NativeUiDark.B50
+    COLOR_SUCCESS_1: SurfaceDark.B100
+    COLOR_SUCCESS_2: SurfaceDark.B110
+    COLOR_SUCCESS_3: SurfaceDark.B120
+    COLOR_SUCCESS_4: SurfaceDark.B130
+    COLOR_SUCCESS_5: SurfaceDark.B140
+    # Shared foreground (ima.stop/errors) and Dependencies cell background.
+    COLOR_ERROR_1: ErrorUiDark.B10
+    COLOR_ERROR_2: SurfaceDark.B160
+    COLOR_ERROR_3: SurfaceDark.B170
+    COLOR_ERROR_4: SurfaceDark.B180
+    COLOR_ERROR_5: SurfaceDark.B190
+    COLOR_WARN_1: SurfaceDark.B200
+    COLOR_WARN_2: SurfaceDark.B210
+    COLOR_WARN_3: SurfaceDark.B220
+    COLOR_WARN_4: SurfaceDark.B230
+    COLOR_WARN_5: SurfaceDark.B240
+    ICON_1: SurfaceDark.B50
+    ICON_2: SurfaceDark.B250
+    ICON_3: SurfaceDark.B260
+    ICON_4: SurfaceDark.B270
+    ICON_5: SurfaceDark.B280
+    ICON_6: SurfaceDark.B40
+    ICON_7: SurfaceDark.B250
+    GROUP_1: GroupDark.B10
+    GROUP_2: GroupDark.B20
+    GROUP_3: GroupDark.B30
+    GROUP_4: GroupDark.B40
+    GROUP_5: GroupDark.B50
+    GROUP_6: GroupDark.B60
+    GROUP_7: GroupDark.B70
+    GROUP_8: GroupDark.B80
+    GROUP_9: GroupDark.B90
+    GROUP_10: GroupDark.B100
+    GROUP_11: GroupDark.B110
+    GROUP_12: GroupDark.B120
+    COLOR_HIGHLIGHT_1: SurfaceDark.B20
+    COLOR_HIGHLIGHT_2: SurfaceDark.B20
+    COLOR_HIGHLIGHT_3: SurfaceDark.B20
+    COLOR_HIGHLIGHT_4: SurfaceDark.B90
+    COLOR_OCCURRENCE_1: SurfaceDark.B80
+    COLOR_OCCURRENCE_2: SurfaceDark.B10
+    COLOR_OCCURRENCE_3: SurfaceDark.B20
+    COLOR_OCCURRENCE_4: SurfaceDark.B90
+    COLOR_OCCURRENCE_5: SurfaceDark.B30
+    EDITOR_BACKGROUND: SyntaxDark.B10
+    EDITOR_CURRENTLINE: SyntaxDark.B20
+    EDITOR_CURRENTCELL: SyntaxDark.B30
+    EDITOR_OCCURRENCE: SyntaxDark.B40
+    EDITOR_CTRLCLICK: SyntaxDark.B50
+    EDITOR_SIDEAREAS: SyntaxDark.B10
+    EDITOR_MATCHED_P: SyntaxDark.B60
+    EDITOR_UNMATCHED_P: SyntaxDark.B70
+    EDITOR_NORMAL: [SyntaxDark.B80, false, false]
+    EDITOR_KEYWORD: [SyntaxDark.B90, false, false]
+    EDITOR_MAGIC: [SyntaxDark.B100, false, false]
+    EDITOR_BUILTIN: [SyntaxDark.B110, false, false]
+    EDITOR_DEFINITION: [SyntaxDark.B50, false, false]
+    EDITOR_COMMENT: [SyntaxDark.B120, false, false]
+    EDITOR_STRING: [SyntaxDark.B130, false, false]
+    EDITOR_NUMBER: [SyntaxDark.B140, false, false]
+    EDITOR_INSTANCE: [SyntaxDark.B110, false, false]
+    EDITOR_SYMBOL: [SyntaxDark.B150, false, false]
+    EDITOR_OPERATOR: [PythonDark.B10, false, false]
+    EDITOR_WORD_OPERATOR: [PythonDark.B10, false, false]
+    EDITOR_PUNCTUATION: [PythonDark.B10, false, false]
+    EDITOR_SEPARATOR: [PythonDark.B10, false, false]
+    EDITOR_CLASS: [PythonDark.B20, false, false]
+    EDITOR_FUNCTION_CALL: [PythonDark.B30, false, false]
+    EDITOR_DOCSTRING: [PythonDark.B40, false, false]
+    EDITOR_TYPE: [PythonDark.B50, false, false]
+    EDITOR_BASECLASS: [PythonDark.B20, false, false]
+    # Native @keyword.function uses syn.keyword, independently of Type.
+    EDITOR_STORAGE: [SyntaxDark.B90, false, false]
+    EDITOR_CONSTANT: [PythonDark.B60, false, false]
+    EDITOR_VARIABLE: [PythonDark.B70, false, false]
+    EDITOR_PARAMETER: [PythonDark.B50, false, false]
+    EDITOR_CLASS_REFERENCE: [PythonDark.B20, false, false]
+    EDITOR_BRACKET_1: [PythonDark.B10, false, false]
+    EDITOR_BRACKET_2: [PythonDark.B10, false, false]
+    EDITOR_BRACKET_3: [PythonDark.B10, false, false]
+    EDITOR_BRACKET_4: [PythonDark.B10, false, false]
+    EDITOR_BRACKET_5: [PythonDark.B10, false, false]
+    EDITOR_BRACKET_6: [PythonDark.B10, false, false]
+    PYTHON_LOGO_UP: LogosDark.B10
+    PYTHON_LOGO_DOWN: LogosDark.B20
+    SPYDER_LOGO_BACKGROUND: SurfaceDark.B10
+    SPYDER_LOGO_WEB: SurfaceDark.B50
+    SPYDER_LOGO_SNAKE: SurfaceDark.B50
+    SPECIAL_TABS_SEPARATOR: SurfaceDark.B30
+    SPECIAL_TABS_SELECTED: SurfaceDark.B10
+    COLOR_HEART: SurfaceDark.B270
+    TIP_TITLE_COLOR: SurfaceDark.B250
+    TIP_CHAR_HIGHLIGHT_COLOR: SurfaceDark.B290
+    OPACITY_TOOLTIP: 230
+    TAB_SELECTED_ACCENT_INNER_EDGE: 0
+    TAB_SELECTED_ACCENT_WIDTH: 1
+css_overrides:
+  --syn-operator: EDITOR_OPERATOR
+  --header-bg-color: HelpDark.B10
+  --header-text-color: HelpDark.B20
+  --syn-error-bg: HelpDark.B30
+  --warning-bg: HelpDark.B40
+  --link-color: HelpDark.B50
+  --hover-color: HelpDark.B60
+  --note-bg: HelpDark.B10
+  --border-light: COLOR_BACKGROUND_5
+appeal_overrides:
+  # Replace all legacy Error/Warning/Secondary class defaults with native roles.
+  --heart: COLOR_HEART
+  --highlight: EDITOR_MAGIC
+  --hand: EDITOR_DEFINITION
+  --link-color: HelpDark.B50
+  --hover-color: HelpDark.B60
+pydoc_overrides:
+  --header-bg-color: HelpDark.B10
+  --header-text-color: HelpDark.B20
+  --link-color: HelpDark.B50
+  --hover-color: HelpDark.B60

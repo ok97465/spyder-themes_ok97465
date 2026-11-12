@@ -1,0 +1,201 @@
+# Upstream repository: https://github.com/rebelot/kanagawa.nvim
+# Upstream revision: bb85e4bfc8d89b0e62c8fa53ccdd13d12e2f77b3
+# Source: https://github.com/rebelot/kanagawa.nvim/blob/bb85e4bfc8d89b0e62c8fa53ccdd13d12e2f77b3/lua/kanagawa/colors.lua
+# Source SHA-256: bad6ccb01c34f16d38083c4df2ead9f03536de81d6ab5d95b1bdf4b0f8129240
+# Source: https://github.com/rebelot/kanagawa.nvim/blob/bb85e4bfc8d89b0e62c8fa53ccdd13d12e2f77b3/lua/kanagawa/themes.lua
+# Source SHA-256: da4cbc68ac2b25a1dcea325da3354396068bb007674c51fac5a9184f08a697cf
+# Source: https://github.com/rebelot/kanagawa.nvim/blob/bb85e4bfc8d89b0e62c8fa53ccdd13d12e2f77b3/lua/kanagawa/highlights/syntax.lua
+# Source SHA-256: 937fb7456e8cc5d63321eaa88e25ea9093e5fe144837a48fec365d7b1edf8aea
+# Source: https://github.com/rebelot/kanagawa.nvim/blob/bb85e4bfc8d89b0e62c8fa53ccdd13d12e2f77b3/lua/kanagawa/highlights/treesitter.lua
+# Source SHA-256: 15c03e494d5cd62044efc4fcbe4b2d8ddf309db372b2b2aa1152182fe10895b9
+# Native Dragon editor background #181616, foreground #C5C9C5 and syntax palette are preserved.
+# Python mappings follow the pinned Dragon theme and Tree-sitter roles; plain variable uses ui.fg, self uses special2 italic, and parameters use syn.parameter.
+# Source keyword/comment italics and word-operator bold are retained; the single Spyder keyword slot follows Keyword rather than the separate bold Statement group.
+# All six bracket depths repeat syn.punct; native Dragon defines no rainbow bracket cycle.
+# Intentional Spyder adaptation: native waveBlue1/waveBlue2 popup/search/selection fills are replaced with dragonBlack4/dragonBlack5 to keep large backgrounds neutral.
+# Qt-only semantic feedback ramps, matched/unmatched bracket fills, current-cell shading and help fills are explicit adaptations.
+# Status bar, tabs, toolbar and tree use only the native Dragon charcoal background stages.
+---
+color_classes:
+  PopupAuditDark: QtPopupAuditDark
+  QtUiAuditDark: QtUiAuditDark
+  ErrorUiDark: QtErrorDark
+  ChromeDark: ChromeDark
+  SurfaceDark: KanagawaDragonSurfaceDark
+  NativeUiDark: KanagawaDragonNativeUiDark
+  GroupDark: KanagawaDragonGroupDark
+  SyntaxDark: KanagawaDragonSyntaxDark
+  PythonDark: KanagawaDragonPythonDark
+  LogosDark: KanagawaDragonLogosDark
+  HelpDark: KanagawaDragonHelpDark
+  PaneBordersDark: KanagawaDragonPaneBordersDark
+semantic_mappings:
+  dark:
+    COLOR_MENU_BACKGROUND: PopupAuditDark.B10
+    COLOR_MENU_TEXT: PopupAuditDark.B20
+    COLOR_MENU_SELECTED_BACKGROUND: PopupAuditDark.B30
+    COLOR_MENU_SELECTED_TEXT: PopupAuditDark.B40
+    COLOR_MENU_BORDER: PopupAuditDark.B50
+    COLOR_SWITCHER_BACKGROUND: PopupAuditDark.B60
+    COLOR_SWITCHER_SELECTED_BACKGROUND: PopupAuditDark.B70
+    COLOR_SWITCHER_BORDER: PopupAuditDark.B80
+    COLOR_SWITCHER_INPUT_BACKGROUND: PopupAuditDark.B90
+    COLOR_BUTTON_TEXT: ChromeDark.B80
+    COLOR_BUTTON_BORDER: ChromeDark.B60
+    COLOR_BUTTON_PRESSED_BACKGROUND: ChromeDark.B50
+    COLOR_BUTTON_HOVER_BACKGROUND: ChromeDark.B40
+    COLOR_BUTTON_BACKGROUND: ChromeDark.B30
+    COLOR_TAB_BACKGROUND: ChromeDark.B20
+    # Qt content frames use dragonBlack5; preserve the warm charcoal palette without copying a near-black split.
+    COLOR_PANE_BORDER: PaneBordersDark.B10
+    COLOR_EDITOR_BORDER: PaneBordersDark.B20
+    COLOR_SIDEBAR_BORDER: PaneBordersDark.B30
+    COLOR_BACKGROUND_1: SurfaceDark.B10
+    COLOR_BACKGROUND_2: SurfaceDark.B10
+    COLOR_BACKGROUND_3: SurfaceDark.B20
+    COLOR_BACKGROUND_4: ChromeDark.B20
+    COLOR_BACKGROUND_5: SurfaceDark.B30
+    COLOR_BACKGROUND_6: SurfaceDark.B40
+    COLOR_TEXT_1: SurfaceDark.B50
+    COLOR_TEXT_2: SurfaceDark.B60
+    COLOR_TEXT_3: SurfaceDark.B70
+    COLOR_TEXT_4: SurfaceDark.B50
+    COLOR_ACCENT_1: SurfaceDark.B80
+    COLOR_ACCENT_2: SurfaceDark.B20
+    COLOR_ACCENT_3: QtUiAuditDark.B30
+    COLOR_ACCENT_4: SurfaceDark.B20
+    COLOR_ACCENT_5: SurfaceDark.B30
+    COLOR_DISABLED: SurfaceDark.B70
+    COLOR_EMPTY: SurfaceDark.B20
+    COLOR_STATUSBAR_BACKGROUND: NativeUiDark.B10
+    COLOR_STATUSBAR_TEXT: NativeUiDark.B20
+    COLOR_TOOLBAR_BACKGROUND: ChromeDark.B10
+    COLOR_EDITOR_LINE_NUMBER: NativeUiDark.B40
+    COLOR_TAB_TEXT: SurfaceDark.B50
+    COLOR_TAB_SELECTED_TEXT: NativeUiDark.B20
+    COLOR_TAB_SELECTED_BACKGROUND: NativeUiDark.B30
+    COLOR_TAB_HOVER_BACKGROUND: ChromeDark.B70
+    COLOR_TAB_SELECTED_ACCENT: NativeUiDark.B50
+    COLOR_TREE_TEXT: NativeUiDark.B20
+    COLOR_TREE_INACTIVE_SELECTION_TEXT: NativeUiDark.B20
+    COLOR_TREE_HOVER_BACKGROUND: NativeUiDark.B60
+    COLOR_TREE_SELECTED_BACKGROUND: NativeUiDark.B70
+    COLOR_TREE_INACTIVE_SELECTION_BACKGROUND: NativeUiDark.B60
+    COLOR_TREE_SELECTED_TEXT: NativeUiDark.B20
+    COLOR_SUCCESS_1: SurfaceDark.B90
+    COLOR_SUCCESS_2: SurfaceDark.B100
+    COLOR_SUCCESS_3: SurfaceDark.B110
+    COLOR_SUCCESS_4: SurfaceDark.B120
+    COLOR_SUCCESS_5: SurfaceDark.B130
+    # Shared foreground (ima.stop/errors) and Dependencies cell background.
+    COLOR_ERROR_1: ErrorUiDark.B10
+    COLOR_ERROR_2: SurfaceDark.B150
+    COLOR_ERROR_3: SurfaceDark.B160
+    COLOR_ERROR_4: SurfaceDark.B170
+    COLOR_ERROR_5: SurfaceDark.B180
+    COLOR_WARN_1: SurfaceDark.B190
+    COLOR_WARN_2: SurfaceDark.B200
+    COLOR_WARN_3: SurfaceDark.B210
+    COLOR_WARN_4: SurfaceDark.B220
+    COLOR_WARN_5: SurfaceDark.B230
+    ICON_1: SurfaceDark.B50
+    ICON_2: SurfaceDark.B240
+    ICON_3: SurfaceDark.B250
+    ICON_4: SurfaceDark.B260
+    ICON_5: SurfaceDark.B270
+    ICON_6: SurfaceDark.B40
+    ICON_7: SurfaceDark.B240
+    GROUP_1: GroupDark.B10
+    GROUP_2: GroupDark.B20
+    GROUP_3: GroupDark.B30
+    GROUP_4: GroupDark.B40
+    GROUP_5: GroupDark.B50
+    GROUP_6: GroupDark.B60
+    GROUP_7: GroupDark.B70
+    GROUP_8: GroupDark.B80
+    GROUP_9: GroupDark.B90
+    GROUP_10: GroupDark.B100
+    GROUP_11: GroupDark.B110
+    GROUP_12: GroupDark.B120
+    COLOR_HIGHLIGHT_1: SurfaceDark.B20
+    COLOR_HIGHLIGHT_2: SurfaceDark.B20
+    COLOR_HIGHLIGHT_3: SurfaceDark.B20
+    COLOR_HIGHLIGHT_4: SurfaceDark.B30
+    COLOR_OCCURRENCE_1: SurfaceDark.B80
+    COLOR_OCCURRENCE_2: SurfaceDark.B10
+    COLOR_OCCURRENCE_3: SurfaceDark.B20
+    COLOR_OCCURRENCE_4: SurfaceDark.B30
+    COLOR_OCCURRENCE_5: SurfaceDark.B30
+    EDITOR_BACKGROUND: SyntaxDark.B10
+    EDITOR_CURRENTLINE: SyntaxDark.B20
+    EDITOR_CURRENTCELL: SyntaxDark.B30
+    EDITOR_OCCURRENCE: SyntaxDark.B20
+    EDITOR_CTRLCLICK: SyntaxDark.B40
+    EDITOR_SIDEAREAS: SyntaxDark.B50
+    EDITOR_MATCHED_P: SyntaxDark.B20
+    EDITOR_UNMATCHED_P: SyntaxDark.B60
+    EDITOR_NORMAL: [SyntaxDark.B70, false, false]
+    EDITOR_KEYWORD: [SyntaxDark.B80, false, true]
+    EDITOR_MAGIC: [SyntaxDark.B90, false, false]
+    EDITOR_BUILTIN: [SyntaxDark.B40, false, false]
+    EDITOR_DEFINITION: [SyntaxDark.B40, false, false]
+    EDITOR_COMMENT: [SyntaxDark.B100, false, true]
+    EDITOR_STRING: [SyntaxDark.B110, false, false]
+    EDITOR_NUMBER: [SyntaxDark.B120, false, false]
+    EDITOR_INSTANCE: [SyntaxDark.B130, false, true]
+    EDITOR_SYMBOL: [SyntaxDark.B140, false, false]
+    EDITOR_OPERATOR: [PythonDark.B10, false, false]
+    EDITOR_WORD_OPERATOR: [PythonDark.B10, true, false]
+    EDITOR_PUNCTUATION: [PythonDark.B20, false, false]
+    EDITOR_SEPARATOR: [PythonDark.B20, false, false]
+    EDITOR_CLASS: [PythonDark.B30, false, false]
+    EDITOR_FUNCTION_CALL: [PythonDark.B40, false, false]
+    EDITOR_DOCSTRING: [PythonDark.B50, false, false]
+    EDITOR_TYPE: [PythonDark.B30, false, false]
+    EDITOR_BASECLASS: [PythonDark.B30, false, false]
+    EDITOR_STORAGE: [PythonDark.B60, false, false]
+    EDITOR_CONSTANT: [PythonDark.B70, false, false]
+    EDITOR_VARIABLE: [PythonDark.B80, false, false]
+    EDITOR_PARAMETER: [PythonDark.B90, false, false]
+    EDITOR_CLASS_REFERENCE: [PythonDark.B30, false, false]
+    EDITOR_BRACKET_1: [PythonDark.B20, false, false]
+    EDITOR_BRACKET_2: [PythonDark.B20, false, false]
+    EDITOR_BRACKET_3: [PythonDark.B20, false, false]
+    EDITOR_BRACKET_4: [PythonDark.B20, false, false]
+    EDITOR_BRACKET_5: [PythonDark.B20, false, false]
+    EDITOR_BRACKET_6: [PythonDark.B20, false, false]
+    PYTHON_LOGO_UP: LogosDark.B10
+    PYTHON_LOGO_DOWN: LogosDark.B20
+    SPYDER_LOGO_BACKGROUND: SurfaceDark.B10
+    SPYDER_LOGO_WEB: SurfaceDark.B50
+    SPYDER_LOGO_SNAKE: SurfaceDark.B50
+    SPECIAL_TABS_SEPARATOR: SurfaceDark.B30
+    SPECIAL_TABS_SELECTED: SurfaceDark.B10
+    COLOR_HEART: SurfaceDark.B260
+    TIP_TITLE_COLOR: SurfaceDark.B240
+    TIP_CHAR_HIGHLIGHT_COLOR: SurfaceDark.B280
+    OPACITY_TOOLTIP: 230
+    TAB_SELECTED_ACCENT_INNER_EDGE: 0
+    TAB_SELECTED_ACCENT_WIDTH: 1
+css_overrides:
+  --syn-operator: EDITOR_OPERATOR
+  --header-bg-color: HelpDark.B10
+  --header-text-color: HelpDark.B20
+  --syn-error-bg: HelpDark.B30
+  --warning-bg: HelpDark.B40
+  --link-color: HelpDark.B50
+  --hover-color: HelpDark.B60
+  --note-bg: HelpDark.B10
+  --border-light: COLOR_BACKGROUND_5
+appeal_overrides:
+  # Replace all legacy Error/Warning/Secondary class defaults with native roles.
+  --heart: COLOR_HEART
+  --highlight: EDITOR_MAGIC
+  --hand: EDITOR_DEFINITION
+  --link-color: HelpDark.B50
+  --hover-color: HelpDark.B60
+pydoc_overrides:
+  --header-bg-color: HelpDark.B10
+  --header-text-color: HelpDark.B20
+  --link-color: HelpDark.B50
+  --hover-color: HelpDark.B60

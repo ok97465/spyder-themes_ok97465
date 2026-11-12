@@ -1,0 +1,223 @@
+# Upstream repository: https://github.com/rebelot/kanagawa.nvim
+# Upstream revision: bb85e4bfc8d89b0e62c8fa53ccdd13d12e2f77b3
+# Source: https://github.com/rebelot/kanagawa.nvim/blob/bb85e4bfc8d89b0e62c8fa53ccdd13d12e2f77b3/lua/kanagawa/colors.lua
+# Source SHA-256: bad6ccb01c34f16d38083c4df2ead9f03536de81d6ab5d95b1bdf4b0f8129240
+# Source: https://github.com/rebelot/kanagawa.nvim/blob/bb85e4bfc8d89b0e62c8fa53ccdd13d12e2f77b3/lua/kanagawa/themes.lua
+# Source SHA-256: da4cbc68ac2b25a1dcea325da3354396068bb007674c51fac5a9184f08a697cf
+# Source: https://github.com/rebelot/kanagawa.nvim/blob/bb85e4bfc8d89b0e62c8fa53ccdd13d12e2f77b3/lua/kanagawa/highlights/syntax.lua
+# Source SHA-256: 937fb7456e8cc5d63321eaa88e25ea9093e5fe144837a48fec365d7b1edf8aea
+# Source: https://github.com/rebelot/kanagawa.nvim/blob/bb85e4bfc8d89b0e62c8fa53ccdd13d12e2f77b3/lua/kanagawa/highlights/treesitter.lua
+# Source SHA-256: 15c03e494d5cd62044efc4fcbe4b2d8ddf309db372b2b2aa1152182fe10895b9
+# Native Dragon editor background #181616, foreground #C5C9C5 and syntax palette are preserved.
+# Python mappings follow the pinned Dragon theme and Tree-sitter roles; plain variable uses ui.fg, self uses special2 italic, and parameters use syn.parameter.
+# Source keyword/comment italics and word-operator bold are retained; the single Spyder keyword slot follows Keyword rather than the separate bold Statement group.
+# All six bracket depths repeat syn.punct; native Dragon defines no rainbow bracket cycle.
+# Intentional Spyder adaptation: native waveBlue1/waveBlue2 popup/search/selection fills are replaced with dragonBlack4/dragonBlack5 to keep large backgrounds neutral.
+# Qt-only semantic feedback ramps, matched/unmatched bracket fills, current-cell shading and help fills are explicit adaptations.
+# Status bar, tabs, toolbar and tree use only the native Dragon charcoal background stages.
+---
+KanagawaDragonSurfaceDark:
+  # COLOR_BACKGROUND_1, COLOR_BACKGROUND_2, COLOR_BACKGROUND_4, COLOR_OCCURRENCE_2, SPYDER_LOGO_BACKGROUND, SPECIAL_TABS_SELECTED
+  B10: '#181616'
+  # COLOR_BACKGROUND_3, COLOR_ACCENT_2, COLOR_ACCENT_3, COLOR_ACCENT_4, COLOR_EMPTY, COLOR_HIGHLIGHT_1, COLOR_HIGHLIGHT_2, COLOR_HIGHLIGHT_3, COLOR_OCCURRENCE_3
+  B20: '#282727'
+  # COLOR_BACKGROUND_5, COLOR_ACCENT_5, COLOR_HIGHLIGHT_4, COLOR_OCCURRENCE_4, COLOR_OCCURRENCE_5, SPECIAL_TABS_SEPARATOR
+  B30: '#393836'
+  # COLOR_BACKGROUND_6, ICON_6
+  B40: '#625E5A'
+  # COLOR_TEXT_1, COLOR_TEXT_4, ICON_1, SPYDER_LOGO_WEB, SPYDER_LOGO_SNAKE
+  B50: '#C5C9C5'
+  # COLOR_TEXT_2
+  B60: '#9E9B93'
+  # COLOR_TEXT_3, COLOR_DISABLED
+  B70: '#7A8382'
+  # COLOR_ACCENT_1, COLOR_OCCURRENCE_1
+  B80: '#12120F'
+  # COLOR_SUCCESS_1
+  B90: '#20201D'
+  # COLOR_SUCCESS_2
+  B100: '#272A23'
+  # COLOR_SUCCESS_3
+  B110: '#30362B'
+  # COLOR_SUCCESS_4
+  B120: '#3E4838'
+  # COLOR_SUCCESS_5
+  B130: '#4C5B44'
+  # COLOR_ERROR_1
+  B140: '#291717'
+  # COLOR_ERROR_2
+  B150: '#391818'
+  # COLOR_ERROR_3
+  B160: '#4C1A1A'
+  # COLOR_ERROR_4
+  B170: '#6B1C1C'
+  # COLOR_ERROR_5
+  B180: '#8A1E1E'
+  # COLOR_WARN_1
+  B190: '#2A2119'
+  # COLOR_WARN_2
+  B200: '#3D2C1C'
+  # COLOR_WARN_3
+  B210: '#52381F'
+  # COLOR_WARN_4
+  B220: '#744C25'
+  # COLOR_WARN_5
+  B230: '#97612A'
+  # ICON_2, ICON_7, TIP_TITLE_COLOR
+  B240: '#8BA4B0'
+  # ICON_3
+  B250: '#76946A'
+  # ICON_4, COLOR_HEART
+  B260: '#E82424'
+  # ICON_5
+  B270: '#FF9E3B'
+  # TIP_CHAR_HIGHLIGHT_COLOR
+  B280: '#949FB5'
+KanagawaDragonNativeUiDark:
+  # COLOR_STATUSBAR_BACKGROUND
+  B10: '#12120F'
+  # COLOR_STATUSBAR_TEXT, COLOR_TAB_SELECTED_TEXT, COLOR_TREE_TEXT, COLOR_TREE_INACTIVE_SELECTION_TEXT, COLOR_TREE_SELECTED_TEXT
+  B20: '#C5C9C5'
+  # COLOR_TOOLBAR_BACKGROUND, COLOR_TAB_SELECTED_BACKGROUND
+  B30: '#181616'
+  # COLOR_EDITOR_LINE_NUMBER
+  B40: '#7A8382'
+  # COLOR_TAB_TEXT, COLOR_TAB_SELECTED_ACCENT
+  B50: '#9E9B93'
+  # COLOR_TAB_HOVER_BACKGROUND, COLOR_TREE_HOVER_BACKGROUND, COLOR_TREE_INACTIVE_SELECTION_BACKGROUND
+  B60: '#282727'
+  # COLOR_TREE_SELECTED_BACKGROUND
+  B70: '#393836'
+KanagawaDragonGroupDark:
+  # GROUP_1
+  B10: '#C4746E'
+  # GROUP_2
+  B20: '#B6927B'
+  # GROUP_3
+  B30: '#C4B28A'
+  # GROUP_4
+  B40: '#8A9A7B'
+  # GROUP_5
+  B50: '#8EA4A2'
+  # GROUP_6
+  B60: '#8BA4B0'
+  # GROUP_7
+  B70: '#8992A7'
+  # GROUP_8
+  B80: '#A292A3'
+  # GROUP_9
+  B90: '#949FB5'
+  # GROUP_10
+  B100: '#87A987'
+  # GROUP_11
+  B110: '#A6A69C'
+  # GROUP_12
+  B120: '#9E9B93'
+KanagawaDragonSyntaxDark:
+  # EDITOR_BACKGROUND
+  B10: '#181616'
+  # EDITOR_CURRENTLINE, EDITOR_OCCURRENCE, EDITOR_MATCHED_P
+  B20: '#393836'
+  # EDITOR_CURRENTCELL
+  B30: '#1F1E1E'
+  # EDITOR_CTRLCLICK, EDITOR_BUILTIN, EDITOR_DEFINITION
+  B40: '#8BA4B0'
+  # EDITOR_SIDEAREAS
+  B50: '#282727'
+  # EDITOR_UNMATCHED_P
+  B60: '#3D1919'
+  # EDITOR_NORMAL
+  B70: '#C5C9C5'
+  # EDITOR_KEYWORD
+  B80: '#8992A7'
+  # EDITOR_MAGIC
+  B90: '#B6927B'
+  # EDITOR_COMMENT
+  B100: '#737C73'
+  # EDITOR_STRING
+  B110: '#8A9A7B'
+  # EDITOR_NUMBER
+  B120: '#A292A3'
+  # EDITOR_INSTANCE
+  B130: '#C4746E'
+  # EDITOR_SYMBOL
+  B140: '#949FB5'
+KanagawaDragonPythonDark:
+  # EDITOR_OPERATOR, EDITOR_WORD_OPERATOR
+  B10: '#C4746E'
+  # EDITOR_PUNCTUATION, EDITOR_SEPARATOR, EDITOR_BRACKET_1, EDITOR_BRACKET_2, EDITOR_BRACKET_3, EDITOR_BRACKET_4, EDITOR_BRACKET_5, EDITOR_BRACKET_6
+  B20: '#9E9B93'
+  # EDITOR_CLASS, EDITOR_TYPE, EDITOR_BASECLASS, EDITOR_CLASS_REFERENCE
+  B30: '#8EA4A2'
+  # EDITOR_FUNCTION_CALL
+  B40: '#8BA4B0'
+  # EDITOR_DOCSTRING
+  B50: '#8A9A7B'
+  # EDITOR_STORAGE
+  B60: '#8992A7'
+  # EDITOR_CONSTANT
+  B70: '#B6927B'
+  # EDITOR_VARIABLE
+  B80: '#C5C9C5'
+  # EDITOR_PARAMETER
+  B90: '#A6A69C'
+KanagawaDragonLogosDark:
+  # PYTHON_LOGO_UP
+  B10: '#3775A9'
+  # PYTHON_LOGO_DOWN
+  B20: '#FFD444'
+KanagawaDragonHelpDark:
+  B10: '#282727'
+  B20: '#C5C9C5'
+  B30: '#291717'
+  B40: '#2A2119'
+  B50: '#8BA4B0'
+  B60: '#C5C9C5'
+
+# Inactive pane edges: B10 panel, B20 editor, B30 sidebar.
+# Qt content frames use dragonBlack5; preserve the warm charcoal palette without copying a near-black split.
+KanagawaDragonPaneBordersDark:
+  B10: '#393836'
+  B20: '#393836'
+  B30: '#393836'
+
+# Qt chrome surfaces: UI-only adaptations of this theme's neutral palette.
+# Keep the existing editor/syntax colors; give wide toolbars and idle controls
+# their own visible surface. Flat source surfaces are adapted for Qt.
+ChromeDark:
+  B10: '#2D2B2B'  # COLOR_TOOLBAR_BACKGROUND
+  B20: '#393836'  # COLOR_TAB_BACKGROUND
+  B30: '#393836'  # COLOR_BUTTON_BACKGROUND
+  B40: '#484747'  # COLOR_BUTTON_HOVER_BACKGROUND
+  B50: '#282727'  # COLOR_BUTTON_PRESSED_BACKGROUND
+  B60: '#625E5A'  # COLOR_BUTTON_BORDER
+  B70: '#484747'  # COLOR_TAB_HOVER_BACKGROUND
+  B80: '#C5C9C5'  # COLOR_BUTTON_TEXT
+
+# Shared COLOR_ERROR_1: icon foreground and legacy Dependencies cell background.
+# Darken the native red/pink only for this Qt role, keeping inherited light
+# tree text at 4.5:1 while maximizing the stop icon against the toolbar.
+QtErrorDark:
+  B10: '#A61A1A'
+
+# Qt frame/state adaptations: COLOR_BACKGROUND_4 also draws the local Help
+# frame and dock tabs, so its inactive tab shade must remain visible.
+# Focus shades retain this palette's hue and readable generic selection text.
+# Popup menus and command palettes use independent native roles.
+QtUiAuditDark:
+  B30: '#514D4A'  # COLOR_ACCENT_3
+
+# Reviewed menus and command palette. Native popup colors where the
+# reference matches; otherwise this theme's own palette is retained.
+# Qt uses opaque fills and 1px popup frames. Switcher titles embed
+# COLOR_TEXT_1 in HTML, so selected/input fills may be adjusted for readability.
+QtPopupAuditDark:
+  B10: '#393836'  # COLOR_MENU_BACKGROUND
+  B20: '#C5C9C5'  # COLOR_MENU_TEXT
+  B30: '#0D0C0C'  # COLOR_MENU_SELECTED_BACKGROUND
+  B40: '#C5C9C5'  # COLOR_MENU_SELECTED_TEXT
+  B50: '#0D0C0C'  # COLOR_MENU_BORDER
+  B60: '#181616'  # COLOR_SWITCHER_BACKGROUND
+  B70: '#393836'  # COLOR_SWITCHER_SELECTED_BACKGROUND
+  B80: '#393836'  # COLOR_SWITCHER_BORDER
+  B90: '#0D0C0C'  # COLOR_SWITCHER_INPUT_BACKGROUND

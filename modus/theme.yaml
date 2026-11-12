@@ -1,0 +1,25 @@
+# Adapted from the official Modus themes by Protesilaos.
+# Copyright (C) 2019-2026 Free Software Foundation, Inc.
+# Source revision: 782743415b3eedac0b99db2342fb35703deb752f
+# https://github.com/protesilaos/modus-themes/blob/782743415b3eedac0b99db2342fb35703deb752f/modus-themes.el
+# GPL-3.0-or-later; the original license text is included in LICENSE.
+# Native palette foregrounds and the black/white editor backgrounds are preserved.
+# Qt surfaces, line/cell highlights and selection fills use the native neutral ramp.
+# Spyder-only roles reuse the closest native semantic foreground; operators inherit normal text.
+# This Spyder adaptation does not make an independent WCAG certification claim.
+---
+name: modus
+display_name: Modus
+description: Modus Vivendi dark and Operandi light palettes with neutral Spyder surfaces
+author: Protesilaos and the Free Software Foundation; adapted for Spyder
+license: GPL-3.0-or-later
+url: https://protesilaos.com/emacs/modus-themes
+version: 1.0.0
+tags:
+- dark
+- light
+- neutral
+- python
+variants:
+  dark: true
+  light: true

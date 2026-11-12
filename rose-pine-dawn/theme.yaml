@@ -1,0 +1,29 @@
+# Rosé Pine Dawn: official source colors adapted to Spyder.
+# Upstream author: Rosé Pine. License: MIT (notice in LICENSE).
+# Upstream revision: d8f5ebe8e096fa833e997c07eb7685ee1677a4ba
+# Source: https://github.com/rose-pine/vscode/blob/d8f5ebe8e096fa833e997c07eb7685ee1677a4ba/themes/rose-pine-dawn-color-theme.json
+# Dawn light variant only. Original ivory background #FAF4ED and native syntax colors are preserved.
+# Generic keyword/storage -> pine; definitions/numbers -> rose; types/classes -> foam; strings/docstrings -> gold.
+# Comments retain italics. All variable roles inherit variable italics; parameters use variable.parameter iris.
+# Base classes retain inherited-class iris italics. Variables/instance names/calls use the native variable.other/function foreground.
+# Builtin functions use support.function love italics; builtin types use support foam; Python True/False/None use constant.language rose.
+# All six original bracket colors and their alpha are RGB-composited over editor.background in source order.
+# Native transparent selection, hover, tab and word highlights are flattened over the ivory editor/sidebar surface.
+# Toolbar uses native title/background base; extra borders and help feedback fills are Qt-specific adaptations.
+# Qt status/tab/tree labels use original text #575279 instead of muted #797593 for at least 4.5:1 UI contrast.
+---
+name: rose-pine-dawn
+display_name: Rosé Pine Dawn
+description: Rosé Pine Dawn colors adapted for the Spyder interface and Python editor
+author: Rosé Pine; Spyder adaptation
+version: 1.0.0
+license: MIT
+# The source explicitly removes group/panel/tab boundaries throughout its UI.
+pane_border_policy: borderless
+tags:
+- rose-pine-dawn
+- neutral-background
+- light
+variants:
+  dark: false
+  light: true

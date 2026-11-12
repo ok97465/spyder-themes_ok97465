@@ -253,3 +253,10 @@ Logos:
   B30: '#414141'
   B40: '#fafafa'
   B50: '#8c0000'
+
+# Qt content frames: B10 panel, B20 editor, B30 sidebar.
+# Qt light content frames use an existing warm neutral; keep the low-contrast palette while retaining pane separation.
+SolarizedPaneBordersLight:
+  B10: '#BABFB7'
+  B20: '#BABFB7'
+  B30: '#BABFB7'

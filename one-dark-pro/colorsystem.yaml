@@ -225,3 +225,51 @@ OneDarkProNativeDark:
   B130: '#D7DAE0'
   B140: '#ABB2BF'  # Native sideBar.foreground, independent of table/dialog text
   B150: '#D7DAE0'  # Native list.inactiveSelectionForeground
+
+# Inactive pane edges: B10 panel, B20 editor, B30 sidebar.
+# Qt editor frames reuse a neutral selection gray; pane/sidebar retain the native panel-border color.
+OneDarkProPaneBordersDark:
+  B10: '#3E4452'
+  B20: '#474D59'
+  B30: '#3E4452'
+
+
+# Interface hierarchy: source colors and Qt-only state adaptations.
+# One Dark Pro VS Code 3.20.6 provides tab hover #323842,
+# neutral #3E4452 and primary button #404754. Qt toolbar and inactive tabs lift
+# the native neutral surfaces, keeping #ABB2BF labels visible. Button hover
+# #4B5362 and pressed #343A46 are Qt state adaptations.
+OneDarkProInterfaceDark:
+  B10: '#323842'  # toolbar
+  B20: '#323842'  # inactive tab
+  B30: '#ABB2BF'  # inactive tab text
+  B40: '#3E4452'  # tab hover
+  B50: '#404754'  # button
+  B60: '#DCDCDC'  # button text
+  B70: '#4B5362'  # button hover
+  B80: '#343A46'  # button pressed
+  B90: '#636B78'  # button border
+
+# Qt UI boundary review (2026-11-13): inactive dock tabs and the legacy
+# Help frame share COLOR_BACKGROUND_4. These neutral adjustments keep
+# their boundaries visible and inactive labels readable. Focus shades
+# stay distinct on pane/editor surfaces; source editor/syntax colors
+# remain in the original palettes above. These are Qt-only adaptations.
+
+QtInterfaceReviewDark:
+  B10: '#383E48'  # COLOR_BACKGROUND_4, COLOR_TAB_BACKGROUND
+
+# Reviewed menus and command palette. Native popup colors where the
+# reference matches; otherwise this theme's own palette is retained.
+# Qt uses opaque fills and 1px popup frames. Switcher titles embed
+# COLOR_TEXT_1 in HTML, so selected/input fills may be adjusted for readability.
+QtPopupAuditDark:
+  B10: '#21252B'  # COLOR_MENU_BACKGROUND
+  B20: '#ABB2BF'  # COLOR_MENU_TEXT
+  B30: '#2C313A'  # COLOR_MENU_SELECTED_BACKGROUND
+  B40: '#D7DAE0'  # COLOR_MENU_SELECTED_TEXT
+  B50: '#3E4452'  # COLOR_MENU_BORDER
+  B60: '#21252B'  # COLOR_SWITCHER_BACKGROUND
+  B70: '#2C313A'  # COLOR_SWITCHER_SELECTED_BACKGROUND
+  B80: '#3E4452'  # COLOR_SWITCHER_BORDER
+  B90: '#1D1F23'  # COLOR_SWITCHER_INPUT_BACKGROUND

@@ -1,0 +1,181 @@
+# Adapted from Horizon and Horizon Bright by Jonathan Olaleye.
+# Source revision: 5ae91b6d49bf291e0a34c0a1cb277d9738aadd90
+# https://github.com/jolaleye/horizon-theme-vscode/tree/5ae91b6d49bf291e0a34c0a1cb277d9738aadd90/themes
+# Sources: horizon.json and horizon-bright.json; MIT notice included in LICENSE.
+# Native editor backgrounds are preserved; alpha colors are composited over editor.background.
+# Spyder adaptation: neutral comments and Bright docstrings are strengthened to at least 4.5:1
+# against the editor background; other token foregrounds preserve their source colors.
+# Normal text follows the source global foreground where no token rule applies.
+# variable.parameter adds italics and inherits the upstream variable foreground.
+# Qt panels, hover and selections use subdued grey/warm-neutral adaptations.
+# Warning and success UI colors are adapted for legibility on the Bright background.
+# No native rainbow bracket scopes exist, so all six bracket depths inherit punctuation.
+---
+HorizonPaletteDark:
+  B10: '#16161C'  # COLOR_BACKGROUND_1
+  B20: '#1C1E26'  # COLOR_BACKGROUND_2
+  B30: '#232530'  # COLOR_BACKGROUND_3
+  B40: '#292B36'  # COLOR_BACKGROUND_4
+  B50: '#343641'  # COLOR_BACKGROUND_5
+  B60: '#535563'  # COLOR_BACKGROUND_6
+  B70: '#D5D8DA'  # COLOR_TEXT_1
+  B80: '#ADB0B8'  # COLOR_TEXT_2
+  B90: '#90939E'  # COLOR_TEXT_3
+  B100: '#777B87'  # COLOR_TEXT_4
+  B110: '#E95378'  # COLOR_ACCENT_4
+  B120: '#E9436D'  # COLOR_ACCENT_5
+  B130: '#29D398'  # COLOR_SUCCESS_1
+  B140: '#27B283'  # COLOR_SUCCESS_2
+  B150: '#1F4941'  # COLOR_SUCCESS_4
+  B160: '#1E3434'  # COLOR_SUCCESS_5
+  B170: '#F43E5C'  # COLOR_ERROR_1
+  B180: '#CD3852'  # COLOR_ERROR_2
+  B190: '#502633'  # COLOR_ERROR_4
+  B200: '#36222C'  # COLOR_ERROR_5
+  B210: '#FAB795'  # COLOR_WARN_1
+  B220: '#D29B81'  # COLOR_WARN_2
+  B230: '#514341'  # COLOR_WARN_4
+  B240: '#373033'  # COLOR_WARN_5
+  B250: '#E4B28F'  # ICON_7
+  B260: '#D55170'  # GROUP_1
+  B270: '#E4A88A'  # GROUP_2
+  B280: '#24A2AD'  # GROUP_3
+  B290: '#A96EC9'  # GROUP_4
+  B300: '#DB887A'  # GROUP_6
+  B310: '#26BBD9'  # GROUP_8
+  B320: '#59E1E3'  # GROUP_9
+  B330: '#EE64AC'  # GROUP_11
+  B340: '#21232D'  # EDITOR_CURRENTLINE
+  B350: '#44475D'  # EDITOR_OCCURRENCE
+  B360: '#582735'  # EDITOR_UNMATCHED_P
+  B370: '#848589'  # EDITOR_COMMENT, strengthened from native alpha composite #4C4D53
+  B380: '#BBBBBB'  # EDITOR_SYMBOL
+  B390: '#3775A9'  # PYTHON_LOGO_UP
+  B400: '#FFD444'  # PYTHON_LOGO_DOWN
+  B410: '#2F212B'  # Help ErrorBackground
+  B420: '#302C30'  # Help WarningBackground
+
+HorizonPaletteLight:
+  B10: '#F9E8E3'  # COLOR_BACKGROUND_1
+  B20: '#FDF0ED'  # COLOR_BACKGROUND_2
+  B30: '#F3E3DF'  # COLOR_BACKGROUND_3
+  B40: '#ECDEDA'  # COLOR_BACKGROUND_4
+  B50: '#DDCFCA'  # COLOR_BACKGROUND_5
+  B60: '#B5AAA6'  # COLOR_BACKGROUND_6
+  B70: '#06060C'  # COLOR_TEXT_1
+  B80: '#504B4A'  # COLOR_TEXT_2
+  B90: '#726A68'  # COLOR_TEXT_3
+  B100: '#8A807D'  # COLOR_TEXT_4
+  B110: '#DDD3CF'  # COLOR_ACCENT_3
+  B120: '#E84A72'  # COLOR_ACCENT_4
+  B130: '#E73665'  # COLOR_ACCENT_5
+  B140: '#16764F'  # COLOR_SUCCESS_1
+  B150: '#408C6B'  # COLOR_SUCCESS_2
+  B160: '#C6D3C7'  # COLOR_SUCCESS_4
+  B170: '#E1E1DA'  # COLOR_SUCCESS_5
+  B180: '#F43E5C'  # COLOR_ERROR_1
+  B190: '#F65E76'  # COLOR_ERROR_2
+  B200: '#FBC5CA'  # COLOR_ERROR_4
+  B210: '#FCDBDC'  # COLOR_ERROR_5
+  B220: '#95521E'  # COLOR_WARN_1
+  B230: '#A86E43'  # COLOR_WARN_2
+  B240: '#E4CABB'  # COLOR_WARN_4
+  B250: '#F1DDD4'  # COLOR_WARN_5
+  B260: '#F77D26'  # ICON_7
+  B270: '#DA103F'  # GROUP_1
+  B280: '#F6661E'  # GROUP_2
+  B290: '#1D8991'  # GROUP_3
+  B300: '#8A31B9'  # GROUP_4
+  B310: '#DC3318'  # GROUP_6
+  B320: '#26BBD9'  # GROUP_8
+  B330: '#59E1E3'  # GROUP_9
+  B340: '#29D398'  # GROUP_10
+  B350: '#EE64AC'  # GROUP_11
+  B360: '#FAB795'  # GROUP_12
+  B370: '#FCE5DF'  # EDITOR_CURRENTLINE
+  B380: '#FBDFD8'  # EDITOR_OCCURRENCE
+  B390: '#FABEC4'  # EDITOR_UNMATCHED_P
+  B400: '#736E6D'  # EDITOR_COMMENT, strengthened from native alpha composite #989190
+  B410: '#333333'  # EDITOR_SYMBOL
+  B420: '#3775A9'  # PYTHON_LOGO_UP
+  B430: '#FFD444'  # PYTHON_LOGO_DOWN
+  B440: '#FCE0E0'  # Help ErrorBackground
+  B450: '#F4E2DA'  # Help WarningBackground
+  B460: '#BB4D17'  # EDITOR_DOCSTRING, strengthened from native string #F6661E
+
+# Inactive pane edges: B10 panel, B20 editor, B30 sidebar.
+# Qt content frames reuse muted slate and warm stone; faint workbench group edges alone do not delimit Qt panes.
+HorizonPaneBordersDark:
+  B10: '#44475D'
+  B20: '#44475D'
+  B30: '#44475D'
+# Qt content frames reuse muted slate and warm stone; faint workbench group edges alone do not delimit Qt panes.
+HorizonPaneBordersLight:
+  B10: '#B5AAA6'
+  B20: '#B5AAA6'
+  B30: '#B5AAA6'
+
+
+# Interface hierarchy: source colors and Qt-only state adaptations.
+# Horizon/Horizon Bright native editor and warm accents are retained.
+# Qt toolbar, tabs and buttons use existing neutral/warm-paper surface levels
+# rather than the editor background. Bright pressed #CBBDB8 is an extra warm
+# neutral adaptation; the other fills reuse this port's established palette.
+HorizonInterfaceDark:
+  B10: '#292B36'  # toolbar
+  B20: '#292B36'  # inactive tab
+  B30: '#ADB0B8'  # inactive tab text
+  B40: '#343641'  # tab hover
+  B50: '#343641'  # button
+  B60: '#D5D8DA'  # button text
+  B70: '#44475D'  # button hover
+  B80: '#292B36'  # button pressed
+  B90: '#535563'  # button border
+HorizonInterfaceLight:
+  B10: '#ECDEDA'  # toolbar
+  B20: '#DDCFCA'  # inactive tab
+  B30: '#504B4A'  # inactive tab text
+  B40: '#ECDEDA'  # tab hover
+  B50: '#DDCFCA'  # button
+  B60: '#504B4A'  # button text
+  B70: '#ECDEDA'  # button hover
+  B80: '#CBBDB8'  # button pressed
+  B90: '#B5AAA6'  # button border
+
+# Qt frame/state adaptations: COLOR_BACKGROUND_4 also draws the local Help
+# frame and dock tabs, so its inactive tab shade must remain visible.
+# Focus shades retain this palette's hue and readable generic selection text.
+# Popup menus and command palettes use independent native roles.
+QtUiAuditDark:
+  B10: '#343641'  # COLOR_BACKGROUND_4, COLOR_TAB_BACKGROUND
+  B20: '#41434F'  # COLOR_TAB_HOVER_BACKGROUND
+  B30: '#65414D'  # COLOR_ACCENT_3
+QtUiAuditLight:
+  B10: '#CBBDB8'  # COLOR_BACKGROUND_4, COLOR_TAB_BACKGROUND
+  B30: '#CEB0B5'  # COLOR_ACCENT_3
+
+# Reviewed menus and command palette. Native popup colors where the
+# reference matches; otherwise this theme's own palette is retained.
+# Qt uses opaque fills and 1px popup frames. Switcher titles embed
+# COLOR_TEXT_1 in HTML, so selected/input fills may be adjusted for readability.
+QtPopupAuditDark:
+  B10: '#232530'  # COLOR_MENU_BACKGROUND
+  B20: '#F0F0F0'  # COLOR_MENU_TEXT
+  B30: '#292B37'  # COLOR_MENU_SELECTED_BACKGROUND
+  B40: '#D5D8DA'  # COLOR_MENU_SELECTED_TEXT
+  B50: '#232530'  # COLOR_MENU_BORDER
+  B60: '#232530'  # COLOR_SWITCHER_BACKGROUND
+  B70: '#292B37'  # COLOR_SWITCHER_SELECTED_BACKGROUND
+  B80: '#44475D'  # COLOR_SWITCHER_BORDER
+  B90: '#2E303E'  # COLOR_SWITCHER_INPUT_BACKGROUND
+
+QtPopupAuditLight:
+  B10: '#FADAD1'  # COLOR_MENU_BACKGROUND
+  B20: '#06060C'  # COLOR_MENU_TEXT
+  B30: '#F9D2C7'  # COLOR_MENU_SELECTED_BACKGROUND
+  B40: '#06060C'  # COLOR_MENU_SELECTED_TEXT
+  B50: '#FADAD1'  # COLOR_MENU_BORDER
+  B60: '#FADAD1'  # COLOR_SWITCHER_BACKGROUND
+  B70: '#F9D2C7'  # COLOR_SWITCHER_SELECTED_BACKGROUND
+  B80: '#B5AAA6'  # COLOR_SWITCHER_BORDER
+  B90: '#F9CBBE'  # COLOR_SWITCHER_INPUT_BACKGROUND

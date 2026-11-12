@@ -1,0 +1,311 @@
+# Rosé Pine Dawn: official source colors adapted to Spyder.
+# Upstream author: Rosé Pine. License: MIT (notice in LICENSE).
+# Upstream revision: d8f5ebe8e096fa833e997c07eb7685ee1677a4ba
+# Source: https://github.com/rose-pine/vscode/blob/d8f5ebe8e096fa833e997c07eb7685ee1677a4ba/themes/rose-pine-dawn-color-theme.json
+# Dawn light variant only. Original ivory background #FAF4ED and native syntax colors are preserved.
+# Generic keyword/storage -> pine; definitions/numbers -> rose; types/classes -> foam; strings/docstrings -> gold.
+# Comments retain italics. All variable roles inherit variable italics; parameters use variable.parameter iris.
+# Base classes retain inherited-class iris italics. Variables/instance names/calls use the native variable.other/function foreground.
+# Builtin functions use support.function love italics; builtin types use support foam; Python True/False/None use constant.language rose.
+# All six original bracket colors and their alpha are RGB-composited over editor.background in source order.
+# Native transparent selection, hover, tab and word highlights are flattened over the ivory editor/sidebar surface.
+# Toolbar uses native title/background base; extra borders and help feedback fills are Qt-specific adaptations.
+# Qt status/tab/tree labels use original text #575279 instead of muted #797593 for at least 4.5:1 UI contrast.
+---
+RosePineDawnNeutral:
+  B0: '#000000'
+  B10: '#151515'
+  B20: '#2A2A2A'
+  B30: '#3E3E3E'
+  B40: '#535353'
+  B50: '#686868'
+  B60: '#7D7D7D'
+  B70: '#929292'
+  B80: '#A6A6A6'
+  B90: '#BBBBBB'
+  B100: '#D0D0D0'
+  B110: '#D9D9D9'
+  B120: '#E3E3E3'
+  B130: '#ECECEC'
+  B140: '#F6F6F6'
+  B150: '#FFFFFF'
+RosePineDawnSecondary:
+  B0: '#000000'
+  B10: '#040A0D'
+  B20: '#08151A'
+  B30: '#0C2027'
+  B40: '#102A34'
+  B50: '#143442'
+  B60: '#183F4F'
+  B70: '#1C4A5C'
+  B80: '#205469'
+  B90: '#245E76'
+  B100: '#286983'
+  B110: '#53879C'
+  B120: '#7EA5B5'
+  B130: '#A9C3CD'
+  B140: '#D4E1E6'
+  B150: '#FFFFFF'
+RosePineDawnTertiary:
+  B0: '#000000'
+  B10: '#0E0C11'
+  B20: '#1D1822'
+  B30: '#2B2533'
+  B40: '#3A3144'
+  B50: '#483D54'
+  B60: '#564965'
+  B70: '#655576'
+  B80: '#736287'
+  B90: '#826E98'
+  B100: '#907AA9'
+  B110: '#A695BA'
+  B120: '#BCAFCB'
+  B130: '#D3CADD'
+  B140: '#E9E4EE'
+  B150: '#FFFFFF'
+RosePineDawnQuaternary:
+  B0: '#000000'
+  B10: '#040A0D'
+  B20: '#08151A'
+  B30: '#0C2027'
+  B40: '#102A34'
+  B50: '#143442'
+  B60: '#183F4F'
+  B70: '#1C4A5C'
+  B80: '#205469'
+  B90: '#245E76'
+  B100: '#286983'
+  B110: '#53879C'
+  B120: '#7EA5B5'
+  B130: '#A9C3CD'
+  B140: '#D4E1E6'
+  B150: '#FFFFFF'
+RosePineDawnSuccess:
+  B0: '#000000'
+  B10: '#090F10'
+  B20: '#111E20'
+  B30: '#1A2C30'
+  B40: '#223B40'
+  B50: '#2B4A50'
+  B60: '#34595F'
+  B70: '#3C686F'
+  B80: '#45767F'
+  B90: '#4D858F'
+  B100: '#56949F'
+  B110: '#78A9B2'
+  B120: '#9ABFC5'
+  B130: '#BBD4D9'
+  B140: '#DDEAEC'
+  B150: '#FFFFFF'
+RosePineDawnError:
+  B0: '#000000'
+  B10: '#120A0C'
+  B20: '#241418'
+  B30: '#361E25'
+  B40: '#482831'
+  B50: '#5A323D'
+  B60: '#6C3B49'
+  B70: '#7E4555'
+  B80: '#904F62'
+  B90: '#A2596E'
+  B100: '#B4637A'
+  B110: '#C38295'
+  B120: '#D2A1AF'
+  B130: '#E1C1CA'
+  B140: '#F0E0E4'
+  B150: '#FFFFFF'
+RosePineDawnWarning:
+  B0: '#000000'
+  B10: '#171005'
+  B20: '#2F1F0A'
+  B30: '#462F10'
+  B40: '#5E3F15'
+  B50: '#754E1A'
+  B60: '#8C5E1F'
+  B70: '#A46E24'
+  B80: '#BB7E2A'
+  B90: '#D38D2F'
+  B100: '#EA9D34'
+  B110: '#EEB15D'
+  B120: '#F2C485'
+  B130: '#F7D8AE'
+  B140: '#FBEBD6'
+  B150: '#FFFFFF'
+Logos:
+  B10: '#3775A9'
+  B20: '#FFD444'
+RosePineDawnSurfaceLight:
+  B10: '#FFFAF3'
+  B20: '#FAF4ED'
+  B30: '#F3EDE8'
+  B40: '#FFFAF3'
+  B50: '#DFDAD9'
+  B60: '#9893A5'
+  B70: '#575279'
+  B80: '#575279'
+  B90: '#797593'
+  B100: '#797593'
+  B110: '#9893A5'
+  B120: '#DFDAD9'
+RosePineDawnAccentLight:
+  B10: '#F3EDE8'
+  B20: '#EFE9E5'
+  B30: '#EFE9E5'
+  B40: '#BFBAC3'
+  B50: '#286983'
+RosePineDawnFeedbackLight:
+  B10: '#84AFB5'
+  B20: '#6DA1AA'
+  B30: '#56949F'
+  B40: '#6DA1AA'
+  B50: '#84AFB5'
+  B60: '#C88C9A'
+  B70: '#BE778A'
+  B80: '#B4637A'
+  B90: '#BE778A'
+  B100: '#C88C9A'
+  B110: '#EEB568'
+  B120: '#ECA94E'
+  B130: '#EA9D34'
+  B140: '#ECA94E'
+  B150: '#EEB568'
+RosePineDawnIconsLight:
+  B10: '#575279'
+  B20: '#286983'
+  B30: '#56949F'
+  B40: '#B4637A'
+  B50: '#EA9D34'
+  B60: '#FFFAF3'
+  B70: '#286983'
+RosePineDawnGroupLight:
+  B10: '#B4637A'
+  B20: '#907AA9'
+  B30: '#286983'
+  B40: '#56949F'
+  B50: '#D7827E'
+  B60: '#EA9D34'
+  B70: '#575279'
+  B80: '#797593'
+  B90: '#9893A5'
+  B100: '#B4637A'
+  B110: '#D7827E'
+  B120: '#907AA9'
+RosePineDawnHighlightLight:
+  B10: '#F3EDE8'
+  B20: '#FFFAF3'
+  B30: '#EFE9E5'
+  B40: '#E5DFDE'
+  B50: '#FAF4ED'
+  B60: '#FFFAF3'
+  B70: '#F3EDE8'
+  B80: '#EFE9E5'
+  B90: '#DFDAD9'
+RosePineDawnEditorLight:
+  B10: '#FAF4ED'
+  B20: '#F3EDE8'
+  B30: '#FAF4ED'
+  B40: '#EFE9E5'
+  B50: '#286983'
+  B60: '#FAF4ED'
+  B70: '#EFE9E5'
+  B80: '#F4E8E4'
+RosePineDawnSyntaxLight:
+  B10: '#575279'
+  B20: '#286983'
+  B30: '#575279'
+  B40: '#B4637A'
+  B50: '#D7827E'
+  B60: '#9893A5'
+  B70: '#EA9D34'
+  B80: '#D7827E'
+  B90: '#575279'
+  B100: '#797593'
+RosePineDawnPythonLight:
+  B10: '#286983'
+  B20: '#286983'
+  B30: '#797593'
+  B40: '#797593'
+  B50: '#56949F'
+  B60: '#575279'
+  B70: '#EA9D34'
+  B80: '#56949F'
+  B90: '#907AA9'
+  B100: '#286983'
+  B110: '#D7827E'
+  B120: '#575279'
+  B130: '#907AA9'
+  B140: '#56949F'
+  B150: '#D7ABB3'
+  B160: '#91AEB8'
+  B170: '#F2C890'
+  B180: '#A8C4C6'
+  B190: '#E8BBB5'
+  B200: '#C5B7CB'
+RosePineDawnNativeUiLight:
+  B10: '#FAF4ED'
+  B20: '#575279'
+  B30: '#FAF4ED'
+  B40: '#797593'
+  B50: '#575279'
+  B60: '#575279'
+  B70: '#F3EDE8'
+  B80: '#F3EDE8'
+  B90: '#286983'
+  B100: '#575279'
+  B110: '#F3EDE8'
+  B120: '#EFE9E5'
+  B130: '#FFFAF3'
+  B140: '#575279'
+  B150: '#575279'
+RosePineDawnDetailLight:
+  B10: '#FFFAF3'
+  B20: '#575279'
+  B30: '#575279'
+  B40: '#DFDAD9'
+  B50: '#F3EDE8'
+  B60: '#B4637A'
+  B70: '#286983'
+  B80: '#575279'
+RosePineDawnHelpLight:
+  B10: '#FFFAF3'
+  B20: '#575279'
+  B30: '#F4E8E4'
+  B40: '#F9EDDE'
+  B50: '#286983'
+  B60: '#316481'
+  B70: '#F3EDE8'
+
+# Qt chrome surfaces: UI-only adaptations of this theme's neutral palette.
+# Keep the existing editor/syntax colors; give wide toolbars and idle controls
+# their own visible surface. Flat source surfaces are adapted for Qt.
+ChromeLight:
+  B10: '#E9E1DD'  # COLOR_TOOLBAR_BACKGROUND
+  B20: '#F2E9E1'  # COLOR_TAB_BACKGROUND
+  B30: '#E9DFD6'  # COLOR_BUTTON_BACKGROUND
+  B40: '#DDD3CC'  # COLOR_BUTTON_HOVER_BACKGROUND
+  B50: '#D2C7C2'  # COLOR_BUTTON_PRESSED_BACKGROUND
+  B60: '#B8ACAE'  # COLOR_BUTTON_BORDER
+  B70: '#E7DDD8'  # COLOR_TAB_HOVER_BACKGROUND
+  B80: '#46415F'  # COLOR_BUTTON_TEXT
+
+# Qt frame/state adaptations: COLOR_BACKGROUND_4 also draws the local Help
+# frame and dock tabs, so its inactive tab shade must remain visible.
+# Focus shades retain this palette's hue and readable generic selection text.
+# Popup menus and command palettes use independent native roles.
+QtUiAuditLight:
+  B30: '#C6D3D4'  # COLOR_ACCENT_3
+
+# Reviewed menus and command palette. Native popup colors where the
+# reference matches; otherwise this theme's own palette is retained.
+# Qt uses opaque fills and 1px popup frames. Switcher titles embed
+# COLOR_TEXT_1 in HTML, so selected/input fills may be adjusted for readability.
+QtPopupAuditLight:
+  B10: '#FFFAF3'  # COLOR_MENU_BACKGROUND
+  B20: '#575279'  # COLOR_MENU_TEXT
+  B30: '#F4EFEA'  # COLOR_MENU_SELECTED_BACKGROUND
+  B40: '#575279'  # COLOR_MENU_SELECTED_TEXT
+  B50: '#F8F3ED'  # COLOR_MENU_BORDER
+  B60: '#FFFAF3'  # COLOR_SWITCHER_BACKGROUND
+  B70: '#F4EFEA'  # COLOR_SWITCHER_SELECTED_BACKGROUND
+  B80: '#F2E9E1'  # COLOR_SWITCHER_BORDER
+  B90: '#F9F2EA'  # COLOR_SWITCHER_INPUT_BACKGROUND

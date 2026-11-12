@@ -1,0 +1,385 @@
+# Upstream repository: https://github.com/kepano/flexoki
+# Upstream revision: 8d723bac4a9ac46adfdf99d42155286977aac72a
+# Source: https://github.com/kepano/flexoki/blob/8d723bac4a9ac46adfdf99d42155286977aac72a/vscode/Flexoki-Dark-color-theme.json
+# Source SHA-256: fd2db5fa965edaa14103cbbc27ae1e259261b8d5be33b5baf9dbd44b1ec4e61e
+# Source: https://github.com/kepano/flexoki/blob/8d723bac4a9ac46adfdf99d42155286977aac72a/vscode/Flexoki-Light-color-theme.json
+# Source SHA-256: 14842b0e0d2fef349b041d51507e1fa51bbbcd71c0e0df0c637d8e7b4ad8a061
+# Source: https://github.com/kepano/flexoki/blob/8d723bac4a9ac46adfdf99d42155286977aac72a/_generators/src/palette.ts
+# Source SHA-256: a1b211e0ffd2422abf58854d0a4463e181db12a7aae2ff42e3632e6ebcbfdffd
+# Native VS Code editor backgrounds, normal foregrounds, syntax colors and neutral UI surfaces are preserved.
+# Alpha selections are composited over the native editor background for opaque Qt colors.
+# The native gutter colors are intentionally faint; line numbers use the upstream comment color for legibility.
+# Qt tab labels use the native normal foreground so hover text remains at least 4.5:1; backgrounds are unchanged.
+# All six bracket depths repeat native punctuation; the upstream theme has no rainbow bracket cycle.
+# Python classes follow entity.name.type.class; builtin types and legacy names use the later support.type.python / variable.legacy.builtin.python cyan rule.
+# Builtin functions retain the native orange bold support.function rule.
+# Python self/cls and inherited-class scopes retain the native normal foreground.
+# Qt-only semantic feedback ramps, current-cell shading and help fills are explicit adaptations.
+# Large widget fills and selections remain neutral; source accent colors are used for small accents and foregrounds.
+---
+FlexokiSurfaceDark:
+  # COLOR_BACKGROUND_1, COLOR_BACKGROUND_2, COLOR_BACKGROUND_4, COLOR_OCCURRENCE_2, SPYDER_LOGO_BACKGROUND, SPECIAL_TABS_SELECTED
+  B10: '#100F0F'
+  # COLOR_BACKGROUND_3, COLOR_ACCENT_2, COLOR_ACCENT_4, COLOR_EMPTY, COLOR_HIGHLIGHT_1, COLOR_HIGHLIGHT_3, COLOR_OCCURRENCE_3
+  B20: '#282726'
+  # COLOR_BACKGROUND_5, COLOR_ACCENT_3, COLOR_HIGHLIGHT_2, COLOR_OCCURRENCE_5, SPECIAL_TABS_SEPARATOR
+  B30: '#343331'
+  # COLOR_BACKGROUND_6, ICON_6
+  B40: '#403E3C'
+  # COLOR_TEXT_1, COLOR_TEXT_4, ICON_1, SPYDER_LOGO_WEB, SPYDER_LOGO_SNAKE
+  B50: '#CECDC3'
+  # COLOR_TEXT_2, COLOR_TEXT_3, COLOR_DISABLED, TIP_CHAR_HIGHLIGHT_COLOR
+  B60: '#878580'
+  # COLOR_ACCENT_1, COLOR_OCCURRENCE_1
+  B70: '#1C1B1A'
+  # COLOR_ACCENT_5, COLOR_HIGHLIGHT_4, COLOR_OCCURRENCE_4
+  B80: '#363533'
+  # COLOR_SUCCESS_1
+  B90: '#1A1A12'
+  # COLOR_SUCCESS_2
+  B100: '#232516'
+  # COLOR_SUCCESS_3
+  B110: '#2E321A'
+  # COLOR_SUCCESS_4
+  B120: '#404720'
+  # COLOR_SUCCESS_5
+  B130: '#515B26'
+  # COLOR_ERROR_1
+  B140: '#1F1413'
+  # COLOR_ERROR_2
+  B150: '#2F1917'
+  # COLOR_ERROR_3
+  B160: '#401F1C'
+  # COLOR_ERROR_4
+  B170: '#5D2823'
+  # COLOR_ERROR_5
+  B180: '#7A312B'
+  # COLOR_WARN_1
+  B190: '#201711'
+  # COLOR_WARN_2
+  B200: '#301F14'
+  # COLOR_WARN_3
+  B210: '#432716'
+  # COLOR_WARN_4
+  B220: '#61361B'
+  # COLOR_WARN_5
+  B230: '#7F441F'
+  # ICON_2, TIP_TITLE_COLOR
+  B240: '#4385BE'
+  # ICON_3
+  B250: '#879A39'
+  # ICON_4, COLOR_HEART
+  B260: '#D14D41'
+  # ICON_5, ICON_7
+  B270: '#DA702C'
+FlexokiNativeUiDark:
+  # COLOR_STATUSBAR_BACKGROUND, COLOR_TOOLBAR_BACKGROUND, COLOR_TAB_SELECTED_BACKGROUND
+  B10: '#100F0F'
+  # COLOR_STATUSBAR_TEXT, COLOR_TAB_TEXT, COLOR_TAB_SELECTED_TEXT, COLOR_TREE_TEXT, COLOR_TREE_INACTIVE_SELECTION_TEXT, COLOR_TREE_SELECTED_TEXT
+  B20: '#CECDC3'
+  # COLOR_EDITOR_LINE_NUMBER
+  B30: '#878580'
+  # COLOR_TAB_HOVER_BACKGROUND, COLOR_TREE_HOVER_BACKGROUND, COLOR_TREE_INACTIVE_SELECTION_BACKGROUND
+  B40: '#343331'
+  # COLOR_TAB_SELECTED_ACCENT
+  B50: '#3AA99F'
+  # COLOR_TREE_SELECTED_BACKGROUND
+  B60: '#403E3C'
+FlexokiGroupDark:
+  # GROUP_1
+  B10: '#D14D41'
+  # GROUP_2, GROUP_9
+  B20: '#DA702C'
+  # GROUP_3
+  B30: '#D0A215'
+  # GROUP_4, GROUP_10
+  B40: '#879A39'
+  # GROUP_5
+  B50: '#3AA99F'
+  # GROUP_6
+  B60: '#4385BE'
+  # GROUP_7, GROUP_11
+  B70: '#8B7EC8'
+  # GROUP_8
+  B80: '#CE5D97'
+  # GROUP_12
+  B90: '#878580'
+FlexokiSyntaxDark:
+  # EDITOR_BACKGROUND, EDITOR_SIDEAREAS
+  B10: '#100F0F'
+  # EDITOR_CURRENTLINE
+  B20: '#1C1B1A'
+  # EDITOR_CURRENTCELL
+  B30: '#1B1A19'
+  # EDITOR_OCCURRENCE
+  B40: '#363533'
+  # EDITOR_CTRLCLICK
+  B50: '#4385BE'
+  # EDITOR_MATCHED_P
+  B60: '#282726'
+  # EDITOR_UNMATCHED_P
+  B70: '#331A18'
+  # EDITOR_NORMAL
+  B80: '#CECDC3'
+  # EDITOR_KEYWORD
+  B90: '#879A39'
+  # EDITOR_MAGIC
+  B100: '#D0A215'
+  # EDITOR_STRING
+  B110: '#3AA99F'
+  # EDITOR_DEFINITION, EDITOR_BUILTIN
+  B120: '#DA702C'
+  # EDITOR_COMMENT, EDITOR_SYMBOL
+  B130: '#878580'
+  # EDITOR_NUMBER
+  B140: '#8B7EC8'
+  # Native globalVariables / variable.language.this; not Python self/cls.
+  B150: '#CE5D97'
+FlexokiPythonDark:
+  # EDITOR_OPERATOR, EDITOR_WORD_OPERATOR
+  B10: '#D14D41'
+  # EDITOR_PUNCTUATION, EDITOR_SEPARATOR, EDITOR_BRACKET_1, EDITOR_BRACKET_2, EDITOR_BRACKET_3, EDITOR_BRACKET_4, EDITOR_BRACKET_5, EDITOR_BRACKET_6
+  B20: '#878580'
+  # EDITOR_CLASS, EDITOR_FUNCTION_CALL, EDITOR_CLASS_REFERENCE
+  B30: '#DA702C'
+  # EDITOR_DOCSTRING, EDITOR_TYPE
+  B40: '#3AA99F'
+  # EDITOR_STORAGE
+  B50: '#4385BE'
+  # EDITOR_CONSTANT, EDITOR_VARIABLE, EDITOR_PARAMETER
+  B60: '#CECDC3'
+FlexokiLogosDark:
+  # PYTHON_LOGO_UP
+  B10: '#3775A9'
+  # PYTHON_LOGO_DOWN
+  B20: '#FFD444'
+FlexokiHelpDark:
+  B10: '#282726'
+  B20: '#CECDC3'
+  B30: '#1F1413'
+  B40: '#201711'
+  B50: '#4385BE'
+  B60: '#CECDC3'
+FlexokiSurfaceLight:
+  # COLOR_BACKGROUND_1, COLOR_BACKGROUND_2, COLOR_BACKGROUND_4, COLOR_OCCURRENCE_2, SPYDER_LOGO_BACKGROUND, SPECIAL_TABS_SELECTED
+  B10: '#FFFCF0'
+  # COLOR_BACKGROUND_3, COLOR_ACCENT_2, COLOR_ACCENT_4, COLOR_EMPTY, COLOR_HIGHLIGHT_1, COLOR_HIGHLIGHT_3, COLOR_OCCURRENCE_3
+  B20: '#E6E4D9'
+  # COLOR_BACKGROUND_5, COLOR_ACCENT_3, COLOR_HIGHLIGHT_2, COLOR_OCCURRENCE_5, SPECIAL_TABS_SEPARATOR
+  B30: '#DAD8CE'
+  # COLOR_BACKGROUND_6, ICON_6
+  B40: '#CECDC3'
+  # COLOR_TEXT_1, COLOR_TEXT_4, ICON_1, SPYDER_LOGO_WEB, SPYDER_LOGO_SNAKE
+  B50: '#100F0F'
+  # COLOR_TEXT_2, COLOR_TEXT_3, COLOR_DISABLED, TIP_CHAR_HIGHLIGHT_COLOR
+  B60: '#6F6E69'
+  # COLOR_ACCENT_1, COLOR_OCCURRENCE_1
+  B70: '#F2F0E5'
+  # COLOR_ACCENT_5, COLOR_HIGHLIGHT_4, COLOR_OCCURRENCE_4
+  B80: '#BFBDB4'
+  # COLOR_SUCCESS_1
+  B90: '#F3F2DE'
+  # COLOR_SUCCESS_2
+  B100: '#E7E8CB'
+  # COLOR_SUCCESS_3
+  B110: '#D9DDB7'
+  # COLOR_SUCCESS_4
+  B120: '#C2CA94'
+  # COLOR_SUCCESS_5
+  B130: '#ABB872'
+  # COLOR_ERROR_1
+  B140: '#F9ECE0'
+  # COLOR_ERROR_2
+  B150: '#F2DBD0'
+  # COLOR_ERROR_3
+  B160: '#EBC9BE'
+  # COLOR_ERROR_4
+  B170: '#DFAAA0'
+  # COLOR_ERROR_5
+  B180: '#D38C83'
+  # COLOR_WARN_1
+  B190: '#FAEEDE'
+  # COLOR_WARN_2
+  B200: '#F4E1CD'
+  # COLOR_WARN_3
+  B210: '#EED2B9'
+  # COLOR_WARN_4
+  B220: '#E4B898'
+  # COLOR_WARN_5
+  B230: '#DA9F78'
+  # ICON_2, TIP_TITLE_COLOR
+  B240: '#205EA6'
+  # ICON_3
+  B250: '#66800B'
+  # ICON_4, COLOR_HEART
+  B260: '#AF3029'
+  # ICON_5, ICON_7
+  B270: '#BC5215'
+FlexokiNativeUiLight:
+  # COLOR_STATUSBAR_BACKGROUND, COLOR_TOOLBAR_BACKGROUND, COLOR_TAB_SELECTED_BACKGROUND
+  B10: '#FFFCF0'
+  # COLOR_STATUSBAR_TEXT, COLOR_TAB_TEXT, COLOR_TAB_SELECTED_TEXT, COLOR_TREE_TEXT, COLOR_TREE_INACTIVE_SELECTION_TEXT, COLOR_TREE_SELECTED_TEXT
+  B20: '#100F0F'
+  # COLOR_EDITOR_LINE_NUMBER
+  B30: '#6F6E69'
+  # COLOR_TAB_HOVER_BACKGROUND, COLOR_TREE_HOVER_BACKGROUND, COLOR_TREE_INACTIVE_SELECTION_BACKGROUND
+  B40: '#DAD8CE'
+  # COLOR_TAB_SELECTED_ACCENT
+  B50: '#24837B'
+  # COLOR_TREE_SELECTED_BACKGROUND
+  B60: '#CECDC3'
+FlexokiGroupLight:
+  # GROUP_1
+  B10: '#AF3029'
+  # GROUP_2, GROUP_9
+  B20: '#BC5215'
+  # GROUP_3
+  B30: '#AD8301'
+  # GROUP_4, GROUP_10
+  B40: '#66800B'
+  # GROUP_5
+  B50: '#24837B'
+  # GROUP_6
+  B60: '#205EA6'
+  # GROUP_7, GROUP_11
+  B70: '#5E409D'
+  # GROUP_8
+  B80: '#A02F6F'
+  # GROUP_12
+  B90: '#6F6E69'
+FlexokiSyntaxLight:
+  # EDITOR_BACKGROUND, EDITOR_SIDEAREAS
+  B10: '#FFFCF0'
+  # EDITOR_CURRENTLINE
+  B20: '#F2F0E5'
+  # EDITOR_CURRENTCELL
+  B30: '#F4F1E6'
+  # EDITOR_OCCURRENCE
+  B40: '#BFBDB4'
+  # EDITOR_CTRLCLICK
+  B50: '#205EA6'
+  # EDITOR_MATCHED_P
+  B60: '#E6E4D9'
+  # EDITOR_UNMATCHED_P
+  B70: '#F1D7CC'
+  # EDITOR_NORMAL
+  B80: '#100F0F'
+  # EDITOR_KEYWORD
+  B90: '#66800B'
+  # EDITOR_MAGIC
+  B100: '#AD8301'
+  # EDITOR_STRING
+  B110: '#24837B'
+  # EDITOR_DEFINITION, EDITOR_BUILTIN
+  B120: '#BC5215'
+  # EDITOR_COMMENT, EDITOR_SYMBOL
+  B130: '#6F6E69'
+  # EDITOR_NUMBER
+  B140: '#5E409D'
+  # Native globalVariables / variable.language.this; not Python self/cls.
+  B150: '#A02F6F'
+FlexokiPythonLight:
+  # EDITOR_OPERATOR, EDITOR_WORD_OPERATOR
+  B10: '#AF3029'
+  # EDITOR_PUNCTUATION, EDITOR_SEPARATOR, EDITOR_BRACKET_1, EDITOR_BRACKET_2, EDITOR_BRACKET_3, EDITOR_BRACKET_4, EDITOR_BRACKET_5, EDITOR_BRACKET_6
+  B20: '#6F6E69'
+  # EDITOR_CLASS, EDITOR_FUNCTION_CALL, EDITOR_CLASS_REFERENCE
+  B30: '#BC5215'
+  # EDITOR_DOCSTRING, EDITOR_TYPE
+  B40: '#24837B'
+  # EDITOR_STORAGE
+  B50: '#205EA6'
+  # EDITOR_CONSTANT, EDITOR_VARIABLE, EDITOR_PARAMETER
+  B60: '#100F0F'
+FlexokiLogosLight:
+  # PYTHON_LOGO_UP
+  B10: '#3775A9'
+  # PYTHON_LOGO_DOWN
+  B20: '#FFD444'
+FlexokiHelpLight:
+  B10: '#E6E4D9'
+  B20: '#100F0F'
+  B30: '#F9ECE0'
+  B40: '#FAEEDE'
+  B50: '#205EA6'
+  B60: '#100F0F'
+
+# Inactive pane edges: B10 panel, B20 editor, B30 sidebar.
+# Qt content frames keep the visible dark edge and strengthen the light edge with an existing paper neutral.
+FlexokiPaneBordersDark:
+  B10: '#343331'
+  B20: '#343331'
+  B30: '#343331'
+# Qt content frames keep the visible dark edge and strengthen the light edge with an existing paper neutral.
+FlexokiPaneBordersLight:
+  B10: '#CECDC3'
+  B20: '#CECDC3'
+  B30: '#CECDC3'
+
+# Qt chrome surfaces: UI-only adaptations of this theme's neutral palette.
+# Keep the existing editor/syntax colors; give wide toolbars and idle controls
+# their own visible surface. Flat source surfaces are adapted for Qt.
+ChromeDark:
+  B10: '#282726'  # COLOR_TOOLBAR_BACKGROUND
+  B20: '#343331'  # COLOR_TAB_BACKGROUND
+  B30: '#343331'  # COLOR_BUTTON_BACKGROUND
+  B40: '#403E3C'  # COLOR_BUTTON_HOVER_BACKGROUND
+  B50: '#575653'  # COLOR_BUTTON_PRESSED_BACKGROUND
+  B60: '#575653'  # COLOR_BUTTON_BORDER
+  B70: '#403E3C'  # COLOR_TAB_HOVER_BACKGROUND
+  B80: '#CECDC3'  # COLOR_BUTTON_TEXT
+
+# Qt chrome surfaces: UI-only adaptations of this theme's neutral palette.
+# Keep the existing editor/syntax colors; give wide toolbars and idle controls
+# their own visible surface. Flat source surfaces are adapted for Qt.
+ChromeLight:
+  B10: '#E6E4D9'  # COLOR_TOOLBAR_BACKGROUND
+  B20: '#DAD8CE'  # COLOR_TAB_BACKGROUND
+  B30: '#DAD8CE'  # COLOR_BUTTON_BACKGROUND
+  B40: '#CECDC3'  # COLOR_BUTTON_HOVER_BACKGROUND
+  B50: '#B7B5AC'  # COLOR_BUTTON_PRESSED_BACKGROUND
+  B60: '#B7B5AC'  # COLOR_BUTTON_BORDER
+  B70: '#E6E4D9'  # COLOR_TAB_HOVER_BACKGROUND
+  B80: '#100F0F'  # COLOR_BUTTON_TEXT
+
+# Shared COLOR_ERROR_1: icon foreground and legacy Dependencies cell background.
+# Darken the native red/pink only for this Qt role, keeping inherited light
+# tree text at 4.5:1 while maximizing the stop icon against the toolbar.
+QtErrorDark:
+  B10: '#97372F'
+
+# Qt frame/state adaptations: COLOR_BACKGROUND_4 also draws the local Help
+# frame and dock tabs, so its inactive tab shade must remain visible.
+# Focus shades retain this palette's hue and readable generic selection text.
+# Popup menus and command palettes use independent native roles.
+QtUiAuditDark:
+  B30: '#403E3C'  # COLOR_ACCENT_3
+QtUiAuditLight:
+  B10: '#CECDC3'  # COLOR_BACKGROUND_4, COLOR_TAB_BACKGROUND
+  B30: '#B7B5AC'  # COLOR_ACCENT_3
+
+# Reviewed menus and command palette. Native popup colors where the
+# reference matches; otherwise this theme's own palette is retained.
+# Qt uses opaque fills and 1px popup frames. Switcher titles embed
+# COLOR_TEXT_1 in HTML, so selected/input fills may be adjusted for readability.
+QtPopupAuditDark:
+  B10: '#100F0F'  # COLOR_MENU_BACKGROUND
+  B20: '#CECDC3'  # COLOR_MENU_TEXT
+  B30: '#343331'  # COLOR_MENU_SELECTED_BACKGROUND
+  B40: '#CECDC3'  # COLOR_MENU_SELECTED_TEXT
+  B50: '#343331'  # COLOR_MENU_BORDER
+  B60: '#1C1B1A'  # COLOR_SWITCHER_BACKGROUND
+  B70: '#403E3C'  # COLOR_SWITCHER_SELECTED_BACKGROUND
+  B80: '#343331'  # COLOR_SWITCHER_BORDER
+  B90: '#1C1B1A'  # COLOR_SWITCHER_INPUT_BACKGROUND
+
+QtPopupAuditLight:
+  B10: '#FFFCF0'  # COLOR_MENU_BACKGROUND
+  B20: '#100F0F'  # COLOR_MENU_TEXT
+  B30: '#DAD8CE'  # COLOR_MENU_SELECTED_BACKGROUND
+  B40: '#100F0F'  # COLOR_MENU_SELECTED_TEXT
+  B50: '#DAD8CE'  # COLOR_MENU_BORDER
+  B60: '#F2F0E5'  # COLOR_SWITCHER_BACKGROUND
+  B70: '#CECDC3'  # COLOR_SWITCHER_SELECTED_BACKGROUND
+  B80: '#CECDC3'  # COLOR_SWITCHER_BORDER
+  B90: '#F2F0E5'  # COLOR_SWITCHER_INPUT_BACKGROUND

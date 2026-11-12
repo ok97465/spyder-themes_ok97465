@@ -1,0 +1,196 @@
+# Upstream repository: https://github.com/nuromirg/nightfox-vscode
+# Upstream revision: ed72c227cd94a9698ad463aad8d496fcc0441b2d
+# Source: Nightfox Theme Collections 1.0.7 (nuromirg), themes/nightfox.json
+# Source URL: https://github.com/nuromirg/nightfox-vscode/blob/ed72c227cd94a9698ad463aad8d496fcc0441b2d/themes/nightfox.json
+# Installed source SHA-256: 5caf020928ba215bf9e2b800c11a31684cf2eb3ff4483d5054bf6bd988493f1e
+# VS Code port of EdenEast/nightfox.nvim; this adaptation follows the VS Code port.
+# Native editor, syntax, selected-tab, statusbar, pane-border and primary-button colors are retained.
+# Python builtin calls use function.defaultLibrary, builtin types use type.defaultLibrary,
+# self/cls use variable.defaultLibrary; docstrings use string and comments retain italics.
+# All bracket depths use the native Brackets scope; the source has no rainbow colors.
+# Generic *.declaration bold is not applied: Spyder cannot limit that flag to semantic declarations.
+# Qt adaptations: COLOR_ACCENT_3 uses native blue for focused pane outlines;
+# toolbar uses titleBar.activeBackground; inactive tabs/legacy Help frame and tab hover
+# are raised within the blue-gray palette, with brighter inactive tab text.
+# Button pressed is a 10% blend of native button.background toward titleBar.activeBackground.
+# VS Code does not specify quickInput colors: Switcher follows editorWidget/input/list roles.
+# Qt feedback/highlight ramps, current-cell tint and help fills adapt the same native palette.
+# Qt feedback adaptation: COLOR_ERROR_1 and COLOR_WARN_1 also fill legacy Dependencies cells;
+# COLOR_ERROR_1 also colors the stop icon. Darkened same-hue fills and native brightWhite
+# tree text retain readable dependency labels while ICON_4/5 keep native red/yellow.
+# The shared stop role retains at least 3:1 contrast against the toolbar.
+---
+color_classes:
+  FeedbackDark: NightfoxFeedbackDark
+  UiDark: NightfoxUiDark
+  SyntaxDark: NightfoxSyntaxDark
+  GroupsDark: NightfoxGroupsDark
+  LogosDark: NightfoxLogosDark
+  HelpDark: NightfoxHelpDark
+semantic_mappings:
+  dark:
+    COLOR_MENU_BACKGROUND: UiDark.B10
+    COLOR_MENU_TEXT: UiDark.B20
+    COLOR_MENU_SELECTED_TEXT: UiDark.B20
+    COLOR_MENU_BORDER: UiDark.B30
+    COLOR_MENU_SELECTED_BACKGROUND: UiDark.B40
+    COLOR_SWITCHER_BACKGROUND: UiDark.B10
+    COLOR_SWITCHER_SELECTED_BACKGROUND: UiDark.B40
+    COLOR_SWITCHER_BORDER: UiDark.B30
+    COLOR_SWITCHER_INPUT_BACKGROUND: UiDark.B10
+    COLOR_BUTTON_BACKGROUND: UiDark.B50
+    COLOR_BUTTON_TEXT: UiDark.B60
+    COLOR_BUTTON_HOVER_BACKGROUND: UiDark.B70
+    COLOR_BUTTON_PRESSED_BACKGROUND: UiDark.B80
+    COLOR_BUTTON_BORDER: UiDark.B50
+    COLOR_TAB_BACKGROUND: UiDark.B90
+    COLOR_PANE_BORDER: UiDark.B30
+    COLOR_EDITOR_BORDER: UiDark.B30
+    COLOR_SIDEBAR_BORDER: UiDark.B30
+    COLOR_BACKGROUND_1: UiDark.B100
+    COLOR_BACKGROUND_2: UiDark.B100
+    COLOR_BACKGROUND_3: UiDark.B10
+    COLOR_BACKGROUND_4: UiDark.B90
+    COLOR_BACKGROUND_5: UiDark.B30
+    COLOR_BACKGROUND_6: UiDark.B110
+    COLOR_TEXT_1: UiDark.B20
+    COLOR_TEXT_2: UiDark.B120
+    COLOR_TEXT_3: UiDark.B110
+    COLOR_TEXT_4: UiDark.B20
+    COLOR_ACCENT_1: UiDark.B60
+    COLOR_ACCENT_2: UiDark.B130
+    COLOR_ACCENT_3: UiDark.B50
+    COLOR_ACCENT_4: UiDark.B130
+    COLOR_ACCENT_5: UiDark.B40
+    COLOR_DISABLED: UiDark.B110
+    COLOR_EMPTY: UiDark.B10
+    COLOR_STATUSBAR_BACKGROUND: UiDark.B60
+    COLOR_STATUSBAR_TEXT: UiDark.B120
+    COLOR_TOOLBAR_BACKGROUND: UiDark.B60
+    COLOR_EDITOR_LINE_NUMBER: UiDark.B110
+    COLOR_TAB_SELECTED_TEXT: UiDark.B20
+    COLOR_TAB_SELECTED_BACKGROUND: UiDark.B100
+    COLOR_TAB_SELECTED_ACCENT: UiDark.B50
+    COLOR_TREE_TEXT: FeedbackDark.B10
+    COLOR_TREE_INACTIVE_SELECTION_TEXT: UiDark.B20
+    COLOR_TREE_HOVER_BACKGROUND: UiDark.B10
+    COLOR_TREE_INACTIVE_SELECTION_BACKGROUND: UiDark.B130
+    COLOR_TREE_SELECTED_TEXT: UiDark.B20
+    COLOR_TAB_TEXT: UiDark.B120
+    COLOR_TAB_HOVER_BACKGROUND: UiDark.B140
+    COLOR_TREE_SELECTED_BACKGROUND: UiDark.B40
+    COLOR_SUCCESS_1: UiDark.B150
+    COLOR_SUCCESS_2: UiDark.B160
+    COLOR_SUCCESS_3: UiDark.B170
+    COLOR_SUCCESS_4: UiDark.B180
+    COLOR_SUCCESS_5: UiDark.B190
+    COLOR_ERROR_1: FeedbackDark.B20
+    COLOR_ERROR_2: UiDark.B210
+    COLOR_ERROR_3: UiDark.B220
+    COLOR_ERROR_4: UiDark.B230
+    COLOR_ERROR_5: UiDark.B240
+    COLOR_WARN_1: FeedbackDark.B30
+    COLOR_WARN_2: UiDark.B260
+    COLOR_WARN_3: UiDark.B270
+    COLOR_WARN_4: UiDark.B280
+    COLOR_WARN_5: UiDark.B290
+    ICON_1: UiDark.B20
+    ICON_2: UiDark.B50
+    ICON_3: UiDark.B150
+    ICON_4: UiDark.B200
+    ICON_5: UiDark.B250
+    ICON_6: UiDark.B110
+    ICON_7: UiDark.B300
+    GROUP_1: GroupsDark.B10
+    GROUP_2: GroupsDark.B20
+    GROUP_3: GroupsDark.B30
+    GROUP_4: GroupsDark.B40
+    GROUP_5: GroupsDark.B50
+    GROUP_6: GroupsDark.B60
+    GROUP_7: GroupsDark.B70
+    GROUP_8: GroupsDark.B80
+    GROUP_9: GroupsDark.B90
+    GROUP_10: GroupsDark.B100
+    GROUP_11: GroupsDark.B110
+    GROUP_12: GroupsDark.B120
+    COLOR_HIGHLIGHT_1: UiDark.B310
+    COLOR_HIGHLIGHT_2: UiDark.B320
+    COLOR_HIGHLIGHT_3: UiDark.B330
+    COLOR_HIGHLIGHT_4: UiDark.B340
+    COLOR_OCCURRENCE_1: UiDark.B60
+    COLOR_OCCURRENCE_2: UiDark.B100
+    COLOR_OCCURRENCE_3: UiDark.B10
+    COLOR_OCCURRENCE_4: UiDark.B130
+    COLOR_OCCURRENCE_5: UiDark.B30
+    EDITOR_BACKGROUND: SyntaxDark.B10
+    EDITOR_CURRENTLINE: SyntaxDark.B20
+    EDITOR_CURRENTCELL: SyntaxDark.B30
+    EDITOR_OCCURRENCE: SyntaxDark.B40
+    EDITOR_CTRLCLICK: SyntaxDark.B50
+    EDITOR_SIDEAREAS: SyntaxDark.B10
+    EDITOR_MATCHED_P: SyntaxDark.B20
+    EDITOR_UNMATCHED_P: SyntaxDark.B60
+    EDITOR_NORMAL: [SyntaxDark.B70, false, false]
+    EDITOR_KEYWORD: [SyntaxDark.B80, false, false]
+    EDITOR_MAGIC: [SyntaxDark.B90, false, false]
+    EDITOR_BUILTIN: [SyntaxDark.B50, false, false]
+    EDITOR_DEFINITION: [SyntaxDark.B50, false, false]
+    EDITOR_COMMENT: [SyntaxDark.B100, false, true]
+    EDITOR_STRING: [SyntaxDark.B110, false, false]
+    EDITOR_NUMBER: [SyntaxDark.B120, false, false]
+    EDITOR_INSTANCE: [SyntaxDark.B130, false, false]
+    EDITOR_SYMBOL: [SyntaxDark.B140, false, false]
+    EDITOR_OPERATOR: [SyntaxDark.B150, false, false]
+    EDITOR_WORD_OPERATOR: [SyntaxDark.B150, false, false]
+    EDITOR_PUNCTUATION: [SyntaxDark.B150, false, false]
+    EDITOR_SEPARATOR: [SyntaxDark.B150, false, false]
+    EDITOR_CLASS: [SyntaxDark.B160, false, false]
+    EDITOR_FUNCTION_CALL: [SyntaxDark.B50, false, false]
+    EDITOR_DOCSTRING: [SyntaxDark.B110, false, false]
+    EDITOR_TYPE: [SyntaxDark.B170, false, false]
+    EDITOR_BASECLASS: [SyntaxDark.B160, false, false]
+    EDITOR_STORAGE: [SyntaxDark.B80, false, false]
+    EDITOR_CONSTANT: [SyntaxDark.B180, false, false]
+    EDITOR_VARIABLE: [SyntaxDark.B190, false, false]
+    EDITOR_PARAMETER: [SyntaxDark.B190, false, false]
+    EDITOR_CLASS_REFERENCE: [SyntaxDark.B160, false, false]
+    EDITOR_BRACKET_1: [SyntaxDark.B150, false, false]
+    EDITOR_BRACKET_2: [SyntaxDark.B150, false, false]
+    EDITOR_BRACKET_3: [SyntaxDark.B150, false, false]
+    EDITOR_BRACKET_4: [SyntaxDark.B150, false, false]
+    EDITOR_BRACKET_5: [SyntaxDark.B150, false, false]
+    EDITOR_BRACKET_6: [SyntaxDark.B150, false, false]
+    PYTHON_LOGO_UP: LogosDark.B10
+    PYTHON_LOGO_DOWN: LogosDark.B20
+    SPYDER_LOGO_BACKGROUND: UiDark.B100
+    SPYDER_LOGO_WEB: UiDark.B20
+    SPYDER_LOGO_SNAKE: UiDark.B20
+    SPECIAL_TABS_SEPARATOR: UiDark.B30
+    SPECIAL_TABS_SELECTED: UiDark.B100
+    COLOR_HEART: UiDark.B200
+    TIP_TITLE_COLOR: UiDark.B50
+    TIP_CHAR_HIGHLIGHT_COLOR: UiDark.B300
+    OPACITY_TOOLTIP: 230
+    TAB_SELECTED_ACCENT_INNER_EDGE: 0
+    TAB_SELECTED_ACCENT_WIDTH: 1
+css_overrides:
+  --syn-operator: EDITOR_OPERATOR
+  --header-bg-color: HelpDark.B10
+  --header-text-color: HelpDark.B20
+  --syn-error-bg: HelpDark.B30
+  --warning-bg: HelpDark.B40
+  --link-color: HelpDark.B50
+  --hover-color: HelpDark.B60
+  --note-bg: HelpDark.B10
+  --border-light: COLOR_BACKGROUND_5
+appeal_overrides:
+  --heart: COLOR_HEART
+  --highlight: EDITOR_MAGIC
+  --hand: EDITOR_DEFINITION
+  --link-color: HelpDark.B50
+  --hover-color: HelpDark.B60
+pydoc_overrides:
+  --header-bg-color: HelpDark.B10
+  --header-text-color: HelpDark.B20
+  --link-color: HelpDark.B50
+  --hover-color: HelpDark.B60

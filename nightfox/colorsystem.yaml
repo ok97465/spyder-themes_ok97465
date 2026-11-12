@@ -1,0 +1,181 @@
+# Upstream repository: https://github.com/nuromirg/nightfox-vscode
+# Upstream revision: ed72c227cd94a9698ad463aad8d496fcc0441b2d
+# Source: Nightfox Theme Collections 1.0.7 (nuromirg), themes/nightfox.json
+# Source URL: https://github.com/nuromirg/nightfox-vscode/blob/ed72c227cd94a9698ad463aad8d496fcc0441b2d/themes/nightfox.json
+# Installed source SHA-256: 5caf020928ba215bf9e2b800c11a31684cf2eb3ff4483d5054bf6bd988493f1e
+# VS Code port of EdenEast/nightfox.nvim; this adaptation follows the VS Code port.
+# Native editor, syntax, selected-tab, statusbar, pane-border and primary-button colors are retained.
+# Python builtin calls use function.defaultLibrary, builtin types use type.defaultLibrary,
+# self/cls use variable.defaultLibrary; docstrings use string and comments retain italics.
+# All bracket depths use the native Brackets scope; the source has no rainbow colors.
+# Generic *.declaration bold is not applied: Spyder cannot limit that flag to semantic declarations.
+# Qt adaptations: COLOR_ACCENT_3 uses native blue for focused pane outlines;
+# toolbar uses titleBar.activeBackground; inactive tabs/legacy Help frame and tab hover
+# are raised within the blue-gray palette, with brighter inactive tab text.
+# Button pressed is a 10% blend of native button.background toward titleBar.activeBackground.
+# VS Code does not specify quickInput colors: Switcher follows editorWidget/input/list roles.
+# Qt feedback/highlight ramps, current-cell tint and help fills adapt the same native palette.
+# Qt feedback adaptation: COLOR_ERROR_1 and COLOR_WARN_1 also fill legacy Dependencies cells;
+# COLOR_ERROR_1 also colors the stop icon. Darkened same-hue fills and native brightWhite
+# tree text retain readable dependency labels while ICON_4/5 keep native red/yellow.
+# The shared stop role retains at least 3:1 contrast against the toolbar.
+---
+NightfoxUiDark:
+  # COLOR_MENU_BACKGROUND, COLOR_SWITCHER_BACKGROUND, COLOR_SWITCHER_INPUT_BACKGROUND, COLOR_BACKGROUND_3, COLOR_EMPTY, COLOR_TREE_HOVER_BACKGROUND, COLOR_OCCURRENCE_3
+  B10: '#212E3F'
+  # COLOR_MENU_TEXT, COLOR_MENU_SELECTED_TEXT, COLOR_TEXT_1, COLOR_TEXT_4, COLOR_TAB_SELECTED_TEXT, COLOR_TREE_INACTIVE_SELECTION_TEXT, COLOR_TREE_SELECTED_TEXT, ICON_1, SPYDER_LOGO_WEB, SPYDER_LOGO_SNAKE
+  B20: '#CDCECF'
+  # COLOR_MENU_BORDER, COLOR_SWITCHER_BORDER, COLOR_PANE_BORDER, COLOR_EDITOR_BORDER, COLOR_SIDEBAR_BORDER, COLOR_BACKGROUND_5, COLOR_OCCURRENCE_5, SPECIAL_TABS_SEPARATOR
+  B30: '#39506D'
+  # COLOR_MENU_SELECTED_BACKGROUND, COLOR_SWITCHER_SELECTED_BACKGROUND, COLOR_ACCENT_5, COLOR_TREE_SELECTED_BACKGROUND
+  B40: '#3C5372'
+  # COLOR_BUTTON_BACKGROUND, COLOR_BUTTON_BORDER, COLOR_ACCENT_3, COLOR_TAB_SELECTED_ACCENT, ICON_2, TIP_TITLE_COLOR
+  B50: '#719CD6'
+  # COLOR_BUTTON_TEXT, COLOR_ACCENT_1, COLOR_STATUSBAR_BACKGROUND, COLOR_TOOLBAR_BACKGROUND, COLOR_OCCURRENCE_1
+  B60: '#131A24'
+  # COLOR_BUTTON_HOVER_BACKGROUND
+  B70: '#86ABDC'
+  # COLOR_BUTTON_PRESSED_BACKGROUND
+  B80: '#688FC4'
+  # COLOR_TAB_BACKGROUND, COLOR_BACKGROUND_4
+  B90: '#2C3C52'
+  # COLOR_BACKGROUND_1, COLOR_BACKGROUND_2, COLOR_TAB_SELECTED_BACKGROUND, COLOR_OCCURRENCE_2, SPYDER_LOGO_BACKGROUND, SPECIAL_TABS_SELECTED
+  B100: '#192330'
+  # COLOR_BACKGROUND_6, COLOR_TEXT_3, COLOR_DISABLED, COLOR_EDITOR_LINE_NUMBER, ICON_6
+  B110: '#71839B'
+  # COLOR_TEXT_2, COLOR_STATUSBAR_TEXT, COLOR_TAB_TEXT
+  B120: '#AEAFB0'
+  # COLOR_ACCENT_2, COLOR_ACCENT_4, COLOR_TREE_INACTIVE_SELECTION_BACKGROUND, COLOR_OCCURRENCE_4
+  B130: '#2B3B51'
+  # COLOR_TAB_HOVER_BACKGROUND
+  B140: '#30435C'
+  # COLOR_SUCCESS_1, ICON_3
+  B150: '#81B29A'
+  # COLOR_SUCCESS_2
+  B160: '#719D8A'
+  # COLOR_SUCCESS_3
+  B170: '#62877A'
+  # COLOR_SUCCESS_4
+  B180: '#52726A'
+  # COLOR_SUCCESS_5
+  B190: '#435C5A'
+  # ICON_4, COLOR_HEART
+  B200: '#C94F6D'
+  # COLOR_ERROR_2
+  B210: '#AF4864'
+  # COLOR_ERROR_3
+  B220: '#94425B'
+  # COLOR_ERROR_4
+  B230: '#7A3B52'
+  # COLOR_ERROR_5
+  B240: '#5F3548'
+  # ICON_5
+  B250: '#DBC074'
+  # COLOR_WARN_2
+  B260: '#BEA86A'
+  # COLOR_WARN_3
+  B270: '#A19160'
+  # COLOR_WARN_4
+  B280: '#847955'
+  # COLOR_WARN_5
+  B290: '#67624B'
+  # ICON_7, TIP_CHAR_HIGHLIGHT_COLOR
+  B300: '#63CDCF'
+  # COLOR_HIGHLIGHT_1
+  B310: '#202D3D'
+  # COLOR_HIGHLIGHT_2
+  B320: '#27364A'
+  # COLOR_HIGHLIGHT_3
+  B330: '#2E4058'
+  # COLOR_HIGHLIGHT_4
+  B340: '#354965'
+NightfoxSyntaxDark:
+  # EDITOR_BACKGROUND, EDITOR_SIDEAREAS
+  B10: '#192330'
+  # EDITOR_CURRENTLINE, EDITOR_MATCHED_P
+  B20: '#29394F'
+  # EDITOR_CURRENTCELL
+  B30: '#1D2938'
+  # EDITOR_OCCURRENCE
+  B40: '#2B3B51'
+  # EDITOR_CTRLCLICK, EDITOR_BUILTIN, EDITOR_DEFINITION, EDITOR_FUNCTION_CALL
+  B50: '#86ABDC'
+  # EDITOR_UNMATCHED_P
+  B60: '#3C2C3C'
+  # EDITOR_NORMAL
+  B70: '#CDCECF'
+  # EDITOR_KEYWORD, EDITOR_STORAGE
+  B80: '#9D79D6'
+  # EDITOR_MAGIC
+  B90: '#DC8ED9'
+  # EDITOR_COMMENT
+  B100: '#738091'
+  # EDITOR_STRING, EDITOR_DOCSTRING
+  B110: '#81B29A'
+  # EDITOR_NUMBER
+  B120: '#F4A261'
+  # EDITOR_INSTANCE
+  B130: '#C94F6D'
+  # EDITOR_SYMBOL
+  B140: '#63CDCF'
+  # EDITOR_OPERATOR, EDITOR_WORD_OPERATOR, EDITOR_PUNCTUATION, EDITOR_SEPARATOR, EDITOR_BRACKET_1, EDITOR_BRACKET_2, EDITOR_BRACKET_3, EDITOR_BRACKET_4, EDITOR_BRACKET_5, EDITOR_BRACKET_6
+  B150: '#AEAFB0'
+  # EDITOR_CLASS, EDITOR_BASECLASS, EDITOR_CLASS_REFERENCE
+  B160: '#DBC074'
+  # EDITOR_TYPE
+  B170: '#7AD5D6'
+  # EDITOR_CONSTANT
+  B180: '#F6B079'
+  # EDITOR_VARIABLE, EDITOR_PARAMETER
+  B190: '#DFDFE0'
+NightfoxGroupsDark:
+  # GROUP_1
+  B10: '#C94F6D'
+  # GROUP_2
+  B20: '#81B29A'
+  # GROUP_3
+  B30: '#DBC074'
+  # GROUP_4
+  B40: '#719CD6'
+  # GROUP_5
+  B50: '#9D79D6'
+  # GROUP_6
+  B60: '#63CDCF'
+  # GROUP_7
+  B70: '#D16983'
+  # GROUP_8
+  B80: '#8EBAA4'
+  # GROUP_9
+  B90: '#E0C989'
+  # GROUP_10
+  B100: '#86ABDC'
+  # GROUP_11
+  B110: '#BAA1E2'
+  # GROUP_12
+  B120: '#7AD5D6'
+NightfoxLogosDark:
+  # PYTHON_LOGO_UP
+  B10: '#3775A9'
+  # PYTHON_LOGO_DOWN
+  B20: '#FFD444'
+NightfoxHelpDark:
+  # --header-bg-color, --note-bg
+  B10: '#212E3F'
+  # --header-text-color
+  B20: '#CDCECF'
+  # --syn-error-bg
+  B30: '#3C2C3C'
+  # --warning-bg
+  B40: '#40423E'
+  # --link-color
+  B50: '#719CD6'
+  # --hover-color
+  B60: '#86ABDC'
+
+NightfoxFeedbackDark:
+  # COLOR_TREE_TEXT: native terminal.ansiBrightWhite
+  B10: '#E4E4E5'
+  # COLOR_ERROR_1: shared Dependencies cell fill / stop icon
+  B20: '#A5455F'
+  # COLOR_WARN_1: legacy Dependencies warning cell fill
+  B30: '#6E6548'

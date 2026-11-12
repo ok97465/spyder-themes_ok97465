@@ -3,6 +3,8 @@
 # Standard Spyder roles provide a fallback; optional Python/UI roles preserve
 # the source's native distinctions in the companion Spyder fork.
 color_classes:
+  PopupAuditDark: QtPopupAuditDark
+  InterfaceDark: TokyoNightAltsyntInterfaceDark
   Primary: AltSurfaceDark
   Secondary: AltBlue
   Tertiary: AltCyan
@@ -17,12 +19,35 @@ color_classes:
   Python: AltPythonDark
   HelpDark: AltHelpDark
   Logos: Logos
+  PaneBordersDark: TokyoNightAltsyntPaneBordersDark
+  QtInterfaceReviewDark: QtInterfaceReviewDark
 semantic_mappings:
   dark:
+    COLOR_MENU_BACKGROUND: PopupAuditDark.B10
+    COLOR_MENU_TEXT: PopupAuditDark.B20
+    COLOR_MENU_SELECTED_BACKGROUND: PopupAuditDark.B30
+    COLOR_MENU_SELECTED_TEXT: PopupAuditDark.B40
+    COLOR_MENU_BORDER: PopupAuditDark.B50
+    COLOR_SWITCHER_BACKGROUND: PopupAuditDark.B60
+    COLOR_SWITCHER_SELECTED_BACKGROUND: PopupAuditDark.B70
+    COLOR_SWITCHER_BORDER: PopupAuditDark.B80
+    COLOR_SWITCHER_INPUT_BACKGROUND: PopupAuditDark.B90
+
+    # Raised Qt surfaces keep inactive tabs and ordinary buttons visible.
+    COLOR_TAB_BACKGROUND: QtInterfaceReviewDark.B10
+    COLOR_BUTTON_BACKGROUND: InterfaceDark.B50
+    COLOR_BUTTON_TEXT: InterfaceDark.B60
+    COLOR_BUTTON_HOVER_BACKGROUND: InterfaceDark.B70
+    COLOR_BUTTON_PRESSED_BACKGROUND: InterfaceDark.B80
+    COLOR_BUTTON_BORDER: InterfaceDark.B90
+    # Qt content frames reuse the native muted focus/resize neutral; transparent workbench sidebar edges do not hide Qt frames.
+    COLOR_PANE_BORDER: PaneBordersDark.B10
+    COLOR_EDITOR_BORDER: PaneBordersDark.B20
+    COLOR_SIDEBAR_BORDER: PaneBordersDark.B30
     COLOR_BACKGROUND_1: SurfaceDark.B10
     COLOR_BACKGROUND_2: SurfaceDark.B30
     COLOR_BACKGROUND_3: SurfaceDark.B40
-    COLOR_BACKGROUND_4: SurfaceDark.B40
+    COLOR_BACKGROUND_4: QtInterfaceReviewDark.B10
     COLOR_BACKGROUND_5: SurfaceDark.B20
     COLOR_BACKGROUND_6: SurfaceDark.B220
     COLOR_TEXT_1: SurfaceDark.B70
@@ -37,14 +62,14 @@ semantic_mappings:
     COLOR_DISABLED: SurfaceDark.B110
     COLOR_EMPTY: SurfaceDark.B240
     COLOR_EDITOR_LINE_NUMBER: SurfaceDark.B240
-    COLOR_TOOLBAR_BACKGROUND: SurfaceDark.B10
+    COLOR_TOOLBAR_BACKGROUND: InterfaceDark.B10
     COLOR_STATUSBAR_BACKGROUND: SurfaceDark.B10
     COLOR_STATUSBAR_TEXT: SurfaceDark.B90
     COLOR_TAB_SELECTED_TEXT: SurfaceDark.B90
     COLOR_TAB_SELECTED_BACKGROUND: SurfaceDark.B20
     COLOR_TAB_SELECTED_ACCENT: SurfaceDark.B250
-    COLOR_TAB_TEXT: SurfaceDark.B100
-    COLOR_TAB_HOVER_BACKGROUND: SurfaceDark.B40
+    COLOR_TAB_TEXT: InterfaceDark.B30
+    COLOR_TAB_HOVER_BACKGROUND: InterfaceDark.B40
     COLOR_TREE_HOVER_BACKGROUND: SurfaceDark.B120
     COLOR_TREE_TEXT: SurfaceDark.B70
     COLOR_TREE_SELECTED_BACKGROUND: SurfaceDark.B120

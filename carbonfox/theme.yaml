@@ -1,0 +1,33 @@
+# Upstream repository: https://github.com/EdenEast/nightfox.nvim
+# Upstream revision: 4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a
+# Source: https://github.com/EdenEast/nightfox.nvim/blob/4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a/lua/nightfox/palette/carbonfox.lua
+# Source SHA-256: 79092f52e2dd5dd886c1fa82aa2a85a780b291133b2a633a7c1dbe8e4acf8416
+# Source: https://github.com/EdenEast/nightfox.nvim/blob/4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a/lua/nightfox/group/syntax.lua
+# Source SHA-256: da0604dfa7af02d87c1e315bd286c4b097860a5395171b3dfc35508cc4343abf
+# Source: https://github.com/EdenEast/nightfox.nvim/blob/4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a/lua/nightfox/group/modules/treesitter.lua
+# Source SHA-256: d66c77290d1eb6388cadc7c6d4ac66d3e8e4bb46e0ffecd8a29edb39fee8c14f
+# Source: https://github.com/EdenEast/nightfox.nvim/blob/4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a/lua/nightfox/lib/color.lua
+# Source SHA-256: 62b6949d92f537125f28fa97eded708cc02ab5501010570b5d6ce6b4de4459b9
+# Source: https://github.com/EdenEast/nightfox.nvim/blob/4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a/lua/nightfox/lib/shade.lua
+# Source SHA-256: bfaf88021f73972d31bd2f5f506dec2e82f4e3b568e658100f0ec94021d82624
+# Native palette shades were resolved by executing the pinned upstream palette/carbonfox.lua and generate_spec with its color/shade library.
+# Editor background #161616, foreground #F2F4F8, all source syntax shades and neutral bg0-bg4/selection surfaces are preserved.
+# Python mappings follow upstream Tree-sitter roles: builtin function/self red, parameter builtin1, generic variable white, type cyan.
+# All six bracket depths repeat syn.bracket; the upstream theme does not define a rainbow cycle.
+# Default source font styles are plain. Qt-only semantic ramps, current-cell fills and help backgrounds are adaptations.
+# Large widget fills, tabs, status bar and selection backgrounds use neutral carbon shades; chromatic colors are confined to syntax, small accents and feedback.
+---
+name: carbonfox
+display_name: Carbonfox
+description: Nightfox Carbonfox syntax and neutral carbon backgrounds adapted for
+  Spyder
+author: James Simpson (@EdenEast) and contributors; Spyder adaptation
+version: 1.0.0
+license: MIT
+tags:
+- carbonfox
+- neutral
+- dark
+variants:
+  dark: true
+  light: false
