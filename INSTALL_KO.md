@@ -2,7 +2,10 @@
 
 개인 커스텀 Spyder(`spyder6_ok97465`)용 테마를 빌드해 Anaconda `base`에 설치합니다. ThemeWeaver와 Pixi가 준비된 환경을 기준으로 합니다.
 
-검증·미리보기 스크립트는 `.tools/`에 둡니다. 기존 ThemeWeaver는 이름이 점(`.`)으로 시작하는 폴더만 제외하므로, 루트에 `tools/` 같은 일반 폴더를 만들면 전체 내보내기가 중단될 수 있습니다. Windows의 숨김 속성과는 무관합니다.
+검증·미리보기 스크립트는 `.tools/`에 둡니다. 현재 인접 ThemeWeaver는
+`theme.yaml`이 있는 폴더만 테마로 내보내므로 `mplstyle/` 같은 일반 폴더는
+자동으로 제외합니다. 이 필터가 없는 이전 ThemeWeaver에서는 일반 폴더 때문에
+전체 내보내기가 중단될 수 있으므로 현재 인접 버전을 사용합니다.
 
 인접 ThemeWeaver의 선택적 UI·메뉴·Switcher 색 내보내기를 사용합니다. 현재 커스텀 Spyder의
 비활성 dock 탭과 도움말 프레임은 `COLOR_BACKGROUND_4`를 직접 사용하므로,

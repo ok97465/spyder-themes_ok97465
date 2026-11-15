@@ -1,0 +1,116 @@
+# Sublime Mariana Dark companion for Matplotlib.
+# Palette source: ../sublime-mariana/colorsystem.yaml and mappings.yaml.
+# Surfaces and selected colors are adapted for contrast on dark plots.
+# Typography/layout follow vscode-modern-dark; no other style is required.
+# Apply before creating figures: plt.style.use(['default', '/path/to/this.mplstyle'])
+# Hex colors omit the hash, except scatter.edgecolors, which needs quoted hex.
+
+# Figure and axes
+figure.facecolor: 343E48
+figure.edgecolor: 343E48
+figure.figsize: 7, 4.5
+figure.dpi: 120
+figure.titlesize: 14
+figure.titleweight: medium
+axes.facecolor: 3A4652
+axes.edgecolor: 8E9093
+axes.linewidth: 0.8
+axes.labelcolor: E6EAF1
+axes.labelsize: 11
+axes.labelpad: 6
+axes.titlecolor: D8DEE9
+axes.titlesize: 12
+axes.titleweight: medium
+axes.titlepad: 10
+axes.axisbelow: True
+axes.grid: True
+axes.grid.which: major
+axes.grid.axis: both
+axes.spines.top: False
+axes.spines.right: False
+axes.formatter.useoffset: True
+axes.unicode_minus: True
+axes.prop_cycle: cycler('color', ['6699CC', 'F9AE58', '99C794', 'C695C6', 'EE6C72', '5FB4B4', 'F97B58'])
+
+# Text, ticks and restrained grid lines
+font.family: sans-serif
+font.sans-serif: DejaVu Sans, Arial, Liberation Sans
+font.size: 11
+text.color: E6EAF1
+mathtext.fontset: dejavusans
+xtick.color: C1C3C6
+ytick.color: C1C3C6
+xtick.labelsize: 10
+ytick.labelsize: 10
+xtick.direction: out
+ytick.direction: out
+xtick.major.size: 4
+ytick.major.size: 4
+xtick.minor.size: 2.5
+ytick.minor.size: 2.5
+xtick.major.width: 0.8
+ytick.major.width: 0.8
+xtick.minor.width: 0.6
+ytick.minor.width: 0.6
+xtick.top: False
+ytick.right: False
+grid.color: 616B78
+grid.alpha: 0.65
+grid.linewidth: 0.6
+grid.linestyle: -
+
+# Lines, markers, bars and error bars
+lines.color: 6699CC
+lines.linewidth: 1.8
+lines.markersize: 5
+lines.markeredgewidth: 0.6
+lines.solid_capstyle: round
+patch.facecolor: 6699CC
+patch.edgecolor: 343E48
+patch.linewidth: 0.7
+patch.force_edgecolor: True
+scatter.edgecolors: "#343E48"
+errorbar.capsize: 3
+hist.bins: 30
+
+# Opaque legend: data behind the legend cannot obscure its labels.
+legend.facecolor: 414E5B
+legend.edgecolor: 8E9093
+legend.framealpha: 1
+legend.frameon: True
+legend.fancybox: True
+legend.fontsize: 10
+legend.title_fontsize: 10
+legend.labelcolor: E6EAF1
+legend.borderpad: 0.6
+legend.labelspacing: 0.4
+legend.handlelength: 2.2
+
+# Distribution plots (including Matplotlib's default unfilled boxplots)
+boxplot.boxprops.color: E6EAF1
+boxplot.boxprops.linewidth: 1.1
+boxplot.whiskerprops.color: C1C3C6
+boxplot.whiskerprops.linewidth: 1.1
+boxplot.capprops.color: C1C3C6
+boxplot.capprops.linewidth: 1.1
+boxplot.medianprops.color: EE6C72
+boxplot.medianprops.linewidth: 1.8
+boxplot.flierprops.marker: o
+boxplot.flierprops.markerfacecolor: none
+boxplot.flierprops.markeredgecolor: F9AE58
+boxplot.flierprops.markersize: 4
+boxplot.meanprops.color: 99C794
+boxplot.meanprops.marker: D
+boxplot.meanprops.markerfacecolor: 99C794
+boxplot.meanprops.markeredgecolor: 343E48
+
+# Perceptually ordered default for heatmaps; colors remain data-dependent.
+image.cmap: viridis
+
+# Preserve the dark background in PNG/SVG/PDF and Spyder's inline images.
+savefig.facecolor: auto
+savefig.edgecolor: auto
+savefig.transparent: False
+savefig.dpi: 180
+savefig.bbox: tight
+savefig.pad_inches: 0.12
