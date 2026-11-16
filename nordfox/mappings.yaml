@@ -4,7 +4,7 @@
 # Source URL: https://github.com/nuromirg/nightfox-vscode/blob/ed72c227cd94a9698ad463aad8d496fcc0441b2d/themes/nordfox.json
 # Installed source SHA-256: 271d3510ab940afbdc44a62e1152b60717f046635e3d2d732c9a77a589568f8d
 # VS Code port of EdenEast/nightfox.nvim; this adaptation follows the VS Code port.
-# Native editor, syntax, selected-tab, statusbar, pane-border and primary-button colors are retained.
+# Native editor background/foreground, syntax, selected-tab, statusbar, pane-border and primary-button colors are retained.
 # Python builtin calls use function.defaultLibrary, builtin types use type.defaultLibrary,
 # self/cls use variable.defaultLibrary; docstrings use string and comments retain italics.
 # All bracket depths use the native Brackets scope; the source has no rainbow colors.
@@ -20,8 +20,10 @@
 # tree text retain readable dependency labels while ICON_4/5 keep native red/yellow.
 # Nordfox shared-role limit: dependency labels reach 4.5:1; the stop icon is 2.719:1 against the toolbar.
 # Qt menu/tree/Switcher selected fill #48586B darkens native #4F6074 slightly for readable #CDCECF text.
+# Editor interaction fills are locally adapted; see EDITOR_COLORS_KO.md.
 ---
 color_classes:
+  EditorStatesDark: NordfoxEditorStatesDark
   FeedbackDark: NordfoxFeedbackDark
   UiDark: NordfoxUiDark
   SyntaxDark: NordfoxSyntaxDark
@@ -59,7 +61,7 @@ semantic_mappings:
     COLOR_TEXT_3: UiDark.B110
     COLOR_TEXT_4: UiDark.B20
     COLOR_ACCENT_1: UiDark.B60
-    COLOR_ACCENT_2: UiDark.B130
+    COLOR_ACCENT_2: EditorStatesDark.B30
     COLOR_ACCENT_3: UiDark.B50
     COLOR_ACCENT_4: UiDark.B130
     COLOR_ACCENT_5: UiDark.B40
@@ -121,15 +123,15 @@ semantic_mappings:
     COLOR_OCCURRENCE_1: UiDark.B60
     COLOR_OCCURRENCE_2: UiDark.B100
     COLOR_OCCURRENCE_3: UiDark.B10
-    COLOR_OCCURRENCE_4: UiDark.B130
+    COLOR_OCCURRENCE_4: EditorStatesDark.B50
     COLOR_OCCURRENCE_5: UiDark.B30
     EDITOR_BACKGROUND: SyntaxDark.B10
-    EDITOR_CURRENTLINE: SyntaxDark.B20
-    EDITOR_CURRENTCELL: SyntaxDark.B30
-    EDITOR_OCCURRENCE: SyntaxDark.B40
+    EDITOR_CURRENTLINE: EditorStatesDark.B20
+    EDITOR_CURRENTCELL: EditorStatesDark.B10
+    EDITOR_OCCURRENCE: EditorStatesDark.B40
     EDITOR_CTRLCLICK: SyntaxDark.B50
     EDITOR_SIDEAREAS: SyntaxDark.B10
-    EDITOR_MATCHED_P: SyntaxDark.B20
+    EDITOR_MATCHED_P: EditorStatesDark.B60
     EDITOR_UNMATCHED_P: SyntaxDark.B60
     EDITOR_NORMAL: [SyntaxDark.B70, false, false]
     EDITOR_KEYWORD: [SyntaxDark.B80, false, false]

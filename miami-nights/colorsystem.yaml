@@ -206,3 +206,11 @@ Logos:
 
 MiamiNightsOptionalUi:
   B10: '#808080'  # Existing Qt line-number fallback, now explicit.
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+MiamiNightsEditorStatesDark:
+  B40: '#D21495'  # EDITOR_OCCURRENCE
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+MiamiNightsEditorStatesLight:
+  B40: '#E3C1F6'  # EDITOR_OCCURRENCE

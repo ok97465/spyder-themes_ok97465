@@ -2,15 +2,17 @@
 # Upstream author: Nikita Prokopov. License: MIT (notice in LICENSE).
 # Upstream revision: 7e8e48c0f33022cd3cf5fec0114c307d63663e39
 # Source: https://github.com/tonsky/vscode-theme-alabaster/blob/7e8e48c0f33022cd3cf5fec0114c307d63663e39/theme/alabaster-color-theme.json
-# Original light theme only. Editor background #F7F7F7 and the four main highlight classes are preserved.
+# Original light theme only. Editor background #F7F7F7 and the four main syntax highlight classes are preserved.
 # Comments red, strings green, constants purple, entity definitions blue; keywords/builtins/variables stay black.
 # Punctuation and all six bracket roles inherit original punctuation gray; no added rainbow or font variations.
 # All formatted syntax roles are regular. Unsupported semantic distinctions fall back to black.
-# Neutral Qt selection #DDDDDD follows original list selection rather than the bluer editor selection #BFDBFE.
-# Original selection highlight alpha is flattened over editor.background. Extra gray widget shades are Qt adaptations.
+# Qt selections follow the neutral list palette; the editor state audit locally adapts their shades.
+# Source selection alpha is flattened over editor.background before local state adaptations. Extra gray widget shades are Qt adaptations.
 # Qt gutter labels use original punctuation/bright-black #777777 instead of native #9DA39A for at least 3:1 contrast.
+# Editor interaction fills are locally adapted; see EDITOR_COLORS_KO.md.
 ---
 color_classes:
+  EditorStatesLight: AlabasterEditorStatesLight
   PopupAuditLight: QtPopupAuditLight
   QtUiAuditLight: QtUiAuditLight
   ChromeLight: ChromeLight
@@ -69,7 +71,7 @@ semantic_mappings:
     COLOR_DISABLED: SurfaceLight.B110
     COLOR_EMPTY: SurfaceLight.B120
     COLOR_ACCENT_1: AccentLight.B10
-    COLOR_ACCENT_2: AccentLight.B20
+    COLOR_ACCENT_2: EditorStatesLight.B30
     COLOR_ACCENT_3: QtUiAuditLight.B30
     COLOR_ACCENT_4: AccentLight.B40
     COLOR_ACCENT_5: AccentLight.B50
@@ -114,16 +116,16 @@ semantic_mappings:
     COLOR_OCCURRENCE_1: HighlightLight.B50
     COLOR_OCCURRENCE_2: HighlightLight.B60
     COLOR_OCCURRENCE_3: HighlightLight.B70
-    COLOR_OCCURRENCE_4: HighlightLight.B80
+    COLOR_OCCURRENCE_4: EditorStatesLight.B50
     COLOR_OCCURRENCE_5: HighlightLight.B90
     EDITOR_BACKGROUND: EditorLight.B10
-    EDITOR_CURRENTLINE: EditorLight.B20
-    EDITOR_CURRENTCELL: EditorLight.B30
-    EDITOR_OCCURRENCE: EditorLight.B40
+    EDITOR_CURRENTLINE: EditorStatesLight.B20
+    EDITOR_CURRENTCELL: EditorStatesLight.B10
+    EDITOR_OCCURRENCE: EditorStatesLight.B40
     EDITOR_CTRLCLICK: EditorLight.B50
     EDITOR_SIDEAREAS: EditorLight.B60
-    EDITOR_MATCHED_P: EditorLight.B70
-    EDITOR_UNMATCHED_P: EditorLight.B80
+    EDITOR_MATCHED_P: EditorStatesLight.B60
+    EDITOR_UNMATCHED_P: EditorStatesLight.B70
     EDITOR_NORMAL: [SyntaxLight.B10, false, false]
     EDITOR_KEYWORD: [SyntaxLight.B20, false, false]
     EDITOR_MAGIC: [SyntaxLight.B30, false, false]

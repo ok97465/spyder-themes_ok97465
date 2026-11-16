@@ -272,3 +272,9 @@ QtPopupAuditDark:
   B70: '#393F48'  # COLOR_SWITCHER_SELECTED_BACKGROUND
   B80: '#30363D'  # COLOR_SWITCHER_BORDER
   B90: '#0D1117'  # COLOR_SWITCHER_INPUT_BACKGROUND
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+GithubDarkEditorStatesDark:
+  B10: '#141B26'  # EDITOR_CURRENTCELL
+  B20: '#212429'  # EDITOR_CURRENTLINE
+  B40: '#6E5E3B'  # EDITOR_OCCURRENCE

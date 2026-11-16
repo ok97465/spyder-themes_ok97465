@@ -175,3 +175,14 @@ Logos:
   B30: '#414141'
   B40: '#fafafa'
   B50: '#8c0000'
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+ObsidianEditorStatesDark:
+  B10: '#1E2223'  # EDITOR_CURRENTCELL
+  B20: '#2B2F31'  # EDITOR_CURRENTLINE
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+ObsidianEditorStatesLight:
+  B10: '#D8D8D9'  # EDITOR_CURRENTCELL
+  B20: '#C6C6C6'  # EDITOR_CURRENTLINE
+  B40: '#78D4F0'  # EDITOR_OCCURRENCE

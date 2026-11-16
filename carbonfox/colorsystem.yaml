@@ -11,11 +11,13 @@
 # Source: https://github.com/EdenEast/nightfox.nvim/blob/4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a/lua/nightfox/lib/shade.lua
 # Source SHA-256: bfaf88021f73972d31bd2f5f506dec2e82f4e3b568e658100f0ec94021d82624
 # Native palette shades were resolved by executing the pinned upstream palette/carbonfox.lua and generate_spec with its color/shade library.
-# Editor background #161616, foreground #F2F4F8, all source syntax shades and neutral bg0-bg4/selection surfaces are preserved.
+# Editor background #161616, foreground #F2F4F8, source syntax shades and neutral UI surfaces are preserved.
+# Editor selection shades are locally adapted within the neutral carbon palette.
 # Python mappings follow upstream Tree-sitter roles: builtin function/self red, parameter builtin1, generic variable white, type cyan.
 # All six bracket depths repeat syn.bracket; the upstream theme does not define a rainbow cycle.
 # Default source font styles are plain. Qt-only semantic ramps, current-cell fills and help backgrounds are adaptations.
 # Large widget fills, tabs, status bar and selection backgrounds use neutral carbon shades; chromatic colors are confined to syntax, small accents and feedback.
+# Editor interaction fills are locally adapted; see EDITOR_COLORS_KO.md.
 ---
 CarbonfoxSurfaceDark:
   # COLOR_BACKGROUND_1, COLOR_BACKGROUND_2, COLOR_BACKGROUND_4, COLOR_OCCURRENCE_2, SPYDER_LOGO_BACKGROUND, SPECIAL_TABS_SELECTED
@@ -227,3 +229,11 @@ QtPopupAuditDark:
   B70: '#525253'  # COLOR_SWITCHER_SELECTED_BACKGROUND
   B80: '#353535'  # COLOR_SWITCHER_BORDER
   B90: '#252525'  # COLOR_SWITCHER_INPUT_BACKGROUND
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+CarbonfoxEditorStatesDark:
+  B10: '#232323'  # EDITOR_CURRENTCELL
+  B30: '#525252'  # COLOR_ACCENT_2
+  B40: '#7C5E24'  # EDITOR_OCCURRENCE
+  B50: '#423E48'  # COLOR_OCCURRENCE_4
+  B60: '#666666'  # EDITOR_MATCHED_P

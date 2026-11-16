@@ -198,3 +198,17 @@ Logos:
   B30: '#414141'
   B40: '#fafafa'
   B50: '#8c0000'
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+ZenburnEditorStatesDark:
+  B10: '#212121'  # EDITOR_CURRENTCELL
+  B40: '#1F6497'  # EDITOR_OCCURRENCE
+  B60: '#2D6D19'  # EDITOR_MATCHED_P
+  B70: '#885055'  # EDITOR_UNMATCHED_P
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+ZenburnEditorStatesLight:
+  B10: '#E2E0D2'  # EDITOR_CURRENTCELL
+  B40: '#8CC7F2'  # EDITOR_OCCURRENCE
+  B60: '#89AB78'  # EDITOR_MATCHED_P
+  B70: '#DE8B8B'  # EDITOR_UNMATCHED_P

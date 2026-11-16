@@ -473,3 +473,19 @@ QtPopupAuditLight:
   B70: '#EDEFF0'  # COLOR_SWITCHER_SELECTED_BACKGROUND
   B80: '#B0BEC5'  # COLOR_SWITCHER_BORDER
   B90: '#EEEEEE'  # COLOR_SWITCHER_INPUT_BACKGROUND
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+MaterialEditorStatesDark:
+  B10: '#373B3C'  # EDITOR_CURRENTCELL
+  B30: '#2D4E56'  # COLOR_ACCENT_2
+  B40: '#82704F'  # EDITOR_OCCURRENCE
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+MaterialEditorStatesLight:
+  B10: '#E3FFFE'  # EDITOR_CURRENTCELL
+  B20: '#E2F1FF'  # EDITOR_CURRENTLINE
+  B30: '#B9DAD8'  # COLOR_ACCENT_2
+  B40: '#FDF0B2'  # EDITOR_OCCURRENCE
+  B50: '#FFF4D5'  # COLOR_OCCURRENCE_4
+  B60: '#E2F0D2'  # EDITOR_MATCHED_P
+  B70: '#FFE6D9'  # EDITOR_UNMATCHED_P

@@ -2,13 +2,14 @@
 # Upstream author: Nikita Prokopov. License: MIT (notice in LICENSE).
 # Upstream revision: 7e8e48c0f33022cd3cf5fec0114c307d63663e39
 # Source: https://github.com/tonsky/vscode-theme-alabaster/blob/7e8e48c0f33022cd3cf5fec0114c307d63663e39/theme/alabaster-color-theme.json
-# Original light theme only. Editor background #F7F7F7 and the four main highlight classes are preserved.
+# Original light theme only. Editor background #F7F7F7 and the four main syntax highlight classes are preserved.
 # Comments red, strings green, constants purple, entity definitions blue; keywords/builtins/variables stay black.
 # Punctuation and all six bracket roles inherit original punctuation gray; no added rainbow or font variations.
 # All formatted syntax roles are regular. Unsupported semantic distinctions fall back to black.
-# Neutral Qt selection #DDDDDD follows original list selection rather than the bluer editor selection #BFDBFE.
-# Original selection highlight alpha is flattened over editor.background. Extra gray widget shades are Qt adaptations.
+# Qt selections follow the neutral list palette; the editor state audit locally adapts their shades.
+# Source selection alpha is flattened over editor.background before local state adaptations. Extra gray widget shades are Qt adaptations.
 # Qt gutter labels use original punctuation/bright-black #777777 instead of native #9DA39A for at least 3:1 contrast.
+# Editor interaction fills are locally adapted; see EDITOR_COLORS_KO.md.
 ---
 AlabasterNeutral:
   B0: '#000000'
@@ -315,3 +316,13 @@ QtPopupAuditLight:
   B70: '#DDDDDD'  # COLOR_SWITCHER_SELECTED_BACKGROUND
   B80: '#BBBBBB'  # COLOR_SWITCHER_BORDER
   B90: '#FFFFFF'  # COLOR_SWITCHER_INPUT_BACKGROUND
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+AlabasterEditorStatesLight:
+  B10: '#E5E5E5'  # EDITOR_CURRENTCELL
+  B20: '#D3D3D3'  # EDITOR_CURRENTLINE
+  B30: '#B0B0B0'  # COLOR_ACCENT_2
+  B40: '#F4D29F'  # EDITOR_OCCURRENCE
+  B50: '#EDD9B6'  # COLOR_OCCURRENCE_4
+  B60: '#D3E5CA'  # EDITOR_MATCHED_P
+  B70: '#FDE7E7'  # EDITOR_UNMATCHED_P

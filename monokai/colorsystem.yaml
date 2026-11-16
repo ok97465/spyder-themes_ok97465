@@ -275,3 +275,17 @@ ChromeDark:
   B60: '#75715E'  # COLOR_BUTTON_BORDER
   B70: '#45463D'  # COLOR_TAB_HOVER_BACKGROUND
   B80: '#F8F8F2'  # COLOR_BUTTON_TEXT
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+MonokaiEditorStatesDark:
+  B10: '#303326'  # EDITOR_CURRENTCELL
+  B20: '#403F34'  # EDITOR_CURRENTLINE
+  B30: '#5C5C55'  # COLOR_ACCENT_2
+  B40: '#2877A0'  # EDITOR_OCCURRENCE
+  B50: '#2B494F'  # COLOR_OCCURRENCE_4
+  B60: '#6E6E6D'  # EDITOR_MATCHED_P
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+MonokaiEditorStatesLight:
+  B10: '#F7EBED'  # EDITOR_CURRENTCELL
+  B40: '#88E5FC'  # EDITOR_OCCURRENCE

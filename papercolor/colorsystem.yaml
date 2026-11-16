@@ -2,7 +2,7 @@
 # Upstream author: Nikyle Nguyen. License: MIT (notice in LICENSE).
 # Upstream revision: 0cfe64ffb24c21a6101b5f994ca342a74c977aef
 # Source: https://github.com/NLKNguyen/papercolor-theme/blob/0cfe64ffb24c21a6101b5f994ca342a74c977aef/colors/PaperColor.vim
-# Original editor backgrounds, foregrounds, cursor lines, gutter backgrounds and Python syntax anchors are preserved.
+# Original editor backgrounds, foregrounds, gutter backgrounds and Python syntax anchors are preserved.
 # Qt gutter labels use the upstream neutral comment foreground (#808080 dark / #878787 light) for at least 3:1 contrast.
 # Python keyword collapses to pythonStatement; definition uses pythonFunction; symbolic operators use generic Operator.
 # Word operators use pythonOperator (bold); comments retain upstream italics; builtin highlighting uses upstream default off.
@@ -10,7 +10,9 @@
 # Class definitions share the definition color; calls/parameters/references fall back to foreground where Vim has no distinction.
 # No native rainbow brackets: all six roles explicitly inherit Delimiter (aqua).
 # Qt bars/tabs/tree selections use neutral gray adaptations instead of the saturated terminal status/tab colors.
-# Selection backgrounds are gray; normal foreground is retained. Help feedback fills are 8% RGB composites.
+# Dark selection remains gray; light editor selection uses a blue tint. Normal foreground is retained.
+# Help feedback fills are 8% RGB composites.
+# Editor interaction fills are locally adapted; see EDITOR_COLORS_KO.md.
 ---
 PapercolorNeutral:
   B0: '#000000'
@@ -489,3 +491,22 @@ QtPopupAuditLight:
   B70: '#92B4D7'  # COLOR_SWITCHER_SELECTED_BACKGROUND
   B80: '#BCBCBC'  # COLOR_SWITCHER_BORDER
   B90: '#FFFFFF'  # COLOR_SWITCHER_INPUT_BACKGROUND
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+PapercolorEditorStatesDark:
+  B10: '#292929'  # EDITOR_CURRENTCELL
+  B20: '#373737'  # EDITOR_CURRENTLINE
+  B30: '#555555'  # COLOR_ACCENT_2
+  B40: '#6D532F'  # EDITOR_OCCURRENCE
+  B50: '#5D3F26'  # COLOR_OCCURRENCE_4
+  B60: '#5D4F38'  # EDITOR_MATCHED_P
+  B70: '#381C2B'  # EDITOR_UNMATCHED_P
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+PapercolorEditorStatesLight:
+  B10: '#DBDBDB'  # EDITOR_CURRENTCELL
+  B20: '#C9C9C9'  # EDITOR_CURRENTLINE
+  B30: '#CAD1E8'  # COLOR_ACCENT_2
+  B40: '#F4C69A'  # EDITOR_OCCURRENCE
+  B50: '#B2B2B2'  # COLOR_OCCURRENCE_4
+  B60: '#B3D1AE'  # EDITOR_MATCHED_P

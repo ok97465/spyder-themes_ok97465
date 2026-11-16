@@ -11,13 +11,16 @@
 # Source: https://github.com/EdenEast/nightfox.nvim/blob/4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a/lua/nightfox/lib/shade.lua
 # Source SHA-256: bfaf88021f73972d31bd2f5f506dec2e82f4e3b568e658100f0ec94021d82624
 # Native palette shades were resolved by executing the pinned upstream palette/carbonfox.lua and generate_spec with its color/shade library.
-# Editor background #161616, foreground #F2F4F8, all source syntax shades and neutral bg0-bg4/selection surfaces are preserved.
+# Editor background #161616, foreground #F2F4F8, source syntax shades and neutral UI surfaces are preserved.
+# Editor selection shades are locally adapted within the neutral carbon palette.
 # Python mappings follow upstream Tree-sitter roles: builtin function/self red, parameter builtin1, generic variable white, type cyan.
 # All six bracket depths repeat syn.bracket; the upstream theme does not define a rainbow cycle.
 # Default source font styles are plain. Qt-only semantic ramps, current-cell fills and help backgrounds are adaptations.
 # Large widget fills, tabs, status bar and selection backgrounds use neutral carbon shades; chromatic colors are confined to syntax, small accents and feedback.
+# Editor interaction fills are locally adapted; see EDITOR_COLORS_KO.md.
 ---
 color_classes:
+  EditorStatesDark: CarbonfoxEditorStatesDark
   PopupAuditDark: QtPopupAuditDark
   QtUiAuditDark: QtUiAuditDark
   ErrorUiDark: QtErrorDark
@@ -62,7 +65,7 @@ semantic_mappings:
     COLOR_TEXT_3: SurfaceDark.B70
     COLOR_TEXT_4: SurfaceDark.B50
     COLOR_ACCENT_1: SurfaceDark.B80
-    COLOR_ACCENT_2: SurfaceDark.B20
+    COLOR_ACCENT_2: EditorStatesDark.B30
     COLOR_ACCENT_3: QtUiAuditDark.B30
     COLOR_ACCENT_4: SurfaceDark.B20
     COLOR_ACCENT_5: SurfaceDark.B90
@@ -125,15 +128,15 @@ semantic_mappings:
     COLOR_OCCURRENCE_1: SurfaceDark.B80
     COLOR_OCCURRENCE_2: SurfaceDark.B10
     COLOR_OCCURRENCE_3: SurfaceDark.B20
-    COLOR_OCCURRENCE_4: SurfaceDark.B90
+    COLOR_OCCURRENCE_4: EditorStatesDark.B50
     COLOR_OCCURRENCE_5: SurfaceDark.B30
     EDITOR_BACKGROUND: SyntaxDark.B10
     EDITOR_CURRENTLINE: SyntaxDark.B20
-    EDITOR_CURRENTCELL: SyntaxDark.B30
-    EDITOR_OCCURRENCE: SyntaxDark.B40
+    EDITOR_CURRENTCELL: EditorStatesDark.B10
+    EDITOR_OCCURRENCE: EditorStatesDark.B40
     EDITOR_CTRLCLICK: SyntaxDark.B50
     EDITOR_SIDEAREAS: SyntaxDark.B10
-    EDITOR_MATCHED_P: SyntaxDark.B60
+    EDITOR_MATCHED_P: EditorStatesDark.B60
     EDITOR_UNMATCHED_P: SyntaxDark.B70
     EDITOR_NORMAL: [SyntaxDark.B80, false, false]
     EDITOR_KEYWORD: [SyntaxDark.B90, false, false]

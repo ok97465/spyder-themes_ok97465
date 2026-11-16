@@ -257,3 +257,11 @@ QtPopupAuditDark:
   B70: '#3F4347'  # Native white 15% overlay: selected quick-panel row.
   B80: '#56595D'  # COLOR_SWITCHER_BORDER
   B90: '#303841'  # Native focused quick-panel input follows editor base.
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+SublimeMarianaEditorStatesDark:
+  B10: '#3E4650'  # EDITOR_CURRENTCELL
+  B30: '#2F4D69'  # COLOR_ACCENT_2
+  B40: '#6F5E3C'  # EDITOR_OCCURRENCE
+  B50: '#46617D'  # COLOR_OCCURRENCE_4
+  B60: '#41686D'  # EDITOR_MATCHED_P

@@ -16,6 +16,8 @@
 # Large widget fills and selections remain neutral; source accent colors are used for small accents and foregrounds.
 ---
 color_classes:
+  EditorStatesLight: FlexokiEditorStatesLight
+  EditorStatesDark: FlexokiEditorStatesDark
   PopupAuditDark: QtPopupAuditDark
   PopupAuditLight: QtPopupAuditLight
   QtUiAuditLight: QtUiAuditLight
@@ -71,7 +73,7 @@ semantic_mappings:
     COLOR_TEXT_3: SurfaceDark.B60
     COLOR_TEXT_4: SurfaceDark.B50
     COLOR_ACCENT_1: SurfaceDark.B70
-    COLOR_ACCENT_2: SurfaceDark.B20
+    COLOR_ACCENT_2: EditorStatesDark.B30
     COLOR_ACCENT_3: QtUiAuditDark.B30
     COLOR_ACCENT_4: SurfaceDark.B20
     COLOR_ACCENT_5: SurfaceDark.B80
@@ -134,15 +136,15 @@ semantic_mappings:
     COLOR_OCCURRENCE_1: SurfaceDark.B70
     COLOR_OCCURRENCE_2: SurfaceDark.B10
     COLOR_OCCURRENCE_3: SurfaceDark.B20
-    COLOR_OCCURRENCE_4: SurfaceDark.B80
+    COLOR_OCCURRENCE_4: EditorStatesDark.B50
     COLOR_OCCURRENCE_5: SurfaceDark.B30
     EDITOR_BACKGROUND: SyntaxDark.B10
-    EDITOR_CURRENTLINE: SyntaxDark.B20
-    EDITOR_CURRENTCELL: SyntaxDark.B30
-    EDITOR_OCCURRENCE: SyntaxDark.B40
+    EDITOR_CURRENTLINE: EditorStatesDark.B20
+    EDITOR_CURRENTCELL: EditorStatesDark.B10
+    EDITOR_OCCURRENCE: EditorStatesDark.B40
     EDITOR_CTRLCLICK: SyntaxDark.B50
     EDITOR_SIDEAREAS: SyntaxDark.B10
-    EDITOR_MATCHED_P: SyntaxDark.B60
+    EDITOR_MATCHED_P: EditorStatesDark.B60
     EDITOR_UNMATCHED_P: SyntaxDark.B70
     EDITOR_NORMAL: [SyntaxDark.B80, false, false]
     EDITOR_KEYWORD: [SyntaxDark.B90, false, false]
@@ -222,7 +224,7 @@ semantic_mappings:
     COLOR_TEXT_3: SurfaceLight.B60
     COLOR_TEXT_4: SurfaceLight.B50
     COLOR_ACCENT_1: SurfaceLight.B70
-    COLOR_ACCENT_2: SurfaceLight.B20
+    COLOR_ACCENT_2: EditorStatesLight.B30
     COLOR_ACCENT_3: QtUiAuditLight.B30
     COLOR_ACCENT_4: SurfaceLight.B20
     COLOR_ACCENT_5: SurfaceLight.B80
@@ -285,15 +287,15 @@ semantic_mappings:
     COLOR_OCCURRENCE_1: SurfaceLight.B70
     COLOR_OCCURRENCE_2: SurfaceLight.B10
     COLOR_OCCURRENCE_3: SurfaceLight.B20
-    COLOR_OCCURRENCE_4: SurfaceLight.B80
+    COLOR_OCCURRENCE_4: EditorStatesLight.B50
     COLOR_OCCURRENCE_5: SurfaceLight.B30
     EDITOR_BACKGROUND: SyntaxLight.B10
-    EDITOR_CURRENTLINE: SyntaxLight.B20
-    EDITOR_CURRENTCELL: SyntaxLight.B30
-    EDITOR_OCCURRENCE: SyntaxLight.B40
+    EDITOR_CURRENTLINE: EditorStatesLight.B20
+    EDITOR_CURRENTCELL: EditorStatesLight.B10
+    EDITOR_OCCURRENCE: EditorStatesLight.B40
     EDITOR_CTRLCLICK: SyntaxLight.B50
     EDITOR_SIDEAREAS: SyntaxLight.B10
-    EDITOR_MATCHED_P: SyntaxLight.B60
+    EDITOR_MATCHED_P: EditorStatesLight.B60
     EDITOR_UNMATCHED_P: SyntaxLight.B70
     EDITOR_NORMAL: [SyntaxLight.B80, false, false]
     EDITOR_KEYWORD: [SyntaxLight.B90, false, false]

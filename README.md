@@ -41,6 +41,8 @@
 | [Zenburn](zenburn) | 눈이 편안한 저대비 배색 |
 
 설치 방법은 [INSTALL_KO.md](INSTALL_KO.md)를 참고하세요.
+커서 줄·현재 셀·선택 영역 등의 색상 구분 기준과 검증 방법은
+[에디터 상태색 검토](EDITOR_COLORS_KO.md)에 있습니다.
 
 Matplotlib 플롯용 스타일은 [mplstyle](mplstyle/README.md)에 있습니다.
 다크 테마 33개에 어울리는 27가지 배색을 `plt.style.use()`로 선택해 적용할 수 있습니다.

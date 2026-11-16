@@ -4,6 +4,8 @@
 # https://github.com/microsoft/vscode/blob/69047191fc427f2f92828279aae1d90d8eeda7ab/extensions/theme-defaults/themes/hc_light.json
 ---
 color_classes:
+  EditorStatesLight: VscodeHighContrastEditorStatesLight
+  EditorStatesDark: VscodeHighContrastEditorStatesDark
   PopupAuditDark: QtPopupAuditDark
   PopupAuditLight: QtPopupAuditLight
   Primary: HighContrastNeutral
@@ -86,12 +88,12 @@ semantic_mappings:
     COLOR_OCCURRENCE_1: HighContrastDark.B560
     COLOR_OCCURRENCE_2: HighContrastDark.B570
     COLOR_OCCURRENCE_3: HighContrastDark.B580
-    COLOR_OCCURRENCE_4: HighContrastDark.B590
+    COLOR_OCCURRENCE_4: EditorStatesDark.B50
     COLOR_OCCURRENCE_5: HighContrastDark.B600
     EDITOR_BACKGROUND: HighContrastDark.B610
-    EDITOR_CURRENTLINE: HighContrastDark.B620
-    EDITOR_CURRENTCELL: HighContrastDark.B630
-    EDITOR_OCCURRENCE: HighContrastDark.B640
+    EDITOR_CURRENTLINE: EditorStatesDark.B20
+    EDITOR_CURRENTCELL: EditorStatesDark.B10
+    EDITOR_OCCURRENCE: EditorStatesDark.B40
     EDITOR_CTRLCLICK: HighContrastDark.B650
     EDITOR_SIDEAREAS: HighContrastDark.B660
     EDITOR_MATCHED_P: HighContrastDark.B670
@@ -275,7 +277,7 @@ semantic_mappings:
     COLOR_TEXT_3: HighContrastLight.B90
     COLOR_TEXT_4: HighContrastLight.B100
     COLOR_ACCENT_1: HighContrastLight.B110
-    COLOR_ACCENT_2: HighContrastLight.B120
+    COLOR_ACCENT_2: EditorStatesLight.B30
     COLOR_ACCENT_3: HighContrastLight.B130
     COLOR_ACCENT_4: HighContrastLight.B140
     COLOR_ACCENT_5: HighContrastLight.B150
@@ -322,12 +324,12 @@ semantic_mappings:
     COLOR_OCCURRENCE_1: HighContrastLight.B560
     COLOR_OCCURRENCE_2: HighContrastLight.B570
     COLOR_OCCURRENCE_3: HighContrastLight.B580
-    COLOR_OCCURRENCE_4: HighContrastLight.B590
+    COLOR_OCCURRENCE_4: EditorStatesLight.B50
     COLOR_OCCURRENCE_5: HighContrastLight.B600
     EDITOR_BACKGROUND: HighContrastLight.B610
-    EDITOR_CURRENTLINE: HighContrastLight.B620
-    EDITOR_CURRENTCELL: HighContrastLight.B630
-    EDITOR_OCCURRENCE: HighContrastLight.B640
+    EDITOR_CURRENTLINE: EditorStatesLight.B20
+    EDITOR_CURRENTCELL: EditorStatesLight.B10
+    EDITOR_OCCURRENCE: EditorStatesLight.B40
     EDITOR_CTRLCLICK: HighContrastLight.B650
     EDITOR_SIDEAREAS: HighContrastLight.B660
     EDITOR_MATCHED_P: HighContrastLight.B670

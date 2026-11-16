@@ -12,6 +12,8 @@
 # No native rainbow bracket scopes exist, so all six bracket depths inherit punctuation.
 ---
 color_classes:
+  EditorStatesLight: HorizonEditorStatesLight
+  EditorStatesDark: HorizonEditorStatesDark
   PopupAuditDark: QtPopupAuditDark
   PopupAuditLight: QtPopupAuditLight
   QtUiAuditLight: QtUiAuditLight
@@ -56,7 +58,7 @@ semantic_mappings:
     COLOR_TEXT_3: Dark.B90
     COLOR_TEXT_4: Dark.B100
     COLOR_ACCENT_1: Dark.B20
-    COLOR_ACCENT_2: Dark.B30
+    COLOR_ACCENT_2: EditorStatesDark.B30
     COLOR_ACCENT_3: QtUiAuditDark.B30
     COLOR_ACCENT_4: Dark.B110
     COLOR_ACCENT_5: Dark.B120
@@ -103,15 +105,15 @@ semantic_mappings:
     COLOR_OCCURRENCE_1: Dark.B10
     COLOR_OCCURRENCE_2: Dark.B20
     COLOR_OCCURRENCE_3: Dark.B30
-    COLOR_OCCURRENCE_4: Dark.B50
+    COLOR_OCCURRENCE_4: EditorStatesDark.B50
     COLOR_OCCURRENCE_5: Dark.B50
     EDITOR_BACKGROUND: Dark.B20
-    EDITOR_CURRENTLINE: Dark.B340
-    EDITOR_CURRENTCELL: Dark.B30
-    EDITOR_OCCURRENCE: Dark.B350
+    EDITOR_CURRENTLINE: EditorStatesDark.B20
+    EDITOR_CURRENTCELL: EditorStatesDark.B10
+    EDITOR_OCCURRENCE: EditorStatesDark.B40
     EDITOR_CTRLCLICK: Dark.B110
     EDITOR_SIDEAREAS: Dark.B20
-    EDITOR_MATCHED_P: Dark.B350
+    EDITOR_MATCHED_P: EditorStatesDark.B60
     EDITOR_UNMATCHED_P: Dark.B360
     EDITOR_NORMAL: [Dark.B70, false, false]
     EDITOR_KEYWORD: [Dark.B290, false, false]
@@ -204,7 +206,7 @@ semantic_mappings:
     COLOR_TEXT_3: Light.B90
     COLOR_TEXT_4: Light.B100
     COLOR_ACCENT_1: Light.B20
-    COLOR_ACCENT_2: Light.B30
+    COLOR_ACCENT_2: EditorStatesLight.B30
     COLOR_ACCENT_3: QtUiAuditLight.B30
     COLOR_ACCENT_4: Light.B120
     COLOR_ACCENT_5: Light.B130
@@ -251,15 +253,15 @@ semantic_mappings:
     COLOR_OCCURRENCE_1: Light.B10
     COLOR_OCCURRENCE_2: Light.B20
     COLOR_OCCURRENCE_3: Light.B30
-    COLOR_OCCURRENCE_4: Light.B110
+    COLOR_OCCURRENCE_4: EditorStatesLight.B50
     COLOR_OCCURRENCE_5: Light.B50
     EDITOR_BACKGROUND: Light.B20
-    EDITOR_CURRENTLINE: Light.B370
-    EDITOR_CURRENTCELL: Light.B30
-    EDITOR_OCCURRENCE: Light.B380
+    EDITOR_CURRENTLINE: EditorStatesLight.B20
+    EDITOR_CURRENTCELL: EditorStatesLight.B10
+    EDITOR_OCCURRENCE: EditorStatesLight.B40
     EDITOR_CTRLCLICK: Light.B120
     EDITOR_SIDEAREAS: Light.B20
-    EDITOR_MATCHED_P: Light.B380
+    EDITOR_MATCHED_P: EditorStatesLight.B60
     EDITOR_UNMATCHED_P: Light.B390
     EDITOR_NORMAL: [Light.B70, false, false]
     EDITOR_KEYWORD: [Light.B300, false, false]

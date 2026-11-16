@@ -290,9 +290,11 @@ def vscode_fox_source_checks(name, variant, palette, folder, extension_dir):
     """Compare the two VS Code ports with an explicitly supplied source install.
 
     This independent check complements YAML/export parity: changing both a
-    palette and its mapping cannot silently change the native source colors.
+    palette and its mapping cannot silently change the retained source colors.
     Qt-only adaptations (shared inactive tab/Help frame, hover text, button
     pressed state and active frame) remain covered by the ordinary UI checks.
+    The seven editor interaction fills are explicit local adaptations governed
+    by verify_editor_colors.py; their native values are recorded separately.
     """
     if extension_dir is None or name not in {"nightfox", "nordfox"}:
         return None
@@ -329,9 +331,6 @@ def vscode_fox_source_checks(name, variant, palette, folder, extension_dir):
     native_ui = {
         "EDITOR_BACKGROUND": "editor.background",
         "EDITOR_SIDEAREAS": "editorGutter.background",
-        "EDITOR_CURRENTLINE": "editor.lineHighlightBackground",
-        "EDITOR_OCCURRENCE": "editor.wordHighlightBackground",
-        "EDITOR_MATCHED_P": "editorBracketMatch.background",
         "COLOR_EDITOR_LINE_NUMBER": "editorLineNumber.foreground",
         "COLOR_STATUSBAR_BACKGROUND": "statusBar.background",
         "COLOR_STATUSBAR_TEXT": "statusBar.foreground",
@@ -373,6 +372,56 @@ def vscode_fox_source_checks(name, variant, palette, folder, extension_dir):
                   source_color=native_color)
         else:
             check(role, native_color, f"colors.{source_role}")
+
+    # These fills intentionally differ from VS Code so cursor line, cell,
+    # selection and text matches do not blend together in Spyder. Do not relax
+    # the native UI/syntax checks above and below. Check explicit local mapping
+    # provenance, exact export parity and the independent separation/readability
+    # policy instead of asserting native color equivalence for these roles.
+    audit_path = Path(__file__).with_name("verify_editor_colors.py")
+    audit_spec = importlib.util.spec_from_file_location("editor_color_audit", audit_path)
+    audit = importlib.util.module_from_spec(audit_spec)
+    audit_spec.loader.exec_module(audit)
+    editor_entry = next(entry for entry in audit.resolve_theme(folder)
+                        if entry["variant"] == variant)
+    editor_checks = audit.evaluate_variant(editor_entry)
+    failed_editor = [item for item in editor_checks["checks"] if not item["passed"]]
+    assert not failed_editor, (
+        "Editor interaction policy failed; see .tools/verify_editor_colors.py: "
+        + "; ".join(f"{item['first']}/{item['second']} {item['value']} < {item['minimum']}"
+                    for item in failed_editor)
+    )
+    interaction_sources = {
+        "EDITOR_CURRENTCELL": None,  # VS Code has no Spyder-style current cell.
+        "EDITOR_CURRENTLINE": "editor.lineHighlightBackground",
+        "COLOR_ACCENT_2": "editor.selectionBackground",
+        "EDITOR_OCCURRENCE": "editor.wordHighlightBackground",
+        "COLOR_OCCURRENCE_4": "editor.findMatchHighlightBackground",
+        "EDITOR_MATCHED_P": "editorBracketMatch.background",
+        "EDITOR_UNMATCHED_P": None,  # Existing local error-tinted bracket fill.
+    }
+    local_mappings = read_yaml(folder / "mappings.yaml")
+    local_semantic = local_mappings["semantic_mappings"][variant]
+    state_alias = "EditorStates" + variant.title()
+    adaptations = []
+    for role, source_role in interaction_sources.items():
+        reference = local_semantic[role]
+        alias, _ = reference.split(".")
+        if role != "EDITOR_UNMATCHED_P":
+            assert alias == state_alias, f"Missing explicit editor state mapping: {role}: {reference}"
+            expected_class = name.title() + "EditorStates" + variant.title()
+            assert local_mappings["color_classes"][alias] == expected_class, (
+                f"Unexpected editor state class: {alias}: {local_mappings['color_classes'][alias]}"
+            )
+        expected = editor_entry["colors"][role]
+        actual = getattr(palette, role)
+        assert actual.lower() == expected.lower(), f"Stale adapted editor fill {role}: {actual} != {expected}"
+        adaptations.append({
+            "role": role, "mapping": reference, "color": actual,
+            "source_role": f"colors.{source_role}" if source_role else None,
+            "source_color": colors[source_role] if source_role else None,
+            "policy": ".tools/verify_editor_colors.py", "passed": True,
+        })
     check("EDITOR_NORMAL", colors["editor.foreground"], "colors.editor.foreground", (False, False))
     native_syntax = {
         "EDITOR_KEYWORD": "keyword", "EDITOR_STORAGE": "keyword",
@@ -438,6 +487,8 @@ def vscode_fox_source_checks(name, variant, palette, folder, extension_dir):
     return {"extension": f"{package['publisher']}.{package['name']}",
             "version": package["version"], "path": str(source_path),
             "sha256": source_hash, "checks": checks,
+            "editor_interaction_adaptations": adaptations,
+            "editor_interaction_checks": editor_checks["checks"],
             "shared_role_contrast_checks": shared_checks}
 
 

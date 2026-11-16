@@ -2,6 +2,7 @@
 # Native UI roles and Python semantic fallback scopes are explicit.
 # Native normal/string colors are explicit fallbacks for unsupported distinctions.
 color_classes:
+  EditorStatesDark: GithubDarkEditorStatesDark
   PopupAuditDark: QtPopupAuditDark
   InterfaceDark: GithubDarkInterfaceDark
   HelpDark: GitHubDarkHelpDark
@@ -123,9 +124,9 @@ semantic_mappings:
     COLOR_OCCURRENCE_4: Syntax.B30
     COLOR_OCCURRENCE_5: SurfaceDark.B50
     EDITOR_BACKGROUND: SurfaceDark.B10
-    EDITOR_CURRENTLINE: Syntax.B10
-    EDITOR_CURRENTCELL: Syntax.B20
-    EDITOR_OCCURRENCE: Syntax.B30
+    EDITOR_CURRENTLINE: EditorStatesDark.B20
+    EDITOR_CURRENTCELL: EditorStatesDark.B10
+    EDITOR_OCCURRENCE: EditorStatesDark.B40
     EDITOR_CTRLCLICK: Syntax.B40
     EDITOR_SIDEAREAS: Syntax.B50
     EDITOR_MATCHED_P: Syntax.B60

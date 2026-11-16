@@ -4,7 +4,7 @@
 # Source URL: https://github.com/nuromirg/nightfox-vscode/blob/ed72c227cd94a9698ad463aad8d496fcc0441b2d/themes/nightfox.json
 # Installed source SHA-256: 5caf020928ba215bf9e2b800c11a31684cf2eb3ff4483d5054bf6bd988493f1e
 # VS Code port of EdenEast/nightfox.nvim; this adaptation follows the VS Code port.
-# Native editor, syntax, selected-tab, statusbar, pane-border and primary-button colors are retained.
+# Native editor background/foreground, syntax, selected-tab, statusbar, pane-border and primary-button colors are retained.
 # Python builtin calls use function.defaultLibrary, builtin types use type.defaultLibrary,
 # self/cls use variable.defaultLibrary; docstrings use string and comments retain italics.
 # All bracket depths use the native Brackets scope; the source has no rainbow colors.
@@ -19,6 +19,7 @@
 # COLOR_ERROR_1 also colors the stop icon. Darkened same-hue fills and native brightWhite
 # tree text retain readable dependency labels while ICON_4/5 keep native red/yellow.
 # The shared stop role retains at least 3:1 contrast against the toolbar.
+# Editor interaction fills are locally adapted; see EDITOR_COLORS_KO.md.
 ---
 NightfoxUiDark:
   # COLOR_MENU_BACKGROUND, COLOR_SWITCHER_BACKGROUND, COLOR_SWITCHER_INPUT_BACKGROUND, COLOR_BACKGROUND_3, COLOR_EMPTY, COLOR_TREE_HOVER_BACKGROUND, COLOR_OCCURRENCE_3
@@ -179,3 +180,12 @@ NightfoxFeedbackDark:
   B20: '#A5455F'
   # COLOR_WARN_1: legacy Dependencies warning cell fill
   B30: '#6E6548'
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+NightfoxEditorStatesDark:
+  B10: '#253040'  # EDITOR_CURRENTCELL
+  B20: '#243A51'  # EDITOR_CURRENTLINE
+  B30: '#454C57'  # COLOR_ACCENT_2
+  B40: '#665431'  # EDITOR_OCCURRENCE
+  B50: '#44536B'  # COLOR_OCCURRENCE_4
+  B60: '#27342E'  # EDITOR_MATCHED_P

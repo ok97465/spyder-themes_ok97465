@@ -17,6 +17,7 @@
 # Status bar, tabs, toolbar and tree use only the native Dragon charcoal background stages.
 ---
 color_classes:
+  EditorStatesDark: KanagawaDragonEditorStatesDark
   PopupAuditDark: QtPopupAuditDark
   QtUiAuditDark: QtUiAuditDark
   ErrorUiDark: QtErrorDark
@@ -61,7 +62,7 @@ semantic_mappings:
     COLOR_TEXT_3: SurfaceDark.B70
     COLOR_TEXT_4: SurfaceDark.B50
     COLOR_ACCENT_1: SurfaceDark.B80
-    COLOR_ACCENT_2: SurfaceDark.B20
+    COLOR_ACCENT_2: EditorStatesDark.B30
     COLOR_ACCENT_3: QtUiAuditDark.B30
     COLOR_ACCENT_4: SurfaceDark.B20
     COLOR_ACCENT_5: SurfaceDark.B30
@@ -124,15 +125,15 @@ semantic_mappings:
     COLOR_OCCURRENCE_1: SurfaceDark.B80
     COLOR_OCCURRENCE_2: SurfaceDark.B10
     COLOR_OCCURRENCE_3: SurfaceDark.B20
-    COLOR_OCCURRENCE_4: SurfaceDark.B30
+    COLOR_OCCURRENCE_4: EditorStatesDark.B50
     COLOR_OCCURRENCE_5: SurfaceDark.B30
     EDITOR_BACKGROUND: SyntaxDark.B10
-    EDITOR_CURRENTLINE: SyntaxDark.B20
-    EDITOR_CURRENTCELL: SyntaxDark.B30
-    EDITOR_OCCURRENCE: SyntaxDark.B20
+    EDITOR_CURRENTLINE: EditorStatesDark.B20
+    EDITOR_CURRENTCELL: EditorStatesDark.B10
+    EDITOR_OCCURRENCE: EditorStatesDark.B40
     EDITOR_CTRLCLICK: SyntaxDark.B40
     EDITOR_SIDEAREAS: SyntaxDark.B50
-    EDITOR_MATCHED_P: SyntaxDark.B20
+    EDITOR_MATCHED_P: EditorStatesDark.B60
     EDITOR_UNMATCHED_P: SyntaxDark.B60
     EDITOR_NORMAL: [SyntaxDark.B70, false, false]
     EDITOR_KEYWORD: [SyntaxDark.B80, false, true]

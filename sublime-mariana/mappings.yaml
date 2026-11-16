@@ -4,6 +4,7 @@
 # Optional EDITOR_* roles require the companion Spyder fork; standard slots
 # provide a compatible fallback for unmodified Spyder.
 color_classes:
+  EditorStatesDark: SublimeMarianaEditorStatesDark
   PopupAuditDark: QtPopupAuditDark
   QtUiAuditDark: QtUiAuditDark
   ChromeDark: ChromeDark
@@ -57,7 +58,7 @@ semantic_mappings:
     COLOR_TEXT_3: SurfaceDark.B90
     COLOR_TEXT_4: SurfaceDark.B100
     COLOR_ACCENT_1: AccentDark.B10
-    COLOR_ACCENT_2: AccentDark.B20
+    COLOR_ACCENT_2: EditorStatesDark.B30
     COLOR_ACCENT_3: QtUiAuditDark.B30
     COLOR_ACCENT_4: AccentDark.B40
     COLOR_ACCENT_5: AccentDark.B50
@@ -121,15 +122,15 @@ semantic_mappings:
     COLOR_OCCURRENCE_1: SurfaceDark.B10
     COLOR_OCCURRENCE_2: SurfaceDark.B20
     COLOR_OCCURRENCE_3: SurfaceDark.B30
-    COLOR_OCCURRENCE_4: Syntax.B30
+    COLOR_OCCURRENCE_4: EditorStatesDark.B50
     COLOR_OCCURRENCE_5: SurfaceDark.B50
     EDITOR_BACKGROUND: SurfaceDark.B10
     EDITOR_CURRENTLINE: Syntax.B10
-    EDITOR_CURRENTCELL: Syntax.B20
-    EDITOR_OCCURRENCE: Syntax.B30
+    EDITOR_CURRENTCELL: EditorStatesDark.B10
+    EDITOR_OCCURRENCE: EditorStatesDark.B40
     EDITOR_CTRLCLICK: Syntax.B40
     EDITOR_SIDEAREAS: Syntax.B50
-    EDITOR_MATCHED_P: Syntax.B60
+    EDITOR_MATCHED_P: EditorStatesDark.B60
     EDITOR_UNMATCHED_P: Syntax.B70
     EDITOR_NORMAL: [Syntax.B80, false, false]
     EDITOR_KEYWORD: [Syntax.B90, false, false]

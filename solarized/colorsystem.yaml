@@ -260,3 +260,17 @@ SolarizedPaneBordersLight:
   B10: '#BABFB7'
   B20: '#BABFB7'
   B30: '#BABFB7'
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+SolarizedEditorStatesDark:
+  B10: '#0A3446'  # EDITOR_CURRENTCELL
+  B30: '#1F5C67'  # COLOR_ACCENT_2
+  B40: '#026BB3'  # EDITOR_OCCURRENCE
+  B50: '#40545B'  # COLOR_OCCURRENCE_4
+  B60: '#24755B'  # EDITOR_MATCHED_P
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+SolarizedEditorStatesLight:
+  B10: '#EAE4D1'  # EDITOR_CURRENTCELL
+  B20: '#E1D8BC'  # EDITOR_CURRENTLINE
+  B40: '#B1DBF9'  # EDITOR_OCCURRENCE

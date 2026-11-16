@@ -410,3 +410,18 @@ QtPopupAuditLight:
   B90: '#FFFFFF'  # COLOR_SWITCHER_INPUT_BACKGROUND
   B100: '#006BBD'  # Native menu.selectionBorder.
   B110: '#006BBD'  # Native list.focusOutline; Switcher selected-row outline.
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+VscodeHighContrastEditorStatesDark:
+  B10: '#141414'  # EDITOR_CURRENTCELL
+  B20: '#212121'  # EDITOR_CURRENTLINE
+  B40: '#625A2A'  # EDITOR_OCCURRENCE
+  B50: '#3D638E'  # COLOR_OCCURRENCE_4
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+VscodeHighContrastEditorStatesLight:
+  B10: '#E9F5FF'  # EDITOR_CURRENTCELL
+  B20: '#E4E7EA'  # EDITOR_CURRENTLINE
+  B30: '#C2D5E9'  # COLOR_ACCENT_2
+  B40: '#F5DAA5'  # EDITOR_OCCURRENCE
+  B50: '#CACFD5'  # COLOR_OCCURRENCE_4

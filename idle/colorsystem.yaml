@@ -171,3 +171,12 @@ Logos:
   B30: '#414141'
   B40: '#fafafa'
   B50: '#8c0000'
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+IdleEditorStatesDark:
+  B30: '#004DAE'  # COLOR_ACCENT_2
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+IdleEditorStatesLight:
+  B10: '#FFF8FF'  # EDITOR_CURRENTCELL
+  B40: '#76D7F4'  # EDITOR_OCCURRENCE

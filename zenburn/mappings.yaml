@@ -6,6 +6,8 @@
 # shade, italic comments and custom light palette (upstream is dark-only).
 # File/dock tabs share the established dock fill; light selected text is dark.
 color_classes:
+  EditorStatesLight: ZenburnEditorStatesLight
+  EditorStatesDark: ZenburnEditorStatesDark
   Primary: ChromaticBlackPanther
   Secondary: HastySodaPop
   Tertiary: HastyFrenchBlue
@@ -131,12 +133,12 @@ semantic_mappings:
     # Editor colors
     EDITOR_BACKGROUND: Primary.B10
     EDITOR_CURRENTLINE: Syntax.B10
-    EDITOR_CURRENTCELL: Syntax.B20
-    EDITOR_OCCURRENCE: Syntax.B30
+    EDITOR_CURRENTCELL: EditorStatesDark.B10
+    EDITOR_OCCURRENCE: EditorStatesDark.B40
     EDITOR_CTRLCLICK: Syntax.B40
     EDITOR_SIDEAREAS: Syntax.B50
-    EDITOR_MATCHED_P: Syntax.B60
-    EDITOR_UNMATCHED_P: Syntax.B70
+    EDITOR_MATCHED_P: EditorStatesDark.B60
+    EDITOR_UNMATCHED_P: EditorStatesDark.B70
     EDITOR_NORMAL: [Syntax.B80, false, false]
     EDITOR_KEYWORD: [Syntax.B90, true, false]
     EDITOR_MAGIC: [Syntax.B100, true, false]
@@ -299,12 +301,12 @@ semantic_mappings:
     # Editor colors
     EDITOR_BACKGROUND: Primary.B140
     EDITOR_CURRENTLINE: SyntaxLight.B10
-    EDITOR_CURRENTCELL: SyntaxLight.B20
-    EDITOR_OCCURRENCE: SyntaxLight.B30
+    EDITOR_CURRENTCELL: EditorStatesLight.B10
+    EDITOR_OCCURRENCE: EditorStatesLight.B40
     EDITOR_CTRLCLICK: SyntaxLight.B40
     EDITOR_SIDEAREAS: SyntaxLight.B50
-    EDITOR_MATCHED_P: SyntaxLight.B60
-    EDITOR_UNMATCHED_P: SyntaxLight.B70
+    EDITOR_MATCHED_P: EditorStatesLight.B60
+    EDITOR_UNMATCHED_P: EditorStatesLight.B70
     EDITOR_NORMAL: [SyntaxLight.B80, false, false]
     EDITOR_KEYWORD: [SyntaxLight.B90, true, false]
     EDITOR_MAGIC: [SyntaxLight.B100, true, false]

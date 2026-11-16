@@ -7,6 +7,8 @@
 # string/number colors; no optional rainbow feature is forced on this Vim port.
 # All six bracket slots deliberately use one neutral delimiter color.
 color_classes:
+  EditorStatesLight: SolarizedEditorStatesLight
+  EditorStatesDark: SolarizedEditorStatesDark
   Primary: Gunmetal
   Secondary: Midnight
   Tertiary: Yellow
@@ -71,7 +73,7 @@ semantic_mappings:
 
     # Accent colors
     COLOR_ACCENT_1: Secondary.B10
-    COLOR_ACCENT_2: Secondary.B20
+    COLOR_ACCENT_2: EditorStatesDark.B30
     COLOR_ACCENT_3: Secondary.B30
     COLOR_ACCENT_4: Secondary.B40
     COLOR_ACCENT_5: Secondary.B60
@@ -130,17 +132,17 @@ semantic_mappings:
     COLOR_OCCURRENCE_1: Primary.B10
     COLOR_OCCURRENCE_2: Primary.B20
     COLOR_OCCURRENCE_3: Primary.B30
-    COLOR_OCCURRENCE_4: Primary.B50
+    COLOR_OCCURRENCE_4: EditorStatesDark.B50
     COLOR_OCCURRENCE_5: Primary.B80
 
     # Editor colors
     EDITOR_BACKGROUND: Primary.B10
     EDITOR_CURRENTLINE: Syntax.B10
-    EDITOR_CURRENTCELL: Syntax.B20
-    EDITOR_OCCURRENCE: Syntax.B30
+    EDITOR_CURRENTCELL: EditorStatesDark.B10
+    EDITOR_OCCURRENCE: EditorStatesDark.B40
     EDITOR_CTRLCLICK: Syntax.B40
     EDITOR_SIDEAREAS: Syntax.B50
-    EDITOR_MATCHED_P: Syntax.B60
+    EDITOR_MATCHED_P: EditorStatesDark.B60
     EDITOR_UNMATCHED_P: Syntax.B70
     EDITOR_NORMAL: [Primary.B130, false, false]
     EDITOR_KEYWORD: [Syntax.B90, false, false]
@@ -307,9 +309,9 @@ semantic_mappings:
 
     # Editor colors
     EDITOR_BACKGROUND: Primary.B140
-    EDITOR_CURRENTLINE: SyntaxLight.B10
-    EDITOR_CURRENTCELL: SyntaxLight.B20
-    EDITOR_OCCURRENCE: SyntaxLight.B30
+    EDITOR_CURRENTLINE: EditorStatesLight.B20
+    EDITOR_CURRENTCELL: EditorStatesLight.B10
+    EDITOR_OCCURRENCE: EditorStatesLight.B40
     EDITOR_CTRLCLICK: SyntaxLight.B40
     EDITOR_SIDEAREAS: SyntaxLight.B50
     EDITOR_MATCHED_P: SyntaxLight.B60

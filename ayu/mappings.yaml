@@ -6,6 +6,8 @@
 # are RGB blends; translucent editor highlights are flattened over editor.bg.
 ---
 color_classes:
+  EditorStatesLight: AyuEditorStatesLight
+  EditorStatesDark: AyuEditorStatesDark
   PopupAuditDark: QtPopupAuditDark
   PopupAuditLight: QtPopupAuditLight
   InterfaceDark: AyuInterfaceDark
@@ -118,15 +120,15 @@ semantic_mappings:
     COLOR_OCCURRENCE_1: SurfaceDark.B10
     COLOR_OCCURRENCE_2: SurfaceDark.B20
     COLOR_OCCURRENCE_3: SurfaceDark.B30
-    COLOR_OCCURRENCE_4: SurfaceDark.B60
+    COLOR_OCCURRENCE_4: EditorStatesDark.B50
     COLOR_OCCURRENCE_5: SurfaceDark.B90
     EDITOR_BACKGROUND: SurfaceDark.B20
-    EDITOR_CURRENTLINE: Syntax.B10
-    EDITOR_CURRENTCELL: SurfaceDark.B20
-    EDITOR_OCCURRENCE: NativeUiDark.B150
+    EDITOR_CURRENTLINE: EditorStatesDark.B20
+    EDITOR_CURRENTCELL: EditorStatesDark.B10
+    EDITOR_OCCURRENCE: EditorStatesDark.B40
     EDITOR_CTRLCLICK: Syntax.B40
     EDITOR_SIDEAREAS: SurfaceDark.B20
-    EDITOR_MATCHED_P: NativeUiDark.B160
+    EDITOR_MATCHED_P: EditorStatesDark.B60
     EDITOR_UNMATCHED_P: Syntax.B70
     EDITOR_NORMAL: [Syntax.B80, false, false]
     EDITOR_KEYWORD: [Syntax.B90, false, false]
@@ -221,7 +223,7 @@ semantic_mappings:
     COLOR_TEXT_3: SurfaceLight.B110
     COLOR_TEXT_4: SurfaceLight.B100
     COLOR_ACCENT_1: UiFillLight.B10
-    COLOR_ACCENT_2: NativeUiLight.B140
+    COLOR_ACCENT_2: EditorStatesLight.B30
     COLOR_ACCENT_3: QtInterfaceReviewLight.B30
     COLOR_ACCENT_4: SecondaryLight.B100
     COLOR_ACCENT_5: SecondaryLight.B80
@@ -268,15 +270,15 @@ semantic_mappings:
     COLOR_OCCURRENCE_1: SurfaceLight.B20
     COLOR_OCCURRENCE_2: SurfaceLight.B40
     COLOR_OCCURRENCE_3: SurfaceLight.B60
-    COLOR_OCCURRENCE_4: SurfaceLight.B80
+    COLOR_OCCURRENCE_4: EditorStatesLight.B50
     COLOR_OCCURRENCE_5: SurfaceLight.B100
     EDITOR_BACKGROUND: SurfaceLight.B20
-    EDITOR_CURRENTLINE: SyntaxLight.B10
-    EDITOR_CURRENTCELL: SurfaceLight.B20
-    EDITOR_OCCURRENCE: NativeUiLight.B150
+    EDITOR_CURRENTLINE: EditorStatesLight.B20
+    EDITOR_CURRENTCELL: EditorStatesLight.B10
+    EDITOR_OCCURRENCE: EditorStatesLight.B40
     EDITOR_CTRLCLICK: SyntaxLight.B40
     EDITOR_SIDEAREAS: SurfaceLight.B20
-    EDITOR_MATCHED_P: NativeUiLight.B160
+    EDITOR_MATCHED_P: EditorStatesLight.B60
     EDITOR_UNMATCHED_P: SyntaxLight.B70
     EDITOR_NORMAL: [SyntaxLight.B80, false, false]
     EDITOR_KEYWORD: [SyntaxLight.B90, false, false]

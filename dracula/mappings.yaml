@@ -7,6 +7,8 @@
 # colors. Existing bold definitions/keywords and italic strings are adaptations.
 # All six bracket slots deliberately use one neutral delimiter color.
 color_classes:
+  EditorStatesLight: DraculaEditorStatesLight
+  EditorStatesDark: DraculaEditorStatesDark
   Primary: LateHaiti
   Secondary: OpticalNervousNeonPink
   Tertiary: NullaryAlpineExpedition
@@ -135,7 +137,7 @@ semantic_mappings:
     EDITOR_BACKGROUND: Primary.B20
     EDITOR_CURRENTLINE: Syntax.B10
     EDITOR_CURRENTCELL: Syntax.B20
-    EDITOR_OCCURRENCE: Syntax.B30
+    EDITOR_OCCURRENCE: EditorStatesDark.B40
     EDITOR_CTRLCLICK: Syntax.B40
     EDITOR_SIDEAREAS: Syntax.B50
     EDITOR_MATCHED_P: Syntax.B60
@@ -301,9 +303,9 @@ semantic_mappings:
 
     # Editor colors
     EDITOR_BACKGROUND: Primary.B140
-    EDITOR_CURRENTLINE: SyntaxLight.B10
-    EDITOR_CURRENTCELL: SyntaxLight.B20
-    EDITOR_OCCURRENCE: SyntaxLight.B30
+    EDITOR_CURRENTLINE: EditorStatesLight.B20
+    EDITOR_CURRENTCELL: EditorStatesLight.B10
+    EDITOR_OCCURRENCE: EditorStatesLight.B40
     EDITOR_CTRLCLICK: SyntaxLight.B40
     EDITOR_SIDEAREAS: SyntaxLight.B50
     EDITOR_MATCHED_P: SyntaxLight.B60

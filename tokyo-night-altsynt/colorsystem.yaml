@@ -243,3 +243,12 @@ QtPopupAuditDark:
   B70: '#181821'  # COLOR_SWITCHER_SELECTED_BACKGROUND
   B80: '#414868'  # COLOR_SWITCHER_BORDER
   B90: '#1A1B26'  # COLOR_SWITCHER_INPUT_BACKGROUND
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+TokyoNightAltsyntEditorStatesDark:
+  B10: '#26272E'  # EDITOR_CURRENTCELL
+  B20: '#2F303E'  # EDITOR_CURRENTLINE
+  B30: '#172441'  # COLOR_ACCENT_2
+  B40: '#62523C'  # EDITOR_OCCURRENCE
+  B50: '#3B373A'  # COLOR_OCCURRENCE_4
+  B60: '#384444'  # EDITOR_MATCHED_P

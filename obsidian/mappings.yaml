@@ -7,6 +7,8 @@
 # Documentation uses the adapted comment shade, separately from orange strings.
 # The established brighter strings/builtins and custom light syntax are retained.
 color_classes:
+  EditorStatesLight: ObsidianEditorStatesLight
+  EditorStatesDark: ObsidianEditorStatesDark
   Primary: InvertedNightmareFuel
   Secondary: LatentFrenchBlue
   Tertiary: SomePurpleRain
@@ -110,8 +112,8 @@ semantic_mappings:
 
     # Editor colors
     EDITOR_BACKGROUND: Primary.B10
-    EDITOR_CURRENTLINE: Syntax.B10
-    EDITOR_CURRENTCELL: Syntax.B20
+    EDITOR_CURRENTLINE: EditorStatesDark.B20
+    EDITOR_CURRENTCELL: EditorStatesDark.B10
     EDITOR_OCCURRENCE: Syntax.B30
     EDITOR_CTRLCLICK: Syntax.B40
     EDITOR_SIDEAREAS: Syntax.B50
@@ -278,9 +280,9 @@ semantic_mappings:
 
     # Editor colors
     EDITOR_BACKGROUND: Primary.B140
-    EDITOR_CURRENTLINE: SyntaxLight.B10
-    EDITOR_CURRENTCELL: SyntaxLight.B20
-    EDITOR_OCCURRENCE: SyntaxLight.B30
+    EDITOR_CURRENTLINE: EditorStatesLight.B20
+    EDITOR_CURRENTCELL: EditorStatesLight.B10
+    EDITOR_OCCURRENCE: EditorStatesLight.B40
     EDITOR_CTRLCLICK: SyntaxLight.B40
     EDITOR_SIDEAREAS: SyntaxLight.B50
     EDITOR_MATCHED_P: SyntaxLight.B60

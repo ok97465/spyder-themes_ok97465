@@ -172,3 +172,15 @@ Logos:
 
 SpyderOptionalUi:
   B10: '#808080'  # Existing Qt line-number fallback, now explicit.
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+SpyderEditorStatesDark:
+  B40: '#1F6C6E'  # EDITOR_OCCURRENCE
+  B50: '#516577'  # COLOR_OCCURRENCE_4
+  B60: '#4C6D34'  # EDITOR_MATCHED_P
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+SpyderEditorStatesLight:
+  B10: '#EEEED0'  # EDITOR_CURRENTCELL
+  B20: '#E7DCE8'  # EDITOR_CURRENTLINE
+  B40: '#8AE2FC'  # EDITOR_OCCURRENCE

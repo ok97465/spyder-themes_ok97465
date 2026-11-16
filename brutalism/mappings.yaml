@@ -4,6 +4,8 @@
 # or rainbow bracket palette is substituted. File/dock tabs share the existing
 # SPECIAL_TABS_SELECTED fill, with readable foregrounds on the light variant.
 color_classes:
+  EditorStatesLight: BrutalismEditorStatesLight
+  EditorStatesDark: BrutalismEditorStatesDark
   OptionalUi: BrutalismOptionalUi
   Primary: DecidableDireWolf
   Secondary: CriticalHeartbeat
@@ -127,9 +129,9 @@ semantic_mappings:
 
     # Editor colors
     EDITOR_BACKGROUND: Primary.B10
-    EDITOR_CURRENTLINE: Primary.B30
+    EDITOR_CURRENTLINE: EditorStatesDark.B20
     EDITOR_CURRENTCELL: Primary.B20
-    EDITOR_OCCURRENCE: Syntax.B30
+    EDITOR_OCCURRENCE: EditorStatesDark.B40
     EDITOR_CTRLCLICK: Syntax.B40
     EDITOR_SIDEAREAS: Syntax.B50
     EDITOR_MATCHED_P: Syntax.B60
@@ -290,18 +292,18 @@ semantic_mappings:
     COLOR_OCCURRENCE_1: Primary.B140
     COLOR_OCCURRENCE_2: Primary.B130
     COLOR_OCCURRENCE_3: Primary.B120
-    COLOR_OCCURRENCE_4: Primary.B100
+    COLOR_OCCURRENCE_4: EditorStatesLight.B50
     COLOR_OCCURRENCE_5: Primary.B70
 
     # Editor colors
     EDITOR_BACKGROUND: Primary.B140
     EDITOR_CURRENTLINE: Primary.B120
     EDITOR_CURRENTCELL: Primary.B130
-    EDITOR_OCCURRENCE: SyntaxLight.B30
+    EDITOR_OCCURRENCE: EditorStatesLight.B40
     EDITOR_CTRLCLICK: SyntaxLight.B40
     EDITOR_SIDEAREAS: Primary.B120
     EDITOR_MATCHED_P: SyntaxLight.B60
-    EDITOR_UNMATCHED_P: SyntaxLight.B70
+    EDITOR_UNMATCHED_P: EditorStatesLight.B70
     EDITOR_NORMAL: [SyntaxLight.B80, false, false]
     EDITOR_KEYWORD: [SyntaxLight.B90, true, false]
     EDITOR_MAGIC: [SyntaxLight.B100, true, false]

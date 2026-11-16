@@ -189,3 +189,14 @@ Logos:
 
 BrutalismOptionalUi:
   B10: '#808080'  # Existing Qt line-number fallback, now explicit.
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+BrutalismEditorStatesDark:
+  B20: '#373535'  # EDITOR_CURRENTLINE
+  B40: '#D51B98'  # EDITOR_OCCURRENCE
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+BrutalismEditorStatesLight:
+  B40: '#84DBCB'  # EDITOR_OCCURRENCE
+  B50: '#A6A6A6'  # COLOR_OCCURRENCE_4
+  B70: '#FF7F7E'  # EDITOR_UNMATCHED_P

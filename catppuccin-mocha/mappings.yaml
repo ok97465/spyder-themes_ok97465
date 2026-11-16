@@ -6,6 +6,8 @@
 # teal builtins, bold declarations and italic strings remain Spyder adaptations.
 # All six bracket slots deliberately use one neutral delimiter color.
 color_classes:
+  EditorStatesLight: CatppuccinMochaEditorStatesLight
+  EditorStatesDark: CatppuccinMochaEditorStatesDark
   Primary: FastBlackVelvet
   Secondary: CompletePurpleIllusion
   Tertiary: ResonntFlyAway
@@ -133,10 +135,10 @@ semantic_mappings:
     EDITOR_BACKGROUND: Primary.B10
     EDITOR_CURRENTLINE: Syntax.B10
     EDITOR_CURRENTCELL: Syntax.B20
-    EDITOR_OCCURRENCE: Syntax.B30
+    EDITOR_OCCURRENCE: EditorStatesDark.B40
     EDITOR_CTRLCLICK: Syntax.B40
     EDITOR_SIDEAREAS: Syntax.B50
-    EDITOR_MATCHED_P: Syntax.B60
+    EDITOR_MATCHED_P: EditorStatesDark.B60
     EDITOR_UNMATCHED_P: Syntax.B70
     EDITOR_NORMAL: [Syntax.B80, false, false]
     EDITOR_KEYWORD: [Syntax.B90, true, false]
@@ -236,7 +238,7 @@ semantic_mappings:
 
     # Accent colors
     COLOR_ACCENT_1: Secondary.B130
-    COLOR_ACCENT_2: Secondary.B120
+    COLOR_ACCENT_2: EditorStatesLight.B30
     COLOR_ACCENT_3: Secondary.B90
     COLOR_ACCENT_4: Secondary.B60
     COLOR_ACCENT_5: Secondary.B30
@@ -300,9 +302,9 @@ semantic_mappings:
 
     # Editor colors
     EDITOR_BACKGROUND: Primary.B140
-    EDITOR_CURRENTLINE: SyntaxLight.B10
-    EDITOR_CURRENTCELL: SyntaxLight.B20
-    EDITOR_OCCURRENCE: SyntaxLight.B30
+    EDITOR_CURRENTLINE: EditorStatesLight.B20
+    EDITOR_CURRENTCELL: EditorStatesLight.B10
+    EDITOR_OCCURRENCE: EditorStatesLight.B40
     EDITOR_CTRLCLICK: SyntaxLight.B40
     EDITOR_SIDEAREAS: SyntaxLight.B50
     EDITOR_MATCHED_P: SyntaxLight.B60

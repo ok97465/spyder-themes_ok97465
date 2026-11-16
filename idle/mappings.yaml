@@ -7,6 +7,8 @@
 # punctuation use normal text. Types use builtins, language constants keywords.
 # The original palette is deliberately not replaced with stock IDLE Classic/Dark.
 color_classes:
+  EditorStatesLight: IdleEditorStatesLight
+  EditorStatesDark: IdleEditorStatesDark
   Primary: ConcurrentMidnightMirage
   Secondary: SoftMattBlue
   Tertiary: OrientedPerrywinkle
@@ -45,7 +47,7 @@ semantic_mappings:
 
     # Accent colors
     COLOR_ACCENT_1: Secondary.B70
-    COLOR_ACCENT_2: Secondary.B80
+    COLOR_ACCENT_2: EditorStatesDark.B30
     COLOR_ACCENT_3: Secondary.B90
     COLOR_ACCENT_4: Secondary.B100
     COLOR_ACCENT_5: Secondary.B110
@@ -278,8 +280,8 @@ semantic_mappings:
     # Editor colors
     EDITOR_BACKGROUND: Primary.B140
     EDITOR_CURRENTLINE: SyntaxLight.B10
-    EDITOR_CURRENTCELL: SyntaxLight.B20
-    EDITOR_OCCURRENCE: SyntaxLight.B30
+    EDITOR_CURRENTCELL: EditorStatesLight.B10
+    EDITOR_OCCURRENCE: EditorStatesLight.B40
     EDITOR_CTRLCLICK: SyntaxLight.B40
     EDITOR_SIDEAREAS: SyntaxLight.B50
     EDITOR_MATCHED_P: SyntaxLight.B60

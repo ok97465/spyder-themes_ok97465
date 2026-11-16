@@ -11,6 +11,8 @@
 # common bracket-depth slots deliberately keep all kinds plain (no rainbow).
 # File/dock tabs share the established selected dock fill, with readable text.
 color_classes:
+  EditorStatesLight: MiamiNightsEditorStatesLight
+  EditorStatesDark: MiamiNightsEditorStatesDark
   OptionalUi: MiamiNightsOptionalUi
   Primary: LocalDarkKnight
   Secondary: SpeedyMagenta
@@ -136,7 +138,7 @@ semantic_mappings:
     EDITOR_BACKGROUND: Primary.B10
     EDITOR_CURRENTLINE: Primary.B30
     EDITOR_CURRENTCELL: Primary.B20
-    EDITOR_OCCURRENCE: Syntax.B30
+    EDITOR_OCCURRENCE: EditorStatesDark.B40
     EDITOR_CTRLCLICK: Syntax.B40
     EDITOR_SIDEAREAS: Primary.B30
     EDITOR_MATCHED_P: Syntax.B60
@@ -304,7 +306,7 @@ semantic_mappings:
     EDITOR_BACKGROUND: Primary.B140
     EDITOR_CURRENTLINE: Primary.B120
     EDITOR_CURRENTCELL: Primary.B130
-    EDITOR_OCCURRENCE: SyntaxLight.B30
+    EDITOR_OCCURRENCE: EditorStatesLight.B40
     EDITOR_CTRLCLICK: SyntaxLight.B40
     EDITOR_SIDEAREAS: Primary.B120
     EDITOR_MATCHED_P: SyntaxLight.B60

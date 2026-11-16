@@ -9,6 +9,8 @@
 # This Spyder adaptation does not make an independent WCAG certification claim.
 ---
 color_classes:
+  EditorStatesLight: ModusEditorStatesLight
+  EditorStatesDark: ModusEditorStatesDark
   PopupAuditDark: QtPopupAuditDark
   PopupAuditLight: QtPopupAuditLight
   QtUiAuditLight: QtUiAuditLight
@@ -51,7 +53,7 @@ semantic_mappings:
     COLOR_TEXT_3: Dark.B80
     COLOR_TEXT_4: Dark.B80
     COLOR_ACCENT_1: Dark.B10
-    COLOR_ACCENT_2: Dark.B30
+    COLOR_ACCENT_2: EditorStatesDark.B30
     COLOR_ACCENT_3: QtUiAuditDark.B30
     COLOR_ACCENT_4: Dark.B100
     COLOR_ACCENT_5: Dark.B110
@@ -101,12 +103,12 @@ semantic_mappings:
     COLOR_OCCURRENCE_4: Dark.B90
     COLOR_OCCURRENCE_5: Dark.B50
     EDITOR_BACKGROUND: Dark.B350
-    EDITOR_CURRENTLINE: Dark.B10
-    EDITOR_CURRENTCELL: Dark.B20
-    EDITOR_OCCURRENCE: Dark.B30
+    EDITOR_CURRENTLINE: EditorStatesDark.B20
+    EDITOR_CURRENTCELL: EditorStatesDark.B10
+    EDITOR_OCCURRENCE: EditorStatesDark.B40
     EDITOR_CTRLCLICK: Dark.B100
     EDITOR_SIDEAREAS: Dark.B350
-    EDITOR_MATCHED_P: Dark.B90
+    EDITOR_MATCHED_P: EditorStatesDark.B60
     EDITOR_UNMATCHED_P: Dark.B360
     EDITOR_NORMAL: [Dark.B70, false, false]
     EDITOR_KEYWORD: [Dark.B370, false, false]
@@ -198,7 +200,7 @@ semantic_mappings:
     COLOR_TEXT_3: Light.B80
     COLOR_TEXT_4: Light.B80
     COLOR_ACCENT_1: Light.B10
-    COLOR_ACCENT_2: Light.B30
+    COLOR_ACCENT_2: EditorStatesLight.B30
     COLOR_ACCENT_3: QtUiAuditLight.B30
     COLOR_ACCENT_4: Light.B100
     COLOR_ACCENT_5: Light.B110
@@ -245,15 +247,15 @@ semantic_mappings:
     COLOR_OCCURRENCE_1: Light.B10
     COLOR_OCCURRENCE_2: Light.B20
     COLOR_OCCURRENCE_3: Light.B30
-    COLOR_OCCURRENCE_4: Light.B90
+    COLOR_OCCURRENCE_4: EditorStatesLight.B50
     COLOR_OCCURRENCE_5: Light.B50
     EDITOR_BACKGROUND: Light.B340
-    EDITOR_CURRENTLINE: Light.B10
-    EDITOR_CURRENTCELL: Light.B20
-    EDITOR_OCCURRENCE: Light.B30
+    EDITOR_CURRENTLINE: EditorStatesLight.B20
+    EDITOR_CURRENTCELL: EditorStatesLight.B10
+    EDITOR_OCCURRENCE: EditorStatesLight.B40
     EDITOR_CTRLCLICK: Light.B100
     EDITOR_SIDEAREAS: Light.B340
-    EDITOR_MATCHED_P: Light.B90
+    EDITOR_MATCHED_P: EditorStatesLight.B60
     EDITOR_UNMATCHED_P: Light.B350
     EDITOR_NORMAL: [Light.B70, false, false]
     EDITOR_KEYWORD: [Light.B360, false, false]

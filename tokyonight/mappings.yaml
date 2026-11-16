@@ -7,6 +7,8 @@
 # https://github.com/folke/tokyonight.nvim/blob/cdc07ac78467a233fd62c493de29a17e0cf2b2b6/lua/tokyonight/groups/treesitter.lua
 # https://github.com/folke/tokyonight.nvim/blob/cdc07ac78467a233fd62c493de29a17e0cf2b2b6/lua/tokyonight/groups/base.lua
 color_classes:
+  EditorStatesLight: TokyonightEditorStatesLight
+  EditorStatesDark: TokyonightEditorStatesDark
   PopupAuditDark: QtPopupAuditDark
   PopupAuditLight: QtPopupAuditLight
   InterfaceDark: TokyonightInterfaceDark
@@ -120,12 +122,12 @@ semantic_mappings:
     COLOR_OCCURRENCE_1: SurfaceDark.B20
     COLOR_OCCURRENCE_2: SurfaceDark.B30
     COLOR_OCCURRENCE_3: SurfaceDark.B40
-    COLOR_OCCURRENCE_4: SurfaceDark.B50
+    COLOR_OCCURRENCE_4: EditorStatesDark.B50
     COLOR_OCCURRENCE_5: SurfaceDark.B130
     EDITOR_BACKGROUND: SurfaceDark.B20
-    EDITOR_CURRENTLINE: Syntax.B10
-    EDITOR_CURRENTCELL: Syntax.B20
-    EDITOR_OCCURRENCE: Syntax.B30
+    EDITOR_CURRENTLINE: EditorStatesDark.B20
+    EDITOR_CURRENTCELL: EditorStatesDark.B10
+    EDITOR_OCCURRENCE: EditorStatesDark.B40
     EDITOR_CTRLCLICK: Syntax.B40
     EDITOR_SIDEAREAS: SurfaceDark.B20
     EDITOR_MATCHED_P: Syntax.B60
@@ -223,7 +225,7 @@ semantic_mappings:
     COLOR_TEXT_4: SurfaceLight.B160
     # Upstream highlight/visual surfaces keep Day's blue text readable.
     COLOR_ACCENT_1: SurfaceLight.B20
-    COLOR_ACCENT_2: WidgetFillLight.B10
+    COLOR_ACCENT_2: EditorStatesLight.B30
     COLOR_ACCENT_3: QtInterfaceReviewLight.B20
     COLOR_ACCENT_4: AccentLight.B30
     COLOR_ACCENT_5: AccentLight.B40
@@ -270,16 +272,16 @@ semantic_mappings:
     COLOR_OCCURRENCE_1: SurfaceLight.B20
     COLOR_OCCURRENCE_2: SurfaceLight.B30
     COLOR_OCCURRENCE_3: SurfaceLight.B40
-    COLOR_OCCURRENCE_4: SurfaceLight.B50
+    COLOR_OCCURRENCE_4: EditorStatesLight.B50
     COLOR_OCCURRENCE_5: SurfaceLight.B130
     EDITOR_BACKGROUND: SurfaceLight.B20
-    EDITOR_CURRENTLINE: SyntaxLight.B10
-    EDITOR_CURRENTCELL: SyntaxLight.B20
-    EDITOR_OCCURRENCE: SyntaxLight.B30
+    EDITOR_CURRENTLINE: EditorStatesLight.B20
+    EDITOR_CURRENTCELL: EditorStatesLight.B10
+    EDITOR_OCCURRENCE: EditorStatesLight.B40
     EDITOR_CTRLCLICK: SyntaxLight.B40
     EDITOR_SIDEAREAS: SurfaceLight.B20
-    EDITOR_MATCHED_P: SyntaxLight.B60
-    EDITOR_UNMATCHED_P: SyntaxLight.B70
+    EDITOR_MATCHED_P: EditorStatesLight.B60
+    EDITOR_UNMATCHED_P: EditorStatesLight.B70
     EDITOR_NORMAL: [SyntaxLight.B80, false, false]
     EDITOR_KEYWORD: [SyntaxLight.B90, false, true]
     EDITOR_MAGIC: [SyntaxLight.B100, false, false]

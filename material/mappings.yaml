@@ -9,6 +9,8 @@
 # Comments and Lighter's normal/string/number/operator colors are darkened or
 # lightened where necessary for readable Spyder text, retaining the source hues.
 color_classes:
+  EditorStatesLight: MaterialEditorStatesLight
+  EditorStatesDark: MaterialEditorStatesDark
   PopupAuditDark: QtPopupAuditDark
   PopupAuditLight: QtPopupAuditLight
   QtUiAuditLight: QtUiAuditLight
@@ -76,7 +78,7 @@ semantic_mappings:
     COLOR_TEXT_3: Primary.B110
     COLOR_TEXT_4: Primary.B100
     COLOR_ACCENT_1: AccentFillDark.B10
-    COLOR_ACCENT_2: NativeUiDark.B140
+    COLOR_ACCENT_2: EditorStatesDark.B30
     COLOR_ACCENT_3: AccentFillDark.B30
     COLOR_ACCENT_4: AccentFillDark.B40
     COLOR_ACCENT_5: AccentFillDark.B50
@@ -127,8 +129,8 @@ semantic_mappings:
     COLOR_OCCURRENCE_5: Primary.B70
     EDITOR_BACKGROUND: Primary.B10
     EDITOR_CURRENTLINE: Syntax.B10
-    EDITOR_CURRENTCELL: NativeUiDark.B70
-    EDITOR_OCCURRENCE: Syntax.B30
+    EDITOR_CURRENTCELL: EditorStatesDark.B10
+    EDITOR_OCCURRENCE: EditorStatesDark.B40
     EDITOR_CTRLCLICK: Syntax.B40
     EDITOR_SIDEAREAS: NativeUiDark.B70
     EDITOR_MATCHED_P: Syntax.B60
@@ -228,7 +230,7 @@ semantic_mappings:
     COLOR_TEXT_3: SurfaceLight.B120
     COLOR_TEXT_4: SurfaceLight.B130
     COLOR_ACCENT_1: AccentFillLight.B10
-    COLOR_ACCENT_2: NativeUiLight.B140
+    COLOR_ACCENT_2: EditorStatesLight.B30
     COLOR_ACCENT_3: QtUiAuditLight.B30
     COLOR_ACCENT_4: AccentFillLight.B40
     COLOR_ACCENT_5: AccentFillLight.B50
@@ -275,16 +277,16 @@ semantic_mappings:
     COLOR_OCCURRENCE_1: SurfaceLight.B10
     COLOR_OCCURRENCE_2: SurfaceLight.B20
     COLOR_OCCURRENCE_3: SurfaceLight.B30
-    COLOR_OCCURRENCE_4: SurfaceLight.B50
+    COLOR_OCCURRENCE_4: EditorStatesLight.B50
     COLOR_OCCURRENCE_5: SurfaceLight.B70
     EDITOR_BACKGROUND: SurfaceLight.B10
-    EDITOR_CURRENTLINE: SyntaxLight.B10
-    EDITOR_CURRENTCELL: NativeUiLight.B70
-    EDITOR_OCCURRENCE: SyntaxLight.B30
+    EDITOR_CURRENTLINE: EditorStatesLight.B20
+    EDITOR_CURRENTCELL: EditorStatesLight.B10
+    EDITOR_OCCURRENCE: EditorStatesLight.B40
     EDITOR_CTRLCLICK: SyntaxLight.B40
     EDITOR_SIDEAREAS: NativeUiLight.B70
-    EDITOR_MATCHED_P: SyntaxLight.B60
-    EDITOR_UNMATCHED_P: SyntaxLight.B70
+    EDITOR_MATCHED_P: EditorStatesLight.B60
+    EDITOR_UNMATCHED_P: EditorStatesLight.B70
     EDITOR_NORMAL: [SyntaxLight.B80, false, false]
     EDITOR_KEYWORD: [SyntaxLight.B90, false, true]
     EDITOR_MAGIC: [SyntaxLight.B100, false, false]

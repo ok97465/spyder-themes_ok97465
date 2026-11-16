@@ -221,3 +221,12 @@ QtPopupAuditDark:
   B70: '#393836'  # COLOR_SWITCHER_SELECTED_BACKGROUND
   B80: '#393836'  # COLOR_SWITCHER_BORDER
   B90: '#0D0C0C'  # COLOR_SWITCHER_INPUT_BACKGROUND
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+KanagawaDragonEditorStatesDark:
+  B10: '#242323'  # EDITOR_CURRENTCELL
+  B20: '#363533'  # EDITOR_CURRENTLINE
+  B30: '#535151'  # COLOR_ACCENT_2
+  B40: '#625026'  # EDITOR_OCCURRENCE
+  B50: '#4C413A'  # COLOR_OCCURRENCE_4
+  B60: '#31392A'  # EDITOR_MATCHED_P

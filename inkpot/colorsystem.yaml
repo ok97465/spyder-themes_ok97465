@@ -187,3 +187,13 @@ Logos:
   B30: '#414141'
   B40: '#fafafa'
   B50: '#8c0000'
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+InkpotEditorStatesDark:
+  B40: '#3653E9'  # EDITOR_OCCURRENCE
+  B60: '#15733F'  # EDITOR_MATCHED_P
+
+# Spyder interaction fills; independently checked in .tools/verify_editor_colors.py.
+InkpotEditorStatesLight:
+  B20: '#C6C6C8'  # EDITOR_CURRENTLINE
+  B40: '#8383AB'  # EDITOR_OCCURRENCE
