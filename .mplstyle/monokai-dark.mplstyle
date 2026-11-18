@@ -33,8 +33,6 @@ axes.unicode_minus: True
 axes.prop_cycle: cycler('color', ['67D8EF', 'FD9621', 'A6E22C', 'AC80FF', 'E7DB74', 'F92472'])
 
 # Text, ticks and restrained grid lines
-font.family: sans-serif
-font.sans-serif: DejaVu Sans, Arial, Liberation Sans
 font.size: 11
 text.color: F8F8F2
 mathtext.fontset: dejavusans
